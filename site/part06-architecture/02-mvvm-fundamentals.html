@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MVVM Fundamentals · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>MVVM Fundamentals</h1>
+          </header>
+          <div class="doc-body"><h1 id="mvvm-fundamentals">MVVM Fundamentals</h1>
+<p><strong>Model–View–ViewModel (MVVM)</strong> is a presentation architecture pattern that separates user interface markup from presentation logic and domain data. It became the standard for WPF, Xamarin, Avalonia, and MAUI applications because it makes UI <strong>testable</strong> and <strong>designer-friendly</strong>.</p>
+<h2 id="the-problem-mvvm-solves">The Problem MVVM Solves</h2>
+<p>Without MVVM, views accumulate logic:</p>
+<pre><code class="language-csharp">// Anti-pattern: logic in code-behind
+private void SaveButton_Click(object sender, RoutedEventArgs e)
+{
+    if (string.IsNullOrWhiteSpace(EmailTextBox.Text)) { /* show error */ return; }
+    _api.SaveUser(EmailTextBox.Text, NameTextBox.Text);
+    StatusLabel.Text = "Saved!";
+}
+</code></pre>
+<p>Problems:</p>
+<ul>
+<li><strong>Untestable</strong> — must instantiate controls to test save logic</li>
+<li><strong>Tight coupling</strong> — view knows API client, validation, and formatting</li>
+<li><strong>Designer friction</strong> — XAML and C# logic intertwined</li>
+</ul>
+<p>MVVM moves logic into a <strong>ViewModel</strong> that the View binds to declaratively.</p>
+<h2 id="the-three-layers">The Three Layers</h2>
+<pre class="mermaid">flowchart LR
+    VIEW[View - XAML + minimal code-behind]
+    VM[ViewModel - presentation state + commands]
+    MODEL[Model - domain data / services]
+    VIEW --&gt;|bindings| VM
+    VM --&gt;|uses| MODEL
+</pre>
+<table class="table">
+<thead>
+<tr>
+<th>Layer</th>
+<th>Responsibility</th>
+<th>Should NOT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Model</strong></td>
+<td>Domain entities, services, plain data</td>
+<td>Reference UI frameworks</td>
+</tr>
+<tr>
+<td><strong>View</strong></td>
+<td>Layout, styles, user input capture</td>
+<td>Contain business rules</td>
+</tr>
+<tr>
+<td><strong>ViewModel</strong></td>
+<td>Expose bindable state; translate user actions</td>
+<td>Reference specific controls (<code>TextBox</code>)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Data flows:</strong> View binds to ViewModel properties. User edits flow <strong>two-way</strong> into ViewModel. ViewModel calls Model/services. Model changes notify ViewModel; ViewModel raises <code>PropertyChanged</code>; View updates automatically.</p>
+<h2 id="inotifypropertychanged-the-binding-contract">INotifyPropertyChanged — The Binding Contract</h2>
+<p>UI frameworks need to know when ViewModel data changes. .NET provides:</p>
+<pre><code class="language-csharp">public interface INotifyPropertyChanged
+{
+    event PropertyChangedEventHandler? PropertyChanged;
+}
+</code></pre>
+<p>When <code>Email</code> changes, the ViewModel raises:</p>
+<pre><code class="language-csharp">PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Email)));
+</code></pre>
+<p>Bound <code>TextBox.Text="{Binding Email}"</code> updates without manual <code>textBox.Text = ...</code> in code-behind.</p>
+<h3 id="setfield-helper-pattern">SetField Helper Pattern</h3>
+<p>SkyUI and Spark Studio repeat a small helper instead of a shared base class:</p>
+<pre><code class="language-csharp">private string _email = "";
+public string Email
+{
+    get =&gt; _email;
+    set
+    {
+        if (SetField(ref _email, value))
+            OnPropertyChanged(nameof(EmailError)); // dependent property
+    }
+}
+
+private bool SetField&lt;T&gt;(ref T field, T value, [CallerMemberName] string? name = null)
+{
+    if (EqualityComparer&lt;T&gt;.Default.Equals(field, value)) return false;
+    field = value;
+    OnPropertyChanged(name);
+    return true;
+}
+</code></pre>
+<p><strong>Why no ViewModelBase?</strong> Each demo ViewModel stays self-contained. Libraries avoid forcing a base class on consumers.</p>
+<h2 id="icommand-encapsulating-user-actions">ICommand — Encapsulating User Actions</h2>
+<p>Buttons need executable actions decoupled from event handlers. WPF/Avalonia expose <code>ICommand</code>:</p>
+<pre><code class="language-csharp">public interface ICommand
+{
+    bool CanExecute(object? parameter);
+    void Execute(object? parameter);
+    event EventHandler? CanExecuteChanged;
+}
+</code></pre>
+<p>ViewModel exposes commands as properties:</p>
+<pre><code class="language-csharp">public ICommand SaveCommand { get; }
+</code></pre>
+<p>XAML binds:</p>
+<pre><code class="language-xml">&lt;Button Content="Save" Command="{Binding SaveCommand}" /&gt;
+</code></pre>
+<p>The View does not know <em>what</em> save does — only that the ViewModel provides a command.</p>
+<h3 id="relaycommand-lightweight-implementation">RelayCommand — Lightweight Implementation</h3>
+<p>SkyUI's <code>FilterEditorRelayCommand</code> wraps an <code>Action</code>:</p>
+<pre><code class="language-csharp">public sealed class FilterEditorRelayCommand : ICommand
+{
+    private readonly Action _execute;
+    private readonly Func&lt;bool&gt;? _canExecute;
+
+    public FilterEditorRelayCommand(Action execute, Func&lt;bool&gt;? canExecute = null)
+    {
+        _execute = execute ?? throw new ArgumentNullException(nameof(execute));
+        _canExecute = canExecute;
+    }
+
+    public bool CanExecute(object? parameter) =&gt; _canExecute?.Invoke() ?? true;
+    public void Execute(object? parameter) =&gt; _execute();
+    public event EventHandler? CanExecuteChanged;
+
+    public void RaiseCanExecuteChanged() =&gt;
+        CanExecuteChanged?.Invoke(this, EventArgs.Empty);
+}
+</code></pre>
+<p><strong>CanExecute</strong> disables buttons while async work runs (<code>IsSaving == true</code>). <strong>RaiseCanExecuteChanged</strong> tells the UI to re-evaluate button enabled state.</p>
+<h2 id="data-binding-modes">Data Binding Modes</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Binding</th>
+<th>Example</th>
+<th>Use case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>One-way</td>
+<td><code>Text="{Binding Title}"</code></td>
+<td>Display-only labels</td>
+</tr>
+<tr>
+<td>Two-way</td>
+<td><code>Text="{Binding Email}"</code></td>
+<td>Form fields</td>
+</tr>
+<tr>
+<td>Command</td>
+<td><code>Command="{Binding SaveCommand}"</code></td>
+<td>Buttons, menu items</td>
+</tr>
+<tr>
+<td>Collection</td>
+<td><code>ItemsSource="{Binding Items}"</code></td>
+<td>Lists, trees</td>
+</tr>
+</tbody>
+</table>
+<p>Avalonia supports <code>x:DataType</code> for compiled bindings — catch property name typos at build time.</p>
+<h2 id="view-wiring-conventions">View Wiring Conventions</h2>
+<p><strong>Demo pages</strong> (SkyUI.Demo) set DataContext in code-behind:</p>
+<pre><code class="language-csharp">public FormsDemo()
+{
+    InitializeComponent();
+    DataContext = new FormsDemoViewModel();
+}
+</code></pre>
+<p><strong>Applications</strong> (Spark Studio) inject ViewModels via DI:</p>
+<pre><code class="language-csharp">desktop.MainWindow = new MainWindow
+{
+    DataContext = Services.GetRequiredService&lt;MainWindowViewModel&gt;(),
+};
+</code></pre>
+<p>DI enables testing ViewModels with fake <code>IMediator</code> and services.</p>
+<h2 id="mvvm-vs-mvc-vs-mvp">MVVM vs MVC vs MVP</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Pattern</th>
+<th>View updates when</th>
+<th>Controller/Presenter role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>MVC</strong></td>
+<td>Model changes; View may poll</td>
+<td>Controller routes requests</td>
+</tr>
+<tr>
+<td><strong>MVP</strong></td>
+<td>Presenter pushes to passive View</td>
+<td>Presenter holds all logic</td>
+</tr>
+<tr>
+<td><strong>MVVM</strong></td>
+<td>Bindings sync View ↔ ViewModel</td>
+<td>ViewModel exposes state; View is active via bindings</td>
+</tr>
+</tbody>
+</table>
+<p>MVVM fits declarative XAML ecosystems best.</p>
+<h2 id="mvvm-inside-controls-not-just-pages">MVVM Inside Controls (Not Just Pages)</h2>
+<p>Reusable controls can host their own ViewModel:</p>
+<ul>
+<li><code>FilterEditor</code> control creates <code>FilterEditorViewModel</code> when <code>Document</code> is set</li>
+<li><code>CheckedListRowModel</code> is a micro-ViewModel per virtualized row</li>
+</ul>
+<p>The <strong>page</strong> ViewModel and <strong>control</strong> ViewModel can coexist — control exposes bindable surface; page orchestrates navigation.</p>
+<h2 id="common-mistakes">Common Mistakes</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Mistake</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ViewModel references <code>TextBox</code></td>
+<td>Expose <code>string Email</code> property</td>
+</tr>
+<tr>
+<td>Model implements <code>INotifyPropertyChanged</code> for everything</td>
+<td>ViewModel wraps Model; Model can stay plain for simple cases</td>
+</tr>
+<tr>
+<td>Confusing UI <code>ICommand</code> with CQRS <code>IRequest</code></td>
+<td>UI Command = button action; CQRS Command = application message (Part 6 chapter 7)</td>
+</tr>
+<tr>
+<td>God ViewModel with 50 properties</td>
+<td>Split by screen or feature</td>
+</tr>
+</tbody>
+</table>
+<h2 id="what-would-break-without-mvvm">What Would Break Without MVVM?</h2>
+<ul>
+<li>Every UI change requires editing code-behind event handlers</li>
+<li>Unit tests need UI thread and control tree</li>
+<li>Designers cannot work on XAML independently</li>
+<li>Reusing presentation logic across platforms (desktop vs mobile) requires copy-paste</li>
+</ul>
+<h2 id="next">Next</h2>
+<p><a href="03-mvvm-skyui.html">MVVM in SkyUI →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#mvvm-fundamentals">MVVM Fundamentals</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#the-problem-mvvm-solves">The Problem MVVM Solves</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#the-three-layers">The Three Layers</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#inotifypropertychanged-the-binding-contract">INotifyPropertyChanged — The Binding Contract</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#setfield-helper-pattern">SetField Helper Pattern</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#icommand-encapsulating-user-actions">ICommand — Encapsulating User Actions</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#relaycommand-lightweight-implementation">RelayCommand — Lightweight Implementation</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#data-binding-modes">Data Binding Modes</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#view-wiring-conventions">View Wiring Conventions</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#mvvm-vs-mvc-vs-mvp">MVVM vs MVC vs MVP</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#mvvm-inside-controls-not-just-pages">MVVM Inside Controls (Not Just Pages)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#common-mistakes">Common Mistakes</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#what-would-break-without-mvvm">What Would Break Without MVVM?</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

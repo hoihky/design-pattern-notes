@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adapter · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>Adapter</h1>
+          </header>
+          <div class="doc-body"><h1 id="adapter">Adapter</h1>
+<p><strong>Intent:</strong> Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.</p>
+<h2 id="the-structural-problem-interface-mismatch">The Structural Problem: Interface Mismatch</h2>
+<p>Libraries, legacy modules, and third-party APIs rarely match the abstractions your application already depends on. Without adaptation, you face bad choices:</p>
+<ul>
+<li><strong>Fork or patch the library</strong> — high maintenance cost.</li>
+<li><strong>Leak foreign types into every caller</strong> — <code>MarkdownPipeline</code>, <code>Markdig.Syntax.HeadingBlock</code>, and native <code>Game</code> vtables spread through business logic.</li>
+<li><strong>Duplicate logic</strong> — every consumer re-implements the same translation.</li>
+</ul>
+<p>The Adapter pattern inserts a <strong>translation layer</strong>: one object implements the interface your client knows (<code>IMarkdownRenderer</code>, <code>ICheckedListItemAdapter</code>) and <strong>delegates</strong> to the foreign API internally. The client never imports the adaptee's types.</p>
+<pre class="mermaid">flowchart LR
+    CLIENT[Client code] --&gt; TARGET[Target interface]
+    TARGET --&gt; ADAPTER[Adapter]
+    ADAPTER --&gt; ADAPTEE[Adaptee / third-party API]
+</pre>
+<h2 id="class-adapter-vs-object-adapter">Class Adapter vs Object Adapter</h2>
+<table class="table">
+<thead>
+<tr>
+<th></th>
+<th>Class adapter</th>
+<th>Object adapter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mechanism</td>
+<td>Multiple inheritance (C++), inherit adaptee + target</td>
+<td>Composition: hold adaptee as field</td>
+</tr>
+<tr>
+<td>Flexibility</td>
+<td>Fixed at compile time</td>
+<td>Can swap adaptee at runtime</td>
+</tr>
+<tr>
+<td>C# / modern C++</td>
+<td>Not available (single inheritance)</td>
+<td><strong>Preferred everywhere</strong></td>
+</tr>
+</tbody>
+</table>
+<p>This book's examples are <strong>object adapters</strong> — a class implements the target interface and wraps the adaptee.</p>
+<h2 id="uml-roles-project-names">UML Roles → Project Names</h2>
+<table class="table">
+<thead>
+<tr>
+<th>GoF role</th>
+<th>Responsibility</th>
+<th>Example in corpus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Client</strong></td>
+<td>Depends only on target interface</td>
+<td><code>CheckedListBox</code>, <code>RenderMarkdownStep</code>, C# game host</td>
+</tr>
+<tr>
+<td><strong>Target</strong></td>
+<td>Interface the client expects</td>
+<td><code>ICheckedListItemAdapter</code>, <code>IMarkdownRenderer</code>, <code>Game</code> (native)</td>
+</tr>
+<tr>
+<td><strong>Adapter</strong></td>
+<td>Implements Target; translates calls</td>
+<td><code>DefaultCheckedListItemAdapter</code>, <code>MarkdigMarkdownRenderer</code>, <code>ManagedGameBridge</code></td>
+</tr>
+<tr>
+<td><strong>Adaptee</strong></td>
+<td>Existing class with incompatible API</td>
+<td>Domain view-models, Markdig, managed script callbacks</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="example-1-skyui-icheckedlistitemadapter-excellent">Example 1: SkyUI — ICheckedListItemAdapter (Excellent)</h2>
+<h3 id="the-mismatch">The mismatch</h3>
+<p><code>CheckedListBox</code> is a hierarchical checklist control. It must display check state, expand/collapse state, and parent/child relationships for <strong>arbitrary</strong> model objects bound via <code>ItemsSource</code>. The control cannot hard-code every domain type (file nodes, permission trees, filter presets).</p>
+<h3 id="class-roles">Class roles</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Pattern role</th>
+<th>What it wraps / contains</th>
+<th>Why this design</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>ICheckedListItemAdapter</code></strong></td>
+<td>Target</td>
+<td>—</td>
+<td>Stable contract: <code>GetIsChecked</code>, <code>SetIsChecked</code>, <code>GetIsExpanded</code>, <code>GetChildren</code>, <code>HasChildren</code>. <code>CheckedListBox</code> depends on this, not on your view-models.</td>
+</tr>
+<tr>
+<td><strong><code>DefaultCheckedListItemAdapter</code></strong></td>
+<td>Adapter</td>
+<td><code>ICheckedListBoxItem</code> instances</td>
+<td>Default translation for SkyUI's own item interface. Maps <code>item.IsChecked</code> ↔ adapter calls.</td>
+</tr>
+<tr>
+<td><strong><code>CheckedListBox</code></strong></td>
+<td>Client</td>
+<td>Holds <code>ItemAdapter</code> property (defaults to <code>DefaultCheckedListItemAdapter</code>)</td>
+<td>Renders rows, handles tri-state cascade via <code>CheckedListCheckCoordinator</code>; never inspects concrete item types.</td>
+</tr>
+<tr>
+<td><strong>Your domain model</strong></td>
+<td>Adaptee (via custom adapter)</td>
+<td>e.g. <code>FileTreeNode</code>, <code>FilterPreset</code></td>
+<td>Stays free of checklist APIs; you supply a custom <code>ICheckedListItemAdapter</code> that reads/writes your properties.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="step-by-step-client-uses-the-pattern">Step-by-step: client uses the pattern</h3>
+<ol>
+<li>A view-model builds a tree of custom objects (not implementing <code>ICheckedListBoxItem</code>).</li>
+<li>The view creates a <strong>custom adapter</strong> implementing <code>ICheckedListItemAdapter</code> — e.g. <code>GetIsChecked</code> reads <code>node.IsSelected</code>, <code>GetChildren</code> returns <code>node.SubFolders</code>.</li>
+<li>The view sets <code>CheckedListBox.ItemAdapter = myAdapter</code> and <code>ItemsSource = rootNodes</code>.</li>
+<li>User toggles a checkbox → control calls <code>adapter.SetIsChecked(item, true)</code> → adapter updates the domain object.</li>
+<li>User expands a row → control calls <code>GetChildren</code> → adapter returns the domain's child collection → control rebuilds flat <code>Rows</code> for virtualization.</li>
+</ol>
+<p>The control's source comment states the intent explicitly: <em>"DIP: CheckedListBox depends on this, not concrete VMs."</em></p>
+<pre><code class="language-csharp">public interface ICheckedListItemAdapter
+{
+    bool? GetIsChecked(object? item);
+    void SetIsChecked(object? item, bool? value);
+    bool GetIsExpanded(object? item);
+    void SetIsExpanded(object? item, bool value);
+    IEnumerable&lt;object?&gt; GetChildren(object? item);
+    bool HasChildren(object? item);
+}
+</code></pre>
+<p><code>DefaultCheckedListItemAdapter</code> is the <strong>reference adapter</strong> — it shows the translation pattern for <code>ICheckedListBoxItem</code>:</p>
+<pre><code class="language-csharp">public bool? GetIsChecked(object? item) =&gt;
+item is ICheckedListBoxItem i ? i.IsChecked : false;
+</code></pre>
+<p>Replace the adapter, not the control, when integrating new model shapes.</p>
+<hr>
+<h2 id="example-2-mdweb-markdig-to-imarkdownrenderer">Example 2: MDWeb — Markdig to IMarkdownRenderer</h2>
+<h3 id="the-mismatch-1">The mismatch</h3>
+<p>MDWeb's pipeline steps (<code>RenderMarkdownStep</code>, navigation builders, PDF export) need <strong>HTML plus heading metadata</strong> from markdown source. Markdig exposes <code>MarkdownPipeline</code>, <code>Markdown.Parse</code>, <code>Markdown.ToHtml</code>, and AST types like <code>HeadingBlock</code>. Pipeline code should not reference any of that — publish modes may swap renderers (standard site vs WeChat-specific pipeline).</p>
+<h3 id="class-roles-1">Class roles</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Pattern role</th>
+<th>What it wraps</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>IMarkdownRenderer</code></strong></td>
+<td>Target</td>
+<td><code>Render(string) → MarkdownRenderResult</code></td>
+<td>Application-facing contract in <code>MDWeb.Core.Abstractions</code>.</td>
+</tr>
+<tr>
+<td><strong><code>MarkdigMarkdownRenderer</code></strong></td>
+<td>Adapter</td>
+<td>Private <code>MarkdownPipeline _pipeline</code> from <code>MarkdownPipelineFactory.CreateSitePipeline()</code></td>
+<td>Encapsulates parse → HTML → post-fixes → heading extraction.</td>
+</tr>
+<tr>
+<td><strong><code>WeChatMarkdownRenderer</code></strong></td>
+<td>Alternate adapter</td>
+<td>Different Markdig pipeline tuned for WeChat</td>
+<td>Same target interface; swapped via DI.</td>
+</tr>
+<tr>
+<td><strong><code>RenderMarkdownStep</code></strong></td>
+<td>Client</td>
+<td>Injects <code>IMarkdownRenderer</code>; loops <code>context.AllPages</code></td>
+<td>Never imports <code>Markdig</code> namespace.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="step-by-step-rendering-a-page">Step-by-step: rendering a page</h3>
+<ol>
+<li><code>SiteGenerationPipeline</code> reaches <code>RenderMarkdownStep</code>.</li>
+<li>Step obtains <code>IMarkdownRenderer</code> from DI (typically <code>MarkdigMarkdownRenderer</code>).</li>
+<li>For each <code>MarkdownPage</code>, step calls <code>renderer.Render(page.RawMarkdown)</code>.</li>
+<li>Inside the adapter: <code>Markdown.Parse</code> → <code>Markdown.ToHtml</code> → <code>CodeBlockIndentFixer.Fix</code> → <code>ExtractHeadings</code> from AST.</li>
+<li>Step assigns <code>result.Html</code> and <code>result.Headings</code> back onto the page model.</li>
+</ol>
+<p>The adapter <strong>hides</strong> slug generation, syntax-highlight pipeline configuration, and Markdig inline traversal. Adding a new markdown engine means a new adapter class, not pipeline surgery.</p>
+<hr>
+<h2 id="example-3-spark-managedgamebridge">Example 3: Spark — ManagedGameBridge</h2>
+<h3 id="the-mismatch-2">The mismatch</h3>
+<p>Spark's native engine drives games through the <code>Game</code> base class: virtual methods <code>OnAttach</code>, <code>OnUpdate</code>, <code>OnRender</code>, etc. C# scripts cannot inherit from C++ vtables directly. The engine needs a <strong>native <code>Game</code> instance</strong> that forwards lifecycle events to <strong>managed function pointers</strong> registered at startup.</p>
+<h3 id="class-roles-2">Class roles</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Pattern role</th>
+<th>What it wraps</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>Game</code></strong></td>
+<td>Target (native interface)</td>
+<td>Abstract lifecycle the engine invokes</td>
+<td>Engine loop calls <code>OnUpdate</code> without knowing about C#</td>
+</tr>
+<tr>
+<td><strong><code>ManagedGameBridge</code></strong></td>
+<td>Adapter</td>
+<td><code>SparkManagedGameCallbacks callbacks</code> struct</td>
+<td>Implements <code>Game</code>; each override forwards to the matching C callback</td>
+</tr>
+<tr>
+<td><strong>C# script / host</strong></td>
+<td>Adaptee</td>
+<td>Registers callbacks via <code>SparkHostApi</code></td>
+<td>Managed code never subclasses C++ <code>Game</code></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-cpp">class ManagedGameBridge final : public Game {
+public:
+    void SetCallbacks(SparkManagedGameCallbacks callbacks);
+    void OnAttach(IEngineContext&amp; context) override;
+    void OnUpdate(const FrameTiming&amp; timing, IEngineContext&amp; context) override;
+    void OnRender(IRenderFrame&amp; frame, IEngineContext&amp; context) override;
+private:
+    SparkManagedGameCallbacks callbacks{};
+};
+</code></pre>
+<p><strong>Note on naming:</strong> Spark source files sometimes say "bridge" in filenames (<code>ManagedGameBridge</code>). That reflects the <strong>cross-language boundary</strong>, not necessarily the GoF Bridge pattern. Here the fix is <strong>retrofit compatibility</strong> (managed API → native <code>Game</code>), which is classic <strong>Adapter</strong>. See the Bridge chapter for intentional abstraction/implementation separation (<code>IUiBackend</code>).</p>
+<hr>
+<h2 id="example-4-lightmapper-ilightmapper">Example 4: LightMapper — ILightMapper</h2>
+<p>Generated mapping code adapts DTO property layouts to domain entity shapes:</p>
+<pre><code class="language-csharp">public interface ILightMapper&lt;TSource, TDestination&gt;
+{
+    TDestination Map(TSource source);
+    void MapTo(TSource source, TDestination destination);
+}
+</code></pre>
+<table class="table">
+<thead>
+<tr>
+<th>Role</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Target</td>
+<td><code>ILightMapper&lt;TSource, TDestination&gt;</code></td>
+</tr>
+<tr>
+<td>Adapter</td>
+<td>Generated mapper class per type pair</td>
+</tr>
+<tr>
+<td>Adaptee</td>
+<td>Reflection / expression-tree copy logic</td>
+</tr>
+<tr>
+<td>Client</td>
+<td>Application services calling <code>Maps.Map(dto)</code></td>
+</tr>
+</tbody>
+</table>
+<p>Thin adapter layer: the "adaptee" is mechanical property copying; the value is a <strong>uniform Map API</strong> over heterogeneous type pairs.</p>
+<hr>
+<h2 id="example-5-skyui-listvirtualgriddatasource">Example 5: SkyUI — ListVirtualGridDataSource</h2>
+<p>Virtual grids speak <code>IVirtualGridDataSource</code>: <code>RowCount</code>, <code>GetRow(long index)</code>, <code>StructureChanged</code>. Application code often already holds an <code>IList</code>.</p>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>IVirtualGridDataSource</code></strong></td>
+<td>Target — grid virtualization protocol</td>
+</tr>
+<tr>
+<td><strong><code>ListVirtualGridDataSource</code></strong></td>
+<td>Adapter — holds <code>IList _list</code>, forwards row access</td>
+</tr>
+<tr>
+<td><strong><code>IList</code> / <code>ObservableCollection</code></strong></td>
+<td>Adaptee</td>
+</tr>
+<tr>
+<td><strong>Virtual grid control</strong></td>
+<td>Client</td>
+</tr>
+</tbody>
+</table>
+<p>Source comment: <em>"Bridges an in-memory IList to IVirtualGridDataSource."</em> The adapter also subscribes to <code>INotifyCollectionChanged</code> on the list and raises <code>StructureChanged</code> so the grid refreshes when rows are added or removed — translation includes <strong>event semantics</strong>, not just method signatures.</p>
+<hr>
+<h2 id="adapter-vs-facade-vs-bridge">Adapter vs Facade vs Bridge</h2>
+<table class="table">
+<thead>
+<tr>
+<th></th>
+<th>Adapter</th>
+<th>Facade</th>
+<th>Bridge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Problem</strong></td>
+<td>One incompatible interface</td>
+<td>Many classes, one front door</td>
+<td>Two dimensions must vary independently</td>
+</tr>
+<tr>
+<td><strong>Scope</strong></td>
+<td>Usually one adaptee</td>
+<td>Whole subsystem</td>
+<td>Parallel hierarchies</td>
+</tr>
+<tr>
+<td><strong>Timing</strong></td>
+<td>Retrofit</td>
+<td>Often planned</td>
+<td>Planned upfront</td>
+</tr>
+<tr>
+<td><strong>Example</strong></td>
+<td><code>MarkdigMarkdownRenderer</code></td>
+<td><code>SiteGenerator</code></td>
+<td><code>IUiBackend</code></td>
+</tr>
+</tbody>
+</table>
+<p><code>MarkdigMarkdownRenderer</code> converts Markdig → <code>IMarkdownRenderer</code> (<strong>Adapter</strong>). <code>SiteGenerator</code> orchestrates pipeline + output writer without exposing step types (<strong>Facade</strong>). Do not confuse <code>ManagedGameBridge</code>'s filename with GoF Bridge.</p>
+<hr>
+<h2 id="when-to-reach-for-adapter">When to Reach for Adapter</h2>
+<ul>
+<li>Integrating third-party libraries without polluting domain layers.</li>
+<li>Wrapping legacy APIs behind interfaces your tests can mock.</li>
+<li>Presenting hierarchical domain models to generic UI controls (<code>ICheckedListItemAdapter</code>).</li>
+<li>Cross-language boundaries (native ↔ managed, C++ ↔ C#).</li>
+</ul>
+<p>Prefer <strong>object adapter via composition</strong> in C# and C++. Register adapters in DI so clients receive the target interface only.</p>
+<h2 id="next">Next</h2>
+<p><a href="03-bridge.html">Bridge →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#adapter">Adapter</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#the-structural-problem-interface-mismatch">The Structural Problem: Interface Mismatch</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#class-adapter-vs-object-adapter">Class Adapter vs Object Adapter</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#uml-roles-project-names">UML Roles → Project Names</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-1-skyui-icheckedlistitemadapter-excellent">Example 1: SkyUI — ICheckedListItemAdapter (Excellent)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-mismatch">The mismatch</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#class-roles">Class roles</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#step-by-step-client-uses-the-pattern">Step-by-step: client uses the pattern</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-2-mdweb-markdig-to-imarkdownrenderer">Example 2: MDWeb — Markdig to IMarkdownRenderer</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-mismatch">The mismatch</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#class-roles">Class roles</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#step-by-step-rendering-a-page">Step-by-step: rendering a page</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-3-spark-managedgamebridge">Example 3: Spark — ManagedGameBridge</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-mismatch">The mismatch</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#class-roles">Class roles</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-4-lightmapper-ilightmapper">Example 4: LightMapper — ILightMapper</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-5-skyui-listvirtualgriddatasource">Example 5: SkyUI — ListVirtualGridDataSource</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#adapter-vs-facade-vs-bridge">Adapter vs Facade vs Bridge</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#when-to-reach-for-adapter">When to Reach for Adapter</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

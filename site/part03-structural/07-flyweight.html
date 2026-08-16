@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flyweight · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>Flyweight</h1>
+          </header>
+          <div class="doc-body"><h1 id="flyweight">Flyweight</h1>
+<p><strong>Intent:</strong> Use sharing to support large numbers of fine-grained objects efficiently by separating <strong>intrinsic</strong> (shared, immutable) state from <strong>extrinsic</strong> (context-specific) state.</p>
+<h2 id="the-structural-problem-memory-at-scale">The Structural Problem: Memory at Scale</h2>
+<p>Imagine a tile map with 50,000 tile <strong>instances</strong> on screen, but only 200 unique tile <strong>definitions</strong> (texture, UV rect, collision flags). Storing full definition data on every instance wastes memory and cache lines.</p>
+<p><strong>Flyweight</strong> stores each unique definition <strong>once</strong> in a factory-managed pool. Instances hold only:</p>
+<ul>
+<li><strong>Intrinsic state</strong> — shared, immutable (glyph shape, texture handle, color token).</li>
+<li><strong>Extrinsic state</strong> — passed in per use (x/y position, parent control, current theme variant).</li>
+</ul>
+<p>Operations become <code>flyweight.Draw(extrinsicContext)</code> rather than <code>instance.Draw()</code> carrying duplicate intrinsic fields.</p>
+<pre class="mermaid">classDiagram
+    class FlyweightFactory {
+        +getFlyweight(key)
+    }
+    class Flyweight {
+        +operation(extrinsicState)
+    }
+    FlyweightFactory o-- Flyweight
+    Client --&gt; FlyweightFactory
+    Client --&gt; Flyweight : uses with extrinsic state
+</pre>
+<h2 id="uml-roles-textbook-mapping">UML Roles — Textbook Mapping</h2>
+<table class="table">
+<thead>
+<tr>
+<th>GoF role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Flyweight</strong></td>
+<td>Stores intrinsic state; accepts extrinsic state in methods</td>
+</tr>
+<tr>
+<td><strong>FlyweightFactory</strong></td>
+<td>Returns shared instance for key; creates on first miss</td>
+</tr>
+<tr>
+<td><strong>Client</strong></td>
+<td>Supplies extrinsic state; never duplicates intrinsic data</td>
+</tr>
+<tr>
+<td><strong>Context</strong></td>
+<td>Extrinsic state holder (sometimes explicit struct)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="honest-assessment-no-classic-flyweight-factory-in-the-corpus">Honest Assessment: No Classic Flyweight Factory in the Corpus</h2>
+<p>None of the seven projects implement the full GoF structure:</p>
+<ul>
+<li>No <code>FlyweightFactory.Get(key)</code> returning shared objects.</li>
+<li>No operation signature of the form <code>Render(extrinsicState)</code> on a shared glyph/tile type.</li>
+<li>No documentation claiming Flyweight intent (unlike MDWeb's explicit Composite comments).</li>
+</ul>
+<p>Related <strong>memory and sharing techniques</strong> appear — and conflating them with Flyweight is a common study mistake:</p>
+<table class="table">
+<thead>
+<tr>
+<th>Technique</th>
+<th>Project</th>
+<th>What it does</th>
+<th>Flyweight?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Immutable palette singletons</td>
+<td>SkyUI <code>SkyDarkColorPalette.Instance</code></td>
+<td>One shared color resource URI per theme</td>
+<td><strong>Flyweight-like</strong> — shared intrinsic theme data</td>
+</tr>
+<tr>
+<td>Asset deduplication</td>
+<td>Spark rendering</td>
+<td>Same texture ID referenced many times</td>
+<td><strong>Cache / interning</strong> — no extrinsic/intrinsic API split</td>
+</tr>
+<tr>
+<td>Buffer pools</td>
+<td>RainDB <code>IBufferPool</code>, <code>HybridBufferPool</code></td>
+<td>Reuse byte buffers across queries</td>
+<td><strong>Object pool</strong> — mutable reuse, not immutable sharing</td>
+</tr>
+<tr>
+<td>Generated mapper singletons</td>
+<td>LightMapper</td>
+<td>Stateless <code>Map()</code> services</td>
+<td><strong>Singleton</strong> — one instance, not many logical objects sharing state</td>
+</tr>
+</tbody>
+</table>
+<p>Teaching Flyweight honestly includes explaining <strong>why</strong> these projects chose pools and caches instead.</p>
+<hr>
+<h2 id="flyweight-vs-object-pool-vs-cache-vs-singleton">Flyweight vs Object Pool vs Cache vs Singleton</h2>
+<table class="table">
+<thead>
+<tr>
+<th></th>
+<th>Flyweight</th>
+<th>Object pool</th>
+<th>Cache</th>
+<th>Singleton</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Goal</strong></td>
+<td>Many logical objects, few shared instances</td>
+<td>Reduce allocation churn</td>
+<td>Avoid recomputation / reload</td>
+<td>One coordinator</td>
+</tr>
+<tr>
+<td><strong>Object mutability</strong></td>
+<td>Flyweight is immutable</td>
+<td>Pooled object reset between uses</td>
+<td>Cached value may mutate</td>
+<td>Varies</td>
+</tr>
+<tr>
+<td><strong>State split</strong></td>
+<td>Intrinsic in flyweight; extrinsic per call</td>
+<td>State lives in pooled object</td>
+<td>Key → value</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td><strong>Example</strong></td>
+<td>Font glyph shared by 10k characters</td>
+<td><code>ArrayPool&lt;byte&gt;.Shared</code></td>
+<td>Texture loaded once by path</td>
+<td><code>SkyDarkColorPalette.Instance</code></td>
+</tr>
+</tbody>
+</table>
+<p>RainDB's <code>PooledFixedWidthColumnChunk</code> and <code>HybridBufferPool</code> recycle <strong>mutable buffers</strong> for vectorized query execution. After checkout, operators write row batches into the buffer; after use, memory returns to the pool. That is <strong>pooling for allocation performance</strong>, not sharing immutable tile definitions across coordinates.</p>
+<hr>
+<h2 id="skyui-palettes-informal-flyweight-teaching-example">SkyUI Palettes — Informal Flyweight Teaching Example</h2>
+<h3 id="what-exists">What exists</h3>
+<p>Theme palettes expose a <strong>single shared instance</strong> per variant:</p>
+<pre><code class="language-csharp">public sealed class SkyDarkColorPalette : ISkyColorPalette
+{
+    public static SkyDarkColorPalette Instance { get; } = new();
+    public string ResourceUri =&gt; SkyPaletteUris.Dark;
+}
+</code></pre>
+<p>Parallel types: <code>SkyLightColorPalette.Instance</code>, <code>SkyHighContrastColorPalette.Instance</code>.</p>
+<h3 id="mapping-to-flyweight-vocabulary">Mapping to Flyweight vocabulary</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Concept</th>
+<th>SkyUI realization</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Intrinsic state</strong></td>
+<td>Avalonia resource URI pointing at shared XAML color dictionary (<code>SkyPalette.Dark.axaml</code>)</td>
+</tr>
+<tr>
+<td><strong>Extrinsic state</strong></td>
+<td>Which control references the palette; active <code>ThemeVariant</code>; which brush property is being resolved</td>
+</tr>
+<tr>
+<td><strong>Factory</strong></td>
+<td>Not explicit — static <code>Instance</code> property acts as <strong>fixed flyweight registry</strong> (one entry per theme)</td>
+</tr>
+<tr>
+<td><strong>Clients</strong></td>
+<td>Thousands of controls across windows — all resolve colors through the same palette instance</td>
+</tr>
+</tbody>
+</table>
+<p>Controls do not each embed a copy of the dark-theme color table. They hold a reference to shared theme infrastructure; <strong>per-control position and state</strong> remain extrinsic.</p>
+<h3 id="why-this-is-informal-flyweight">Why this is "informal" Flyweight</h3>
+<p>GoF Flyweight usually involves:</p>
+<ul>
+<li><strong>Many keys</strong> in a factory (character 'A' in font X, tile ID 42).</li>
+<li><strong>Dynamic lookup</strong> at runtime.</li>
+</ul>
+<p>SkyUI has <strong>three</strong> palette flyweights (dark/light/high-contrast) — essentially enum-sized sharing. The pattern idea applies; the factory machinery would be over-engineering.</p>
+<hr>
+<h2 id="raindb-buffer-pools-not-flyweight">RainDB — Buffer Pools (Not Flyweight)</h2>
+<p><code>RainDbEngine</code> wires <code>HybridBufferPool</code> as both <code>IBufferPool</code> and <code>IAlignedBufferPool</code>:</p>
+<pre><code class="language-csharp">var buffers = new HybridBufferPool();
+return new RainDbEngine(catalog, buffers, buffers, executor, sql, linq, ...);
+</code></pre>
+<table class="table">
+<thead>
+<tr>
+<th>Role</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pool</td>
+<td><code>HybridBufferPool</code></td>
+</tr>
+<tr>
+<td>Client</td>
+<td>Query operators via <code>IExecutionContext</code></td>
+</tr>
+<tr>
+<td>Checkout</td>
+<td>Operator requests buffer, fills with column data, returns</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Why pooling fits databases:</strong> query batches are <strong>short-lived mutable scratch space</strong>. Flyweight would imply immutable shared column chunks — wrong semantics when each scan produces different rows.</p>
+<p><strong>Teaching point:</strong> when profiling shows allocation pressure, reach for <strong>pools</strong> first. Reach for <strong>Flyweight</strong> when profiling shows <strong>duplicate immutable identity data</strong> (glyphs, tiles, icon definitions, repeated AST nodes).</p>
+<hr>
+<h2 id="spark-asset-ids-and-batching-cache-not-flyweight-api">Spark — Asset IDs and Batching (Cache, Not Flyweight API)</h2>
+<p>Spark likely references textures and sprites by <strong>asset ID</strong> with deduplication in asset management. Many <code>Sprite</code> components may reference the same texture handle — shared intrinsic GPU resource, extrinsic transform per entity.</p>
+<p>The engine does not necessarily expose a <code>TileFlyweightFactory</code>. Modern engines achieve the same memory profile through:</p>
+<ul>
+<li><strong>Interned asset paths → ID</strong></li>
+<li><strong>GPU instancing / batching</strong> (extrinsic transforms in instance buffer)</li>
+<li><strong>Shared mesh/material assets</strong></li>
+</ul>
+<p>Valid engineering — Flyweight is the <strong>conceptual label</strong> for what's happening, not a class you must name <code>FlyweightFactory</code>.</p>
+<hr>
+<h2 id="hypothetical-flyweight-in-spark-tilemaps">Hypothetical: Flyweight in Spark Tilemaps</h2>
+<p>If Spark needed explicit teaching example:</p>
+<pre><code class="language-cpp">struct TileFlyweight {
+    TextureId texture;
+    Rect uv;
+    uint32_t collisionFlags;
+};
+
+class TileFlyweightFactory {
+public:
+    TileFlyweight&amp; Get(TileDefinitionId id);
+};
+
+void DrawTile(const TileFlyweight&amp; fw, int worldX, int worldY);  // extrinsic position
+</code></pre>
+<p>50,000 drawn tiles might reference 200 flyweights. <strong>Current engine</strong> likely uses asset IDs + renderer batching instead — fewer types, same memory story.</p>
+<hr>
+<h2 id="when-to-add-explicit-flyweight">When to Add Explicit Flyweight</h2>
+<p>Add Flyweight when profiling shows:</p>
+<ul>
+<li>Huge count of <strong>small objects</strong> differing only by a few shared fields.</li>
+<li>Intrinsic data is <strong>immutable</strong> after load.</li>
+<li>Extrinsic context is cheap to pass per operation (coordinates, parent ID, style key).</li>
+</ul>
+<p><strong>Do not</strong> use Flyweight for:</p>
+<ul>
+<li>Mutable workspace buffers (use pools).</li>
+<li>Objects whose "shared" state changes per tenant (use normal instances).</li>
+<li>Cases with only 2–3 shared variants (static singletons suffice).</li>
+</ul>
+<hr>
+<h2 id="client-walkthrough-textbook-flyweight-reference">Client Walkthrough — Textbook Flyweight (Reference)</h2>
+<p>For contrast with the corpus, here is how a <strong>full</strong> Flyweight client behaves:</p>
+<ol>
+<li>Client requests <code>factory.Get("icon-warning")</code> — factory returns shared <code>IconFlyweight</code> (intrinsic SVG path data).</li>
+<li>Client loops 1,000 list rows.</li>
+<li>For each row, calls <code>flyweight.Paint(canvas, x, y, color)</code> — <strong>extrinsic</strong> position and tint passed per call.</li>
+<li>Memory: one flyweight + 1,000 lightweight row models — not 1,000 copies of SVG path strings.</li>
+</ol>
+<p>No project in this book implements that loop verbatim; SkyUI palettes approximate step 1 with static instances; RainDB and Spark use other optimizations.</p>
+<hr>
+<h2 id="summary">Summary</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Project</th>
+<th>Mechanism</th>
+<th>Closest pattern label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SkyUI themes</td>
+<td><code>SkyDarkColorPalette.Instance</code></td>
+<td>Informal Flyweight (shared intrinsic theme)</td>
+</tr>
+<tr>
+<td>RainDB</td>
+<td><code>HybridBufferPool</code></td>
+<td>Object pool</td>
+</tr>
+<tr>
+<td>Spark</td>
+<td>Asset ID + GPU batching</td>
+<td>Cache / sharing without Flyweight API</td>
+</tr>
+<tr>
+<td>LightMapper</td>
+<td>Generated mapper singletons</td>
+<td>Singleton service</td>
+</tr>
+</tbody>
+</table>
+<p>Recognizing Flyweight <strong>conceptually</strong> helps you spot duplicate immutable data. Recognizing its <strong>absence</strong> helps you pick pools, caches, and singletons without forcing a factory you do not need.</p>
+<h2 id="next">Next</h2>
+<p><a href="08-proxy.html">Proxy →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#flyweight">Flyweight</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#the-structural-problem-memory-at-scale">The Structural Problem: Memory at Scale</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#uml-roles-textbook-mapping">UML Roles — Textbook Mapping</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#honest-assessment-no-classic-flyweight-factory-in-the-corpus">Honest Assessment: No Classic Flyweight Factory in the Corpus</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#flyweight-vs-object-pool-vs-cache-vs-singleton">Flyweight vs Object Pool vs Cache vs Singleton</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#skyui-palettes-informal-flyweight-teaching-example">SkyUI Palettes — Informal Flyweight Teaching Example</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#what-exists">What exists</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#mapping-to-flyweight-vocabulary">Mapping to Flyweight vocabulary</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-this-is-informal-flyweight">Why this is "informal" Flyweight</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#raindb-buffer-pools-not-flyweight">RainDB — Buffer Pools (Not Flyweight)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#spark-asset-ids-and-batching-cache-not-flyweight-api">Spark — Asset IDs and Batching (Cache, Not Flyweight API)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#hypothetical-flyweight-in-spark-tilemaps">Hypothetical: Flyweight in Spark Tilemaps</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#when-to-add-explicit-flyweight">When to Add Explicit Flyweight</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#client-walkthrough-textbook-flyweight-reference">Client Walkthrough — Textbook Flyweight (Reference)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#summary">Summary</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

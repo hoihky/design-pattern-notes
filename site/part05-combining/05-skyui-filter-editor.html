@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SkyUI Filter Editor · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>SkyUI Filter Editor</h1>
+          </header>
+          <div class="doc-body"><h1 id="skyui-filter-editor-composite-visitor">SkyUI — Filter Editor (Composite + Visitor)</h1>
+<p>SkyUI's data-grid filter editor demonstrates how <strong>Composite</strong> and <strong>Visitor</strong> solve the same problem from two angles: <strong>structure</strong> vs <strong>operations</strong>. Users build nested AND/OR filter expressions; the UI edits them interactively, exports SQL, validates fields, and keeps Avalonia bindings synchronized — without one god class that knows everything.</p>
+<p>This chapter traces a user building a filter, watching SQL update live, and explains why Composite and Visitor are inseparable here.</p>
+<h2 id="end-to-end-user-journey">End-to-End User Journey</h2>
+<pre class="mermaid">sequenceDiagram
+    participant User
+    participant View as FilterEditor.axaml
+    participant VM as FilterEditorViewModel
+    participant Tree as FilterGroupNode / FilterConditionNode
+    participant Exp as BasicFilterSqlExporter
+    participant Val as CompositeSkyValidator
+
+    User-&gt;&gt;View: click "Add AND group"
+    View-&gt;&gt;VM: AddAndGroupCommand.Execute()
+    VM-&gt;&gt;Tree: TargetGroup.AddGroup(And)
+    Tree-&gt;&gt;Tree: Children.CollectionChanged
+    VM-&gt;&gt;VM: WireNode(new group)
+    VM-&gt;&gt;Exp: ToSql(document)
+    Exp-&gt;&gt;Tree: root.Accept(visitor)
+    Exp--&gt;&gt;VM: SQL string
+    VM-&gt;&gt;View: SqlPreview updated (Observer)
+    User-&gt;&gt;View: set Field = "Price", Operator = "&gt;", Value = "100"
+    Tree-&gt;&gt;VM: PropertyChanged
+    VM-&gt;&gt;Exp: ToSql(document)
+    VM-&gt;&gt;View: SqlPreview = "(\"Price\" &gt; '100')"
+    User-&gt;&gt;View: submit form field
+    View-&gt;&gt;Val: Validate(value)
+</pre>
+<p><strong>What the user experiences:</strong></p>
+<ol>
+<li>Open filter editor on a data grid column set.</li>
+<li>Click <strong>Add condition</strong> — a row appears with field picker, operator dropdown, value textbox.</li>
+<li>Click <strong>Add AND group</strong> — a nested group container appears; conditions inside combine with AND.</li>
+<li><strong>SQL preview</strong> pane updates on every edit — no "Export" button needed.</li>
+<li>Form fields elsewhere use validators (<code>Required</code>, <code>Range</code>) composed via <code>CompositeSkyValidator</code>.</li>
+</ol>
+<p>Under the hood, the tree is a Composite; SQL generation is a Visitor; commands mutate the tree; Observer keeps UI in sync.</p>
+<h2 id="problem-forces">Problem Forces</h2>
+<p>Users build nested filter expressions (AND/OR groups with field conditions). The UI must:</p>
+<ol>
+<li><strong>Edit the tree interactively</strong> — add/remove groups and conditions, select nodes.</li>
+<li><strong>Export to SQL</strong> (and potentially JSON, OData, etc.) — output formats change; node types should not.</li>
+<li><strong>Validate nodes</strong> — form fields use composable validation rules.</li>
+<li><strong>Bind to MVVM views</strong> — Avalonia bindings require <code>INotifyPropertyChanged</code>.</li>
+</ol>
+<p>Force (1) suggests Composite. Force (2) suggests Visitor. Force (3) suggests Composite again (validator composition). Force (4) suggests Observer. These are <strong>different forces on the same tree</strong> — the chapter's central lesson.</p>
+<h2 id="composite-expression-tree">Composite — Expression Tree</h2>
+<h3 id="force">Force</h3>
+<p>Filter structure is inherently hierarchical: <code>(A AND B) OR (C AND (D OR E))</code>. Flat lists of conditions cannot represent precedence without lossy serialization.</p>
+<h3 id="why-composite">Why Composite</h3>
+<pre><code class="language-csharp">public abstract class FilterNodeBase : INotifyPropertyChanged
+{
+    public FilterGroupNode? Parent { get; internal set; }
+    public int Depth { get; }  // computed from parent chain
+    public abstract ObservableCollection&lt;FilterNodeBase&gt; Children { get; }
+    public abstract T Accept&lt;T&gt;(IFilterNodeVisitor&lt;T&gt; visitor);
+    public void RemoveFromParent() { … }
+}
+
+public sealed class FilterGroupNode : FilterNodeBase
+{
+    public FilterLogicalKind LogicalKind { get; set; }  // And / Or
+    public override ObservableCollection&lt;FilterNodeBase&gt; Children =&gt; _children;
+
+    public FilterConditionNode AddCondition(string fieldPath, FilterCompareOperator op, string? valueText);
+    public FilterGroupNode AddGroup(FilterLogicalKind kind);
+}
+
+public sealed class FilterConditionNode : FilterNodeBase
+{
+    public string FieldPath { get; set; }
+    public FilterCompareOperator Operator { get; set; }
+    public string? ValueText { get; set; }
+    public override ObservableCollection&lt;FilterNodeBase&gt; Children =&gt; Empty;  // leaf
+}
+</code></pre>
+<p><strong>Class-level detail:</strong></p>
+<ul>
+<li><strong><code>FilterGroupNode</code></strong> is the composite — holds heterogeneous children (groups or conditions). <code>OnChildrenChanged</code> maintains parent pointers when children move between groups.</li>
+<li><strong><code>FilterConditionNode</code></strong> is the leaf — <code>Children</code> returns empty collection so UI tree controls can bind uniformly without <code>if (is group)</code>.</li>
+<li><strong><code>Accept&lt;T&gt;</code></strong> delegates to visitor — Composite provides structure; Visitor provides operations (see next section).</li>
+<li><strong><code>Depth</code></strong> computed property supports indented UI rendering without separate view-model depth tracking.</li>
+<li><strong><code>INotifyPropertyChanged</code></strong> on base — when <code>LogicalKind</code>, <code>FieldPath</code>, or <code>ValueText</code> changes, ViewModel refreshes SQL.</li>
+</ul>
+<p><code>FilterDocument</code> wraps root group + available field metadata:</p>
+<pre><code class="language-csharp">public sealed class FilterDocument
+{
+    public FilterGroupNode Root { get; }
+    public ObservableCollection&lt;FilterFieldDescriptor&gt; Fields { get; }
+}
+</code></pre>
+<h3 id="interaction-with-viewmodel">Interaction with ViewModel</h3>
+<p><code>FilterEditorViewModel</code> wires the tree:</p>
+<ul>
+<li>Subscribes to <code>Children.CollectionChanged</code> on every group — new nodes get <code>PropertyChanged</code> handlers.</li>
+<li><code>TargetGroup</code> property determines where Add commands insert nodes (selected group, parent of selected condition, or root).</li>
+<li><code>RefreshSql()</code> called on any structural or property change.</li>
+</ul>
+<p>The ViewModel <strong>does not</strong> contain SQL string building logic — it delegates to <code>IFilterSqlExporter</code>.</p>
+<h3 id="if-we-removed-composite">If we removed Composite</h3>
+<p>Flat <code>List&lt;FilterCondition&gt;</code> with manual grouping flags loses precedence semantics. UI tree controls need special cases for "is this row a group header?" everywhere.</p>
+<h2 id="visitor-sql-export">Visitor — SQL Export</h2>
+<h3 id="force-1">Force</h3>
+<p>Multiple operations walk the same tree: SQL export today, JSON export tomorrow, "count conditions" analytics, validation passes. Adding operations by editing <code>FilterGroupNode</code> and <code>FilterConditionNode</code> violates Open/Closed Principle.</p>
+<h3 id="why-visitor">Why Visitor</h3>
+<pre><code class="language-csharp">public interface IFilterNodeVisitor&lt;out T&gt;
+{
+    T VisitGroup(FilterGroupNode node);
+    T VisitCondition(FilterConditionNode node);
+}
+</code></pre>
+<p><code>BasicFilterSqlExporter</code> implements export via private nested visitor:</p>
+<pre><code class="language-csharp">public string ToSql(FilterDocument document) =&gt; document.Root.Accept(new Visitor());
+
+private sealed class Visitor : IFilterNodeVisitor&lt;string&gt;
+{
+    public string VisitGroup(FilterGroupNode node)
+    {
+        if (node.Children.Count == 0) return "(1 = 1)";
+        var sep = node.LogicalKind == FilterLogicalKind.And ? " AND " : " OR ";
+        // parenthesize, join child.Accept(this) results
+    }
+
+    public string VisitCondition(FilterConditionNode node)
+    {
+        var col = QuoteIdentifier(node.FieldPath);
+        return node.Operator switch
+        {
+            FilterCompareOperator.Equal =&gt; $"{col} = {SqlLiteral(node.ValueText)}",
+            FilterCompareOperator.Contains =&gt; $"{col} LIKE '%' || {SqlLiteral(node.ValueText)} || '%'",
+            FilterCompareOperator.IsNull =&gt; $"{col} IS NULL",
+            // …
+        };
+    }
+}
+</code></pre>
+<p><strong>Class-level detail:</strong></p>
+<ul>
+<li><strong>Double dispatch:</strong> <code>node.Accept(visitor)</code> calls <code>visitor.VisitGroup(this)</code> or <code>VisitCondition(this)</code> — correct overload without <code>is</code> checks in exporter.</li>
+<li><strong>Empty group</strong> returns <code>(1 = 1)</code> — valid SQL for "no constraints" instead of empty string breaking outer AND.</li>
+<li><strong>Operator switch</strong> lives only in visitor — node classes stay data-only.</li>
+<li><strong>Dialect isolation:</strong> <code>BasicFilterSqlExporter</code> uses double-quoted identifiers and <code>||</code> concatenation — a PostgreSQL-specific exporter implements same interface differently.</li>
+</ul>
+<h3 id="interaction-with-composite">Interaction with Composite</h3>
+<p>Composite <strong>requires</strong> uniform <code>Accept</code> on all nodes. Visitor <strong>requires</strong> stable node types. Together:</p>
+<ul>
+<li>New export format = new <code>IFilterNodeVisitor&lt;string&gt;</code> implementation (or new exporter class calling Accept).</li>
+<li>New node type (e.g., <code>FilterNotNode</code>) = add class + update <strong>all</strong> visitors — acceptable only when node types are stable (SkyUI's are).</li>
+</ul>
+<p><code>FilterEditorViewModel.SetSqlExporter(IFilterSqlExporter exporter)</code> swaps dialect at runtime — <strong>Strategy on the exporter</strong>, Visitor inside it.</p>
+<h3 id="if-we-removed-visitor">If we removed Visitor</h3>
+<pre><code class="language-csharp">class FilterEditor {
+    string ToSql(FilterNode node) {
+        if (node is FilterGroupNode g) { /* recurse */ }
+        else if (node is FilterConditionNode c) { /* emit */ }
+    }
+    string ToJson(FilterNode node) { /* duplicate structure walk */ }
+}
+</code></pre>
+<p>Every new output format duplicates tree-walk and type-switch logic. Bug in SQL group parentheses does not fix JSON export.</p>
+<h2 id="composite-visitor-interaction-diagram">Composite + Visitor Interaction Diagram</h2>
+<pre class="mermaid">flowchart LR
+    subgraph structure [Composite — what the tree IS]
+        ROOT[FilterGroupNode root]
+        G1[FilterGroupNode AND]
+        C1[FilterConditionNode]
+        C2[FilterConditionNode]
+        ROOT --&gt; G1
+        G1 --&gt; C1
+        G1 --&gt; C2
+    end
+    subgraph operations [Visitor — what we DO to the tree]
+        SQL[BasicFilterSqlExporter.Visitor]
+        FUTURE[JsonFilterExporter — future]
+    end
+    ROOT --&gt;|Accept| SQL
+    ROOT --&gt;|Accept| FUTURE
+</pre>
+<p><strong>Structure is stable; operations vary.</strong> This is the Gang of Four's intended Composite+Visitor collaboration.</p>
+<h2 id="command-ui-actions">Command — UI Actions</h2>
+<h3 id="force-2">Force</h3>
+<p>XAML buttons ("Add group", "Remove", "Delete node") must not call code-behind methods that directly mutate UI-specific state. MVVM requires bindable <code>ICommand</code> objects.</p>
+<h3 id="why-command">Why Command</h3>
+<pre><code class="language-csharp">AddAndGroupCommand = new FilterEditorRelayCommand(() =&gt; AddGroup(FilterLogicalKind.And));
+RemoveSelectedCommand = new FilterEditorRelayCommand(RemoveSelected, CanRemoveSelected);
+RemoveNodeCommand = new FilterEditorNodeCommand(RemoveNode);
+</code></pre>
+<p><strong>Class-level detail:</strong></p>
+<ul>
+<li><code>FilterEditorRelayCommand</code> — standard relay with <code>CanExecute</code> for remove (cannot delete root).</li>
+<li><code>FilterEditorNodeCommand</code> — parameterized command carrying target node from tree view item template.</li>
+<li>Commands call ViewModel methods that mutate Composite tree — Command decouples <strong>gesture</strong> from <strong>domain mutation</strong>.</li>
+</ul>
+<h3 id="interaction">Interaction</h3>
+<p>Command → ViewModel → Composite tree → CollectionChanged/PropertyChanged → Observer → View refresh + Visitor SQL refresh. Command does not call Visitor directly.</p>
+<h3 id="if-we-removed-command">If we removed Command</h3>
+<p>Code-behind in <code>FilterEditor.axaml.cs</code> — untestable, breaks MVVM binding conventions in SkyUI demos.</p>
+<h2 id="observer-property-notifications">Observer — Property Notifications</h2>
+<h3 id="force-3">Force</h3>
+<p>Avalonia bindings to <code>LogicalKind</code>, <code>FieldPath</code>, <code>ValueText</code>, <code>SqlPreview</code>, <code>SelectedNode</code> require change notification.</p>
+<h3 id="why-observer">Why Observer</h3>
+<p><code>FilterNodeBase</code> implements <code>INotifyPropertyChanged</code>. <code>FilterEditorViewModel</code> implements it for <code>SqlPreview</code> and <code>SelectedNode</code>. ViewModel subscribes to:</p>
+<ul>
+<li><code>node.PropertyChanged</code> — any condition edit triggers SQL refresh.</li>
+<li><code>Children.CollectionChanged</code> — structural edits trigger SQL refresh and re-wiring.</li>
+</ul>
+<p><strong>Class-level detail:</strong> <code>WireFilterGroup</code> / <code>UnwireFilterGroup</code> prevent memory leaks when nodes are removed — handlers detach on removal. <code>Dispose()</code> on ViewModel unwires entire tree.</p>
+<h3 id="interaction-with-visitor">Interaction with Visitor</h3>
+<p>Observer triggers <strong>when</strong> to re-export; Visitor defines <strong>how</strong> to export. Separation keeps SQL logic out of property setters.</p>
+<h2 id="strategy-sql-dialect-extension-point">Strategy — SQL Dialect (Extension Point)</h2>
+<p><code>IFilterSqlExporter</code> interface with <code>BasicFilterSqlExporter</code> default. Swapping exporter changes SQL dialect without touching UI tree or node classes:</p>
+<pre><code class="language-csharp">public void SetSqlExporter(IFilterSqlExporter exporter)
+{
+    _exporter = exporter;
+    RefreshSql();
+}
+</code></pre>
+<p>This is <strong>Strategy</strong> at the exporter level wrapping <strong>Visitor</strong> at the walk level — two patterns, two forces (dialect vs operation structure).</p>
+<h2 id="composite-validator-form-fields">Composite Validator — Form Fields</h2>
+<p>Separate from filter tree but same Composite pattern:</p>
+<pre><code class="language-csharp">public sealed class CompositeSkyValidator : ISkyValidator
+{
+    public SkyValidationResult Validate(object? value)
+    {
+        foreach (var validator in _validators)
+        {
+            var result = validator.Validate(value);
+            if (!result.IsValid) return result;
+        }
+        return SkyValidationResult.Valid;
+    }
+}
+</code></pre>
+<p><code>SkyValidators.Required()</code>, <code>SkyValidators.Range(min, max)</code> — Factory Method returning validator leaves composed in <code>new CompositeSkyValidator(required, range)</code>.</p>
+<p>Filter editor <strong>field pickers</strong> and grid <strong>form fields</strong> share validation infrastructure. Filter <strong>tree</strong> uses Visitor; filter <strong>form values</strong> use Composite validator — same pattern name, different domain object.</p>
+<h2 id="architecture-diagram">Architecture Diagram</h2>
+<pre class="mermaid">flowchart TB
+    UI[FilterEditor View] --&gt; VM[FilterEditorViewModel]
+    VM --&gt; CMD[FilterEditorRelayCommand]
+    VM --&gt; TREE[FilterDocument.Root — Composite]
+    TREE --&gt; OBS[INotifyPropertyChanged]
+    VM --&gt; EXP[IFilterSqlExporter — Strategy]
+    EXP --&gt; VIS[BasicFilterSqlExporter.Visitor]
+    FORM[Form fields] --&gt; COMPV[CompositeSkyValidator]
+</pre>
+<h2 id="why-not-one-big-class">Why Not One Big Class?</h2>
+<p>Anti-pattern:</p>
+<pre><code class="language-csharp">class FilterEditor {
+    string ToSql(FilterNode node) {
+        if (node is FilterGroupNode g) { /* recurse */ }
+        else if (node is FilterConditionNode c) { /* emit */ }
+    }
+    string ToJson(FilterNode node) { /* duplicate structure walk */ }
+    void AddAndGroup() { /* UI + tree + sql */ }
+}
+</code></pre>
+<p>Problems:</p>
+<ul>
+<li>SQL and JSON walks duplicate traversal logic — parenthesis bugs in one, fixed only in one.</li>
+<li>UI commands, validation, and export entangle — cannot unit test SQL without UI thread.</li>
+<li>New node type requires editing monolith class.</li>
+</ul>
+<p><strong>Visitor</strong> centralizes per-type <strong>operations</strong>. <strong>Composite</strong> centralizes <strong>structure</strong>. <strong>Command</strong> centralizes <strong>gestures</strong>. <strong>Observer</strong> centralizes <strong>sync</strong>.</p>
+<h2 id="tests">Tests</h2>
+<p><code>CompositeSkyValidatorTests</code> verify validator composition order (first failure wins). Filter SQL tests build <code>FilterDocument</code> programmatically, call <code>BasicFilterSqlExporter.ToSql</code>, assert string — <strong>no UI required</strong>. Structure/operation separation enables unit tests:</p>
+<pre><code class="language-csharp">var doc = new FilterDocument(…);
+doc.Root.AddCondition("Price", FilterCompareOperator.GreaterThan, "100");
+var sql = new BasicFilterSqlExporter().ToSql(doc);
+Assert.Contains("\"Price\" &gt; '100'", sql);
+</code></pre>
+<h2 id="impact-analysis">Impact Analysis</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Removed</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Composite</strong></td>
+<td>Cannot represent nested AND/OR; UI hacks with indent levels</td>
+</tr>
+<tr>
+<td><strong>Visitor</strong></td>
+<td>Duplicated tree walks per export format; OCP violated</td>
+</tr>
+<tr>
+<td><strong>Command</strong></td>
+<td>Code-behind; untestable UI mutations</td>
+</tr>
+<tr>
+<td><strong>Observer</strong></td>
+<td>Manual view refresh; stale SQL preview</td>
+</tr>
+<tr>
+<td><strong>Strategy (exporter)</strong></td>
+<td>Dialect hard-coded in ViewModel</td>
+</tr>
+<tr>
+<td><strong>Composite validator</strong></td>
+<td>Monolithic validation functions per form</td>
+</tr>
+</tbody>
+</table>
+<p>Removing <strong>Visitor</strong> while keeping Composite hurts most when adding second output format — the exact scenario filter editors face in production (SQL + OData + Elasticsearch JSON).</p>
+<h2 id="lessons">Lessons</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Force</th>
+<th>Pattern</th>
+<th>Key class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nested boolean logic</td>
+<td>Composite</td>
+<td><code>FilterGroupNode</code>, <code>FilterConditionNode</code></td>
+</tr>
+<tr>
+<td>Multiple tree operations</td>
+<td>Visitor</td>
+<td><code>IFilterNodeVisitor&lt;T&gt;</code>, <code>BasicFilterSqlExporter</code></td>
+</tr>
+<tr>
+<td>MVVM button binding</td>
+<td>Command</td>
+<td><code>FilterEditorRelayCommand</code></td>
+</tr>
+<tr>
+<td>Live UI sync</td>
+<td>Observer</td>
+<td><code>INotifyPropertyChanged</code> on <code>FilterNodeBase</code></td>
+</tr>
+<tr>
+<td>SQL dialect variation</td>
+<td>Strategy</td>
+<td><code>IFilterSqlExporter</code></td>
+</tr>
+<tr>
+<td>Composable field rules</td>
+<td>Composite</td>
+<td><code>CompositeSkyValidator</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="next">Next</h2>
+<p><a href="06-raindb-engine.html">RainDB Query Engine →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#skyui-filter-editor-composite-visitor">SkyUI — Filter Editor (Composite + Visitor)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#end-to-end-user-journey">End-to-End User Journey</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#problem-forces">Problem Forces</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#composite-expression-tree">Composite — Expression Tree</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#force">Force</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-composite">Why Composite</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#interaction-with-viewmodel">Interaction with ViewModel</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#if-we-removed-composite">If we removed Composite</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#visitor-sql-export">Visitor — SQL Export</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#force">Force</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-visitor">Why Visitor</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#interaction-with-composite">Interaction with Composite</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#if-we-removed-visitor">If we removed Visitor</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#composite-visitor-interaction-diagram">Composite + Visitor Interaction Diagram</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#command-ui-actions">Command — UI Actions</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#force">Force</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-command">Why Command</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#interaction">Interaction</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#if-we-removed-command">If we removed Command</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#observer-property-notifications">Observer — Property Notifications</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#force">Force</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-observer">Why Observer</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#interaction-with-visitor">Interaction with Visitor</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#strategy-sql-dialect-extension-point">Strategy — SQL Dialect (Extension Point)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#composite-validator-form-fields">Composite Validator — Form Fields</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#architecture-diagram">Architecture Diagram</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#why-not-one-big-class">Why Not One Big Class?</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#tests">Tests</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#impact-analysis">Impact Analysis</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#lessons">Lessons</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

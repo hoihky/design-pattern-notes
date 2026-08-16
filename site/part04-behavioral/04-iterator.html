@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iterator · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>Iterator</h1>
+          </header>
+          <div class="doc-body"><h1 id="iterator">Iterator</h1>
+<p><strong>Intent:</strong> Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.</p>
+<h2 id="the-behavioral-problem-traversal-vs-structure">The Behavioral Problem: Traversal vs Structure</h2>
+<p>Collections hide <strong>storage</strong> (array, linked list, tree, columnar batch) behind an API. Callers often need <strong>sequential access</strong> — process every page, every node, every row — without knowing whether the backing store is contiguous memory, pointer chains, or lazy file I/O.</p>
+<p>Two failure modes without Iterator:</p>
+<ol>
+<li><strong>Leaky abstraction</strong> — expose <code>Node*</code>, internal arrays, or <code>Children</code> lists; callers couple to structure and break when storage changes.</li>
+<li><strong>Duplicated traversal</strong> — every algorithm reimplements walk logic (recursive tree descent, UTF-8 decoding, batch paging).</li>
+</ol>
+<p>Iterator separates <strong>traversal protocol</strong> from <strong>container implementation</strong>. The client asks for <code>Begin</code>/<code>End</code> or <code>foreach</code>; the aggregate supplies an iterator that knows how to advance. Multiple iterators can traverse the same structure concurrently (with defined invalidation rules).</p>
+<p>This is fundamentally a <strong>behavioral</strong> pattern: it assigns responsibility for "how to walk" to a collaborator rather than to every consumer.</p>
+<h2 id="gof-participants-real-classes">GoF Participants → Real Classes</h2>
+<table class="table">
+<thead>
+<tr>
+<th>GoF role</th>
+<th>Spark <code>LinkedList</code></th>
+<th>C# <code>foreach</code> / LINQ</th>
+<th>MDWeb navigation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Iterator</strong></td>
+<td><code>LinkedList&lt;T&gt;::Iterator</code></td>
+<td><code>IEnumerator&lt;T&gt;</code></td>
+<td>(implicit recursion in <code>NavigationBuilder</code>)</td>
+</tr>
+<tr>
+<td><strong>ConcreteIterator</strong></td>
+<td>Holds <code>LinkedListNode&lt;T&gt;* current</code></td>
+<td>Enumerator over collection</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>Aggregate</strong></td>
+<td><code>LinkedList&lt;T&gt;</code></td>
+<td><code>IEnumerable&lt;T&gt;</code></td>
+<td><code>ContentFolder</code> / content tree</td>
+</tr>
+<tr>
+<td><strong>Client</strong></td>
+<td>Range-for loop body</td>
+<td>Pipeline code</td>
+<td><code>NavigationBuilder.CollectPages</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="example-1-spark-linkedlistiterator-classic-external-iterator">Example 1: Spark — LinkedList::Iterator (Classic External Iterator)</h2>
+<p>Spark's standard library includes a doubly linked list used where <code>std::list</code> might appear, with explicit iterators for C++ range-for compatibility.</p>
+<h3 id="aggregate-state">Aggregate state</h3>
+<p><code>LinkedList&lt;T&gt;</code> holds:</p>
+<ul>
+<li><code>head</code>, <code>tail</code> — pointers to first/last <code>LinkedListNode&lt;T&gt;</code></li>
+<li><code>num</code> — element count</li>
+</ul>
+<p>Nodes store <code>value</code>, <code>prev</code>, <code>next</code>. The list <strong>does not</strong> expose node pointers publicly except through iterators.</p>
+<h3 id="iterator-state-and-behavior">Iterator state and behavior</h3>
+<pre><code class="language-cpp">class Iterator {
+    LinkedListNode&lt;T&gt;* current = nullptr;
+public:
+    explicit Iterator(LinkedListNode&lt;T&gt;* node) : current(node) {}
+    T&amp; operator*() const { return current-&gt;value; }
+    Iterator&amp; operator++() { current = current-&gt;next; return *this; }
+    bool operator==(Iterator other) const { return current == other.current; }
+};
+</code></pre>
+<table class="table">
+<thead>
+<tr>
+<th>Method</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Begin()</code></td>
+<td>Returns iterator at <code>head</code></td>
+</tr>
+<tr>
+<td><code>End()</code></td>
+<td>Returns iterator at <code>nullptr</code> (sentinel)</td>
+</tr>
+<tr>
+<td><code>operator++</code></td>
+<td>Advances <code>current</code> along <code>next</code></td>
+</tr>
+<tr>
+<td><code>operator*</code></td>
+<td>Dereferences <strong>value</strong>, not node</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Who calls whom:</strong> Client code (or range-for desugaring) compares iterator to <code>End()</code>, increments, reads <code>*it</code>. <code>LinkedList</code> never runs the loop body — it only factory-builds iterators.</p>
+<h3 id="sequence-walkthrough">Sequence walkthrough</h3>
+<pre class="mermaid">sequenceDiagram
+    participant Client as for-loop
+    participant List as LinkedList
+    participant It as Iterator
+    participant Node as LinkedListNode
+
+    Client-&gt;&gt;List: Begin()
+    List--&gt;&gt;It: Iterator(head)
+    loop while It != End()
+        Client-&gt;&gt;It: operator*
+        It-&gt;&gt;Node: read value
+        Client-&gt;&gt;It: operator++
+        It-&gt;&gt;It: current = current-&gt;next
+    end
+</pre>
+<h3 id="invalidation-rules-documented-in-source">Invalidation rules (documented in source)</h3>
+<p>Stable iterators across <code>PushBack</code> <strong>unless</strong> the node referenced is erased. This contract matches typical linked-list iterator semantics — callers must not hold iterators across mutating operations they do not control.</p>
+<h3 id="constiterator">ConstIterator</h3>
+<p>Parallel <code>ConstIterator</code> and <code>Begin() const</code> allow read-only traversal without mutable <code>T&amp;</code> — same pattern as <code>const_iterator</code> in STL.</p>
+<h3 id="trade-offs">Trade-offs</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Benefit</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>O(1) insert at ends</td>
+<td>No random access by index</td>
+</tr>
+<tr>
+<td>Range-for ergonomics</td>
+<td>Pointer chasing vs array cache locality</td>
+</tr>
+<tr>
+<td>Encapsulation</td>
+<td>External iterator verbose vs internal</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Alternatives:</strong> Index-based <code>for (i &lt; size)</code> if random access container; internal iterator (coroutines in C++20); callback <code>ForEach(fn)</code> (no multiple concurrent traversals).</p>
+<hr>
+<h2 id="example-2-spark-utf8stringconstiterator-traversal-logic-as-iterator">Example 2: Spark — Utf8String::ConstIterator (Traversal Logic as Iterator)</h2>
+<p>UTF-8 strings are <strong>not</strong> one codepoint per byte. Naive <code>for (i = 0; i &lt; length; i++)</code> breaks on multibyte sequences.</p>
+<p><code>Utf8String::ConstIterator</code> (referenced in engine docs) advances by <strong>decoded codepoint width</strong> via <code>NextCodepoint()</code>. The iterator encapsulates:</p>
+<ul>
+<li>Current byte offset in the string</li>
+<li>Decode rules for UTF-8 leading/trailing bytes</li>
+</ul>
+<p><strong>Behavioral point:</strong> The <strong>aggregate</strong> still looks like a byte buffer; the <strong>iterator</strong> owns the algorithm for "what is one element." Clients iterate <strong>characters</strong> without calling decode helpers in every loop.</p>
+<p>Same pattern appears in RainDB when scanning columnar batches: logical "row" iteration may skip internal column layout — language-level <code>foreach</code> over abstractions hides physical storage.</p>
+<hr>
+<h2 id="example-3-mdweb-tree-traversal-implicit-iterator">Example 3: MDWeb — Tree Traversal (Implicit Iterator)</h2>
+<p>MDWeb's content model is a <strong>tree</strong> of folders and markdown pages. <code>ReadContentStep</code> loads the tree into <code>SiteContext.Root</code>. <code>NavigationBuilder.CollectPages</code> walks the tree recursively to flatten pages into <code>context.AllPages</code>:</p>
+<pre><code class="language-csharp">// Conceptual: recursive descent over ContentFolder.Children
+private static NavigationNode BuildNode(ContentNode node) { ... }
+</code></pre>
+<p>There is no named <code>IEnumerator&lt;ContentNode&gt;</code>, but the behavior matches Iterator:</p>
+<ul>
+<li><strong>Sequential access</strong> over a composite structure</li>
+<li><strong>Without</strong> exposing internal child storage details to every pipeline step</li>
+<li>Each page eventually appears in <code>AllPages</code> for <code>RenderMarkdownStep</code> to foreach</li>
+</ul>
+<h3 id="could-be-explicit">Could be explicit</h3>
+<p>Refactoring to <code>IEnumerable&lt;ContentPage&gt; EnumeratePages(ContentNode root)</code> would:</p>
+<ul>
+<li>Centralize walk order (depth-first vs breadth-first)</li>
+<li>Enable lazy evaluation if the tree grows huge</li>
+<li>Give pipeline steps a uniform <code>foreach (var page in ...)</code></li>
+</ul>
+<p>Today, <strong>flatten-then-loop</strong> in <code>RenderMarkdownStep</code> is Iterator at the collection level:</p>
+<pre><code class="language-csharp">foreach (var page in context.AllPages)
+{
+    var result = markdownRenderer.Render(page.RawMarkdown);
+    page.HtmlContent = result.Html;
+}
+</code></pre>
+<p>The iterator is C# compiler-generated over <code>List&lt;T&gt;</code> — still Iterator pattern via <code>IEnumerable</code>.</p>
+<hr>
+<h2 id="example-4-c-foreach-and-ienumerable">Example 4: C# foreach and IEnumerable</h2>
+<p>.NET mainstreams Iterator via:</p>
+<ul>
+<li><code>IEnumerable&lt;T&gt;</code> — aggregate exposes <code>GetEnumerator()</code></li>
+<li><code>IEnumerator&lt;T&gt;</code> — <code>MoveNext()</code>, <code>Current</code>, <code>Dispose()</code></li>
+<li><code>foreach</code> — syntactic sugar</li>
+</ul>
+<p>SkyUI's <code>FilterGroupNode.Children</code> is <code>ObservableCollection&lt;FilterNodeBase&gt;</code>. UI and visitors iterate children with <code>foreach</code> — each child may be <code>FilterConditionNode</code> or nested <code>FilterGroupNode</code> (Composite + traversal).</p>
+<p>RainDB execution engines iterate <code>IColumnarBatch</code> rows without exposing column buffers — same decoupling at data-plane scale.</p>
+<hr>
+<h2 id="external-vs-internal-iterator">External vs Internal Iterator</h2>
+<table class="table">
+<thead>
+<tr>
+<th>External (Spark C++)</th>
+<th>Internal (C# foreach)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Client drives <code>++</code></td>
+<td>Enumerator drives <code>MoveNext</code></td>
+</tr>
+<tr>
+<td>Multiple traversal strategies possible</td>
+<td>Single protocol per <code>GetEnumerator</code></td>
+</tr>
+<tr>
+<td>Explicit end sentinel</td>
+<td><code>MoveNext</code> returns false</td>
+</tr>
+<tr>
+<td>Spark <code>LinkedList::Iterator</code></td>
+<td>MDWeb <code>foreach (var page in ...)</code></td>
+</tr>
+</tbody>
+</table>
+<p>GoF catalog emphasizes external iterators; modern C# favors internal. Both satisfy "traverse without exposing representation."</p>
+<hr>
+<h2 id="iterator-vs-visitor">Iterator vs Visitor</h2>
+<p>Both walk structures; responsibilities differ:</p>
+<table class="table">
+<thead>
+<tr>
+<th>Iterator</th>
+<th>Visitor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Question:</strong> "What is the next element?"</td>
+<td><strong>Question:</strong> "What operation applies to each element type?"</td>
+</tr>
+<tr>
+<td>One traversal mechanism</td>
+<td>Many operations (<code>VisitGroup</code>, <code>VisitCondition</code>)</td>
+</tr>
+<tr>
+<td>Spark list walk</td>
+<td>SkyUI filter tree → SQL</td>
+</tr>
+<tr>
+<td>Client supplies loop body</td>
+<td>Visitor supplies per-type methods</td>
+</tr>
+</tbody>
+</table>
+<p>SkyUI filter editor uses <strong>Visitor</strong> for SQL export and could use Iterator for "list all conditions" — complementary.</p>
+<hr>
+<h2 id="pitfalls">Pitfalls</h2>
+<ul>
+<li><strong>Concurrent modification</strong> — mutating collection while iterating invalidates enumerators (<code>InvalidOperationException</code> in .NET).</li>
+<li><strong>Exposing raw indices</strong> on linked structures — defeats purpose of iterator abstraction.</li>
+<li><strong>Giant lazy sequences</strong> — without iterator, eager <code>ToList()</code> on huge trees wastes memory.</li>
+</ul>
+<hr>
+<h2 id="trade-offs-summary">Trade-offs Summary</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Use Iterator when</th>
+<th>Consider alternatives when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Many algorithms share same walk order</td>
+<td>Single <code>ForEach</code> callback suffices</td>
+</tr>
+<tr>
+<td>Representation may change</td>
+<td>Public read-only index access is stable forever</td>
+</tr>
+<tr>
+<td>Need lazy/paged access</td>
+<td>LINQ already expresses query, not walk</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="next">Next</h2>
+<p><a href="05-mediator.html">Mediator →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#iterator">Iterator</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#the-behavioral-problem-traversal-vs-structure">The Behavioral Problem: Traversal vs Structure</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#gof-participants-real-classes">GoF Participants → Real Classes</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-1-spark-linkedlistiterator-classic-external-iterator">Example 1: Spark — LinkedList::Iterator (Classic External Iterator)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#aggregate-state">Aggregate state</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#iterator-state-and-behavior">Iterator state and behavior</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#sequence-walkthrough">Sequence walkthrough</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#invalidation-rules-documented-in-source">Invalidation rules (documented in source)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#constiterator">ConstIterator</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#trade-offs">Trade-offs</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-2-spark-utf8stringconstiterator-traversal-logic-as-iterator">Example 2: Spark — Utf8String::ConstIterator (Traversal Logic as Iterator)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-3-mdweb-tree-traversal-implicit-iterator">Example 3: MDWeb — Tree Traversal (Implicit Iterator)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#could-be-explicit">Could be explicit</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-4-c-foreach-and-ienumerable">Example 4: C# foreach and IEnumerable</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#external-vs-internal-iterator">External vs Internal Iterator</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#iterator-vs-visitor">Iterator vs Visitor</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#pitfalls">Pitfalls</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#trade-offs-summary">Trade-offs Summary</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

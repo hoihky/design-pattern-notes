@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Singleton · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>Singleton</h1>
+          </header>
+          <div class="doc-body"><h1 id="singleton">Singleton</h1>
+<p><strong>Intent:</strong> Ensure a class has only one instance and provide a global point of access to it.</p>
+<p>The Singleton pattern solves a <strong>coordination problem</strong>: some subsystems must have exactly one owner of shared state or behavior across the process. Without a enforced single instance, you get duplicate registries, conflicting UI routing, or redundant no-op services allocated on every code path.</p>
+<p>Singleton is also one of the most misapplied patterns in the industry. Before reaching for it, ask whether you need <em>one instance</em> or merely <em>one instance per application scope</em> — the latter is usually DI singleton lifetime without static global access.</p>
+<h2 id="structure">Structure</h2>
+<pre class="mermaid">classDiagram
+    class Singleton {
+        -static instance
+        -Singleton()
+        +static GetInstance() Singleton
+    }
+</pre>
+<h3 id="gof-participants">GoF Participants</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Singleton</strong></td>
+<td>Defines <code>GetInstance()</code> (or <code>Instance</code>), hides constructors, holds the sole instance</td>
+</tr>
+</tbody>
+</table>
+<p>In this corpus, Singleton often combines with other patterns: <code>NoOpSpillWriter</code> is also a <strong>Null Object</strong>; theme palettes are <strong>Flyweights</strong> (Part 3).</p>
+<h2 id="when-to-use">When to Use</h2>
+<ul>
+<li>Exactly one instance must coordinate a resource (UI root, layer registry, null-object spill writer)</li>
+<li>Lazy initialization is acceptable</li>
+<li>Global access is intentional, documented, and limited to true process-wide concerns</li>
+<li>The instance is stateless or carefully synchronized</li>
+</ul>
+<h2 id="when-to-avoid">When to Avoid</h2>
+<ul>
+<li>Testability suffers when everything reaches for <code>Instance</code> or <code>Get()</code></li>
+<li>Distributed systems (multiple processes) need real singletons via external stores, not static fields</li>
+<li><strong>Prefer DI singleton lifetime</strong> when the "single instance" is per-application, not per-process-global with static access</li>
+<li>The object is just a cache — a scoped service or lazy DI registration may suffice</li>
+</ul>
+<hr>
+<h2 id="example-1-spark-uisystem-meyers-singleton">Example 1: Spark — UiSystem (Meyers Singleton)</h2>
+<h3 id="the-problem">The Problem</h3>
+<p>Spark supports two retained UI backends: native Spark controls and Dear ImGui wrappers. Game code, editor panels, and demos all need to route input, schedule paint, and obtain the active control factory — but they cannot each construct their own UI root. Two <code>UiSystem</code> instances would mean two active backends, duplicated input routing, and inconsistent frame lifecycle hooks.</p>
+<h3 id="classes-and-responsibilities">Classes and Responsibilities</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>UiSystem</code></strong></td>
+<td>Singleton</td>
+<td>Owns registered backends, tracks active backend, forwards input/paint/engine hooks</td>
+</tr>
+<tr>
+<td><strong><code>SparkUiBackend</code></strong></td>
+<td>Concrete backend</td>
+<td>Spark-native input, paint, and <code>SparkUiControlsFactory</code></td>
+</tr>
+<tr>
+<td><strong><code>DearImguiUiBackend</code></strong></td>
+<td>Concrete backend</td>
+<td>ImGui input, paint, and <code>DearImguiControlsFactory</code></td>
+</tr>
+<tr>
+<td><strong><code>IUiBackend</code></strong></td>
+<td>Strategy interface</td>
+<td>Backend contract: factory access, frame lifecycle</td>
+</tr>
+<tr>
+<td><strong><code>IImGuiLayer</code></strong></td>
+<td>External dependency</td>
+<td>Vulkan ImGui layer bound once at engine startup</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Relationships:</strong> <code>UiSystem</code> holds <code>UniquePtr</code> to both backends and a pointer to <code>activeBackend</code>. Clients call <code>UiSystem::Get()</code>; they never construct <code>UiSystem</code> directly (private constructor).</p>
+<h3 id="object-creation-flow">Object Creation Flow</h3>
+<ol>
+<li>First call to <code>UiSystem::Get()</code> runs in any thread after C++11 static init rules apply</li>
+<li>Function-local <code>static UiSystem instance{}</code> is zero-initialized once (Meyers singleton)</li>
+<li>Engine startup (<code>Engine.cpp</code>) calls <code>RegisterSparkNativeBackend()</code> and <code>RegisterDearImguiBackend()</code></li>
+<li><code>RegisterSparkNativeBackend()</code> allocates <code>SparkUiBackend</code> and sets it active if none is set</li>
+<li><code>SetActiveBackend(UiBackendKind::DearImGui)</code> swaps <code>activeBackend</code> to the ImGui backend</li>
+<li>Panel code calls <code>Get().GetActiveBackendPtr()-&gt;GetControlsFactory()</code> — always the same <code>UiSystem</code>, possibly different backend</li>
+</ol>
+<pre><code class="language-cpp">UiSystem&amp; UiSystem::Get() noexcept {
+    static UiSystem instance{};
+    return instance;
+}
+</code></pre>
+<pre><code class="language-cpp">class UiSystem {
+public:
+    static UiSystem&amp; Get();
+    void SetActiveBackend(UiBackendKind kind);
+    IUiBackend* GetActiveBackendPtr();
+    // ProcessInput, Paint, OnEnginePreRender, ...
+private:
+    UiSystem() = default;
+    UniquePtr&lt;SparkUiBackend&gt; sparkNativeBackend;
+    UniquePtr&lt;DearImguiUiBackend&gt; dearImguiBackend;
+    IUiBackend* activeBackend = nullptr;
+};
+</code></pre>
+<h3 id="participant-mapping">Participant Mapping</h3>
+<table class="table">
+<thead>
+<tr>
+<th>GoF</th>
+<th>Spark class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Singleton</td>
+<td><code>UiSystem</code></td>
+</tr>
+<tr>
+<td>(Related) Strategy</td>
+<td><code>IUiBackend</code> / <code>SparkUiBackend</code> / <code>DearImguiUiBackend</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="when-you-see-this-in-the-wild">When You See This in the Wild</h3>
+<p>Engine subsystems with a single coordinator: audio device manager, input stack, render device facade. Meyers singleton in C++ is the idiomatic thread-safe lazy form since C++11.</p>
+<h3 id="common-mistakes">Common Mistakes</h3>
+<ul>
+<li>Calling <code>Get()</code> from static initializers of other translation units (initialization order fiasco) — Meyers avoids this by lazy init inside <code>Get()</code></li>
+<li>Storing mutable test state in the singleton without reset hooks — prefer <code>SetActiveBackend</code> for backend swaps in tests rather than replacing the whole singleton</li>
+</ul>
+<hr>
+<h2 id="example-2-spark-renderlayerregistry">Example 2: Spark — RenderLayerRegistry</h2>
+<h3 id="the-problem-1">The Problem</h3>
+<p>Drawables must sort by a global layer order (<code>Background</code>, <code>Default</code>, <code>UI</code>, custom script-registered layers). If every <code>SpriteRenderer</code> kept its own layer name table, layer IDs would not compare consistently across the scene graph, serialization, and scripting interop.</p>
+<h3 id="classes-and-responsibilities-1">Classes and Responsibilities</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>RenderLayerRegistry</code></strong></td>
+<td>Singleton registry</td>
+<td>Registers built-in and custom layers; assigns stable <code>RenderLayerId</code></td>
+</tr>
+<tr>
+<td><strong><code>RenderLayerId</code></strong></td>
+<td>Handle</td>
+<td>Index into the registry's layer table</td>
+</tr>
+<tr>
+<td><strong><code>DrawableSortResolver</code></strong></td>
+<td>Client</td>
+<td>Reads sort order from <code>RenderLayerRegistry::Instance()</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="object-creation-flow-1">Object Creation Flow</h3>
+<ol>
+<li>First <code>RenderLayerRegistry::Instance()</code> creates the static registry</li>
+<li>Constructor calls <code>RegisterBuiltInLayers()</code> — populates default layer names and sort keys</li>
+<li>Scripts call <code>RegisterLayer(name, sortingOrder)</code> via interop — mutates the same registry</li>
+<li>Serialization handlers read/write layer names through <code>Instance()</code> to preserve stable IDs</li>
+</ol>
+<h3 id="participant-mapping-1">Participant Mapping</h3>
+<table class="table">
+<thead>
+<tr>
+<th>GoF</th>
+<th>Spark class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Singleton</td>
+<td><code>RenderLayerRegistry</code></td>
+</tr>
+<tr>
+<td>(Related) Registry</td>
+<td>Layer name → <code>RenderLayerId</code> map inside the singleton</td>
+</tr>
+</tbody>
+</table>
+<h3 id="when-you-see-this-in-the-wild-1">When You See This in the Wild</h3>
+<p>Global registries: MIME types, shader profile tables, animation state name hashes. One table, one lookup — classic registry singleton.</p>
+<h3 id="common-mistakes-1">Common Mistakes</h3>
+<ul>
+<li>Registering layers after drawables already cached IDs — registration must happen at startup or before first use</li>
+<li>Treating the registry as a general-purpose service locator — it owns one concern (render layers)</li>
+</ul>
+<hr>
+<h2 id="example-3-raindb-noopspillwriter">Example 3: RainDB — NoOpSpillWriter</h2>
+<h3 id="the-problem-2">The Problem</h3>
+<p>Hash aggregation and future join operators accept an <code>ISpillWriter</code> for overflow-to-disk when partial state exceeds memory thresholds. Most deployments and all unit tests run fully in-memory. Every operator would need <code>if (spillEnabled)</code> branches if null were passed, or tests would allocate throwaway writers on every session.</p>
+<h3 id="classes-and-responsibilities-2">Classes and Responsibilities</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>ISpillWriter</code></strong></td>
+<td>Product interface</td>
+<td><code>IsEnabled</code>, <code>SpillChunkAsync</code> contract</td>
+</tr>
+<tr>
+<td><strong><code>NoOpSpillWriter</code></strong></td>
+<td>Singleton + Null Object</td>
+<td>Single shared instance; <code>IsEnabled == false</code>; spill calls complete immediately</td>
+</tr>
+<tr>
+<td><strong><code>RainDbEngine</code></strong></td>
+<td>Client / composition root</td>
+<td>Defaults <code>SpillWriter</code> to <code>NoOpSpillWriter.Instance</code> when none injected</td>
+</tr>
+<tr>
+<td><strong><code>RainDbExecutionContext</code></strong></td>
+<td>Session client</td>
+<td>Receives the same spill writer from the engine</td>
+</tr>
+</tbody>
+</table>
+<h3 id="object-creation-flow-2">Object Creation Flow</h3>
+<ol>
+<li><code>NoOpSpillWriter</code> static property initializer runs once: <code>Instance { get; } = new()</code></li>
+<li>Private constructor prevents <code>new NoOpSpillWriter()</code> elsewhere</li>
+<li><code>RainDbEngine.CreateDefault()</code> passes <code>NoOpSpillWriter.Instance</code> into the constructor</li>
+<li>Constructor: <code>SpillWriter = spillWriter ?? NoOpSpillWriter.Instance</code></li>
+<li><code>CreateSession()</code> builds <code>RainDbExecutionContext</code> with that shared reference</li>
+<li>Operators check <code>context.SpillWriter.IsEnabled</code> — false for the singleton — and skip spill branches</li>
+</ol>
+<pre><code class="language-csharp">public sealed class NoOpSpillWriter : ISpillWriter
+{
+    public static NoOpSpillWriter Instance { get; } = new();
+    private NoOpSpillWriter() { }
+    public bool IsEnabled =&gt; false;
+    public ValueTask SpillChunkAsync(...) =&gt; ValueTask.CompletedTask;
+}
+</code></pre>
+<h3 id="participant-mapping-2">Participant Mapping</h3>
+<table class="table">
+<thead>
+<tr>
+<th>GoF</th>
+<th>RainDB class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Singleton</td>
+<td><code>NoOpSpillWriter</code></td>
+</tr>
+<tr>
+<td>Product / Interface</td>
+<td><code>ISpillWriter</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="when-you-see-this-in-the-wild-2">When You See This in the Wild</h3>
+<p>Null-object singletons: <code>Stream.Null</code>, no-op loggers, <code>CancellationToken.None</code>-style sentinels. One allocation for the entire process; semantics are "do nothing correctly."</p>
+<h3 id="common-mistakes-2">Common Mistakes</h3>
+<ul>
+<li>Making <code>NoOpSpillWriter</code> mutable "for tests" — inject a test double implementing <code>ISpillWriter</code> instead</li>
+<li>Assuming Singleton implies thread-safe <em>mutation</em> — this instance is immutable; safe everywhere</li>
+</ul>
+<hr>
+<h2 id="example-4-lightmapper-generated-mapper-singletons">Example 4: LightMapper — Generated Mapper Singletons</h2>
+<h3 id="the-problem-3">The Problem</h3>
+<p>LightMapper generates one mapper class per source/destination type pair. Dispatch happens millions of times in hot paths. Allocating a new mapper per <code>Map()</code> call would add GC pressure for stateless objects.</p>
+<h3 id="classes-and-responsibilities-3">Classes and Responsibilities</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>LightMapper__Order__OrderDto</code></strong> (generated)</td>
+<td>Concrete mapper</td>
+<td>Implements <code>ILightMapper&lt;Order, OrderDto&gt;</code></td>
+</tr>
+<tr>
+<td><strong><code>Instance</code></strong> (generated static field)</td>
+<td>Singleton access point</td>
+<td>Single readonly mapper per pair</td>
+</tr>
+<tr>
+<td><strong><code>MapperRegistry</code></strong> (generated)</td>
+<td>Registry / dispatcher</td>
+<td>Returns <code>(ILightMapper&lt;TSource,TDest&gt;)(object)ConcreteMapper.Instance</code></td>
+</tr>
+<tr>
+<td><strong><code>MappingCodeEmitter</code></strong></td>
+<td>Generator</td>
+<td>Emits singleton field and registry dispatch at compile time</td>
+</tr>
+</tbody>
+</table>
+<h3 id="object-creation-flow-3">Object Creation Flow</h3>
+<ol>
+<li>Roslyn source generator analyzes <code>[LightMapper]</code> mappings at compile time</li>
+<li>Generator emits sealed mapper class with <code>internal static readonly ... Instance = new();</code></li>
+<li><code>MapperRegistry.Get&lt;Order, OrderDto&gt;()</code> returns the singleton via typeof dispatch</li>
+<li>DI registration (<code>AddLightMapperMappers</code>) registers each mapper as singleton pointing at <code>Instance</code></li>
+<li>Client calls <code>mapper.Map(source)</code> — no per-call allocation</li>
+</ol>
+<pre><code class="language-csharp">internal sealed class LightMapper__Order__OrderDto : ILightMapper&lt;Order, OrderDto&gt;
+{
+    internal static readonly LightMapper__Order__OrderDto Instance = new();
+    // Map / MapTo implementation...
+}
+</code></pre>
+<h3 id="participant-mapping-3">Participant Mapping</h3>
+<table class="table">
+<thead>
+<tr>
+<th>GoF</th>
+<th>LightMapper artifact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Singleton</td>
+<td>Generated <code>Instance</code> field on each mapper class</td>
+</tr>
+<tr>
+<td>Factory (generated)</td>
+<td><code>MapperRegistry.Get&lt;TSource, TDestination&gt;()</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="when-you-see-this-in-the-wild-3">When You See This in the Wild</h3>
+<p>Source-generated singletons for stateless adapters: serializers, comparers, expression compilers cached per type pair.</p>
+<h3 id="common-mistakes-3">Common Mistakes</h3>
+<ul>
+<li>Putting mutable mapping configuration on the singleton mapper — mappers should remain stateless</li>
+<li>Using Singleton here when mapping context varies per call — pass context as method parameters instead</li>
+</ul>
+<hr>
+<h2 id="example-5-skyui-immutable-palette-singletons">Example 5: SkyUI — Immutable Palette Singletons</h2>
+<h3 id="the-problem-4">The Problem</h3>
+<p>Avalonia themes need shared brush and color tokens referenced from hundreds of XAML <code>{StaticResource}</code> and code-behind lookups. Allocating a new palette per control would waste memory; mutating a shared palette would cause cross-control bleed.</p>
+<h3 id="classes-and-responsibilities-4">Classes and Responsibilities</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>SkyDarkColorPalette</code></strong></td>
+<td>Singleton flyweight</td>
+<td>Immutable color tokens; <code>Instance</code> property</td>
+</tr>
+<tr>
+<td><strong><code>ISkyColorPalette</code></strong></td>
+<td>Interface</td>
+<td>Palette contract for theme switching</td>
+</tr>
+<tr>
+<td><strong>Theme XAML</strong></td>
+<td>Client</td>
+<td>References palette resources</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-csharp">public sealed class SkyDarkColorPalette : ISkyColorPalette
+{
+    public static SkyDarkColorPalette Instance { get; } = new();
+    // read-only color properties...
+}
+</code></pre>
+<h3 id="object-creation-flow-4">Object Creation Flow</h3>
+<ol>
+<li>CLR initializes static properties before first access</li>
+<li><code>Instance</code> creates one palette object per theme variant (Dark, Light, HighContrast)</li>
+<li>Controls read brushes from the shared instance — no per-control allocation</li>
+<li>Theme switch replaces which singleton palette is <em>selected</em>, not mutating instances</li>
+</ol>
+<h3 id="participant-mapping-4">Participant Mapping</h3>
+<table class="table">
+<thead>
+<tr>
+<th>GoF</th>
+<th>SkyUI class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Singleton</td>
+<td><code>SkyDarkColorPalette.Instance</code></td>
+</tr>
+<tr>
+<td>Flyweight (Part 3)</td>
+<td>Shared immutable theme tokens</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="singleton-vs-di-addsingleton">Singleton vs DI <code>AddSingleton</code></h2>
+<table class="table">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>GoF Singleton</th>
+<th>DI Singleton</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Access</td>
+<td><code>Class.Instance</code> / <code>Get()</code></td>
+<td>Constructor injection</td>
+</tr>
+<tr>
+<td>Lifetime</td>
+<td>Process-wide static</td>
+<td>Container-scoped</td>
+</tr>
+<tr>
+<td>Testing</td>
+<td>Harder — static hidden dependency</td>
+<td>Replace registration in test host</td>
+</tr>
+<tr>
+<td>Example</td>
+<td><code>UiSystem::Get()</code></td>
+<td>MDWeb <code>AddSingleton&lt;IMarkdownRenderer, ...&gt;()</code></td>
+</tr>
+</tbody>
+</table>
+<p>MDWeb uses DI singleton lifetime for services — <strong>not</strong> GoF Singleton. Teach the distinction explicitly in code review.</p>
+<h2 id="thread-safety">Thread Safety</h2>
+<ul>
+<li><strong>Meyers singleton</strong> in C++11+ is thread-safe for initialization</li>
+<li>C# <code>static readonly</code> initialized before first access is safe for immutable singletons</li>
+<li>Lazy <code>double-checked locking</code> is rarely needed in modern C#/C++</li>
+<li>Mutable singletons require synchronization or confinement to one thread — prefer immutability</li>
+</ul>
+<h2 id="when-you-see-this-in-the-wild-summary">When You See This in the Wild (Summary)</h2>
+<ul>
+<li>Process-wide coordinators (UI, audio, input)</li>
+<li>Null-object and no-op services shared by reference</li>
+<li>Immutable flyweight registries (theme tokens, interned strings)</li>
+<li>Generated stateless adapters (LightMapper)</li>
+</ul>
+<h2 id="common-mistakes-summary">Common Mistakes (Summary)</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Mistake</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Singleton for "I only need one in my app"</td>
+<td>DI <code>AddSingleton</code> + constructor injection</td>
+</tr>
+<tr>
+<td>Singleton with heavy mutable state</td>
+<td>Split coordinator (singleton) from data (scoped services)</td>
+</tr>
+<tr>
+<td>Testing without reset</td>
+<td>Provide seam (<code>SetActiveBackend</code>, inject <code>ISpillWriter</code>)</td>
+</tr>
+<tr>
+<td>Eager static initialization order bugs</td>
+<td>Meyers / lazy static in C++; avoid cross-TU static init chains</td>
+</tr>
+</tbody>
+</table>
+<h2 id="review-checklist">Review Checklist</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input disabled="disabled" type="checkbox"> Is global access truly required?</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox"> Is the instance stateless or carefully synchronized?</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox"> Can tests substitute or reset state?</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox"> Would DI singleton lifetime suffice without static <code>Get()</code>?</li>
+</ul>
+<h2 id="next">Next</h2>
+<p><a href="03-factory-method.html">Factory Method →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#singleton">Singleton</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#structure">Structure</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#gof-participants">GoF Participants</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#when-to-use">When to Use</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#when-to-avoid">When to Avoid</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-1-spark-uisystem-meyers-singleton">Example 1: Spark — UiSystem (Meyers Singleton)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The Problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#classes-and-responsibilities">Classes and Responsibilities</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#object-creation-flow">Object Creation Flow</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#participant-mapping">Participant Mapping</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#when-you-see-this-in-the-wild">When You See This in the Wild</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#common-mistakes">Common Mistakes</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-2-spark-renderlayerregistry">Example 2: Spark — RenderLayerRegistry</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The Problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#classes-and-responsibilities">Classes and Responsibilities</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#object-creation-flow">Object Creation Flow</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#participant-mapping">Participant Mapping</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#when-you-see-this-in-the-wild">When You See This in the Wild</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#common-mistakes">Common Mistakes</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-3-raindb-noopspillwriter">Example 3: RainDB — NoOpSpillWriter</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The Problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#classes-and-responsibilities">Classes and Responsibilities</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#object-creation-flow">Object Creation Flow</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#participant-mapping">Participant Mapping</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#when-you-see-this-in-the-wild">When You See This in the Wild</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#common-mistakes">Common Mistakes</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-4-lightmapper-generated-mapper-singletons">Example 4: LightMapper — Generated Mapper Singletons</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The Problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#classes-and-responsibilities">Classes and Responsibilities</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#object-creation-flow">Object Creation Flow</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#participant-mapping">Participant Mapping</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#when-you-see-this-in-the-wild">When You See This in the Wild</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#common-mistakes">Common Mistakes</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-5-skyui-immutable-palette-singletons">Example 5: SkyUI — Immutable Palette Singletons</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The Problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#classes-and-responsibilities">Classes and Responsibilities</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#object-creation-flow">Object Creation Flow</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#participant-mapping">Participant Mapping</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#singleton-vs-di">Singleton vs DI </a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#thread-safety">Thread Safety</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#when-you-see-this-in-the-wild-summary">When You See This in the Wild (Summary)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#common-mistakes-summary">Common Mistakes (Summary)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#review-checklist">Review Checklist</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

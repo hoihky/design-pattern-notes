@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Decorator · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>Decorator</h1>
+          </header>
+          <div class="doc-body"><h1 id="decorator">Decorator</h1>
+<p><strong>Intent:</strong> Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.</p>
+<h2 id="the-structural-problem-exploding-subclasses-for-features">The Structural Problem: Exploding Subclasses for Features</h2>
+<p>Suppose an image processor can optionally log, cache, compress, and watermark. Subclassing yields combinatorial explosion:</p>
+<pre><code>ImageProcessor
+LoggingImageProcessor
+CachingImageProcessor
+LoggingCachingImageProcessor
+LoggingCachingWatermarkImageProcessor
+…
+</code></pre>
+<p><strong>Decorator</strong> wraps a shared <strong>Component</strong> interface: each decorator implements the same interface, holds an inner component, and adds behavior before/after delegating. Clients build stacks at runtime:</p>
+<pre><code>new LoggingDecorator(new CachingDecorator(new CoreProcessor()))
+</code></pre>
+<p>Every layer looks like the core type — callers cannot tell how many wrappers exist.</p>
+<pre class="mermaid">classDiagram
+    class Component {
+        &lt;&lt;interface&gt;&gt;
+        +operation()
+    }
+    class ConcreteComponent
+    class Decorator {
+        -component: Component
+        +operation()
+    }
+    class ConcreteDecoratorA
+    class ConcreteDecoratorB
+    Component &lt;|.. ConcreteComponent
+    Component &lt;|.. Decorator
+    Decorator o-- Component
+    Decorator &lt;|-- ConcreteDecoratorA
+    Decorator &lt;|-- ConcreteDecoratorB
+</pre>
+<h2 id="uml-roles-textbook-mapping">UML Roles — Textbook Mapping</h2>
+<table class="table">
+<thead>
+<tr>
+<th>GoF role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Component</strong></td>
+<td>Interface for core and wrappers</td>
+</tr>
+<tr>
+<td><strong>ConcreteComponent</strong></td>
+<td>Base behavior</td>
+</tr>
+<tr>
+<td><strong>Decorator</strong></td>
+<td>Implements Component; forwards to held Component</td>
+</tr>
+<tr>
+<td><strong>ConcreteDecorator</strong></td>
+<td>Adds specific responsibility (logging, caching)</td>
+</tr>
+<tr>
+<td><strong>Client</strong></td>
+<td>Builds chain; depends on Component interface only</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="honest-assessment-no-classic-stackable-decorators-in-the-corpus">Honest Assessment: No Classic Stackable Decorators in the Corpus</h2>
+<p>After searching all seven projects, <strong>none</strong> implement the textbook pattern: multiple classes implementing the <strong>same narrow interface</strong>, each wrapping an inner instance, composable in arbitrary order at runtime.</p>
+<p>That absence is <strong>informative</strong>, not a failure. Similar goals appear through other structures:</p>
+<table class="table">
+<thead>
+<tr>
+<th>Goal</th>
+<th>Pattern used instead</th>
+<th>Where</th>
+<th>Why alternative won</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cross-cutting request behavior</td>
+<td>Chain of Responsibility / Middleware</td>
+<td>LightMediator <code>IRequestMiddleware</code></td>
+<td>Ordered pipeline with shared <code>RequestHandlerDelegate</code>; not every layer shares one <code>Handle()</code> signature</td>
+</tr>
+<tr>
+<td>HTML transformation per publish target</td>
+<td>Strategy (single processor)</td>
+<td>MDWeb <code>IHtmlPostProcessor</code></td>
+<td>Modes are <strong>mutually exclusive</strong> (Site vs WeChat), not stacked</td>
+</tr>
+<tr>
+<td>Pipeline orchestration</td>
+<td>Named steps</td>
+<td>MDWeb <code>PostProcessHtmlStep</code></td>
+<td>Steps share <code>SiteContext</code>, not one <code>Render()</code> interface</td>
+</tr>
+<tr>
+<td>HTTP image operations</td>
+<td>Command + handler</td>
+<td>ImgKit <code>ImageHandlers</code></td>
+<td>API boundary maps 1:1 to operations, not decorator stacks</td>
+</tr>
+</tbody>
+</table>
+<p>Understanding Decorator still matters: when you <strong>do</strong> need arbitrary runtime stacking on one interface, recognize it — and when you don't, pick a simpler pattern deliberately.</p>
+<hr>
+<h2 id="closest-case-mdweb-html-post-processing">Closest Case: MDWeb HTML Post-Processing</h2>
+<h3 id="what-exists">What exists</h3>
+<p>After markdown renders to HTML, publish profiles may transform output. <code>IHtmlPostProcessor</code> defines:</p>
+<pre><code class="language-csharp">public interface IHtmlPostProcessor
+{
+    PublishMode Mode { get; }
+    string Process(string html);
+}
+</code></pre>
+<p>Implementations:</p>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Role</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>PassThroughHtmlPostProcessor</code></strong></td>
+<td>No-op strategy</td>
+<td>Returns HTML unchanged for <code>PublishMode.Site</code></td>
+</tr>
+<tr>
+<td><strong><code>WeChatHtmlPostProcessor</code></strong></td>
+<td>WeChat strategy</td>
+<td>Parses HTML with AngleSharp; strips scripts/classes; inlines preset styles; replaces Mermaid blocks with placeholders</td>
+</tr>
+</tbody>
+</table>
+<p><code>PostProcessHtmlStep</code> selects <strong>one</strong> processor matching the configured mode:</p>
+<pre><code class="language-csharp">var processor = postProcessors.FirstOrDefault(p =&gt; p.Mode == mode);
+foreach (var page in context.AllPages)
+    page.HtmlContent = processor.Process(page.HtmlContent);
+</code></pre>
+<h3 id="why-this-is-strategy-not-decorator">Why this is Strategy, not Decorator</h3>
+<ul>
+<li><strong>One active processor</strong> per generation run — you never stack <code>SanitizeDecorator(WatermarkDecorator(html))</code>.</li>
+<li>Processors are registered in DI as a <strong>collection</strong>; selection is by <code>PublishMode</code>, not by nesting.</li>
+<li>The interface is tied to publish profiles, not to a reusable "HTML stream" abstraction.</li>
+</ul>
+<h3 id="what-decorator-would-look-like-hypothetical">What Decorator would look like (hypothetical)</h3>
+<p>If WeChat export needed <strong>composable</strong> transforms applied to the standard site HTML in sequence:</p>
+<pre><code class="language-csharp">IHtmlPostProcessor pipeline = new InlineStylesDecorator(
+    new StripScriptsDecorator(
+        new MermaidPlaceholderDecorator(coreProcessor)));
+html = pipeline.Process(html);
+</code></pre>
+<p>Each decorator would implement <code>Process(string)</code> by calling <code>_inner.Process(html)</code> then mutating the result. MDWeb did not need this — WeChat mode is a <strong>single cohesive transformation</strong> (<code>WeChatHtmlPostProcessor</code> is 180+ lines of DOM work). One class is easier to test and reason about than five thin decorators.</p>
+<p><strong>Teaching point:</strong> Decorator shines when features are <strong>independent</strong> and <strong>combinable</strong> (logging ∧ caching ∧ encryption). When transformations form one <strong>coherent profile</strong>, Strategy or a single service class is clearer.</p>
+<hr>
+<h2 id="middleware-as-decorator-cousin">Middleware as Decorator Cousin</h2>
+<p>LightMediator builds a request pipeline by wrapping delegates:</p>
+<pre><code class="language-csharp">RequestHandlerDelegate&lt;TResponse&gt; next = ct =&gt; handler.HandleAsync(request, ct);
+for (var i = middlewares.Length - 1; i &gt;= 0; i--)
+{
+    var middleware = middlewares[i];
+    var inner = next;
+    next = ct =&gt; middleware.HandleAsync(request, inner, ct);
+}
+</code></pre>
+<h3 id="decorator-like-behavior">Decorator-like behavior</h3>
+<p>Each middleware <strong>wraps</strong> the next delegate — outer code runs before/after inner code. Conceptually:</p>
+<pre><code>LoggingMiddleware → AuthMiddleware → ValidationMiddleware → Handler
+</code></pre>
+<h3 id="why-gof-labels-it-chain-of-responsibility-part-4">Why GoF labels it Chain of Responsibility (Part 4)</h3>
+<ul>
+<li>Middleware types implement <code>IRequestMiddleware</code>, not a shared <code>IRequestHandler</code> component interface.</li>
+<li>The wrapped type is a <strong>delegate</strong>, not the same interface as the core handler.</li>
+<li>Ordering is explicit in the array; decorators typically nest at construction time.</li>
+</ul>
+<p><strong>Mental model:</strong> middleware is <strong>Decorator semantics on a pipeline</strong>, structured as <strong>Chain of Responsibility</strong> for ASP.NET-style composition. Both beat subclassing for cross-cutting concerns.</p>
+<hr>
+<h2 id="imgkit-explicit-handlers-vs-decorator-chain">ImgKit — Explicit Handlers vs Decorator Chain</h2>
+<p>ImgKit processes images through command handlers (<code>ImageHandlers</code>, <code>ImageProcessingHandlerBase</code>). Optional steps (resize, filter, format conversion) are <strong>discrete API operations</strong>, not wrappers around a shared <code>IImageProcessor.Process(Image)</code>.</p>
+<p>If every upload needed arbitrary combinations of EXIF strip + watermark + filter at runtime, a decorator chain on <code>IImageProcessor</code> would fit. Current HTTP API design favors <strong>explicit endpoints and commands</strong> — clearer OpenAPI docs, simpler authorization per operation.</p>
+<hr>
+<h2 id="recognizing-decorator-in-the-wild">Recognizing Decorator in the Wild</h2>
+<p>Look for:</p>
+<ul>
+<li>Same interface on wrapper and wrappee.</li>
+<li>Constructor taking <code>IComponent inner</code> (or similar).</li>
+<li><code>operation()</code> calls <code>_inner.operation()</code> plus extra work.</li>
+<li>Client code (or DI) assembling chains.</li>
+</ul>
+<p>Modern .NET sometimes uses <strong><code>DispatchProxy</code></strong> or source generators for interception — decorator intent without manual wrapper classes.</p>
+<h2 id="when-to-choose-decorator">When to Choose Decorator</h2>
+<p>Choose Decorator when:</p>
+<ul>
+<li>Multiple <strong>independent</strong> enhancements combine arbitrarily.</li>
+<li>Enhancements attach at <strong>runtime</strong> (per-request, per-tenant config).</li>
+<li>The <strong>same interface</strong> must hold through the entire stack (transparent to callers).</li>
+</ul>
+<p>Choose <strong>Strategy</strong> when:</p>
+<ul>
+<li>Exactly <strong>one</strong> algorithm is active (publish mode, sort order, renderer choice).</li>
+</ul>
+<p>Choose <strong>Pipeline steps</strong> when:</p>
+<ul>
+<li>Stages share rich context (<code>SiteContext</code>, <code>IServiceProvider</code>).</li>
+<li>Stages have <strong>different method signatures</strong> or responsibilities (read disk → render → write output).</li>
+</ul>
+<p>Choose <strong>Middleware</strong> when:</p>
+<ul>
+<li>Cross-cutting concerns wrap <strong>request handling</strong> with delegate chaining.</li>
+</ul>
+<h2 id="implementing-decorator-deliberately">Implementing Decorator Deliberately</h2>
+<p>If you add decorator stacks to your own code:</p>
+<ol>
+<li>Keep the <strong>Component interface minimal</strong> — one or two methods.</li>
+<li>Make decorators <strong>pure wrappers</strong> — no hidden singletons.</li>
+<li>Document <strong>order sensitivity</strong> (encrypt-before-compress vs compress-before-encrypt).</li>
+<li>Prefer DI factory methods that assemble chains from configuration.</li>
+</ol>
+<p>The corpus chose simpler patterns because its domains rarely needed arbitrary feature stacking — that is a valid engineering outcome worth studying alongside the textbook pattern.</p>
+<h2 id="next">Next</h2>
+<p><a href="06-facade.html">Facade →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#decorator">Decorator</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#the-structural-problem-exploding-subclasses-for-features">The Structural Problem: Exploding Subclasses for Features</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#uml-roles-textbook-mapping">UML Roles — Textbook Mapping</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#honest-assessment-no-classic-stackable-decorators-in-the-corpus">Honest Assessment: No Classic Stackable Decorators in the Corpus</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#closest-case-mdweb-html-post-processing">Closest Case: MDWeb HTML Post-Processing</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#what-exists">What exists</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-this-is-strategy-not-decorator">Why this is Strategy, not Decorator</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#what-decorator-would-look-like-hypothetical">What Decorator would look like (hypothetical)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#middleware-as-decorator-cousin">Middleware as Decorator Cousin</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#decorator-like-behavior">Decorator-like behavior</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-gof-labels-it-chain-of-responsibility-part-4">Why GoF labels it Chain of Responsibility (Part 4)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#imgkit-explicit-handlers-vs-decorator-chain">ImgKit — Explicit Handlers vs Decorator Chain</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#recognizing-decorator-in-the-wild">Recognizing Decorator in the Wild</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#when-to-choose-decorator">When to Choose Decorator</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#implementing-decorator-deliberately">Implementing Decorator Deliberately</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

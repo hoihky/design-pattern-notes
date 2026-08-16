@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Storage-Layer CQRS in RainDB · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>Storage-Layer CQRS in RainDB</h1>
+          </header>
+          <div class="doc-body"><h1 id="storage-layer-cqrs-in-raindb">Storage-Layer CQRS in RainDB</h1>
+<p>RainDB does not use <code>IMediator</code> or <code>IRequestHandler</code>. Instead, it applies <strong>CQRS at the storage engine level</strong>: <strong>append-only writes</strong> vs <strong>compiled read queries</strong>. Understanding this variant prevents the mistake of thinking CQRS requires a C# mediator library.</p>
+<h2 id="the-problem-at-database-layer">The Problem at Database Layer</h2>
+<p>An embedded analytics engine must:</p>
+<ul>
+<li><strong>Ingest</strong> columnar batches quickly (write path — append, minimal locking)</li>
+<li><strong>Analyze</strong> with SQL or LINQ (read path — scan, aggregate, join — never mutates stored batches in place)</li>
+<li>Keep compile logic separate from execution (SRP, Part 1)</li>
+</ul>
+<p>Mixing "parse SQL" and "append bytes to segment file" in one class creates the same entanglement CQRS solves at the application layer.</p>
+<h2 id="write-path-commands-without-a-mediator">Write Path — Commands Without a Mediator</h2>
+<h3 id="memorytable.appendbatch">MemoryTable.AppendBatch</h3>
+<p>The write model is <strong>columnar batches</strong> — <code>IColumnarBatch</code> containing typed column chunks.</p>
+<pre><code class="language-csharp">// Conceptual write API
+table.AppendBatch(batch);
+catalog.Register(table);
+</code></pre>
+<p><code>MemoryTable</code> appends batches to an in-memory segment list. Optional <code>IRainDbBatchPersistence.OnBatchAppended</code> hook serializes to disk — <strong>side effect on write</strong>, analogous to notification after command.</p>
+<h3 id="write-characteristics">Write Characteristics</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Property</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mutability</td>
+<td>Append-only; batches are not updated in place</td>
+</tr>
+<tr>
+<td>Model</td>
+<td><code>IColumnarBatch</code>, <code>IColumnChunk</code></td>
+</tr>
+<tr>
+<td>Concurrency</td>
+<td>Engine-specific; append is the narrow write surface</td>
+</tr>
+<tr>
+<td>Persistence</td>
+<td><code>RainDbFileDatabase</code>, <code>RainDbBatchBinaryCodec</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>No SQL UPDATE</strong> in the pedagogical model — analytics workloads favor inserts and scans over row-by-row mutation.</p>
+<h3 id="analytics-demo-write-flow">Analytics Demo Write Flow</h3>
+<p>From <code>RainDB.AnalyticsDemo</code>:</p>
+<ol>
+<li>Build <code>ColumnarBatch</code> with event data</li>
+<li><code>table.AppendBatch(batch)</code></li>
+<li><code>engine.Catalog.Register(table)</code></li>
+</ol>
+<p>Data is now visible to the read path via catalog metadata.</p>
+<h2 id="read-path-queries-without-touching-write-api">Read Path — Queries Without Touching Write API</h2>
+<h3 id="entry-point-raindbengine.executesqlasync">Entry Point — RainDbEngine.ExecuteSqlAsync</h3>
+<pre><code class="language-csharp">public async ValueTask&lt;IQueryResult&gt; ExecuteSqlAsync(string sql, CancellationToken ct = default)
+{
+    var plan = await SqlCompiler.CompileAsync(sql, Catalog, ct);
+    return await Executor.ExecuteAsync(plan, CreateContext(ct));
+}
+</code></pre>
+<p><strong>Two phases:</strong></p>
+<ol>
+<li><strong>Compile</strong> — <code>ISqlCompiler</code> parses SQL, binds to catalog schema, lowers to <code>IPhysicalPlan</code></li>
+<li><strong>Execute</strong> — <code>IQueryExecutor</code> runs plan operators, returns <code>IQueryResult</code></li>
+</ol>
+<p>Read path never calls <code>AppendBatch</code>.</p>
+<h3 id="linq-alternative">LINQ Alternative</h3>
+<p><code>ILinqCompiler</code> accepts expression trees — same physical plan output, different front-end. <strong>ISP</strong> — SQL users and LINQ users get separate compiler surfaces; both feed the same executor.</p>
+<h3 id="defaultqueryexecutor-operator-dispatch">DefaultQueryExecutor — Operator Dispatch</h3>
+<pre><code class="language-csharp">public ValueTask&lt;IQueryResult&gt; ExecuteAsync(IPhysicalPlan plan, IExecutionContext context)
+{
+    return plan switch
+    {
+        VectorizedScanPhysicalPlan scan =&gt; _scanEngine.ExecuteAsync(scan, context),
+        HashAggregatePhysicalPlan agg =&gt; _hashEngine.ExecuteAsync(agg, context),
+        JoinPhysicalPlan join =&gt; _joinEngine.ExecuteAsync(join, context),
+        // ...
+    };
+}
+</code></pre>
+<p>Each engine reads columnar data, produces <code>IColumnarQueryResult</code> or <code>IAggregateQueryResult</code>. <strong>Read models</strong> are projections — not the same objects as write batches.</p>
+<h3 id="read-result-hierarchy">Read Result Hierarchy</h3>
+<pre><code class="language-csharp">public interface IQueryResult : IAsyncDisposable
+{
+    long RowCount { get; }
+}
+
+public interface IColumnarQueryResult : IQueryResult
+{
+    IReadOnlyList&lt;IColumnarBatch&gt; Batches { get; }
+}
+</code></pre>
+<p>Callers consuming only <code>RowCount</code> work with any result type (LSP, Part 1).</p>
+<h2 id="cqrs-mapping-application-vs-storage">CQRS Mapping — Application vs Storage</h2>
+<table class="table">
+<thead>
+<tr>
+<th>CQRS concept</th>
+<th>LightMediator (app)</th>
+<th>RainDB (storage)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Command</td>
+<td><code>CreateOrderCommand</code></td>
+<td><code>AppendBatch</code></td>
+</tr>
+<tr>
+<td>Query</td>
+<td><code>GetOrderSummaryQuery</code></td>
+<td><code>ExecuteSqlAsync</code></td>
+</tr>
+<tr>
+<td>Handler</td>
+<td><code>CreateOrderHandler</code></td>
+<td><code>VectorizedScanEngine</code>, etc.</td>
+</tr>
+<tr>
+<td>Bus</td>
+<td><code>IMediator</code></td>
+<td><code>RainDbEngine</code> facade</td>
+</tr>
+<tr>
+<td>Read model</td>
+<td><code>GetOrderSummaryResponse</code></td>
+<td><code>IColumnarQueryResult</code></td>
+</tr>
+<tr>
+<td>Write model</td>
+<td><code>CreateOrderResult</code> in store</td>
+<td>Stored <code>IColumnarBatch</code> segments</td>
+</tr>
+</tbody>
+</table>
+<h2 id="end-to-end-write-then-read">End-to-End — Write Then Read</h2>
+<pre class="mermaid">flowchart TB
+    subgraph write [Write Path]
+        B[Build ColumnarBatch]
+        A[MemoryTable.AppendBatch]
+        P[Optional persistence hook]
+    end
+    subgraph read [Read Path]
+        SQL[SQL text]
+        C[DefaultSqlCompiler]
+        PL[IPhysicalPlan]
+        E[DefaultQueryExecutor]
+        R[IQueryResult]
+    end
+    B --&gt; A --&gt; P
+    SQL --&gt; C --&gt; PL --&gt; E --&gt; R
+    A -.-&gt;|catalog metadata| C
+</pre>
+<ol>
+<li><strong>Write:</strong> append events batch to <code>events</code> table</li>
+<li><strong>Read:</strong> <code>SELECT region, COUNT(*) FROM events GROUP BY region</code></li>
+<li>Compiler resolves <code>events</code> → <code>MemoryTable</code> metadata → scan plan</li>
+<li><code>HashAggregateEngine</code> reads batches, never writes back</li>
+</ol>
+<p>Tests in <code>Phase1ReadPathTests</code> validate scan/filter/project over appended data.</p>
+<h2 id="why-not-mediator-inside-raindb">Why Not Mediator Inside RainDB?</h2>
+<p>RainDB is a <strong>library</strong>, not an HTTP API. Callers embed the engine:</p>
+<pre><code class="language-csharp">var engine = RainDbEngine.CreateDefault(catalog);
+await engine.ExecuteSqlAsync("SELECT ...");
+</code></pre>
+<p>Message dispatch would add ceremony without HTTP controllers or UI ViewModels. The <strong>facade + compiler + executor</strong> split achieves the same separation of concerns.</p>
+<h2 id="prototype-on-read-path">Prototype on Read Path</h2>
+<p><code>CompositeJoinKey.DeepClone()</code> during hash aggregation (Part 2) — join keys copied when merging partial aggregates. Write path appends raw batches; read path allocates independent key copies during computation. Different lifecycles for write vs read data structures.</p>
+<h2 id="lessons-for-system-designers">Lessons for System Designers</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Lesson</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CQRS is a <strong>separation principle</strong>, not a NuGet package</td>
+<td>RainDB proves storage-level split</td>
+</tr>
+<tr>
+<td>Read/write <strong>asymmetry</strong> is normal</td>
+<td>Analytics: heavy reads, append-only writes</td>
+</tr>
+<tr>
+<td>Compilers are <strong>query</strong> concern</td>
+<td>Never mixed into <code>AppendBatch</code></td>
+</tr>
+<tr>
+<td>Facade unifies entry points</td>
+<td><code>RainDbEngine</code> without exposing every internal type</td>
+</tr>
+</tbody>
+</table>
+<h2 id="next">Next</h2>
+<p><a href="10-combining-architecture.html">Combining MVVM, Clean Architecture, and CQRS →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#storage-layer-cqrs-in-raindb">Storage-Layer CQRS in RainDB</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#the-problem-at-database-layer">The Problem at Database Layer</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#write-path-commands-without-a-mediator">Write Path — Commands Without a Mediator</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#memorytableappendbatch">MemoryTable.AppendBatch</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#write-characteristics">Write Characteristics</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#analytics-demo-write-flow">Analytics Demo Write Flow</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#read-path-queries-without-touching-write-api">Read Path — Queries Without Touching Write API</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#entry-point-raindbengineexecutesqlasync">Entry Point — RainDbEngine.ExecuteSqlAsync</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#linq-alternative">LINQ Alternative</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#defaultqueryexecutor-operator-dispatch">DefaultQueryExecutor — Operator Dispatch</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#read-result-hierarchy">Read Result Hierarchy</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#cqrs-mapping-application-vs-storage">CQRS Mapping — Application vs Storage</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#end-to-end-write-then-read">End-to-End — Write Then Read</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#why-not-mediator-inside-raindb">Why Not Mediator Inside RainDB?</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#prototype-on-read-path">Prototype on Read Path</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#lessons-for-system-designers">Lessons for System Designers</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

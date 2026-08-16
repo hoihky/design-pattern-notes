@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spark Game Engine Layering · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>Spark Game Engine Layering</h1>
+          </header>
+          <div class="doc-body"><h1 id="spark-game-engine-layering">Spark — Game Engine Layering</h1>
+<p>Spark is a C++ game engine with editor, physics, UI, audio, and scripting. Its architecture stacks patterns across subsystems because game engines face simultaneous forces: swap rendering/UI backends, serialize heterogeneous components, drive AI without <code>switch</code> explosion, and keep game code thin against a large runtime.</p>
+<p>This chapter traces a developer's journey — boot a demo, swap UI backend, save a scene, watch AI patrol — through Spark's pattern layers.</p>
+<h2 id="end-to-end-user-journey">End-to-End User Journey</h2>
+<pre class="mermaid">sequenceDiagram
+    participant Dev as Game Developer
+    participant Demo as Platformer2DDemo
+    participant Ctx as IEngineContext
+    participant UI as UiSystem
+    participant Backend as IUiBackend
+    participant Factory as IUiControlsFactory
+    participant Scene as SceneSerializer
+    participant Registry as ComponentSnapshotRegistry
+    participant FSM as FsmStateMachine
+
+    Dev-&gt;&gt;Demo: launch game / open editor
+    Demo-&gt;&gt;Ctx: GetInput(), TryGetScene()
+    Note over Ctx: Facade hides Engine monolith
+    Dev-&gt;&gt;UI: SetActiveBackend(SparkNative | DearImGui)
+    UI-&gt;&gt;Backend: GetActiveBackendPtr()
+    Backend-&gt;&gt;Factory: GetControlsFactory()
+    Dev-&gt;&gt;Demo: editor panel CreateButton(…)
+    Factory--&gt;&gt;Demo: IUiButton (backend-specific)
+    Dev-&gt;&gt;Scene: Capture(world) → SceneDocument
+    Scene-&gt;&gt;Registry: Find(ComponentKind) per component
+    Registry--&gt;&gt;Scene: IComponentSnapshotHandler (Strategy)
+    Note over FSM: AI entity Tick → SendEvent → state transition
+</pre>
+<p><strong>What the developer experiences:</strong></p>
+<ol>
+<li><p><strong>Boot:</strong> Game code receives <code>IEngineContext&amp;</code> — not a raw <code>Engine</code> pointer. Input, scene, audio, and framebuffer size come through small interface methods.</p>
+</li>
+<li><p><strong>Editor UI:</strong> Developer or demo code calls <code>UiSystem::Get().SetActiveBackend(UiBackendKind::DearImGui)</code> and builds panels using <code>GetContext(frame).GetControlsFactory().CreateButton(…)</code>. Controls look and behave according to the active backend without <code>#ifdef IMGUI</code> in panel code.</p>
+</li>
+<li><p><strong>Save scene:</strong> Editor invokes <code>SceneSerializer::Capture(world, ctx, includeFilter)</code> → <code>SceneDocument</code> (memento). Each component type is serialized by its registered handler. File writes go through <code>WriteToFile</code>.</p>
+</li>
+<li><p><strong>AI tick:</strong> Enemy entities run <code>FsmStateMachine::Tick(timing, blackboard)</code>. Events like "player spotted" trigger transitions; current state's <code>OnEnter</code>/<code>OnExit</code> run polymorphically via <code>IFsmState</code>.</p>
+</li>
+</ol>
+<p>Each journey segment uses different patterns, but they share a theme: <strong>stable abstractions at the boundary, pluggable implementations inside</strong>.</p>
+<h2 id="layer-overview-pattern-interactions">Layer Overview — Pattern Interactions</h2>
+<pre class="mermaid">flowchart TB
+    DEMO[Game / Demo code] --&gt; CTX[IEngineContext — Facade]
+    CTX --&gt; SCENE[Scene / ECS]
+    CTX --&gt; UI[UiSystem — Facade]
+    CTX --&gt; PHYS[PhysicsSubsystem — Facade]
+    UI --&gt; BRIDGE[IUiBackend — Bridge]
+    BRIDGE --&gt; AF[IUiControlsFactory — Abstract Factory]
+    AF --&gt; BTN[IUiButton / ISlider / …]
+    SCENE --&gt; MEMENTO[SceneSerializer]
+    MEMENTO --&gt; DOC[SceneDocument — Memento]
+    MEMENTO --&gt; REG[ComponentSnapshotRegistry]
+    REG --&gt; STRAT[IComponentSnapshotHandler — Strategy per kind]
+    AI[AI Agent] --&gt; FSM[FsmStateMachine — State]
+    FSM --&gt; ISTATE[IFsmState implementations]
+    PHYS --&gt; SHAPE[IShape2D — LSP polymorphism]
+</pre>
+<p>The vertical split matters: <strong>game-facing facades</strong> (<code>IEngineContext</code>, <code>UiSystem</code>) sit above <strong>variation mechanisms</strong> (Bridge, Abstract Factory, Strategy registry, State machine). Game code should depend on the top row; only engine internals touch the bottom row.</p>
+<h2 id="facade-ienginecontext-and-subsystem-facades">Facade — IEngineContext and Subsystem Facades</h2>
+<h3 id="force">Force</h3>
+<p>The <code>Engine</code> class coordinates windowing, Vulkan presentation, ECS, audio, input, and optional ImGui. Game code that includes <code>Engine.hpp</code> and calls internal methods couples to everything and breaks when the engine refactors.</p>
+<h3 id="why-facade">Why Facade</h3>
+<p><code>IEngineContext</code> exposes a minimal stable surface:</p>
+<pre><code class="language-cpp">class IEngineContext {
+public:
+    [[nodiscard]] virtual Window&amp; GetWindow() = 0;
+    [[nodiscard]] virtual IInput&amp; GetInput() = 0;
+    [[nodiscard]] virtual Scene* TryGetScene() noexcept = 0;
+    [[nodiscard]] virtual SoundEngine* TryGetSoundEngine() noexcept = 0;
+    virtual void GetFramebufferSize(int&amp; outWidth, int&amp; outHeight) const = 0;
+    // …
+};
+</code></pre>
+<p><strong>Class-level detail:</strong> Methods return <strong>small interface types</strong> (<code>IInput&amp;</code>, <code>Scene*</code>) rather than concrete classes — Interface Segregation applied inside the Facade. <code>TryGetScene()</code> returns nullable pointer because not every host binds an ECS scene (shell demos vs full games). <code>TryGetSoundEngine()</code> similarly optional.</p>
+<p><code>UiSystem</code>, <code>PhysicsSubsystem</code>, and <code>SoundEngine</code> are <strong>nested facades</strong> — each hides its subsystem's internal graph. <code>UiSystem::Get()</code> is the global entry for retained UI; games never touch <code>SparkUiBackend</code> or <code>DearImguiUiBackend</code> directly unless configuring backends.</p>
+<h3 id="interaction-with-bridge">Interaction with Bridge</h3>
+<p>Game code calls <code>UiSystem</code> methods (<code>ProcessInput</code>, <code>Paint</code>, <code>GetContext</code>). <code>UiSystem</code> delegates to active <code>IUiBackend*</code>. The game never knows whether Spark native or ImGui renders the panel — Facade wraps Bridge.</p>
+<h3 id="if-we-removed-facade">If we removed Facade</h3>
+<p>Every demo includes engine internals. Refactoring <code>Engine</code> breaks all games. Unit testing input handling requires constructing the full engine. The Facade is the <strong>contract</strong> between engine team and game team.</p>
+<h2 id="bridge-abstract-factory-ui-stack">Bridge + Abstract Factory — UI Stack</h2>
+<h3 id="force-1">Force</h3>
+<p>Spark ships two UI backends: <strong>Spark native</strong> (retained, game-styled controls) and <strong>Dear ImGui</strong> (immediate-mode, editor-friendly). Editor panels must create buttons, sliders, tree views, and dock workspaces. Control types are parallel across backends (every backend has <em>some</em> button) but implementations differ completely.</p>
+<p>Two independent axes vary:</p>
+<ol>
+<li><strong>Rendering/input backend</strong> (Spark vs ImGui)</li>
+<li><strong>Control product family</strong> (button, slider, tree view, …)</li>
+</ol>
+<h3 id="why-bridge">Why Bridge</h3>
+<p><code>IUiBackend</code> separates the abstraction "UI toolkit" from implementations:</p>
+<pre><code class="language-cpp">class SparkUiBackend final : public IUiBackend {
+    [[nodiscard]] UiBackendKind GetKind() const noexcept override;
+    [[nodiscard]] IUiControlsFactory&amp; GetControlsFactory() noexcept override;
+    void ProcessInput(…);
+    void Paint(…);
+};
+</code></pre>
+<p><code>UiSystem::SetActiveBackend(UiBackendKind kind)</code> swaps the active backend pointer. <code>ProcessInput</code> and <code>Paint</code> forward to <code>activeBackend</code> — classic Bridge structure: abstraction (<code>UiSystem</code> / <code>IUiBackend</code>) on one axis, implementation (<code>SparkUiBackend</code>, <code>DearImguiUiBackend</code>) on the other.</p>
+<h3 id="why-abstract-factory">Why Abstract Factory</h3>
+<p><code>IUiControlsFactory</code> creates <strong>families</strong> of related controls for one backend:</p>
+<pre><code class="language-cpp">class IUiControlsFactory {
+    virtual UniquePtr&lt;IUiButton&gt; CreateButton(const ButtonDesc&amp; desc) = 0;
+    virtual UniquePtr&lt;ISlider&gt; CreateSlider(const SliderDesc&amp; desc) = 0;
+    virtual UniquePtr&lt;ITreeView&gt; CreateTreeView(const TreeViewDesc&amp; desc) = 0;
+    // …
+};
+</code></pre>
+<p><code>SparkUiControlsFactory</code> returns Spark-native controls; <code>DearImguiControlsFactory</code> returns ImGui-backed controls. Editor code calls <code>GetControlsFactory().CreateButton(desc)</code> — it never mixes a Spark button with ImGui layout code.</p>
+<p><strong>Class-level detail:</strong> <code>ControlDesc</code> structs (e.g., <code>ButtonDesc</code>) carry layout and label data backend-agnostically. Each factory interprets descriptors into backend-specific widgets. <code>HierarchyPanel</code> and <code>InspectorPanel</code> depend on <code>IUiButton*</code>, not <code>SparkButton</code> or <code>ImGui::Button</code>.</p>
+<h3 id="interaction-between-bridge-and-factory">Interaction between Bridge and Factory</h3>
+<pre><code>UiSystem.SetActiveBackend(DearImGui)
+→ activeBackend = dearImguiBackend
+→ GetContext(frame).GetControlsFactory()
+    → dearImguiBackend.GetControlsFactory()
+        → DearImguiControlsFactory.CreateTreeView(…)
+</code></pre>
+<p>Bridge selects <strong>which factory family</strong> is active. Abstract Factory ensures <strong>all controls in one panel</strong> come from the same family. Using Bridge without Factory would leave panel code choosing concrete control types. Using Factory without Bridge would require panel code to pick the factory manually on every call.</p>
+<h3 id="if-we-removed-bridge">If we removed Bridge</h3>
+<p><code>#ifdef SPARK_UI_NATIVE</code> / <code>#elif IMGUI</code> scattered through editor panels. Adding a third backend (e.g., console UI) touches every panel file.</p>
+<h3 id="if-we-removed-abstract-factory">If we removed Abstract Factory</h3>
+<p>Panel code calls <code>SparkUiBackend::CreateButton</code> or <code>ImguiControls::Button</code> directly — backend leakage. Mixing backends in one panel becomes possible and buggy.</p>
+<h2 id="memento-strategy-scene-saveload">Memento + Strategy — Scene Save/Load</h2>
+<h3 id="force-2">Force</h3>
+<p>ECS scenes contain dozens of component kinds (<code>Transform</code>, <code>Mesh</code>, <code>RigidBody</code>, <code>Animator</code>, …). Save format must capture all present components and restore them on load. Adding a new component type must not require rewriting <code>SceneSerializer</code>.</p>
+<h3 id="why-memento">Why Memento</h3>
+<p><code>SceneDocument</code> is the memento — a serializable snapshot detached from live <code>GameWorld</code> state:</p>
+<pre><code>SceneSerializer::Capture(world, ctx, includeEntity)
+    → SceneDocument (entities, component records, hierarchy)
+SceneSerializer::WriteToFile(document, path)
+</code></pre>
+<p><code>SceneDeserializer::Apply(document, world, ctx)</code> restores into a live world. The live scene and saved document are independent representations — you can capture, edit the file, and apply later.</p>
+<h3 id="why-strategy-via-registry">Why Strategy (via registry)</h3>
+<p>Each component kind has an <code>IComponentSnapshotHandler</code>:</p>
+<pre><code class="language-cpp">class IComponentSnapshotHandler {
+    [[nodiscard]] virtual ComponentKind GetKind() const noexcept = 0;
+    [[nodiscard]] virtual bool TryCapture(const GameObject&amp; owner, …, ComponentRecord&amp; out) const = 0;
+    [[nodiscard]] virtual bool TryRestore(GameObject&amp; owner, const ComponentRecord&amp; record, …) const = 0;
+};
+</code></pre>
+<p>Handlers are <strong>stateless strategy objects</strong> — one strategy per component kind. <code>TransformSnapshotHandler</code> knows how to read/write transform data; <code>MeshSnapshotHandler</code> resolves asset paths via <code>SceneCaptureContext</code> callbacks.</p>
+<p><code>ComponentSnapshotRegistry</code> owns handlers and provides lookup:</p>
+<pre><code class="language-cpp">void Register(UniquePtr&lt;IComponentSnapshotHandler&gt; handler);
+[[nodiscard]] const IComponentSnapshotHandler* Find(ComponentKind kind) const noexcept;
+[[nodiscard]] static ComponentSnapshotRegistry&amp; Default();
+</code></pre>
+<p><strong>Class-level detail:</strong> <code>SceneSerializer</code> iterates entities, asks registry for handler by <code>ComponentKind</code>, calls <code>TryCapture</code>. Unknown kinds are skipped; new kinds register a handler without editing serializer code — <strong>OCP via registry</strong>.</p>
+<p><code>SceneCaptureContext</code> and <code>SceneApplyContext</code> carry optional hooks (mesh asset path resolution, deferred loading via <code>GameWorldAssetLoader</code>) so handlers stay stateless while still accessing engine services.</p>
+<h3 id="interaction">Interaction</h3>
+<p>Memento defines <strong>what</strong> is stored (<code>SceneDocument</code>). Strategy defines <strong>how</strong> each component type converts between live ECS and records. Registry connects them at runtime. Without Memento, handlers would write directly to disk formats mixed with live object mutation. Without Strategy, <code>SceneSerializer</code> would contain a giant <code>switch(ComponentKind)</code>.</p>
+<h3 id="if-we-removed-memento">If we removed Memento</h3>
+<p>Save/load directly mutates or reads live objects during capture — no undo, no inspect saved file before apply, no network replication of snapshots.</p>
+<h3 id="if-we-removed-strategy-registry">If we removed Strategy registry</h3>
+<p>Every new component edits <code>SceneSerializer.cpp</code> — merge conflicts and regression risk grow with each component added.</p>
+<h2 id="state-ai-and-animation">State — AI and Animation</h2>
+<h3 id="force-3">Force</h3>
+<p>AI behaviors (patrol → chase → attack) and animation states grow <code>if (state == Patrol) … else if (state == Chase)</code> blocks in <code>OnTick</code>. Transitions multiply; timing and entry/exit logic entangle.</p>
+<h3 id="why-state">Why State</h3>
+<p><code>FsmStateMachine</code> holds polymorphic states and a data-driven transition table:</p>
+<pre><code class="language-cpp">struct FsmTransition {
+    std::uint32_t fromState = 0;
+    std::uint32_t eventId = 0;
+    std::uint32_t toState = 0;
+};
+
+class FsmStateMachine {
+    void AddState(UniquePtr&lt;IFsmState&gt; state);
+    void AddTransition(const FsmTransition&amp; rule);
+    bool SendEvent(std::uint32_t eventId, AiBlackboard&amp; board);
+    void Tick(const FrameTiming&amp; timing, AiBlackboard&amp; board);
+};
+</code></pre>
+<p><strong>Class-level detail:</strong> States implement <code>IFsmState</code> with <code>OnEnter</code>, <code>OnExit</code>, <code>OnTick</code>. The machine calls <code>EnterState_</code> on transitions — entry/exit logic lives in state objects, not in the machine. <code>AiBlackboard</code> shares data (last known player position, path waypoints) without states holding direct references to each other.</p>
+<p>Transitions are <code>(fromState, eventId) → toState</code> triples — designers can data-drive AI graphs without recompiling. Animation FSMs reuse the same machinery for idle/walk/jump cycles.</p>
+<h3 id="interaction-with-facade">Interaction with Facade</h3>
+<p>Game AI code holds <code>FsmStateMachine</code> as a member; it calls <code>SendEvent</code> from collision callbacks and <code>Tick</code> from <code>GameObject::Update</code>. It does not interact with UI Bridge or scene serialization — State is an independent behavioral pattern for <strong>modeful behavior</strong>.</p>
+<h3 id="if-we-removed-state">If we removed State</h3>
+<p>One <code>EnemyAI::Update()</code> method accumulates modes, transition guards, and animation flags — untestable and fragile. Adding "flee" mode requires editing the central switch.</p>
+<h2 id="strategy-physics-and-colliders">Strategy — Physics and Colliders</h2>
+<h3 id="force-4">Force</h3>
+<p>2D physics supports multiple shape types (circle, box, polygon) with different bake and narrow-phase algorithms. Collision pair tests depend on both shapes.</p>
+<h3 id="why-strategy-factory-method">Why Strategy + Factory Method</h3>
+<ul>
+<li><code>ShapeFactory2D</code> — Factory Method creating <code>IShape2D</code> products from descriptors.</li>
+<li><code>IColliderBakeStrategy2D</code> — Strategy per collider type in the bake pipeline (mesh → collision geometry).</li>
+<li><code>NarrowPhase2D</code> — dispatch table over <code>(shapeA, shapeB)</code> pairs calling specialized overlap tests.</li>
+</ul>
+<p><strong>Class-level detail:</strong> Collision code uses <code>IShape2D&amp;</code> polymorphically — <strong>LSP</strong>. Every shape honors overlap, raycast, and contact generation contracts so broad-phase code treats shapes uniformly.</p>
+<h3 id="interaction-1">Interaction</h3>
+<p>Physics strategies are <strong>lower-level</strong> than AI State — they operate on data shapes, not entity behavior modes. Both are Strategy pattern but at different granularities. Shape strategies do not use a registry like component snapshots because shape count is small and fixed.</p>
+<h2 id="observer-ecs-signals">Observer — ECS Signals</h2>
+<p>Components on one <code>GameObject</code> communicate via <code>EmitSignal</code> / <code>OnSignal</code> without direct references — entity-local Observer. A health component emits <code>Damaged</code>; UI and sound components subscribe. This avoids coupling <code>HealthComponent</code> to <code>HealthHud</code> and <code>SoundEngine</code>.</p>
+<p><strong>Interaction with Facade:</strong> HUD facades in demos (<code>HealthHud</code>) subscribe to signals and call <code>IEngineContext</code> for presentation — Observer decouples components; Facade decouples HUD from engine internals.</p>
+<h2 id="singleton-coordinators">Singleton — Coordinators</h2>
+<p><code>UiSystem::Get()</code> and <code>RenderLayerRegistry::Instance()</code> provide process-wide coordinators. In C++ game loops, DI containers are less idiomatic than C# — Singleton (used carefully) gives global access to registries that must exist exactly once.</p>
+<p><strong>Caution:</strong> Singleton here is <strong>coordinator access</strong>, not "store all game state globally." Game state lives in ECS; Singletons own infrastructure registries.</p>
+<h2 id="cross-language-adapter-managedgamebridge">Cross-Language Adapter — ManagedGameBridge</h2>
+<p><code>ManagedGameBridge</code> adapts C# script callbacks to native <code>Game</code> lifecycle — scripting layer without polluting engine core. This is <strong>Adapter</strong> across language boundaries: C# expects managed delegates; engine expects C function pointers or native vtables.</p>
+<h2 id="demo-facades-platformer2ddemo">Demo Facades — Platformer2DDemo</h2>
+<p>Tutorial demos wrap combat, HUD, and spawning behind small facades (<code>PlayerCombat</code>, <code>HealthHud</code>) — documented in headers as pattern examples. These are ** teaching facades** at game-logic granularity, distinct from engine-level <code>IEngineContext</code>.</p>
+<h2 id="impact-analysis">Impact Analysis</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Removed</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>IEngineContext Facade</strong></td>
+<td>Games couple to monolithic <code>Engine</code>; refactors break all demos</td>
+</tr>
+<tr>
+<td><strong>Bridge (IUiBackend)</strong></td>
+<td>Backend <code>#ifdef</code> in every editor panel; cannot swap UI at runtime</td>
+</tr>
+<tr>
+<td><strong>Abstract Factory</strong></td>
+<td>Mixed backend controls; panels know concrete widget classes</td>
+</tr>
+<tr>
+<td><strong>Memento (SceneDocument)</strong></td>
+<td>No inspectable save format; capture tied to live mutation</td>
+</tr>
+<tr>
+<td><strong>Strategy registry</strong></td>
+<td>Serializer monolith; each component type edit risks regressions</td>
+</tr>
+<tr>
+<td><strong>State (FSM)</strong></td>
+<td>AI/animation <code>switch</code> explosion in single Update method</td>
+</tr>
+<tr>
+<td><strong>LSP on IShape2D</strong></td>
+<td>Collision code type-checks shapes; new shapes break callers</td>
+</tr>
+</tbody>
+</table>
+<p>Removing <strong>Bridge + Abstract Factory together</strong> collapses the entire UI extensibility story — the strongest pattern combination in Spark's corpus.</p>
+<h2 id="lessons-for-engine-authors">Lessons for Engine Authors</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Problem</th>
+<th>Pattern stack</th>
+<th>Anchor class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Swap UI backends</td>
+<td>Bridge + Abstract Factory</td>
+<td><code>UiSystem</code>, <code>IUiBackend</code>, <code>IUiControlsFactory</code></td>
+</tr>
+<tr>
+<td>Save arbitrary component sets</td>
+<td>Memento + Strategy registry</td>
+<td><code>SceneSerializer</code>, <code>ComponentSnapshotRegistry</code></td>
+</tr>
+<tr>
+<td>AI behavior growth</td>
+<td>State</td>
+<td><code>FsmStateMachine</code>, <code>IFsmState</code></td>
+</tr>
+<tr>
+<td>Keep game code thin</td>
+<td>Facade</td>
+<td><code>IEngineContext</code></td>
+</tr>
+<tr>
+<td>Shape algorithm variation</td>
+<td>Strategy + LSP</td>
+<td><code>IShape2D</code>, <code>ShapeFactory2D</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="next">Next</h2>
+<p><a href="04-imgkit-stack.html">ImgKit Full-Stack CQRS →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#spark-game-engine-layering">Spark — Game Engine Layering</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#end-to-end-user-journey">End-to-End User Journey</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#layer-overview-pattern-interactions">Layer Overview — Pattern Interactions</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#facade-ienginecontext-and-subsystem-facades">Facade — IEngineContext and Subsystem Facades</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#force">Force</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-facade">Why Facade</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#interaction-with-bridge">Interaction with Bridge</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#if-we-removed-facade">If we removed Facade</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#bridge-abstract-factory-ui-stack">Bridge + Abstract Factory — UI Stack</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#force">Force</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-bridge">Why Bridge</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-abstract-factory">Why Abstract Factory</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#interaction-between-bridge-and-factory">Interaction between Bridge and Factory</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#if-we-removed-bridge">If we removed Bridge</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#if-we-removed-abstract-factory">If we removed Abstract Factory</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#memento-strategy-scene-saveload">Memento + Strategy — Scene Save/Load</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#force">Force</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-memento">Why Memento</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-strategy-via-registry">Why Strategy (via registry)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#interaction">Interaction</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#if-we-removed-memento">If we removed Memento</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#if-we-removed-strategy-registry">If we removed Strategy registry</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#state-ai-and-animation">State — AI and Animation</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#force">Force</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-state">Why State</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#interaction-with-facade">Interaction with Facade</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#if-we-removed-state">If we removed State</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#strategy-physics-and-colliders">Strategy — Physics and Colliders</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#force">Force</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-strategy-factory-method">Why Strategy + Factory Method</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#interaction">Interaction</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#observer-ecs-signals">Observer — ECS Signals</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#singleton-coordinators">Singleton — Coordinators</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#cross-language-adapter-managedgamebridge">Cross-Language Adapter — ManagedGameBridge</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#demo-facades-platformer2ddemo">Demo Facades — Platformer2DDemo</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#impact-analysis">Impact Analysis</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#lessons-for-engine-authors">Lessons for Engine Authors</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

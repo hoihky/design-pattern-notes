@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Composite · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>Composite</h1>
+          </header>
+          <div class="doc-body"><h1 id="composite">Composite</h1>
+<p><strong>Intent:</strong> Compose objects into tree structures to represent part-whole hierarchies. Clients treat individual objects and compositions uniformly.</p>
+<h2 id="the-structural-problem-part-whole-hierarchies">The Structural Problem: Part-Whole Hierarchies</h2>
+<p>Real domains are often trees:</p>
+<ul>
+<li>A documentation site has folders containing pages and sub-folders.</li>
+<li>A filter editor has AND/OR groups containing conditions and nested groups.</li>
+<li>A form may run several validators as one logical rule.</li>
+</ul>
+<p>Without Composite, client code accumulates type switches:</p>
+<pre><code class="language-csharp">if (node is Folder f) { foreach (var c in f.Children) ... }
+else if (node is Page p) { ... }
+</code></pre>
+<p>Every new operation (navigation, PDF export, SQL generation, validation) duplicates traversal logic. Composite introduces a <strong>shared component interface</strong> so one algorithm walks leaves and containers the same way.</p>
+<pre class="mermaid">classDiagram
+    class Component {
+        &lt;&lt;interface&gt;&gt;
+        +operation()
+    }
+    class Leaf
+    class Composite {
+        +children: List~Component~
+        +add(child)
+        +operation()
+    }
+    Component &lt;|.. Leaf
+    Component &lt;|.. Composite
+    Composite o-- Component
+</pre>
+<h2 id="uml-roles-general-mapping">UML Roles — General Mapping</h2>
+<table class="table">
+<thead>
+<tr>
+<th>GoF role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Component</strong></td>
+<td>Common interface for leaf and composite</td>
+</tr>
+<tr>
+<td><strong>Leaf</strong></td>
+<td>No children; terminal node</td>
+</tr>
+<tr>
+<td><strong>Composite</strong></td>
+<td>Stores children; delegates operations recursively</td>
+</tr>
+<tr>
+<td><strong>Client</strong></td>
+<td>Manipulates <code>Component</code> references without <code>is</code> checks</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="example-1-mdweb-content-tree-excellent">Example 1: MDWeb — Content Tree (Excellent)</h2>
+<h3 id="the-problem">The problem</h3>
+<p>MDWeb builds static sites from a filesystem content tree. The generator must:</p>
+<ul>
+<li>Walk all markdown pages for rendering.</li>
+<li>Build nested sidebar navigation.</li>
+<li>Preserve folder ordering and titles.</li>
+</ul>
+<p>Folders and pages share metadata (<code>Name</code>, <code>RelativePath</code>, <code>Title</code>, <code>Order</code>) but differ in behavior: folders <strong>contain</strong> nodes; pages <strong>hold markdown source</strong>.</p>
+<h3 id="class-roles">Class roles</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Pattern role</th>
+<th>What it contains</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>ContentNode</code></strong></td>
+<td>Component (abstract)</td>
+<td>Shared: <code>Name</code>, <code>RelativePath</code>, <code>Title</code>, <code>Order</code></td>
+<td>Uniform base type for all traversal entry points. Source documents: <em>"Composite pattern: base node in the content tree."</em></td>
+</tr>
+<tr>
+<td><strong><code>ContentFolder</code></strong></td>
+<td>Composite</td>
+<td><code>List&lt;ContentNode&gt; Children</code></td>
+<td>Can hold <code>MarkdownPage</code> and nested <code>ContentFolder</code>. Adding a child does not change folder's type.</td>
+</tr>
+<tr>
+<td><strong><code>MarkdownPage</code></strong></td>
+<td>Leaf</td>
+<td><code>RawMarkdown</code>, <code>HtmlContent</code>, <code>FrontMatter</code>, <code>TableOfContents</code>, paths</td>
+<td>Terminal node — no child list. Represents one renderable page.</td>
+</tr>
+<tr>
+<td><strong><code>NavigationBuilder</code></strong></td>
+<td>Client</td>
+<td>Static methods on <code>ContentNode</code></td>
+<td>Recurses tree without caring whether current node is folder or page.</td>
+</tr>
+<tr>
+<td><strong><code>SiteGenerator</code> / pipeline steps</strong></td>
+<td>Client</td>
+<td><code>CollectPages</code>, render steps</td>
+<td>Operate on <code>ContentFolder</code> root uniformly.</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-csharp">public abstract class ContentNode
+{
+    public required string Name { get; init; }
+    public required string RelativePath { get; init; }
+    public string? Title { get; set; }
+    public int Order { get; set; }
+}
+
+public sealed class ContentFolder : ContentNode
+{
+    public List&lt;ContentNode&gt; Children { get; } = [];
+}
+
+public sealed class MarkdownPage : ContentNode
+{
+    public required string SourceFilePath { get; init; }
+    public string RawMarkdown { get; set; } = string.Empty;
+    public string HtmlContent { get; set; } = string.Empty;
+    // ...
+}
+</code></pre>
+<h3 id="step-by-step-building-navigation">Step-by-step: building navigation</h3>
+<ol>
+<li><code>FileSystemContentReader</code> constructs a <code>ContentFolder</code> root with nested folders and <code>MarkdownPage</code> leaves.</li>
+<li>CLI or pipeline calls <code>NavigationBuilder.Build(rootFolder, activePagePath)</code>.</li>
+<li><code>BuildNode</code> receives a <code>ContentNode</code>:
+<ul>
+<li>If <strong><code>MarkdownPage</code></strong>: returns a <code>NavigationItem</code> with <code>Url = page.OutputRelativePath</code>, <code>IsActive</code> set from active path.</li>
+<li>If <strong><code>ContentFolder</code></strong>: creates a group <code>NavigationItem</code> (<code>Url = null</code>), loops <code>folder.Children</code>, recursively calls <code>BuildNode</code> for each child, adds results to <code>item.Children</code>.</li>
+</ul>
+</li>
+<li>Template renders nested <code>&lt;ul&gt;</code> from the resulting <code>NavigationItem</code> tree.</li>
+<li><code>NavigationBuilder.Flatten</code> performs a second uniform walk for flat sidebar layouts — same composite, different visitor-like operation.</li>
+</ol>
+<h3 id="step-by-step-collecting-all-pages">Step-by-step: collecting all pages</h3>
+<ol>
+<li>Pipeline step calls <code>NavigationBuilder.CollectPages(rootNode, pagesList)</code>.</li>
+<li>For a <strong>leaf</strong> (<code>MarkdownPage</code>): append to list, return.</li>
+<li>For a <strong>composite</strong> (<code>ContentFolder</code>): foreach child, recurse.</li>
+</ol>
+<p>No separate "folder walker" and "page walker" — one method, two cases on the shared <code>ContentNode</code> type.</p>
+<h3 id="composite-vs-inheritance-trap">Composite vs inheritance trap</h3>
+<p>Do <strong>not</strong> model <code>ContentFolder : MarkdownPage</code> or "a folder is a special page." MDWeb models <strong>"folder HAS children"</strong> — containment, not subtype polymorphism of behavior. Folders never render as HTML pages themselves.</p>
+<hr>
+<h2 id="example-2-skyui-compositeskyvalidator">Example 2: SkyUI — CompositeSkyValidator</h2>
+<h3 id="the-problem-1">The problem</h3>
+<p>Form fields need multiple validation rules (required, email format, min length). The field control should call <strong>one</strong> validator and receive <strong>one</strong> result — without knowing how many rules exist.</p>
+<h3 id="class-roles-1">Class roles</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Pattern role</th>
+<th>What it wraps</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>ISkyValidator</code></strong></td>
+<td>Component</td>
+<td><code>Validate(object?) → SkyValidationResult</code></td>
+<td>Leaf and composite share this interface.</td>
+</tr>
+<tr>
+<td><strong><code>RequiredValidator</code>, <code>EmailValidator</code>, …</strong></td>
+<td>Leaf</td>
+<td>Single rule logic</td>
+<td>Each validates independently.</td>
+</tr>
+<tr>
+<td><strong><code>CompositeSkyValidator</code></strong></td>
+<td>Composite</td>
+<td><code>IReadOnlyList&lt;ISkyValidator&gt; _validators</code></td>
+<td>Runs children in order; returns <strong>first failure</strong> or valid.</td>
+</tr>
+<tr>
+<td><strong><code>SkyFormField</code></strong></td>
+<td>Client</td>
+<td>Holds an <code>ISkyValidator</code> (often a composite)</td>
+<td>Calls <code>Validate</code> once on blur/submit.</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-csharp">public sealed class CompositeSkyValidator : ISkyValidator
+{
+    private readonly IReadOnlyList&lt;ISkyValidator&gt; _validators;
+
+    public SkyValidationResult Validate(object? value)
+    {
+        foreach (var validator in _validators)
+        {
+            var result = validator.Validate(value);
+            if (!result.IsValid) return result;
+        }
+        return SkyValidationResult.Valid;
+    }
+}
+</code></pre>
+<h3 id="step-by-step-validating-an-email-field">Step-by-step: validating an email field</h3>
+<ol>
+<li>View-model constructs <code>new CompositeSkyValidator(new RequiredValidator(), new EmailValidator())</code>.</li>
+<li>Assigns to <code>SkyFormField.Validator</code>.</li>
+<li>User leaves the field empty → <code>RequiredValidator</code> fails → composite returns immediately (short-circuit).</li>
+<li>User enters <code>"not-an-email"</code> → required passes, email fails.</li>
+<li>User enters valid email → all leaves pass → <code>SkyValidationResult.Valid</code>.</li>
+</ol>
+<p>The field never loops validators itself — the composite encapsulates child ordering and aggregation policy.</p>
+<p><strong>Note:</strong> This composite is a <strong>linear list</strong>, not a deep tree. GoF Composite allows both; the uniform <code>ISkyValidator</code> interface is the key teaching point.</p>
+<hr>
+<h2 id="example-3-skyui-filter-expression-tree">Example 3: SkyUI — Filter Expression Tree</h2>
+<h3 id="the-problem-2">The problem</h3>
+<p>The filter editor builds visual query trees: groups with AND/OR logic containing field conditions and nested groups. Operations needed:</p>
+<ul>
+<li>Bind tree to hierarchical UI (<code>ObservableCollection</code> children).</li>
+<li>Export to SQL without scattering <code>if (group) … else if (condition) …</code> across the codebase.</li>
+</ul>
+<h3 id="class-roles-2">Class roles</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Pattern role</th>
+<th>Children</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>FilterNodeBase</code></strong></td>
+<td>Component (abstract)</td>
+<td><code>abstract ObservableCollection&lt;FilterNodeBase&gt; Children</code></td>
+<td>Uniform node with <code>Parent</code>, <code>Depth</code>, <code>Accept(visitor)</code>.</td>
+</tr>
+<tr>
+<td><strong><code>FilterGroupNode</code></strong></td>
+<td>Composite</td>
+<td>Mutable <code>_children</code> collection; <code>LogicalKind</code> (And/Or)</td>
+<td><code>AddCondition</code>, <code>AddGroup</code> factory methods; wires <code>Parent</code> on collection changes.</td>
+</tr>
+<tr>
+<td><strong><code>FilterConditionNode</code></strong></td>
+<td>Leaf</td>
+<td>Returns <strong>empty</strong> <code>_emptyChildren</code> collection</td>
+<td>Field path, operator, value — terminal predicate.</td>
+</tr>
+<tr>
+<td><strong><code>BasicFilterSqlExporter.Visitor</code></strong></td>
+<td>Client (Visitor pattern)</td>
+<td>—</td>
+<td><code>VisitGroup</code> recurses via <code>child.Accept(this)</code>; <code>VisitCondition</code> emits SQL fragment.</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-csharp">public sealed class FilterGroupNode : FilterNodeBase
+{
+    private readonly ObservableCollection&lt;FilterNodeBase&gt; _children = new();
+    public FilterLogicalKind LogicalKind { get; set; }  // And / Or
+
+    public FilterConditionNode AddCondition(string fieldPath, FilterCompareOperator op, ...)
+    public FilterGroupNode AddGroup(FilterLogicalKind kind = FilterLogicalKind.And)
+}
+</code></pre>
+<h3 id="step-by-step-sql-export-walk">Step-by-step: SQL export walk</h3>
+<ol>
+<li>User builds tree in UI: root AND group → condition <code>"Name" Contains "foo"</code> + nested OR group with two conditions.</li>
+<li>User clicks Export → <code>BasicFilterSqlExporter.ToSql(document)</code>.</li>
+<li>Exporter calls <code>document.Root.Accept(new Visitor())</code>.</li>
+<li><strong>At a group:</strong> visitor loops <code>node.Children</code>, each <code>child.Accept(this)</code>, joins with <code>" AND "</code> or <code>" OR "</code>, wraps in parentheses.</li>
+<li><strong>At a condition:</strong> visitor emits <code>"\"FieldPath\" LIKE '%' || 'value' || '%'"</code> (or appropriate operator).</li>
+<li>Client receives one SQL string — never inspected node concrete types.</li>
+</ol>
+<p>Composite gives <strong>structure</strong>; Visitor (Part 4) gives <strong>operations</strong> without modifying node classes. Together they replace duplicated traversal switches.</p>
+<hr>
+<h2 id="composite-operations-summary">Composite Operations Summary</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Operation</th>
+<th>MDWeb</th>
+<th>SkyUI Filter</th>
+<th>SkyUI Validation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Traverse</strong></td>
+<td><code>NavigationBuilder.BuildNode</code></td>
+<td><code>Accept(visitor)</code></td>
+<td><code>CompositeSkyValidator.Validate</code></td>
+</tr>
+<tr>
+<td><strong>Add child</strong></td>
+<td><code>folder.Children.Add(page)</code></td>
+<td><code>group.AddCondition(...)</code></td>
+<td><code>new CompositeSkyValidator(a, b, c)</code></td>
+</tr>
+<tr>
+<td><strong>Uniform treat</strong></td>
+<td>Folder or page in nav</td>
+<td>Group or condition in export</td>
+<td>Single or composite validator</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="when-composite-fits">When Composite Fits</h2>
+<ul>
+<li>Tree-structured domain models (filesystem, org charts, scene graphs, filter ASTs).</li>
+<li>Multiple algorithms over the same tree (nav, search, export, validate).</li>
+<li>UI binding where containers and leaves appear in one control (tree view, filter designer).</li>
+</ul>
+<p><strong>Safety:</strong> define whether composites propagate operations to all children (validation: fail-fast) or aggregate results (filter SQL: combine all). Document the policy on the composite class.</p>
+<h2 id="next">Next</h2>
+<p><a href="05-decorator.html">Decorator →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#composite">Composite</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#the-structural-problem-part-whole-hierarchies">The Structural Problem: Part-Whole Hierarchies</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#uml-roles-general-mapping">UML Roles — General Mapping</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-1-mdweb-content-tree-excellent">Example 1: MDWeb — Content Tree (Excellent)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#class-roles">Class roles</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#step-by-step-building-navigation">Step-by-step: building navigation</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#step-by-step-collecting-all-pages">Step-by-step: collecting all pages</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#composite-vs-inheritance-trap">Composite vs inheritance trap</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-2-skyui-compositeskyvalidator">Example 2: SkyUI — CompositeSkyValidator</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#class-roles">Class roles</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#step-by-step-validating-an-email-field">Step-by-step: validating an email field</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-3-skyui-filter-expression-tree">Example 3: SkyUI — Filter Expression Tree</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#class-roles">Class roles</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#step-by-step-sql-export-walk">Step-by-step: SQL export walk</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#composite-operations-summary">Composite Operations Summary</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#when-composite-fits">When Composite Fits</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clean Architecture in Practice · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>Clean Architecture in Practice</h1>
+          </header>
+          <div class="doc-body"><h1 id="clean-architecture-in-practice">Clean Architecture in Practice</h1>
+<p>This chapter walks four projects that implement the dependency rule differently — from textbook four-layer MDWeb to contracts-first RainDB and header-based Spark.</p>
+<hr>
+<h2 id="mdweb-textbook-four-layer-split">MDWeb — Textbook Four-Layer Split</h2>
+<p>MDWeb is the clearest Clean Architecture example in the corpus.</p>
+<h3 id="project-map">Project Map</h3>
+<pre><code>MDWeb.Core/              ← innermost: zero project references
+  Abstractions/          ← 15+ port interfaces
+  Models/                ← SiteConfiguration, ContentNode, MarkdownPage
+MDWeb.Application/       ← use cases only → references Core
+  Pipeline/              ← IGenerationStep implementations
+  Generation/            ← SiteGenerator facade
+  Building/              ← SiteBuilder
+MDWeb.Infrastructure/    ← adapters → references Core only
+  Rendering/             ← MarkdigMarkdownRenderer
+  Templating/            ← ScribanTemplateEngine
+  Content/               ← FileSystemContentReader
+MDWeb.Cli/               ← composition root → Application + Infrastructure
+</code></pre>
+<h3 id="dependency-graph">Dependency Graph</h3>
+<pre><code>MDWeb.Cli
+├── MDWeb.Application ──→ MDWeb.Core
+└── MDWeb.Infrastructure ──→ MDWeb.Core
+</code></pre>
+<p>Application and Infrastructure are <strong>siblings</strong>. Infrastructure never references Application.</p>
+<h3 id="port-adapter-table">Port → Adapter Table</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Port (<code>MDWeb.Core</code>)</th>
+<th>Adapter (<code>MDWeb.Infrastructure</code>)</th>
+<th>What it hides</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>IContentReader</code></td>
+<td><code>FileSystemContentReader</code></td>
+<td>Filesystem scan, frontmatter parse</td>
+</tr>
+<tr>
+<td><code>IMarkdownRenderer</code></td>
+<td><code>MarkdigMarkdownRenderer</code>, <code>WeChatMarkdownRenderer</code></td>
+<td>Markdig pipeline config</td>
+</tr>
+<tr>
+<td><code>ITemplateEngine</code></td>
+<td><code>ScribanTemplateEngine</code></td>
+<td>Scriban script execution</td>
+</tr>
+<tr>
+<td><code>IOutputWriter</code></td>
+<td><code>FileSystemOutputWriter</code></td>
+<td>Directory create, file write</td>
+</tr>
+<tr>
+<td><code>IDocumentExporter</code></td>
+<td><code>PuppeteerPdfDocumentExporter</code></td>
+<td>Headless Chrome PDF</td>
+</tr>
+<tr>
+<td><code>IHtmlPostProcessor</code></td>
+<td><code>PassThroughHtmlPostProcessor</code>, <code>WeChatHtmlPostProcessor</code></td>
+<td>Publish-mode HTML transforms</td>
+</tr>
+</tbody>
+</table>
+<h3 id="use-case-example-rendermarkdownstep">Use Case Example — RenderMarkdownStep</h3>
+<p>Application layer step depends on port:</p>
+<pre><code class="language-csharp">public sealed class RenderMarkdownStep(IMarkdownRenderer markdownRenderer) : IGenerationStep
+{
+    public Task ExecuteAsync(SiteContext context, CancellationToken ct)
+    {
+        foreach (var page in context.AllPages)
+        {
+            var result = markdownRenderer.Render(page.RawMarkdown);
+            page.HtmlContent = result.Html;
+        }
+        return Task.CompletedTask;
+    }
+}
+</code></pre>
+<p><strong>No <code>using Markdig</code></strong> in Application. Swapping renderers is Infrastructure + composition root concern.</p>
+<h3 id="composition-root-program.cs">Composition Root — Program.cs</h3>
+<pre><code class="language-csharp">services.AddMDWebApplication();
+services.AddMDWebInfrastructure(themeDir);
+</code></pre>
+<p>Infrastructure DI selects renderer by theme manifest:</p>
+<pre><code class="language-csharp">services.AddSingleton&lt;IMarkdownRenderer&gt;(sp =&gt;
+manifest.PublishMode == PublishMode.WeChat
+    ? sp.GetRequiredService&lt;WeChatMarkdownRenderer&gt;()
+    : sp.GetRequiredService&lt;MarkdigMarkdownRenderer&gt;());
+</code></pre>
+<p><strong>Walkthrough:</strong> CLI parses <code>--theme</code> → loads manifest → registers WeChat or site renderer → pipeline steps receive correct strategy without conditional logic in steps.</p>
+<hr>
+<h2 id="imgkit-application-centric-hexagon">ImgKit — Application-Centric Hexagon</h2>
+<p>ImgKit uses a pragmatic layout: ports live in <code>ImgKit.Application/Abstractions</code>, not a separate Core project.</p>
+<h3 id="layer-map">Layer Map</h3>
+<pre><code>ImgKit.Api/           ← REST controllers (presentation)
+ImgKit.Web/           ← Blazor studio (presentation)
+ImgKit.Application/   ← use cases, handlers, strategies, abstractions
+ImgKit.Infrastructure/← thin: PillowNet runtime bootstrap
+</code></pre>
+<h3 id="dependency-direction">Dependency Direction</h3>
+<pre><code>Api → Application, Infrastructure
+Application ↛ Api, Web (no upward refs)
+Handlers → ITempImageFileStore, IImageFilterStrategyFactory (ports in Application)
+</code></pre>
+<h3 id="thin-controller-fat-handler">Thin Controller — Fat Handler</h3>
+<p><code>ImagesController</code> maps HTTP to commands:</p>
+<pre><code class="language-csharp">[HttpPost("resize")]
+public async Task&lt;IActionResult&gt; Resize(IFormFile image, [FromForm] ResizeImageRequest request, ...)
+{
+    var command = new ResizeImageCommand { Image = await image.ToImageInputAsync(...), ... };
+    var result = await mediator.SendAsync(command, cancellationToken);
+    return ToFileResult(result);
+}
+</code></pre>
+<p>Controller knows HTTP (<code>IFormFile</code>). Handler knows image processing. <strong>Separation of presentation from use case.</strong></p>
+<h3 id="cross-library-ports">Cross-Library Ports</h3>
+<p>ImgKit consumes <strong>LightMediator</strong> (dispatch) and <strong>LightMapper</strong> (DTO mapping) as application-layer infrastructure — handlers stay free of manual property copying and direct handler resolution.</p>
+<h3 id="pragmatic-leak">Pragmatic Leak</h3>
+<p><code>TempImageFileStore</code> concrete class registers inside Application DI — file I/O slightly inside the "use case" ring. Acceptable for small apps; larger systems move it to Infrastructure.</p>
+<hr>
+<h2 id="raindb-contracts-first-engine">RainDB — Contracts-First Engine</h2>
+<p>RainDB optimizes for <strong>library consumers</strong> embedding an analytics engine.</p>
+<h3 id="assembly-rings">Assembly Rings</h3>
+<pre><code>RainDB.Abstractions/   ← ICatalog, IQueryExecutor, IPhysicalPlan, IBufferPool
+RainDB.Core/           ← catalog impl, MemoryTable, columnar storage
+RainDB.Query/          ← execution engines, physical operators
+RainDB.Sql/            ← SQL text → physical plan
+RainDB.Linq/           ← expression trees → physical plan
+RainDB.Driver/           ← RainDbEngine composition root + public API
+</code></pre>
+<h3 id="srp-at-subsystem-boundary">SRP at Subsystem Boundary</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Compiler</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ISqlCompiler</code></td>
+<td>SQL → <code>IPhysicalPlan</code></td>
+</tr>
+<tr>
+<td><code>ILinqCompiler</code></td>
+<td>Expression → <code>IPhysicalPlan</code></td>
+</tr>
+<tr>
+<td><code>IQueryExecutor</code></td>
+<td>Run plan, return <code>IQueryResult</code></td>
+</tr>
+</tbody>
+</table>
+<p><code>IQueryExecutor</code> XML docs: <em>"SRP: parsing/planning live elsewhere."</em></p>
+<h3 id="raindbengine-facade-composition-root">RainDbEngine — Facade + Composition Root</h3>
+<pre><code class="language-csharp">public sealed class RainDbEngine
+{
+    public ICatalog Catalog { get; }
+    public ISqlCompiler SqlCompiler { get; }
+    public ILinqCompiler LinqCompiler { get; }
+    public IQueryExecutor Executor { get; }
+
+    public static RainDbEngine CreateDefault(ICatalog catalog)
+    {
+        var buffers = new HybridBufferPool();
+        return new RainDbEngine(catalog, buffers, buffers,
+            new DefaultQueryExecutor(), new DefaultSqlCompiler(), new DefaultLinqCompiler(),
+            NoOpSpillWriter.Instance);
+    }
+}
+</code></pre>
+<p>Consumers call <code>engine.ExecuteSqlAsync("SELECT ...")</code> — not <code>new DefaultSqlCompiler()</code> manually.</p>
+<h3 id="iexecutioncontext-dip-bundle">IExecutionContext — DIP Bundle</h3>
+<p>Operators receive execution dependencies as one port:</p>
+<pre><code class="language-csharp">public interface IExecutionContext
+{
+    ICatalog Catalog { get; }
+    IBufferPool BufferPool { get; }
+    IAlignedBufferPool AlignedBufferPool { get; }
+    ISpillWriter SpillWriter { get; }
+    CancellationToken CancellationToken { get; }
+}
+</code></pre>
+<p>Tests inject in-memory catalog and <code>NoOpSpillWriter.Instance</code> without touching operator code.</p>
+<hr>
+<h2 id="spark-clean-architecture-in-c">Spark — Clean Architecture in C++</h2>
+<p>Spark uses <strong>headers as public contracts</strong> instead of .NET assemblies.</p>
+<h3 id="layout">Layout</h3>
+<pre><code>include/spark/     ← public API (IEngineContext, IGame, IShape2D, IUiBackend)
+src/spark/         ← Vulkan, GLFW, implementations (games must not include)
+</code></pre>
+<h3 id="dependency-inversion-for-games">Dependency Inversion for Games</h3>
+<p>Games implement <code>IGame</code> and receive <code>IEngineContext</code>:</p>
+<pre><code class="language-cpp">class IEngineContext {
+    virtual Window&amp; GetWindow() = 0;
+    virtual IInput&amp; GetInput() = 0;
+    virtual Scene* TryGetScene() noexcept = 0;
+};
+</code></pre>
+<p>Demo code never <code>#include</code>s Vulkan headers. <code>Engine</code> owns subsystems; <code>EngineContext</code> implements the facade.</p>
+<h3 id="documented-philosophy">Documented Philosophy</h3>
+<p>Spark's programming guide states: <strong>games depend on <code>IGame</code> / <code>IEngineContext</code>, not <code>VulkanRenderer</code>.</strong></p>
+<p>Same dependency rule, native code idioms.</p>
+<hr>
+<h2 id="skyui-package-layering-not-domain-ca">SkyUI — Package Layering (Not Domain CA)</h2>
+<p>SkyUI is a <strong>UI framework</strong>, not a business application. Layering is horizontal:</p>
+<pre><code>SkyUI.Core → SkyUI → SkyUI.Data / SkyUI.Diagram
+</code></pre>
+<p><code>ISkyColorPalette</code>, <code>IVirtualGridDataSource</code>, <code>IEdgePathComputer</code> are <strong>framework extension ports</strong> — OCP for themes and routing, not enterprise domain.</p>
+<p>Still teaches <strong>modular presentation architecture</strong>.</p>
+<hr>
+<h2 id="comparison-table">Comparison Table</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Project</th>
+<th>Inner ring</th>
+<th>Composition root</th>
+<th>Best teaching angle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MDWeb</td>
+<td><code>MDWeb.Core</code></td>
+<td><code>MDWeb.Cli/Program.cs</code></td>
+<td>Strict four-layer CA</td>
+</tr>
+<tr>
+<td>ImgKit</td>
+<td>Application abstractions</td>
+<td><code>ImgKit.Api/Program.cs</code></td>
+<td>CQRS + hexagonal pragmatism</td>
+</tr>
+<tr>
+<td>RainDB</td>
+<td><code>RainDB.Abstractions</code></td>
+<td><code>RainDbEngine.CreateDefault</code></td>
+<td>Engine/library CA</td>
+</tr>
+<tr>
+<td>Spark</td>
+<td><code>include/spark/</code></td>
+<td><code>main.cpp</code> / <code>Engine</code> ctor</td>
+<td>C++ DIP</td>
+</tr>
+<tr>
+<td>SkyUI</td>
+<td><code>SkyUI.Core</code></td>
+<td>Demo <code>App.axaml</code></td>
+<td>UI package modularity</td>
+</tr>
+</tbody>
+</table>
+<h2 id="next">Next</h2>
+<p><a href="07-cqrs-fundamentals.html">CQRS Fundamentals →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#clean-architecture-in-practice">Clean Architecture in Practice</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#mdweb-textbook-four-layer-split">MDWeb — Textbook Four-Layer Split</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#project-map">Project Map</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#dependency-graph">Dependency Graph</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#port-adapter-table">Port → Adapter Table</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#use-case-example-rendermarkdownstep">Use Case Example — RenderMarkdownStep</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#composition-root-programcs">Composition Root — Program.cs</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#imgkit-application-centric-hexagon">ImgKit — Application-Centric Hexagon</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#layer-map">Layer Map</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#dependency-direction">Dependency Direction</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#thin-controller-fat-handler">Thin Controller — Fat Handler</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#cross-library-ports">Cross-Library Ports</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#pragmatic-leak">Pragmatic Leak</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#raindb-contracts-first-engine">RainDB — Contracts-First Engine</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#assembly-rings">Assembly Rings</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#srp-at-subsystem-boundary">SRP at Subsystem Boundary</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#raindbengine-facade-composition-root">RainDbEngine — Facade + Composition Root</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#iexecutioncontext-dip-bundle">IExecutionContext — DIP Bundle</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#spark-clean-architecture-in-c">Spark — Clean Architecture in C++</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#layout">Layout</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#dependency-inversion-for-games">Dependency Inversion for Games</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#documented-philosophy">Documented Philosophy</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#skyui-package-layering-not-domain-ca">SkyUI — Package Layering (Not Domain CA)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#comparison-table">Comparison Table</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

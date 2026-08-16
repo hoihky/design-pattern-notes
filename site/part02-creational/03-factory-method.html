@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Factory Method · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>Factory Method</h1>
+          </header>
+          <div class="doc-body"><h1 id="factory-method">Factory Method</h1>
+<p><strong>Intent:</strong> Define an interface for creating an object, but let subclasses (or dedicated factory types) decide which class to instantiate.</p>
+<p>Factory Method solves the <strong>"which concrete type?"</strong> problem. Client code needs a product but should not embed the rules that pick <code>BoxShape2D</code> vs <code>CircleShape2D</code>, <code>DiagramNodePresenter</code> vs a custom presenter, or a full Markdig pipeline vs a WeChat-restricted one. Those rules live in one factory; callers depend on the product interface.</p>
+<h2 id="structure">Structure</h2>
+<pre class="mermaid">classDiagram
+    class Creator {
+        +factoryMethod() Product
+    }
+    class ConcreteCreator {
+        +factoryMethod() Product
+    }
+    Creator &lt;|-- ConcreteCreator
+    Product &lt;|.. ConcreteProduct
+    ConcreteCreator ..&gt; ConcreteProduct : creates
+</pre>
+<h3 id="gof-participants">GoF Participants</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Product</strong></td>
+<td>Interface or base type the client uses (<code>IShape2D</code>, <code>IDiagramNodePresenter</code>)</td>
+</tr>
+<tr>
+<td><strong>ConcreteProduct</strong></td>
+<td>Class actually constructed (<code>BoxShape2D</code>, <code>DiagramNodePresenter</code>)</td>
+</tr>
+<tr>
+<td><strong>Creator</strong></td>
+<td>Declares the factory method; may provide default implementation</td>
+</tr>
+<tr>
+<td><strong>ConcreteCreator</strong></td>
+<td>Overrides factory method to return a specific concrete product</td>
+</tr>
+</tbody>
+</table>
+<p>Modern code often collapses Creator and ConcreteCreator into a single static class (<code>ShapeFactory2D</code>) or interface implementation (<code>DefaultDiagramNodePresenterFactory</code>).</p>
+<h2 id="variants-in-modern-code">Variants in Modern Code</h2>
+<ol>
+<li><strong>Virtual factory method</strong> — override in subclass (classic GoF)</li>
+<li><strong>Static factory method</strong> — <code>Mesh::CreateUnitCube()</code> on the product's companion type</li>
+<li><strong>Interface factory</strong> — <code>IDiagramNodePresenterFactory.CreatePresenter()</code></li>
+<li><strong>Template factory</strong> — <code>GameObject::AddComponent&lt;T&gt;()</code> (Spark ECS)</li>
+<li><strong>Composition-root factory</strong> — <code>RainDbEngine.CreateDefault()</code> wires a full object graph</li>
+</ol>
+<hr>
+<h2 id="example-1-spark-shapefactory2d">Example 1: Spark — ShapeFactory2D</h2>
+<h3 id="the-problem">The Problem</h3>
+<p>Spark's 2D physics narrow phase operates on <code>IShape2D</code> — axis-aligned boxes, circles, convex polygons. Shapes are built from many sources: raw AABBs, baked tilemap colliders, ECS <code>BoxCollider2DComponent</code> on live <code>GameObject</code>s. Each source requires different math (world-space transform, polygon bake). If every callsite did <code>new BoxShape2D(...)</code>, collider conversion logic would duplicate across <code>DynamicCollider2D</code>, <code>ColliderBakeStrategies2D</code>, and tests.</p>
+<h3 id="classes-and-responsibilities">Classes and Responsibilities</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>ShapeFactory2D</code></strong></td>
+<td>Creator (static)</td>
+<td>Named factory methods; picks concrete shape type</td>
+</tr>
+<tr>
+<td><strong><code>IShape2D</code></strong></td>
+<td>Product</td>
+<td>Collision query interface for narrow phase</td>
+</tr>
+<tr>
+<td><strong><code>BoxShape2D</code></strong></td>
+<td>ConcreteProduct</td>
+<td>AABB-backed shape</td>
+</tr>
+<tr>
+<td><strong><code>CircleShape2D</code></strong></td>
+<td>ConcreteProduct</td>
+<td>Circle with center + radius</td>
+</tr>
+<tr>
+<td><strong><code>ConvexPolygonShape2D</code></strong></td>
+<td>ConcreteProduct</td>
+<td>Baked polygon vertices</td>
+</tr>
+<tr>
+<td><strong><code>BoxCollider2DComponent</code></strong></td>
+<td>Input data</td>
+<td>ECS component; not a shape — factory reads it</td>
+</tr>
+<tr>
+<td><strong><code>GameObject</code></strong></td>
+<td>Context</td>
+<td>Supplies transform for world-space conversion</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Relationships:</strong> Factory methods return <code>UniquePtr&lt;IShape2D&gt;</code> — exclusive ownership transfers to the physics pipeline. Collider components never implement <code>IShape2D</code>; the factory bridges ECS and physics.</p>
+<h3 id="object-creation-flow">Object Creation Flow</h3>
+<p><strong>Path A — direct geometry:</strong></p>
+<ol>
+<li>Client calls <code>ShapeFactory2D::CreateBox(aabb)</code></li>
+<li>Factory executes <code>return UniquePtr&lt;IShape2D&gt;(new BoxShape2D(aabb))</code></li>
+<li>Caller receives abstract pointer; narrow phase calls virtual methods on <code>IShape2D</code></li>
+</ol>
+<p><strong>Path B — from live collider:</strong></p>
+<ol>
+<li>Client calls <code>CreateFromBoxCollider(owner, collider)</code></li>
+<li>Factory calls <code>ComputeBoxCollider2WorldAabb(owner, collider, aabb)</code> — domain logic centralized here</li>
+<li>Factory delegates to <code>CreateBox(aabb)</code> → <code>BoxShape2D</code></li>
+<li><code>DynamicCollider2D</code> stores the <code>UniquePtr&lt;IShape2D&gt;</code> on the collider snapshot</li>
+</ol>
+<p><strong>Path C — dispatch from baked static collider:</strong></p>
+<ol>
+<li><code>CreateFromStaticCollider(collider)</code> inspects <code>collider.shape</code> enum</li>
+<li>Circle → <code>CreateCircle(...)</code>; ConvexPolygon → <code>CreateConvexPolygon(...)</code>; else → <code>CreateBox(...)</code></li>
+</ol>
+<pre><code class="language-cpp">/** Factory for ECS-free 2D shapes (Factory Method). */
+class ShapeFactory2D {
+public:
+    static UniquePtr&lt;IShape2D&gt; CreateBox(CollisionAabb2 aabb);
+    static UniquePtr&lt;IShape2D&gt; CreateCircle(float centerX, float centerY, float radius);
+    static UniquePtr&lt;IShape2D&gt; CreateFromBoxCollider(GameObject&amp; owner, const BoxCollider2DComponent&amp; collider);
+    // ...
+};
+</code></pre>
+<h3 id="participant-mapping">Participant Mapping</h3>
+<table class="table">
+<thead>
+<tr>
+<th>GoF</th>
+<th>Spark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Creator</td>
+<td><code>ShapeFactory2D</code></td>
+</tr>
+<tr>
+<td>Product</td>
+<td><code>IShape2D</code></td>
+</tr>
+<tr>
+<td>ConcreteProduct</td>
+<td><code>BoxShape2D</code>, <code>CircleShape2D</code>, <code>ConvexPolygonShape2D</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="when-you-see-this-in-the-wild">When You See This in the Wild</h3>
+<p>Platform-specific object creation, enum-to-type dispatch, "convert DTO/component to domain model" helpers that return interfaces.</p>
+<h3 id="common-mistakes">Common Mistakes</h3>
+<ul>
+<li>Returning concrete types from factory methods — defeats the purpose; callers re-couple to <code>BoxShape2D</code></li>
+<li>Putting business logic unrelated to creation in the factory — keep conversion/bake rules; don't add simulation steps</li>
+</ul>
+<hr>
+<h2 id="example-2-spark-mesh-static-creators">Example 2: Spark — Mesh Static Creators</h2>
+<h3 id="the-problem-1">The Problem</h3>
+<p>Demos and the Vulkan renderer need procedural meshes (unit cube, ground plane, sky sphere) with correct vertex layouts, normals, and index topology. Hand-building vertex buffers at every demo duplicates error-prone geometry code.</p>
+<h3 id="classes-and-responsibilities-1">Classes and Responsibilities</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>Mesh</code></strong></td>
+<td>Product + Creator</td>
+<td>Holds vertex/index data; static methods build canonical meshes</td>
+</tr>
+<tr>
+<td><strong><code>CreateUnitCube()</code></strong></td>
+<td>Factory method</td>
+<td>Emits 24-vertex cube with per-face normals</td>
+</tr>
+<tr>
+<td><strong><code>CreateGroundPlane()</code></strong></td>
+<td>Factory method</td>
+<td>Large horizontal quad for shadows/reflections</td>
+</tr>
+<tr>
+<td><strong><code>CreateSkySphere()</code></strong></td>
+<td>Factory method</td>
+<td>Inverted sphere for skydome rendering</td>
+</tr>
+</tbody>
+</table>
+<h3 id="object-creation-flow-1">Object Creation Flow</h3>
+<ol>
+<li>Demo calls <code>Mesh::CreateUnitCube()</code> during asset initialization</li>
+<li>Factory method fills <code>std::vector&lt;Vertex&gt;</code> and index buffer with known topology</li>
+<li>Returns <code>Mesh</code> by value (move-elided) or stored in <code>SharedPtr&lt;Mesh&gt;</code> via <code>MakeShared</code></li>
+<li><code>ComponentSnapshotRegistry</code> deserializes mesh placeholders by calling the same factory — consistent geometry on load</li>
+</ol>
+<pre><code class="language-cpp">static Mesh CreateUnitCube();
+static Mesh CreateGroundPlane(float size);
+static Mesh CreateSkySphere(float radius);
+</code></pre>
+<h3 id="participant-mapping-1">Participant Mapping</h3>
+<table class="table">
+<thead>
+<tr>
+<th>GoF</th>
+<th>Spark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Creator</td>
+<td><code>Mesh</code> (static methods)</td>
+</tr>
+<tr>
+<td>Product</td>
+<td><code>Mesh</code></td>
+</tr>
+<tr>
+<td>ConcreteProduct</td>
+<td>Same class — variant selected by method name, not subtype</td>
+</tr>
+</tbody>
+</table>
+<p>This is the <strong>Simple Factory</strong> / static factory method variant: one product class, multiple construction recipes.</p>
+<h3 id="when-you-see-this-in-the-wild-1">When You See This in the Wild</h3>
+<p><code>File.OpenRead</code>, <code>Task.Run</code>, <code>TimeSpan.FromMinutes</code> — named construction methods on the product type.</p>
+<h3 id="common-mistakes-1">Common Mistakes</h3>
+<ul>
+<li>One mega-method with enum parameter (<code>CreateMesh(MeshKind kind)</code>) when named methods are clearer and type-safe</li>
+</ul>
+<hr>
+<h2 id="example-3-spark-imguilayerfactory">Example 3: Spark — ImGuiLayerFactory</h2>
+<h3 id="the-problem-2">The Problem</h3>
+<p>The engine bootstrap needs an <code>IImGuiLayer</code> for Vulkan-backed Dear ImGui, but the concrete class ties to renderer internals. Bootstrap code should call one function, not include backend headers.</p>
+<h3 id="classes-and-responsibilities-2">Classes and Responsibilities</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>CreateImGuiLayer()</code></strong></td>
+<td>Free-function Creator</td>
+<td>Returns <code>UniquePtr&lt;IImGuiLayer&gt;</code></td>
+</tr>
+<tr>
+<td><strong><code>IImGuiLayer</code></strong></td>
+<td>Product</td>
+<td>ImGui frame interface</td>
+</tr>
+<tr>
+<td><strong>Concrete ImGui layer</strong></td>
+<td>ConcreteProduct</td>
+<td>Vulkan-specific implementation (hidden)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="object-creation-flow-2">Object Creation Flow</h3>
+<ol>
+<li><code>Engine.cpp</code> calls <code>CreateImGuiLayer()</code> during renderer setup</li>
+<li>Factory allocates concrete layer with backend dependencies</li>
+<li><code>UiSystem::BindImGuiLayer(layer.get())</code> connects UI system to renderer</li>
+<li>Engine never references the concrete class name</li>
+</ol>
+<h3 id="when-you-see-this-in-the-wild-2">When You See This in the Wild</h3>
+<p>Free-function factories in C++ to avoid exposing implementation types in public headers.</p>
+<hr>
+<h2 id="example-4-skyui-diagramnodepresenterfactory">Example 4: SkyUI — DiagramNodePresenterFactory</h2>
+<h3 id="the-problem-3">The Problem</h3>
+<p><code>DiagramSurface</code> renders graph nodes. Default nodes use standard chrome; host applications may need custom presenters for domain-specific nodes (ER diagrams, state machines). The surface must not hardcode <code>new DiagramNodePresenter(...)</code> for every node added.</p>
+<h3 id="classes-and-responsibilities-3">Classes and Responsibilities</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>IDiagramNodePresenterFactory</code></strong></td>
+<td>Creator interface</td>
+<td><code>CreatePresenter(host, node)</code></td>
+</tr>
+<tr>
+<td><strong><code>DefaultDiagramNodePresenterFactory</code></strong></td>
+<td>ConcreteCreator</td>
+<td>Returns standard <code>DiagramNodePresenter</code></td>
+</tr>
+<tr>
+<td><strong><code>DiagramSurface</code></strong></td>
+<td>Client</td>
+<td>Holds <code>NodeFactory</code> styled property; calls factory when syncing nodes</td>
+</tr>
+<tr>
+<td><strong><code>DiagramNode</code></strong></td>
+<td>Input</td>
+<td>Model data driving presenter choice</td>
+</tr>
+<tr>
+<td><strong><code>Control</code></strong></td>
+<td>Product (Avalonia)</td>
+<td>Visual root returned to the diagram</td>
+</tr>
+</tbody>
+</table>
+<h3 id="object-creation-flow-3">Object Creation Flow</h3>
+<ol>
+<li><code>DiagramSurface</code> constructor sets <code>NodeFactory = new DefaultDiagramNodePresenterFactory()</code></li>
+<li>When a node is added to the model, surface calls <code>NodeFactory.CreatePresenter(this, node)</code></li>
+<li>Factory returns <code>Control</code> (presenter) parented into the diagram canvas</li>
+<li>Tests assign a fake factory via <code>NodeFactory</code> property before loading nodes</li>
+<li>Custom apps subclass or implement <code>IDiagramNodePresenterFactory</code> for alternate visuals</li>
+</ol>
+<pre><code class="language-csharp">public interface IDiagramNodePresenterFactory
+{
+    Control CreatePresenter(DiagramSurface host, DiagramNode node);
+}
+</code></pre>
+<h3 id="participant-mapping-2">Participant Mapping</h3>
+<table class="table">
+<thead>
+<tr>
+<th>GoF</th>
+<th>SkyUI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Creator</td>
+<td><code>IDiagramNodePresenterFactory</code></td>
+</tr>
+<tr>
+<td>ConcreteCreator</td>
+<td><code>DefaultDiagramNodePresenterFactory</code></td>
+</tr>
+<tr>
+<td>Product</td>
+<td><code>Control</code> (presenter implementation)</td>
+</tr>
+<tr>
+<td>Client</td>
+<td><code>DiagramSurface</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="when-you-see-this-in-the-wild-3">When You See This in the Wild</h3>
+<p>Pluggable UI cell/item templates, ASP.NET <code>IControllerActivator</code>, view-model factories in MVVM frameworks.</p>
+<h3 id="common-mistakes-2">Common Mistakes</h3>
+<ul>
+<li>Factory that takes 15 parameters — pass a context object (<code>DiagramSurface</code>, <code>DiagramNode</code>)</li>
+<li>Creating presenters in the model layer — keep creation at the view boundary</li>
+</ul>
+<hr>
+<h2 id="example-5-skyui-skyvalidators-factory-methods">Example 5: SkyUI — SkyValidators Factory Methods</h2>
+<h3 id="the-problem-4">The Problem</h3>
+<p>Form fields need validators (<code>Required</code>, <code>Email</code>, <code>Range</code>) composed at declaration time. Callers should depend on <code>ISkyValidator</code>, not concrete validator classes, so validation rules stay swappable and composable.</p>
+<h3 id="classes-and-responsibilities-4">Classes and Responsibilities</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>SkyValidators</code></strong></td>
+<td>Creator (static)</td>
+<td>Named factory methods per rule type</td>
+</tr>
+<tr>
+<td><strong><code>ISkyValidator</code></strong></td>
+<td>Product</td>
+<td><code>Validate(value)</code> contract</td>
+</tr>
+<tr>
+<td><strong><code>RequiredValidator</code>, <code>EmailValidator</code>, ...</strong></td>
+<td>ConcreteProduct</td>
+<td>Rule implementations</td>
+</tr>
+</tbody>
+</table>
+<h3 id="object-creation-flow-4">Object Creation Flow</h3>
+<ol>
+<li>ViewModel declares: <code>SkyValidators.Required("Email is required.")</code>, <code>SkyValidators.Email()</code></li>
+<li>Each static method allocates concrete validator, returns <code>ISkyValidator</code></li>
+<li><code>SkyFormField</code> runs validators on value change — depends only on interface</li>
+<li><code>CompositeSkyValidator</code> combines multiple <code>ISkyValidator</code> instances (related composite pattern)</li>
+</ol>
+<h3 id="when-you-see-this-in-the-wild-4">When You See This in the Wild</h3>
+<p><code>Enum.Parse&lt;T&gt;</code>, logging <code>Log.ForContext&lt;T&gt;()</code>, FluentValidation <code>RuleFor</code> builders that return configured validators.</p>
+<hr>
+<h2 id="example-6-mdweb-markdownpipelinefactory">Example 6: MDWeb — MarkdownPipelineFactory</h2>
+<h3 id="the-problem-5">The Problem</h3>
+<p>MDWeb renders markdown for two channels: full documentation sites (diagrams, Bootstrap, auto-IDs) and WeChat export (restricted extensions, no diagram support). Embedding pipeline construction inside each renderer duplicates Markdig configuration and risks drift between channels.</p>
+<h3 id="classes-and-responsibilities-5">Classes and Responsibilities</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>MarkdownPipelineFactory</code></strong></td>
+<td>Creator (static)</td>
+<td><code>CreateSitePipeline()</code>, <code>CreateWeChatPipeline()</code></td>
+</tr>
+<tr>
+<td><strong><code>MarkdownPipeline</code></strong></td>
+<td>Product (Markdig)</td>
+<td>Immutable configured parser/renderer</td>
+</tr>
+<tr>
+<td><strong><code>MarkdigMarkdownRenderer</code></strong></td>
+<td>Client</td>
+<td>Holds site pipeline from factory</td>
+</tr>
+<tr>
+<td><strong><code>WeChatMarkdownRenderer</code></strong></td>
+<td>Client</td>
+<td>Holds WeChat pipeline from factory</td>
+</tr>
+</tbody>
+</table>
+<h3 id="object-creation-flow-5">Object Creation Flow</h3>
+<ol>
+<li>Renderer field initializer: <code>MarkdownPipelineFactory.CreateSitePipeline()</code></li>
+<li>Factory builds <code>MarkdownPipelineBuilder</code>, enables extensions per channel, calls <code>.Build()</code></li>
+<li>Renderer passes pipeline to Markdig on each <code>Render()</code> call</li>
+<li>Adding a channel = new factory method — renderers unchanged</li>
+</ol>
+<pre><code class="language-csharp">public static MarkdownPipeline CreateSitePipeline() =&gt;
+new MarkdownPipelineBuilder()
+    .UseAdvancedExtensions()
+    .UseDiagrams()
+    .UseAutoIdentifiers(AutoIdentifierOptions.GitHub)
+    // ...
+    .Build();
+</code></pre>
+<h3 id="participant-mapping-3">Participant Mapping</h3>
+<table class="table">
+<thead>
+<tr>
+<th>GoF</th>
+<th>MDWeb</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Creator</td>
+<td><code>MarkdownPipelineFactory</code></td>
+</tr>
+<tr>
+<td>Product</td>
+<td><code>MarkdownPipeline</code></td>
+</tr>
+</tbody>
+</table>
+<p>This is a <strong>Simple Factory</strong> (two products, one creator class) — not Abstract Factory, because products are not a family of related controls.</p>
+<hr>
+<h2 id="example-7-raindb-raindbengine.createdefault">Example 7: RainDB — RainDbEngine.CreateDefault</h2>
+<h3 id="the-problem-6">The Problem</h3>
+<p>Opening RainDB requires wiring catalog, buffer pools, SQL/LINQ compilers, executor, and spill writer into a coherent engine. Application code should call one entry point, not construct eight collaborators in the correct order.</p>
+<h3 id="classes-and-responsibilities-6">Classes and Responsibilities</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>RainDbEngine.CreateDefault()</code></strong></td>
+<td>Factory method</td>
+<td>Builds default in-memory engine graph</td>
+</tr>
+<tr>
+<td><strong><code>RainDbEngine.OpenPersistent()</code></strong></td>
+<td>Factory method</td>
+<td>Same graph + file-backed catalog</td>
+</tr>
+<tr>
+<td><strong><code>RainDbEngine</code></strong></td>
+<td>Product (facade)</td>
+<td>Hosts catalog, pools, compilers, executor</td>
+</tr>
+<tr>
+<td><strong><code>HybridBufferPool</code></strong></td>
+<td>Collaborator</td>
+<td>Created inside factory</td>
+</tr>
+<tr>
+<td><strong><code>NoOpSpillWriter.Instance</code></strong></td>
+<td>Collaborator</td>
+<td>Injected by default</td>
+</tr>
+</tbody>
+</table>
+<h3 id="object-creation-flow-6">Object Creation Flow</h3>
+<ol>
+<li>Client calls <code>RainDbEngine.CreateDefault()</code> or <code>OpenPersistent(path)</code></li>
+<li>Factory allocates <code>HybridBufferPool</code>, <code>DefaultQueryExecutor</code>, compilers</li>
+<li>Factory passes <code>NoOpSpillWriter.Instance</code> as spill writer</li>
+<li>Returns fully wired <code>RainDbEngine</code></li>
+<li>Client calls <code>ExecuteSqlAsync</code> — never touched individual collaborators' constructors</li>
+</ol>
+<pre><code class="language-csharp">public static RainDbEngine CreateDefault(ICatalog catalog)
+{
+    var buffers = new HybridBufferPool();
+    var executor = new DefaultQueryExecutor();
+    var sql = new DefaultSqlCompiler();
+    var linq = new DefaultLinqCompiler();
+    return new RainDbEngine(catalog, buffers, buffers, executor, sql, linq, NoOpSpillWriter.Instance);
+}
+</code></pre>
+<h3 id="when-you-see-this-in-the-wild-5">When You See This in the Wild</h3>
+<p><code>DbContext</code> options builders, <code>Host.CreateDefaultBuilder</code>, SDK <code>Client.Create()</code> methods.</p>
+<hr>
+<h2 id="example-8-lightmediator-createsendinvoker">Example 8: LightMediator — CreateSendInvoker</h2>
+<h3 id="the-problem-7">The Problem</h3>
+<p>MediatR-style dispatch must invoke <code>Send&lt;TRequest,TResponse&gt;</code> for arbitrary request/response type pairs discovered at runtime from handler registration. A generic open delegate cannot be invoked without closing generic type parameters first.</p>
+<h3 id="classes-and-responsibilities-7">Classes and Responsibilities</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>Mediator</code></strong></td>
+<td>Client + cache</td>
+<td><code>ConcurrentDictionary</code> keyed by (Request, Response) types</td>
+</tr>
+<tr>
+<td><strong><code>CreateSendInvoker</code></strong></td>
+<td>Factory method</td>
+<td>Builds closed generic method via reflection</td>
+</tr>
+<tr>
+<td><strong><code>SendInvoker</code></strong></td>
+<td>Product</td>
+<td>Typed delegate wrapper for dispatch</td>
+</tr>
+</tbody>
+</table>
+<h3 id="object-creation-flow-7">Object Creation Flow</h3>
+<ol>
+<li>First <code>Send</code> for a <code>(RequestType, ResponseType)</code> pair hits cache miss</li>
+<li><code>CreateSendInvoker(requestType, responseType)</code> calls <code>MakeGenericMethod</code> on open <code>SendCore</code></li>
+<li>Returns <code>new SendInvoker(closedMethod)</code> stored in dictionary</li>
+<li>Subsequent sends reuse cached invoker — factory runs once per type pair</li>
+</ol>
+<h3 id="when-you-see-this-in-the-wild-6">When You See This in the Wild</h3>
+<p>Reflection-based serializers, ORM materializers, expression-tree compilers — runtime type closure with caching.</p>
+<hr>
+<h2 id="factory-method-vs-simple-new">Factory Method vs Simple <code>new</code></h2>
+<p>Use a factory when:</p>
+<ul>
+<li>Construction is non-trivial or platform-specific</li>
+<li>Return type should be an interface</li>
+<li>Creation point may vary (DI, tests, backends)</li>
+<li>Enum or schema drives concrete type selection</li>
+</ul>
+<p>Use <code>new</code> when:</p>
+<ul>
+<li>Type is concrete, stable, and construction is one line with no domain rules</li>
+</ul>
+<h2 id="when-you-see-this-in-the-wild-summary">When You See This in the Wild (Summary)</h2>
+<ul>
+<li>Static <code>Create*</code> methods returning interfaces</li>
+<li>Interface factories injected into clients (<code>IDiagramNodePresenterFactory</code>)</li>
+<li>Composition-root <code>CreateDefault()</code> wiring object graphs</li>
+<li>Cached reflection factories (LightMediator)</li>
+</ul>
+<h2 id="common-mistakes-summary">Common Mistakes (Summary)</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Mistake</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>God factory with 50 methods</td>
+<td>Split by domain (<code>ShapeFactory2D</code> vs <code>ShapeFactory3D</code>)</td>
+</tr>
+<tr>
+<td>Factory returning <code>void</code> side effects</td>
+<td>Factory creates; client uses product</td>
+</tr>
+<tr>
+<td>Confusing Simple Factory with Abstract Factory</td>
+<td>One product vs coordinated family</td>
+</tr>
+<tr>
+<td>No interface on product</td>
+<td>Callers re-couple to concretes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="next">Next</h2>
+<p><a href="04-abstract-factory.html">Abstract Factory →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#factory-method">Factory Method</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#structure">Structure</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#gof-participants">GoF Participants</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#variants-in-modern-code">Variants in Modern Code</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-1-spark-shapefactory2d">Example 1: Spark — ShapeFactory2D</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The Problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#classes-and-responsibilities">Classes and Responsibilities</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#object-creation-flow">Object Creation Flow</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#participant-mapping">Participant Mapping</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#when-you-see-this-in-the-wild">When You See This in the Wild</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#common-mistakes">Common Mistakes</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-2-spark-mesh-static-creators">Example 2: Spark — Mesh Static Creators</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The Problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#classes-and-responsibilities">Classes and Responsibilities</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#object-creation-flow">Object Creation Flow</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#participant-mapping">Participant Mapping</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#when-you-see-this-in-the-wild">When You See This in the Wild</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#common-mistakes">Common Mistakes</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-3-spark-imguilayerfactory">Example 3: Spark — ImGuiLayerFactory</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The Problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#classes-and-responsibilities">Classes and Responsibilities</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#object-creation-flow">Object Creation Flow</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#when-you-see-this-in-the-wild">When You See This in the Wild</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-4-skyui-diagramnodepresenterfactory">Example 4: SkyUI — DiagramNodePresenterFactory</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The Problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#classes-and-responsibilities">Classes and Responsibilities</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#object-creation-flow">Object Creation Flow</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#participant-mapping">Participant Mapping</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#when-you-see-this-in-the-wild">When You See This in the Wild</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#common-mistakes">Common Mistakes</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-5-skyui-skyvalidators-factory-methods">Example 5: SkyUI — SkyValidators Factory Methods</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The Problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#classes-and-responsibilities">Classes and Responsibilities</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#object-creation-flow">Object Creation Flow</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#when-you-see-this-in-the-wild">When You See This in the Wild</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-6-mdweb-markdownpipelinefactory">Example 6: MDWeb — MarkdownPipelineFactory</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The Problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#classes-and-responsibilities">Classes and Responsibilities</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#object-creation-flow">Object Creation Flow</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#participant-mapping">Participant Mapping</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-7-raindb-raindbenginecreatedefault">Example 7: RainDB — RainDbEngine.CreateDefault</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The Problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#classes-and-responsibilities">Classes and Responsibilities</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#object-creation-flow">Object Creation Flow</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#when-you-see-this-in-the-wild">When You See This in the Wild</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-8-lightmediator-createsendinvoker">Example 8: LightMediator — CreateSendInvoker</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The Problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#classes-and-responsibilities">Classes and Responsibilities</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#object-creation-flow">Object Creation Flow</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#when-you-see-this-in-the-wild">When You See This in the Wild</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#factory-method-vs-simple">Factory Method vs Simple </a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#when-you-see-this-in-the-wild-summary">When You See This in the Wild (Summary)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#common-mistakes-summary">Common Mistakes (Summary)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

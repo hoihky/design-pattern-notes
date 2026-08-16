@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prototype · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>Prototype</h1>
+          </header>
+          <div class="doc-body"><h1 id="prototype">Prototype</h1>
+<p><strong>Intent:</strong> Create new objects by <strong>copying</strong> an existing instance (prototype) rather than constructing from scratch.</p>
+<p>Prototype solves the <strong>re-derivation cost problem</strong>. Sometimes building an object from first principles is expensive, error-prone, or requires private knowledge embedded in an existing instance. Copying — shallow or deep — preserves invariants already established. Other times, the runtime needs a duplicate for isolation: hash table keys must not share mutable backing arrays with batch memory that will be reused.</p>
+<h2 id="structure">Structure</h2>
+<pre class="mermaid">classDiagram
+    class Prototype {
+        &lt;&lt;interface&gt;&gt;
+        +clone()
+    }
+    class ConcretePrototype {
+        +clone()
+    }
+    Prototype &lt;|.. ConcretePrototype
+</pre>
+<h3 id="gof-participants">GoF Participants</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Prototype</strong></td>
+<td>Declares <code>Clone()</code> / <code>DeepClone()</code></td>
+</tr>
+<tr>
+<td><strong>ConcretePrototype</strong></td>
+<td>Implements copy logic; may register in a prototype registry</td>
+</tr>
+<tr>
+<td><strong>Client</strong></td>
+<td>Asks prototype to clone instead of calling <code>new</code> with full constructor args</td>
+</tr>
+</tbody>
+</table>
+<p>Classic Prototype adds a <strong>registry</strong> mapping names to prototype instances. This corpus uses <strong>ad hoc clone methods</strong> instead — same intent, lighter structure.</p>
+<h2 id="when-to-use">When to Use</h2>
+<ul>
+<li>Object creation is expensive and copies are cheaper</li>
+<li>Configuration is complex and cloning preserves invariants</li>
+<li>Runtime doesn't know concrete types until execution (registry of prototypes)</li>
+<li>Stored keys or clipboard entries must be <strong>isolated copies</strong> of live data</li>
+</ul>
+<h2 id="when-to-avoid">When to Avoid</h2>
+<ul>
+<li>Types are trivially constructible from public fields</li>
+<li>Deep copy cost exceeds reconstruction</li>
+<li>Copy semantics are ambiguous (shared handles, non-cloneable resources)</li>
+</ul>
+<h2 id="when-cloning-is-not-prototype">When Cloning Is NOT Prototype</h2>
+<p>Defensive copies in constructors (<code>plan.Nodes.ToArray()</code>) protect internal state — not the Prototype pattern unless cloning is the <strong>primary creation mechanism</strong> for new domain objects.</p>
+<hr>
+<h2 id="example-1-raindb-compositejoinkey.deepclone">Example 1: RainDB — CompositeJoinKey.DeepClone</h2>
+<h3 id="the-problem">The Problem</h3>
+<p>RainDB's hash aggregation and hash join operators group rows by <strong>composite keys</strong> that may include fixed-width numeric parts and UTF-8 string payloads extracted from columnar batches. During parallel aggregation, each worker thread accumulates partial dictionaries. When partials merge into a global dictionary, keys from batch memory cannot be stored by reference — the underlying byte arrays may be reused when the next batch arrives.</p>
+<p>Using keys directly from <code>CompositeJoinKeyBuilder.Build(...)</code> without copying would mean two dictionary entries share the same <code>byte[]</code> backing store; mutating or recycling batch memory corrupts hash lookups silently.</p>
+<h3 id="classes-and-responsibilities">Classes and Responsibilities</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>CompositeJoinKey</code></strong></td>
+<td>ConcretePrototype</td>
+<td>Holds <code>NullMask</code>, <code>NumericParts</code>, <code>Utf8Payloads</code>; implements <code>DeepClone()</code></td>
+</tr>
+<tr>
+<td><strong><code>CompositeJoinKeyBuilder</code></strong></td>
+<td>Factory (related)</td>
+<td>Builds keys from batch rows — <strong>not</strong> prototype; creates fresh keys from column data</td>
+</tr>
+<tr>
+<td><strong><code>CompositeJoinKeyComparer</code></strong></td>
+<td>Client helper</td>
+<td>Sorts/compares keys; does not clone</td>
+</tr>
+<tr>
+<td><strong><code>HashAggregateEngine</code></strong></td>
+<td>Client</td>
+<td>Merges partial dictionaries; calls <code>DeepClone()</code> when inserting into global map</td>
+</tr>
+<tr>
+<td><strong><code>JoinExecutionEngine</code></strong></td>
+<td>Client</td>
+<td>Uses keys in build/probe hash tables</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Relationships:</strong> Keys are built by the builder from live batch data. Only when a key becomes <strong>owned dictionary state</strong> does the engine clone. Equality/hash use the key's parts; clone produces a new key with identical logical value but independent arrays.</p>
+<h3 id="object-creation-flow">Object Creation Flow</h3>
+<p><strong>Building a key (Factory, not Prototype):</strong></p>
+<ol>
+<li>Operator scans row <code>r</code> in columnar batch</li>
+<li><code>CompositeJoinKeyBuilder.Build(schema, batch, r, keyIndices)</code> allocates <code>numeric[]</code>, <code>utf8Payloads[]</code></li>
+<li>For UTF-8 columns, <code>CopyUtf8Payload</code> copies span from chunk into new <code>byte[]</code></li>
+<li>Returns new <code>CompositeJoinKey(mask, numeric, utf8Payloads)</code></li>
+</ol>
+<p><strong>Cloning for stable dictionary ownership (Prototype):</strong></p>
+<ol>
+<li><code>MergePartialsComposite</code> iterates partial dictionary entries</li>
+<li>On first sight of a key not in global map:
+<pre><code class="language-csharp">global[kv.Key.DeepClone()] = merged;
+</code></pre>
+</li>
+<li><code>DeepClone()</code> copies <code>NumericParts</code> array and each non-null UTF-8 payload array</li>
+<li>Global dictionary keys are independent of batch lifetime</li>
+<li>On key collision, accumulators merge in place — no second clone needed</li>
+</ol>
+<pre><code class="language-csharp">public CompositeJoinKey DeepClone()
+{
+    var nums = (ulong[])NumericParts.Clone();
+    byte[]?[] utf = new byte[Utf8Payloads.Length][];
+    for (var i = 0; i &lt; Utf8Payloads.Length; i++)
+        utf[i] = Utf8Payloads[i] is { } u ? (byte[])u.Clone() : null;
+    return new CompositeJoinKey(NullMask, nums, utf);
+}
+</code></pre>
+<h3 id="participant-mapping">Participant Mapping</h3>
+<table class="table">
+<thead>
+<tr>
+<th>GoF</th>
+<th>RainDB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ConcretePrototype</td>
+<td><code>CompositeJoinKey</code></td>
+</tr>
+<tr>
+<td>Client</td>
+<td><code>HashAggregateEngine.MergePartialsComposite</code></td>
+</tr>
+<tr>
+<td>Clone operation</td>
+<td><code>DeepClone()</code></td>
+</tr>
+</tbody>
+</table>
+<p>Note: <code>CompositeJoinKeyBuilder</code> is a <strong>Simple Factory</strong>, not part of Prototype. The pattern boundary is the <strong><code>DeepClone()</code> copy</strong> used as the creation mechanism for stable keys.</p>
+<h3 id="when-you-see-this-in-the-wild">When You See This in the Wild</h3>
+<ul>
+<li>Dictionary keys wrapping mutable byte buffers</li>
+<li>Copy-on-write structures in databases and game engines</li>
+<li>Graph node duplication where adjacency lists must not alias</li>
+</ul>
+<h3 id="common-mistakes">Common Mistakes</h3>
+<ul>
+<li><strong>Shallow clone</strong> of keys with nested arrays — two dictionary slots share UTF-8 bytes; batch recycle causes corruption</li>
+<li>Cloning on every comparison — clone only when <strong>taking ownership</strong> in long-lived structures</li>
+<li>Confusing builder with prototype — builder creates from columns; prototype copies from existing key</li>
+</ul>
+<hr>
+<h2 id="example-2-skyui-videotimeline.cloneproto">Example 2: SkyUI — VideoTimeline.CloneProto</h2>
+<h3 id="the-problem-1">The Problem</h3>
+<p><code>VideoTimeline</code> supports cut/copy/paste on clip items. Copy must place independent clips on the internal clipboard; paste must not mutate originals when the user edits pasted clips. Re-entering clip data manually would duplicate field mapping and miss new properties when the model evolves.</p>
+<h3 id="classes-and-responsibilities-1">Classes and Responsibilities</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>VideoTimeline</code></strong></td>
+<td>Client</td>
+<td>Owns tracks, clips, selection, clipboard</td>
+</tr>
+<tr>
+<td><strong><code>TimelineClipItem</code></strong></td>
+<td>ConcretePrototype</td>
+<td>Clip model: <code>TrackId</code>, <code>StartTime</code>, <code>Duration</code>, <code>Label</code>, <code>Tag</code></td>
+</tr>
+<tr>
+<td><strong><code>CloneProto</code></strong></td>
+<td>Clone method</td>
+<td>Static helper producing new clip with copied fields</td>
+</tr>
+<tr>
+<td><strong><code>_clipboard</code></strong></td>
+<td>Storage</td>
+<td>List of cloned clips awaiting paste</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Relationships:</strong> <code>TimelineClipItem</code> is a plain model object. <code>CloneProto</code> is not on the interface — it's a private static on the control (acceptable for UI-local prototype). New clip gets a new <code>Id</code> when pasted (downstream paste logic), not during clone.</p>
+<h3 id="object-creation-flow-1">Object Creation Flow</h3>
+<ol>
+<li>User selects clips and triggers copy (<code>CopyInternal</code>)</li>
+<li>For each selected clip id, timeline finds <code>TimelineClipItem</code> in <code>Clips</code></li>
+<li><code>_clipboard.Add(CloneProto(c))</code></li>
+<li><code>CloneProto</code> allocates new <code>TimelineClipItem</code> with copied scalar fields:
+<pre><code class="language-csharp">private static TimelineClipItem CloneProto(TimelineClipItem c) =&gt;
+new()
+{
+    TrackId = c.TrackId,
+    StartTime = c.StartTime,
+    Duration = c.Duration,
+    Label = c.Label,
+    Tag = c.Tag,
+};
+</code></pre>
+</li>
+<li>Cut calls <code>CopyInternal()</code> then <code>DeleteSelectedClips()</code> — clipboard holds prototypes of removed clips</li>
+<li>Paste duplicates from clipboard (may offset time/track) without touching originals</li>
+</ol>
+<h3 id="participant-mapping-1">Participant Mapping</h3>
+<table class="table">
+<thead>
+<tr>
+<th>GoF</th>
+<th>SkyUI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ConcretePrototype</td>
+<td><code>TimelineClipItem</code></td>
+</tr>
+<tr>
+<td>Client</td>
+<td><code>VideoTimeline</code></td>
+</tr>
+<tr>
+<td>Clone operation</td>
+<td><code>CloneProto</code> (private static)</td>
+</tr>
+</tbody>
+</table>
+<p>This is a <strong>shallow prototype</strong> — clips hold value types and strings; no nested mutable collections to deep-copy.</p>
+<h3 id="when-you-see-this-in-the-wild-1">When You See This in the Wild</h3>
+<ul>
+<li>Clipboard in editors (text, timeline, diagram nodes)</li>
+<li>"Duplicate slide/page/layer" in creative tools</li>
+<li>Branching undo snapshots where copy is cheaper than replay</li>
+</ul>
+<h3 id="common-mistakes-1">Common Mistakes</h3>
+<ul>
+<li>Shallow copy when <code>Tag</code> holds mutable reference types — aliasing if tag objects are shared and mutated</li>
+<li>Cloning UI controls instead of models — clone data (<code>TimelineClipItem</code>), rebuild visuals separately</li>
+</ul>
+<hr>
+<h2 id="example-3-lightmapper-map-vs-mapto">Example 3: LightMapper — Map vs MapTo</h2>
+<h3 id="the-problem-2">The Problem</h3>
+<p>High-throughput mapping paths want to avoid allocating a new DTO on every <code>Map()</code> call when a buffer already exists in an object pool or on the stack.</p>
+<h3 id="classes-and-responsibilities-2">Classes and Responsibilities</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>ILightMapper&lt;TSource,TDest&gt;</code></strong></td>
+<td>Prototype / Factory hybrid</td>
+<td><code>Map</code> creates new; <code>MapTo</code> fills existing</td>
+</tr>
+<tr>
+<td><strong>Generated mappers</strong></td>
+<td>ConcretePrototype behavior</td>
+<td>Copy fields from source into destination instance</td>
+</tr>
+</tbody>
+</table>
+<h3 id="object-creation-flow-2">Object Creation Flow</h3>
+<p><strong>Factory-like path:</strong></p>
+<ol>
+<li>Client calls <code>mapper.Map(order)</code></li>
+<li>Mapper allocates new <code>OrderDto</code>, copies fields, returns it</li>
+</ol>
+<p><strong>Prototype-variant path (reuse destination):</strong></p>
+<ol>
+<li>Client rents <code>OrderDto</code> from pool</li>
+<li>Calls <code>mapper.MapTo(order, dto)</code> — overwrites dto fields in place</li>
+<li>Client returns dto to pool after use</li>
+</ol>
+<pre><code class="language-csharp">TDestination Map(TSource source);           // creates new destination
+void MapTo(TSource source, TDestination destination);  // fills existing
+</code></pre>
+<p><code>Map</code> is factory-like; <code>MapTo</code> enables <strong>reuse</strong> of pre-allocated destination objects — a performance-oriented prototype variant in hot paths.</p>
+<h3 id="when-you-see-this-in-the-wild-2">When You See This in the Wild</h3>
+<ul>
+<li>Object pools with <code>CopyTo</code> / <code>ParseInto</code> APIs</li>
+<li>Game engines updating component data in place</li>
+<li>Serialization into pre-sized buffers</li>
+</ul>
+<hr>
+<h2 id="spark-scene-snapshots-related-not-pure-prototype">Spark — Scene Snapshots (Related, Not Pure Prototype)</h2>
+<h3 id="the-problem-3">The Problem</h3>
+<p>Save/load and undo need captured scene state.</p>
+<h3 id="why-it-is-memento-not-prototype">Why It Is Memento, Not Prototype</h3>
+<p><code>SceneSerializer</code> captures ECS state into <code>SceneDocument</code> and <code>SceneDeserializer</code> restores it. This is closer to <strong>Memento</strong> (Part 4) — externalized state for undo/save — than runtime <code>Clone()</code> on live <code>GameObject</code>s. Creation happens through deserialization, not copying an in-memory prototype instance.</p>
+<p>Use Prototype when the live instance <strong>is</strong> the template; use Memento when state is <strong>extracted</strong> to an external representation.</p>
+<hr>
+<h2 id="prototype-registry-not-in-corpus">Prototype Registry (Not in Corpus)</h2>
+<p>Classic Prototype adds a registry:</p>
+<pre><code class="language-csharp">prototypes["circle"] = new CirclePrototype();
+var shape = prototypes["circle"].Clone();
+</code></pre>
+<p>Spark's <code>ShapeFactory2D</code> uses <strong>Factory Method</strong> instead — explicit creation from parameters, not clone-from-template. Choose Prototype when:</p>
+<ul>
+<li>Instances vary at runtime and are already configured</li>
+<li>Copying preserves invariants better than reconstructing</li>
+<li>Type set is open-ended (plugin shapes cloned from defaults)</li>
+</ul>
+<p>Choose Factory Method when construction rules are static and parameterized.</p>
+<hr>
+<h2 id="deep-vs-shallow-clone">Deep vs Shallow Clone</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Clone</th>
+<th>Behavior</th>
+<th>Risk</th>
+<th>Corpus example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shallow</td>
+<td>Copy top-level fields; share nested references</td>
+<td>Shared mutable state</td>
+<td><code>CloneProto</code> — safe when fields are scalars/strings</td>
+</tr>
+<tr>
+<td>Deep</td>
+<td>Copy nested data recursively</td>
+<td>Higher cost; correct isolation</td>
+<td><code>CompositeJoinKey.DeepClone</code> — copies all byte arrays</td>
+</tr>
+</tbody>
+</table>
+<p>RainDB's <code>DeepClone</code> is explicit about depth — teaching point for aggregate keys with UTF-8 payloads stored as <code>byte[]</code>.</p>
+<h3 id="c-and-c-notes">C# and C++ Notes</h3>
+<ul>
+<li><strong>C#:</strong> <code>ICloneable</code> is discouraged (returns <code>object</code>, no depth contract); prefer typed <code>DeepClone()</code> or copy constructors with clear semantics</li>
+<li><strong>C++:</strong> copy ctor / virtual <code>Clone()</code> on polymorphic types; watch <strong>slicing</strong> when copying through base pointer — return <code>UniquePtr&lt;Base&gt;</code> from virtual <code>Clone()</code></li>
+<li><strong>Records:</strong> C# records provide value-based equality but not automatic deep clone for nested mutable collections</li>
+</ul>
+<h2 id="prototype-vs-other-creational-patterns">Prototype vs Other Creational Patterns</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Question</th>
+<th>Pattern</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Need exactly one shared instance?</td>
+<td>Singleton</td>
+</tr>
+<tr>
+<td>Need which type from parameters?</td>
+<td>Factory Method</td>
+</tr>
+<tr>
+<td>Need consistent family of types?</td>
+<td>Abstract Factory</td>
+</tr>
+<tr>
+<td>Need stepwise assembly + validation?</td>
+<td>Builder</td>
+</tr>
+<tr>
+<td>Need copy of existing configured instance?</td>
+<td><strong>Prototype</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="when-you-see-this-in-the-wild-summary">When You See This in the Wild (Summary)</h2>
+<ul>
+<li>Clipboard and duplicate operations in editors</li>
+<li>Defensive copying of composite keys into long-lived indexes</li>
+<li><code>MapTo</code> / in-place fill for pooled DTOs</li>
+<li><code>MemberwiseClone</code> in frameworks (know whether shallow is safe)</li>
+</ul>
+<h2 id="common-mistakes-summary">Common Mistakes (Summary)</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Mistake</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shallow clone with mutable nested state</td>
+<td>Explicit deep clone (RainDB)</td>
+</tr>
+<tr>
+<td>Prototype registry without clear clone contract</td>
+<td>Document depth; prefer typed methods over <code>ICloneable</code></td>
+</tr>
+<tr>
+<td>Cloning instead of immutability</td>
+<td>Immutable keys need no clone — RainDB keys are mutable arrays requiring copy</td>
+</tr>
+<tr>
+<td>Labeling defensive ctor copies as Prototype</td>
+<td>Reserve for primary creation-by-copy</td>
+</tr>
+</tbody>
+</table>
+<h2 id="part-2-summary">Part 2 Summary</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Top example</th>
+<th>Core decoupling</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Singleton</td>
+<td><code>UiSystem::Get()</code>, <code>NoOpSpillWriter.Instance</code></td>
+<td>Single process-wide coordinator</td>
+</tr>
+<tr>
+<td>Factory Method</td>
+<td><code>ShapeFactory2D</code>, <code>Mesh::CreateUnitCube</code></td>
+<td>Concrete type selection</td>
+</tr>
+<tr>
+<td>Abstract Factory</td>
+<td><code>IUiControlsFactory</code> + backends</td>
+<td>Related product families</td>
+</tr>
+<tr>
+<td>Builder</td>
+<td><code>SiteBuilder</code></td>
+<td>Stepwise assembly + validation</td>
+</tr>
+<tr>
+<td>Prototype</td>
+<td><code>CompositeJoinKey.DeepClone</code>, <code>CloneProto</code></td>
+<td>Copy instead of rebuild</td>
+</tr>
+</tbody>
+</table>
+<p>Creational patterns converge on one goal: <strong>keep object birth out of business logic</strong>. The next part applies the same discipline to how objects are composed after they exist.</p>
+<h2 id="next">Next</h2>
+<p><a href="../part03-structural/01-introduction.html">Part 3: Introduction to Structural Patterns →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#prototype">Prototype</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#structure">Structure</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#gof-participants">GoF Participants</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#when-to-use">When to Use</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#when-to-avoid">When to Avoid</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#when-cloning-is-not-prototype">When Cloning Is NOT Prototype</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-1-raindb-compositejoinkeydeepclone">Example 1: RainDB — CompositeJoinKey.DeepClone</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The Problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#classes-and-responsibilities">Classes and Responsibilities</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#object-creation-flow">Object Creation Flow</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#participant-mapping">Participant Mapping</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#when-you-see-this-in-the-wild">When You See This in the Wild</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#common-mistakes">Common Mistakes</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-2-skyui-videotimelinecloneproto">Example 2: SkyUI — VideoTimeline.CloneProto</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The Problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#classes-and-responsibilities">Classes and Responsibilities</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#object-creation-flow">Object Creation Flow</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#participant-mapping">Participant Mapping</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#when-you-see-this-in-the-wild">When You See This in the Wild</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#common-mistakes">Common Mistakes</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-3-lightmapper-map-vs-mapto">Example 3: LightMapper — Map vs MapTo</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The Problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#classes-and-responsibilities">Classes and Responsibilities</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#object-creation-flow">Object Creation Flow</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#when-you-see-this-in-the-wild">When You See This in the Wild</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#spark-scene-snapshots-related-not-pure-prototype">Spark — Scene Snapshots (Related, Not Pure Prototype)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The Problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-it-is-memento-not-prototype">Why It Is Memento, Not Prototype</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#prototype-registry-not-in-corpus">Prototype Registry (Not in Corpus)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#deep-vs-shallow-clone">Deep vs Shallow Clone</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#c-and-c-notes">C# and C++ Notes</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#prototype-vs-other-creational-patterns">Prototype vs Other Creational Patterns</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#when-you-see-this-in-the-wild-summary">When You See This in the Wild (Summary)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#common-mistakes-summary">Common Mistakes (Summary)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#part-2-summary">Part 2 Summary</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

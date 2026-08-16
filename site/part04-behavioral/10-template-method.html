@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Template Method · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>Template Method</h1>
+          </header>
+          <div class="doc-body"><h1 id="template-method">Template Method</h1>
+<p><strong>Intent:</strong> Define the skeleton of an algorithm in an operation, deferring some steps to subclasses or injected hooks.</p>
+<h2 id="the-behavioral-problem-fixed-workflow-variable-steps">The Behavioral Problem: Fixed Workflow, Variable Steps</h2>
+<p>Many operations share the <strong>same sequence</strong> but differ in one phase:</p>
+<ul>
+<li>Load image → <strong>transform</strong> → save image</li>
+<li>Validate HTTP request → <strong>append parameters</strong> → send multipart</li>
+<li>Enter FSM state → <strong>tick</strong> → exit state</li>
+</ul>
+<p>Copy-pasting the shared phases into every handler duplicates error-prone boilerplate (temp files, timeouts, gates, cleanup). Subclassing with empty overrides forces inheritance for every variant. <strong>Template Method</strong> defines the invariant steps in a base class (or base function) and calls <strong>hooks</strong> — virtual methods, abstract methods, or <code>Func&lt;&gt;</code> delegates — for the varying step.</p>
+<p>Behaviorally, this assigns responsibility: <strong>base knows order and invariants</strong>; <strong>subclasses/handlers know domain variation</strong>.</p>
+<hr>
+<h2 id="gof-participants-imgkit-imageprocessinghandlerbase">GoF Participants → ImgKit ImageProcessingHandlerBase</h2>
+<table class="table">
+<thead>
+<tr>
+<th>GoF role</th>
+<th>ImgKit mapping</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AbstractClass</strong></td>
+<td><code>ImageProcessingHandlerBase</code></td>
+</tr>
+<tr>
+<td><strong>ConcreteClass</strong></td>
+<td>Each <code>*ImageHandler</code> (via hook lambda, not override)</td>
+</tr>
+<tr>
+<td><strong>Template methods</strong></td>
+<td><code>ProcessAsync</code>, <code>InspectAsync</code></td>
+</tr>
+<tr>
+<td><strong>Primitive operations (fixed)</strong></td>
+<td>Validate, acquire gate, write temp, Task.Run, delete temps</td>
+</tr>
+<tr>
+<td><strong>Hook operations (variant)</strong></td>
+<td><code>Func&lt;Image, Image&gt; transform</code> passed to <code>ProcessAsync</code></td>
+</tr>
+</tbody>
+</table>
+<p>ImgKit uses <strong>delegate hooks</strong> instead of virtual <code>protected abstract Image Transform(Image)</code> — same Template Method semantics with less inheritance depth.</p>
+<hr>
+<h2 id="example-1-imageprocessinghandlerbase-primary">Example 1: ImageProcessingHandlerBase (Primary)</h2>
+<p>Source documents intent explicitly:</p>
+<pre><code class="language-csharp">/// Template Method base for handlers that load an image, process it, and serialize output.
+public abstract class ImageProcessingHandlerBase(
+    ITempImageFileStore tempFiles,
+    IPillowNetProcessingGate processingGate)
+</code></pre>
+<h3 id="state-held-by-base">State held by base</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Dependency</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ITempImageFileStore</code></td>
+<td>Write uploaded bytes to disk path; delete after processing</td>
+</tr>
+<tr>
+<td><code>IPillowNetProcessingGate</code></td>
+<td>Limit concurrent PillowNet work — acquire/release scope</td>
+</tr>
+</tbody>
+</table>
+<p>Concrete handlers inherit these via primary constructor — no duplicate fields.</p>
+<h3 id="template-method-processasync">Template method: ProcessAsync</h3>
+<pre><code class="language-csharp">protected async Task&lt;ProcessedImageModel&gt; ProcessAsync(
+    ImageInput input,
+    Func&lt;Image, Image&gt; transform,   // HOOK — variant step
+    string? outputFormat = null,
+    CancellationToken cancellationToken = default)
+{
+    ImageOperationValidator.ValidateInput(input);
+
+    using var processingScope = await processingGate.AcquireAsync(cancellationToken);
+    using var timeoutSource = CreateTimeoutSource(cancellationToken);
+
+    var inputPath = await tempFiles.WriteAsync(input.Data, input.FileName, timeoutSource.Token);
+    var (outputPath, format, contentType) = ImageOutputHelper.ResolveOutput(input.FileName, outputFormat);
+
+    try
+    {
+        return await Task.Run(
+            () =&gt; ProcessOnBackgroundThread(inputPath, outputPath, format, contentType, transform),
+            timeoutSource.Token);
+    }
+    finally
+    {
+        tempFiles.Delete(inputPath);
+        tempFiles.Delete(outputPath);
+    }
+}
+</code></pre>
+<h3 id="fixed-skeleton-invariant-steps">Fixed skeleton (invariant steps)</h3>
+<ol>
+<li><strong>Validate input</strong> — reject empty or oversized uploads early.</li>
+<li><strong>Acquire processing gate</strong> — global concurrency cap across handlers.</li>
+<li><strong>Create linked timeout token</strong> — <code>MaxProcessingSeconds</code> bound.</li>
+<li><strong>Write temp input file</strong> — PillowNet works on paths.</li>
+<li><strong>Resolve output path/format/content-type</strong> — <code>ImageOutputHelper</code>.</li>
+<li><strong>Run on thread pool</strong> — <code>ProcessOnBackgroundThread</code> opens image, calls hook, saves, reads bytes into model.</li>
+<li><strong>Finally delete temps</strong> — always runs even on exception.</li>
+</ol>
+<h3 id="hook-transform">Hook: transform</h3>
+<p><code>ProcessOnBackgroundThread</code>:</p>
+<pre><code class="language-csharp">using var source = Image.Open(inputPath);
+using var processed = transform(source);  // hook invocation
+processed.Save(outputPath, format);
+// build ProcessedImageModel from bytes + metadata
+</code></pre>
+<p>Each handler supplies hook at call site:</p>
+<pre><code class="language-csharp">// ResizeImageHandler
+await ProcessAsync(request.Image, image =&gt; image.Resize((w, h), resampling), ...);
+
+// ApplyFilterHandler — Strategy inside hook
+await ProcessAsync(request.Image, image =&gt; strategy.Apply(image, options), ...);
+</code></pre>
+<p><strong>Who calls whom:</strong> <code>IRequestHandler.HandleAsync</code> (concrete handler) → <code>ProcessAsync</code> (template) → handler's lambda → optional Strategy.</p>
+<h3 id="second-template-inspectasync">Second template: InspectAsync</h3>
+<p>Same skeleton for read-only metadata — no output file transform save path variant; uses <code>InspectOnBackgroundThread</code>. <code>GetImageInfoHandler</code> uses this template without pixel mutation hook complexity.</p>
+<h3 id="sequence-resize-request-through-template">Sequence: resize request through template</h3>
+<pre class="mermaid">sequenceDiagram
+    participant H as ResizeImageHandler
+    participant Base as ImageProcessingHandlerBase
+    participant Gate as IPillowNetProcessingGate
+    participant Temp as ITempImageFileStore
+    participant PN as PillowNet Image
+
+    H-&gt;&gt;Base: ProcessAsync(input, img =&gt; img.Resize(...))
+    Base-&gt;&gt;Base: ValidateInput
+    Base-&gt;&gt;Gate: AcquireAsync
+    Base-&gt;&gt;Temp: WriteAsync(bytes)
+    Base-&gt;&gt;Base: Task.Run(ProcessOnBackgroundThread)
+    Base-&gt;&gt;PN: Open(inputPath)
+    Base-&gt;&gt;PN: transform (Resize)
+    Base-&gt;&gt;PN: Save(outputPath)
+    Base-&gt;&gt;Temp: Delete paths (finally)
+    Base--&gt;&gt;H: ProcessedImageModel
+</pre>
+<h3 id="collaboration-with-command-and-strategy">Collaboration with Command and Strategy</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Layer</th>
+<th>Pattern</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ImagesController</code></td>
+<td>Command client</td>
+<td>Build <code>ResizeImageCommand</code></td>
+</tr>
+<tr>
+<td><code>ResizeImageHandler</code></td>
+<td>Command receiver</td>
+<td>Map command → hook</td>
+</tr>
+<tr>
+<td><code>ImageProcessingHandlerBase</code></td>
+<td>Template Method</td>
+<td>I/O + threading + cleanup</td>
+</tr>
+<tr>
+<td><code>IImageFilterStrategy</code></td>
+<td>Strategy</td>
+<td>Pixel algorithm inside hook</td>
+</tr>
+</tbody>
+</table>
+<p>Without Template Method, every handler would duplicate gate, timeout, and temp file logic — nine handlers × ~40 lines = maintenance hazard.</p>
+<hr>
+<h2 id="example-2-imageoperationrequestbuilderbase-smaller-template">Example 2: ImageOperationRequestBuilderBase (Smaller Template)</h2>
+<p>API clients building multipart requests share structure:</p>
+<pre><code class="language-csharp">public abstract class ImageOperationRequestBuilderBase
+{
+    public abstract ImageOperationDescriptor Descriptor { get; }
+    public abstract void AppendParameters(MultipartFormDataContent content, ImageOperationRequest request);
+}
+</code></pre>
+<p>A shared <code>BuildRequest()</code> loop (if present on base) would:</p>
+<ol>
+<li>Create multipart content</li>
+<li>Append image stream</li>
+<li>Call <code>AppendParameters</code> hook</li>
+<li>Return request message</li>
+</ol>
+<p>Subclasses supply descriptor metadata and form fields — Template Method at HTTP client boundary, symmetric to server-side <code>ProcessAsync</code>.</p>
+<hr>
+<h2 id="template-method-vs-strategy-imgkit">Template Method vs Strategy (ImgKit)</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Template Method</th>
+<th>Strategy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fixed:</strong> validate, gate, temps, threading</td>
+<td><strong>Swappable:</strong> blur vs sharpen vs resize math</td>
+</tr>
+<tr>
+<td>Inheritance + delegate hook on base</td>
+<td>Interface + factory</td>
+</tr>
+<tr>
+<td>One skeleton per family (<code>ProcessAsync</code>)</td>
+<td>Many algorithms per family</td>
+</tr>
+<tr>
+<td>Cross-cutting resource management</td>
+<td>Domain pixel operations</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Both</strong> appear in one handler: Template Method wraps Strategy inside the hook.</p>
+<p>Choosing between them:</p>
+<ul>
+<li>If <strong>order and resource rules</strong> must never be skipped → Template Method.</li>
+<li>If <strong>algorithm</strong> swaps at runtime by name → Strategy.</li>
+<li>If entire workflow differs (inspect vs mutate) → separate template methods (<code>InspectAsync</code> vs <code>ProcessAsync</code>), not one Strategy interface.</li>
+</ul>
+<hr>
+<h2 id="example-3-spark-ifsmstate-lifecycle-borderline-template-method">Example 3: Spark — IFsmState Lifecycle (Borderline Template Method)</h2>
+<p><code>FsmStateMachine::Tick</code> and <code>SendEvent</code> define invariant call order:</p>
+<ol>
+<li>On first tick: <code>OnEnter</code> initial state</li>
+<li>Each tick: current state's <code>OnTick</code></li>
+<li>On transition: <code>OnExit</code> old → <code>OnEnter</code> new</li>
+</ol>
+<p>Concrete states implement hooks; machine owns skeleton. This blends <strong>State</strong> (chapter 8) and Template Method — common in lifecycle frameworks.</p>
+<hr>
+<h2 id="template-method-vs-callback-higher-order-function">Template Method vs Callback / Higher-Order Function</h2>
+<p>Modern C# often uses <strong>Func&lt;&gt; hooks</strong> (ImgKit) instead of <code>protected virtual</code> methods:</p>
+<table class="table">
+<thead>
+<tr>
+<th>Virtual override style</th>
+<th>Func hook style</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Subclass per variant</td>
+<td>Lambda per handler class</td>
+</tr>
+<tr>
+<td>Compiler enforces override</td>
+<td>Flexible closure captures</td>
+</tr>
+<tr>
+<td>Classic GoF</td>
+<td>Idiomatic C# with records/handlers</td>
+</tr>
+</tbody>
+</table>
+<p>Behavioral pattern is the same: <strong>don't call us, we'll call you</strong> at the hook point.</p>
+<hr>
+<h2 id="trade-offs">Trade-offs</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Benefit</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DRY for invariant steps</td>
+<td>Base class can become god base if too many hooks</td>
+</tr>
+<tr>
+<td>Consistent timeout/cleanup</td>
+<td>Subclasses depend on inheritance (mitigated by protected helpers)</td>
+</tr>
+<tr>
+<td>Easy to add handlers</td>
+<td>Harder to compose multiple independent skeletons</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Alternatives:</strong></p>
+<ul>
+<li><strong>Decorator</strong> stack for each step (flexible, verbose).</li>
+<li><strong>Pipeline</strong> of small functions (functional style).</li>
+<li><strong>Middleware only</strong> — LightMediator wraps handler but does not replace per-domain I/O template inside ImgKit handlers.</li>
+</ul>
+<p>ImgKit correctly uses <strong>Middleware</strong> for logging and <strong>Template Method</strong> for PillowNet resource rules — different invariant boundaries.</p>
+<hr>
+<h2 id="testing-template-method">Testing Template Method</h2>
+<p>Test base behavior once:</p>
+<ul>
+<li>Mock <code>ITempImageFileStore</code> / gate</li>
+<li>Pass hook that marks image or throws</li>
+<li>Assert temps deleted on success and failure</li>
+<li>Assert gate acquired/released</li>
+</ul>
+<p>Test handlers with lightweight hook asserting domain args — no need to re-test timeout logic per handler.</p>
+<hr>
+<h2 id="next">Next</h2>
+<p><a href="11-visitor.html">Visitor →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#template-method">Template Method</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#the-behavioral-problem-fixed-workflow-variable-steps">The Behavioral Problem: Fixed Workflow, Variable Steps</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#gof-participants-imgkit-imageprocessinghandlerbase">GoF Participants → ImgKit ImageProcessingHandlerBase</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-1-imageprocessinghandlerbase-primary">Example 1: ImageProcessingHandlerBase (Primary)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#state-held-by-base">State held by base</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#template-method-processasync">Template method: ProcessAsync</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#fixed-skeleton-invariant-steps">Fixed skeleton (invariant steps)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#hook-transform">Hook: transform</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#second-template-inspectasync">Second template: InspectAsync</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#sequence-resize-request-through-template">Sequence: resize request through template</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#collaboration-with-command-and-strategy">Collaboration with Command and Strategy</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-2-imageoperationrequestbuilderbase-smaller-template">Example 2: ImageOperationRequestBuilderBase (Smaller Template)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#template-method-vs-strategy-imgkit">Template Method vs Strategy (ImgKit)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-3-spark-ifsmstate-lifecycle-borderline-template-method">Example 3: Spark — IFsmState Lifecycle (Borderline Template Method)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#template-method-vs-callback-higher-order-function">Template Method vs Callback / Higher-Order Function</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#trade-offs">Trade-offs</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#testing-template-method">Testing Template Method</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

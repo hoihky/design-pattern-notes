@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abstract Factory · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>Abstract Factory</h1>
+          </header>
+          <div class="doc-body"><h1 id="abstract-factory">Abstract Factory</h1>
+<p><strong>Intent:</strong> Provide an interface for creating <strong>families</strong> of related or dependent objects without specifying their concrete classes.</p>
+<p>Abstract Factory solves the <strong>consistency problem</strong> across related products. A UI panel, its buttons, and its list view must share layout assumptions, styling hooks, and input behavior. Creating each control through an independent factory method would allow accidental mixing — Spark buttons inside ImGui panel wrappers — that breaks rendering and hit-testing.</p>
+<p>The key distinction from Factory Method: <strong>multiple product types</strong> that must stay consistent within a family.</p>
+<h2 id="structure">Structure</h2>
+<pre class="mermaid">classDiagram
+    class AbstractFactory {
+        &lt;&lt;interface&gt;&gt;
+        +createProductA()
+        +createProductB()
+    }
+    class ConcreteFactory1 {
+        +createProductA()
+        +createProductB()
+    }
+    class ConcreteFactory2 {
+        +createProductA()
+        +createProductB()
+    }
+    AbstractFactory &lt;|.. ConcreteFactory1
+    AbstractFactory &lt;|.. ConcreteFactory2
+</pre>
+<h3 id="gof-participants">GoF Participants</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AbstractFactory</strong></td>
+<td>Declares creation methods for each product in the family</td>
+</tr>
+<tr>
+<td><strong>ConcreteFactory</strong></td>
+<td>Implements all creation methods for one family</td>
+</tr>
+<tr>
+<td><strong>AbstractProduct</strong></td>
+<td>Interface for each product kind (<code>IUiButton</code>, <code>IPanel</code>)</td>
+</tr>
+<tr>
+<td><strong>ConcreteProduct</strong></td>
+<td>Family-specific implementation (<code>SparkButton</code>, <code>ImGuiButton</code>)</td>
+</tr>
+<tr>
+<td><strong>Client</strong></td>
+<td>Uses only AbstractFactory + AbstractProduct interfaces</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="example-1-spark-iuicontrolsfactory-canonical">Example 1: Spark — IUiControlsFactory (Canonical)</h2>
+<h3 id="the-problem">The Problem</h3>
+<p>Spark ships two retained UI stacks: <strong>Spark native</strong> (themed HUD, editor chrome) and <strong>Dear ImGui retained</strong> (docking tools, rapid internal panels). Editor panels build trees of buttons, sliders, panels, lists, tree views, and dock workspaces. Each control type has a Spark implementation and an ImGui-wrapped implementation.</p>
+<p>If <code>HierarchyPanel</code> called <code>new SparkButton(...)</code> directly, switching to ImGui would require rewriting every panel. If buttons and panels were created from unrelated factories, a developer could mix backends — Spark layout metrics with ImGui input routing — producing subtle bugs.</p>
+<h3 id="classes-and-responsibilities">Classes and Responsibilities</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>IUiControlsFactory</code></strong></td>
+<td>AbstractFactory</td>
+<td>One <code>Create*</code> method per control type; pure virtual</td>
+</tr>
+<tr>
+<td><strong><code>SparkUiControlsFactory</code></strong></td>
+<td>ConcreteFactory</td>
+<td>Returns <code>SparkButton</code>, <code>SparkPanel</code>, <code>SparkList</code>, …</td>
+</tr>
+<tr>
+<td><strong><code>DearImguiControlsFactory</code></strong></td>
+<td>ConcreteFactory</td>
+<td>Returns ImGui-wrapped equivalents</td>
+</tr>
+<tr>
+<td><strong><code>IUiButton</code>, <code>IPanel</code>, <code>IList</code>, …</strong></td>
+<td>AbstractProduct</td>
+<td>Control interfaces in <code>IUiControls.hpp</code></td>
+</tr>
+<tr>
+<td><strong><code>SparkButton</code>, <code>ImGuiButton</code>, …</strong></td>
+<td>ConcreteProduct</td>
+<td>Backend-specific implementations</td>
+</tr>
+<tr>
+<td><strong><code>IUiBackend</code></strong></td>
+<td>Family context</td>
+<td>Exposes <code>GetControlsFactory()</code> for the active stack</td>
+</tr>
+<tr>
+<td><strong><code>SparkUiBackend</code> / <code>DearImguiUiBackend</code></strong></td>
+<td>ConcreteFactory owner</td>
+<td>Holds the matching factory instance</td>
+</tr>
+<tr>
+<td><strong><code>UiSystem</code></strong></td>
+<td>Client coordinator</td>
+<td>Selects active backend; panels reach factory through it</td>
+</tr>
+<tr>
+<td><strong><code>*Desc</code> structs</strong></td>
+<td>Creation parameters</td>
+<td><code>ButtonDesc</code>, <code>PanelDesc</code> — backend-neutral configuration</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Relationships:</strong></p>
+<pre class="mermaid">flowchart TB
+    PANEL[HierarchyPanel] --&gt; UISYS[UiSystem]
+    UISYS --&gt; BACKEND[IUiBackend]
+    BACKEND --&gt; FACTORY[IUiControlsFactory]
+    FACTORY --&gt; BTN[IUiButton]
+    FACTORY --&gt; PNL[IPanel]
+    FACTORY --&gt; LST[IList]
+    FACTORY --&gt; TV[ITreeView]
+</pre>
+<p>Each <code>IUiBackend</code> owns exactly one <code>IUiControlsFactory</code>. The family boundary matches the <strong>backend</strong> boundary.</p>
+<h3 id="object-creation-flow">Object Creation Flow</h3>
+<ol>
+<li>Engine startup registers backends on <code>UiSystem::Get()</code></li>
+<li><code>SetActiveBackend(UiBackendKind::SparkNative)</code> sets <code>activeBackend</code> to <code>SparkUiBackend</code></li>
+<li><code>HierarchyPanel</code> obtains factory:
+<code>UiSystem::Get().GetActiveBackendPtr()-&gt;GetControlsFactory()</code></li>
+<li>Panel builds UI:
+<pre><code class="language-cpp">auto&amp; factory = /* step 3 */;
+auto panel = factory.CreatePanel({ .title = "Hierarchy" });
+auto tree = factory.CreateTreeView({ .rootLabel = "Scene" });
+panel-&gt;AddChild(tree.get());
+</code></pre>
+</li>
+<li><code>SparkUiControlsFactory::CreateTreeView</code> returns <code>UniquePtr&lt;ITreeView&gt;</code> owning <code>SparkTreeView</code></li>
+<li>User switches backend via <code>UiToolkitSettings</code> → <code>SetActiveBackend(DearImGui)</code></li>
+<li>Same panel code runs; step 3 now returns <code>DearImguiControlsFactory</code>; step 5 creates ImGui wrappers instead</li>
+</ol>
+<pre><code class="language-cpp">/**
+ * Abstract Factory: creates families of UI controls for a single backend
+ * (Spark native or Dear ImGui).
+ */
+class IUiControlsFactory {
+public:
+    virtual UniquePtr&lt;IUiButton&gt; CreateButton(const ButtonDesc&amp; desc) = 0;
+    virtual UniquePtr&lt;ISlider&gt; CreateSlider(const SliderDesc&amp; desc) = 0;
+    virtual UniquePtr&lt;IPanel&gt; CreatePanel(const PanelDesc&amp; desc) = 0;
+    virtual UniquePtr&lt;ILabel&gt; CreateLabel(const LabelDesc&amp; desc) = 0;
+    virtual UniquePtr&lt;IList&gt; CreateList(const ListDesc&amp; desc) = 0;
+    virtual UniquePtr&lt;ITreeView&gt; CreateTreeView(const TreeViewDesc&amp; desc) = 0;
+    // ... full control family
+};
+</code></pre>
+<pre><code class="language-cpp">class IUiBackend {
+public:
+    virtual IUiControlsFactory&amp; GetControlsFactory() noexcept = 0;
+    virtual void ProcessInput(...) = 0;
+    virtual void Paint(...) = 0;
+};
+</code></pre>
+<h3 id="participant-mapping">Participant Mapping</h3>
+<table class="table">
+<thead>
+<tr>
+<th>GoF</th>
+<th>Spark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AbstractFactory</td>
+<td><code>IUiControlsFactory</code></td>
+</tr>
+<tr>
+<td>ConcreteFactory</td>
+<td><code>SparkUiControlsFactory</code>, <code>DearImguiControlsFactory</code></td>
+</tr>
+<tr>
+<td>AbstractProduct</td>
+<td><code>IUiButton</code>, <code>IPanel</code>, <code>IList</code>, …</td>
+</tr>
+<tr>
+<td>ConcreteProduct</td>
+<td><code>SparkButton</code>, ImGui-wrapped controls</td>
+</tr>
+<tr>
+<td>Client</td>
+<td>Editor panels, demos (<code>HierarchyPanel</code>, <code>InspectorPanel</code>)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="when-you-see-this-in-the-wild">When You See This in the Wild</h3>
+<ul>
+<li><strong>UI toolkit abstraction</strong> — Qt vs native, Skia vs CPU renderer families</li>
+<li><strong>Cross-platform SDKs</strong> — iOS vs Android widget sets created from one <code>PlatformWidgetFactory</code></li>
+<li><strong>Theme systems</strong> — light vs dark control skins that must not mix</li>
+</ul>
+<h3 id="common-mistakes">Common Mistakes</h3>
+<ul>
+<li>One factory method per control type spread across unrelated classes — use Abstract Factory when products are <strong>used together</strong></li>
+<li>Passing backend-specific types into <code>*Desc</code> structs — descriptors must stay backend-neutral</li>
+<li>Creating some controls via factory and others via raw <code>ImGui::</code> — breaks family consistency (Spark docs allow raw ImGui for debug overlays <em>alongside</em> retained family, but not mixed within one retained tree)</li>
+</ul>
+<hr>
+<h2 id="why-not-factory-method-per-control">Why Not Factory Method Per Control?</h2>
+<p>You <em>could</em> have <code>IButtonFactory</code>, <code>IPanelFactory</code>, etc. Abstract Factory groups them because:</p>
+<ul>
+<li>Spark buttons assume Spark panels for layout metrics and child attachment</li>
+<li>ImGui buttons assume ImGui panel wrappers for scroll and dock behavior</li>
+<li>Mixing Spark buttons with ImGui panels breaks hit-testing and layout</li>
+<li>Backend switch must swap <strong>all</strong> control creators atomically — one <code>IUiControlsFactory</code> reference</li>
+</ul>
+<p>Factory Method answers "which button type?"; Abstract Factory answers "which <strong>consistent set</strong> of control types?"</p>
+<hr>
+<h2 id="example-2-imgkit-strategy-factories-abstract-factorylike">Example 2: ImgKit — Strategy Factories (Abstract Factory–like)</h2>
+<h3 id="the-problem-1">The Problem</h3>
+<p>ImgKit's processing studio exposes filters, enhancements, and image operations. Each category has multiple strategies (blur, sharpen, grayscale, …). Web request builders must resolve a strategy by user-selected name without knowing every concrete PillowNet wrapper class.</p>
+<h3 id="classes-and-responsibilities-1">Classes and Responsibilities</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>IImageFilterStrategyFactory</code></strong></td>
+<td>AbstractFactory (one product line)</td>
+<td><code>GetStrategy(filterName)</code></td>
+</tr>
+<tr>
+<td><strong><code>ImageFilterStrategyFactory</code></strong></td>
+<td>ConcreteFactory</td>
+<td>DI-injected dictionary of strategies</td>
+</tr>
+<tr>
+<td><strong><code>IImageFilterStrategy</code></strong></td>
+<td>AbstractProduct</td>
+<td><code>Name</code>, <code>Apply(image, options)</code></td>
+</tr>
+<tr>
+<td><strong>Concrete strategies</strong></td>
+<td>ConcreteProduct</td>
+<td><code>BlurFilterStrategy</code>, etc.</td>
+</tr>
+<tr>
+<td><strong>Parallel factories</strong></td>
+<td>Sibling families</td>
+<td><code>IImageEnhancementStrategyFactory</code>, <code>IImageOpsStrategyFactory</code></td>
+</tr>
+</tbody>
+</table>
+<p>Each factory covers <strong>one category</strong> (filters vs enhancements vs ops) — structurally similar to abstract factory families keyed by operation name rather than by platform backend.</p>
+<h3 id="object-creation-flow-1">Object Creation Flow</h3>
+<ol>
+<li>ASP.NET DI registers all <code>IImageFilterStrategy</code> implementations</li>
+<li><code>ImageFilterStrategyFactory</code> constructor builds <code>Dictionary&lt;string, IImageFilterStrategy&gt;</code> keyed by <code>Name</code></li>
+<li>API handler receives filter name from multipart request</li>
+<li>Calls <code>_filterFactory.GetStrategy("GaussianBlur")</code></li>
+<li>Returns singleton-scoped strategy instance; <code>Apply</code> mutates PillowNet image</li>
+</ol>
+<pre><code class="language-csharp">public interface IImageFilterStrategyFactory
+{
+    IImageFilterStrategy GetStrategy(string filterName);
+}
+</code></pre>
+<h3 id="participant-mapping-1">Participant Mapping</h3>
+<table class="table">
+<thead>
+<tr>
+<th>GoF</th>
+<th>ImgKit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AbstractFactory</td>
+<td><code>IImageFilterStrategyFactory</code> (per category)</td>
+</tr>
+<tr>
+<td>ConcreteFactory</td>
+<td><code>ImageFilterStrategyFactory</code></td>
+</tr>
+<tr>
+<td>AbstractProduct</td>
+<td><code>IImageFilterStrategy</code></td>
+</tr>
+</tbody>
+</table>
+<p>Documented primarily as <strong>Strategy</strong> (Part 4) in ImgKit — the factory shape is how strategies are <strong>selected</strong>, not how they vary at runtime.</p>
+<h3 id="when-you-see-this-in-the-wild-1">When You See This in the Wild</h3>
+<p>Plugin registries: <code>IFilterFactory</code>, codec factories, payment provider factories where each provider supplies a coherent set of services (authorize, capture, refund).</p>
+<h3 id="common-mistakes-1">Common Mistakes</h3>
+<ul>
+<li>One giant factory returning unrelated types (filters + exporters + mailers) — split families by domain</li>
+<li>Throwing generic <code>Exception</code> on unknown name — return typed not-found for API errors</li>
+</ul>
+<hr>
+<h2 id="example-3-lightmapper-mapperregistry">Example 3: LightMapper — MapperRegistry</h2>
+<h3 id="the-problem-2">The Problem</h3>
+<p>Applications define dozens of source/destination mapping pairs. Hand-writing an abstract factory class per assembly does not scale. LightMapper generates mappers and a registry at compile time.</p>
+<h3 id="classes-and-responsibilities-2">Classes and Responsibilities</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>MapperRegistry</code></strong> (generated)</td>
+<td>AbstractFactory substitute</td>
+<td><code>Get&lt;TSource, TDestination&gt;()</code></td>
+</tr>
+<tr>
+<td><strong><code>LightMapper__*__*</code></strong> (generated)</td>
+<td>ConcreteProduct + Singleton</td>
+<td>Per-pair mapper</td>
+</tr>
+<tr>
+<td><strong><code>ILightMapper&lt;TSource,TDest&gt;</code></strong></td>
+<td>AbstractProduct</td>
+<td><code>Map</code>, <code>MapTo</code></td>
+</tr>
+<tr>
+<td><strong><code>MappingCodeEmitter</code></strong></td>
+<td>Generator</td>
+<td>Emits registry + mappers</td>
+</tr>
+</tbody>
+</table>
+<h3 id="object-creation-flow-2">Object Creation Flow</h3>
+<ol>
+<li>Developer annotates types with <code>[LightMapper]</code></li>
+<li>Generator emits <code>MapperRegistry</code> with typeof dispatch table</li>
+<li>Client calls <code>MapperRegistry.Get&lt;Order, OrderDto&gt;()</code></li>
+<li>Registry returns existing singleton mapper for that pair</li>
+<li>No hand-written <code>OrderMapperFactory : IMapperFactory</code> required</li>
+</ol>
+<h3 id="when-you-see-this-in-the-wild-2">When You See This in the Wild</h3>
+<p>Source generators replacing hand-written abstract factories: DI auto-registration, RPC client stubs, ORM provider factories.</p>
+<hr>
+<h2 id="abstract-factory-vs-factory-method">Abstract Factory vs Factory Method</h2>
+<table class="table">
+<thead>
+<tr>
+<th></th>
+<th>Factory Method</th>
+<th>Abstract Factory</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Products</td>
+<td>One per creator method</td>
+<td>Many related per factory</td>
+</tr>
+<tr>
+<td>Extension</td>
+<td>New creator subclass or new static method</td>
+<td>New factory implementation</td>
+</tr>
+<tr>
+<td>Client knows</td>
+<td>One product interface</td>
+<td>Whole family via one factory reference</td>
+</tr>
+<tr>
+<td>Spark example</td>
+<td><code>ShapeFactory2D::CreateBox</code></td>
+<td><code>IUiControlsFactory::CreateButton</code> + <code>CreatePanel</code> + …</td>
+</tr>
+<tr>
+<td>Switch cost</td>
+<td>Usually local</td>
+<td>Swaps entire product line</td>
+</tr>
+</tbody>
+</table>
+<h2 id="abstract-factory-vs-builder">Abstract Factory vs Builder</h2>
+<ul>
+<li><strong>Abstract Factory</strong> creates <strong>related products</strong> immediately — each <code>Create*</code> returns a finished control</li>
+<li><strong>Builder</strong> assembles <strong>one complex product</strong> step by step (<code>SiteBuilder</code>, next chapter) — optional parts, validation at end</li>
+</ul>
+<p>Do not confuse <code>MarkdownPipelineFactory</code> (two independent pipelines — Factory Method / Simple Factory) with <code>IUiControlsFactory</code> (coordinated control set).</p>
+<h2 id="testing">Testing</h2>
+<p>Inject or select <code>DearImguiControlsFactory</code> in headless tests; use <code>SparkUiControlsFactory</code> in editor builds. Same panel source code, different family:</p>
+<ol>
+<li>Test host calls <code>UiSystem::Get().SetActiveBackend(UiBackendKind::DearImGui)</code></li>
+<li>Panel builds tree through factory</li>
+<li>Assert on <code>IUiTreeView</code> behavior without GPU-native Spark chrome</li>
+</ol>
+<h2 id="when-you-see-this-in-the-wild-summary">When You See This in the Wild (Summary)</h2>
+<ul>
+<li>Platform or theme backends with multiple widget/control types</li>
+<li>Plugin SDKs returning coherent capability bundles</li>
+<li>Generated registries (LightMapper) replacing handwritten factory hierarchies</li>
+</ul>
+<h2 id="common-mistakes-summary">Common Mistakes (Summary)</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Mistake</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Leaking concrete products from factory</td>
+<td>Return <code>UniquePtr&lt;IUiButton&gt;</code>, not <code>SparkButton*</code></td>
+</tr>
+<tr>
+<td>Partial family swap</td>
+<td>Swap <code>IUiBackend</code>, not individual controls</td>
+</tr>
+<tr>
+<td>Over-using Abstract Factory for one product</td>
+<td>Use Factory Method</td>
+</tr>
+<tr>
+<td>Fat factory interface violating ISP</td>
+<td>Group by real family boundaries (Spark's control set is genuinely co-used)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="next">Next</h2>
+<p><a href="05-builder.html">Builder →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#abstract-factory">Abstract Factory</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#structure">Structure</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#gof-participants">GoF Participants</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-1-spark-iuicontrolsfactory-canonical">Example 1: Spark — IUiControlsFactory (Canonical)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The Problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#classes-and-responsibilities">Classes and Responsibilities</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#object-creation-flow">Object Creation Flow</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#participant-mapping">Participant Mapping</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#when-you-see-this-in-the-wild">When You See This in the Wild</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#common-mistakes">Common Mistakes</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#why-not-factory-method-per-control">Why Not Factory Method Per Control?</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-2-imgkit-strategy-factories-abstract-factorylike">Example 2: ImgKit — Strategy Factories (Abstract Factory–like)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The Problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#classes-and-responsibilities">Classes and Responsibilities</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#object-creation-flow">Object Creation Flow</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#participant-mapping">Participant Mapping</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#when-you-see-this-in-the-wild">When You See This in the Wild</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#common-mistakes">Common Mistakes</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-3-lightmapper-mapperregistry">Example 3: LightMapper — MapperRegistry</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The Problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#classes-and-responsibilities">Classes and Responsibilities</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#object-creation-flow">Object Creation Flow</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#when-you-see-this-in-the-wild">When You See This in the Wild</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#abstract-factory-vs-factory-method">Abstract Factory vs Factory Method</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#abstract-factory-vs-builder">Abstract Factory vs Builder</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#testing">Testing</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#when-you-see-this-in-the-wild-summary">When You See This in the Wild (Summary)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#common-mistakes-summary">Common Mistakes (Summary)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

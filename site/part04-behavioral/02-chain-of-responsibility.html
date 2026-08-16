@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chain of Responsibility · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>Chain of Responsibility</h1>
+          </header>
+          <div class="doc-body"><h1 id="chain-of-responsibility">Chain of Responsibility</h1>
+<p><strong>Intent:</strong> Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request. Chain the receiving objects and pass the request along the chain until an object handles it.</p>
+<h2 id="the-behavioral-problem-who-handles-this-request">The Behavioral Problem: Who Handles This Request?</h2>
+<p>Without Chain of Responsibility, a coordinator often becomes a <strong>god method</strong>: one function knows every handler, every order, and every cross-cutting concern (logging, validation, auth). Adding a feature means editing that coordinator. Worse, the <em>sender</em> (HTTP controller, CLI entry point) may need to know which downstream object should run — tight coupling from the edge of the system to the core.</p>
+<p>Chain of Responsibility solves this by giving each handler a uniform interface and a way to <strong>delegate forward</strong>. The sender talks to the head of the chain (or pipeline) only. Each link decides whether to handle, pass on, wrap, or augment the request. The pattern appears in two flavors in this repo:</p>
+<ul>
+<li><strong>Classic CoR</strong> — first handler that accepts the work stops the chain (optional pass).</li>
+<li><strong>Pipeline CoR</strong> — every stage runs in order, mutating shared context (MDWeb) or wrapping a terminal handler (LightMediator middleware).</li>
+</ul>
+<p>Both avoid central switch statements and keep senders ignorant of the full handler graph.</p>
+<h2 id="gof-participants-real-classes">GoF Participants → Real Classes</h2>
+<table class="table">
+<thead>
+<tr>
+<th>GoF role</th>
+<th>Responsibility</th>
+<th>MDWeb mapping</th>
+<th>LightMediator mapping</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Handler</strong></td>
+<td>Defines successor interface; optional default pass</td>
+<td><code>IGenerationStep</code></td>
+<td><code>IRequestMiddleware&lt;TRequest,TResponse&gt;</code></td>
+</tr>
+<tr>
+<td><strong>ConcreteHandler</strong></td>
+<td>Handles or forwards</td>
+<td><code>ReadContentStep</code>, <code>RenderMarkdownStep</code>, …</td>
+<td><code>ElapsedRequestLoggingMiddleware&lt;,&gt;</code></td>
+</tr>
+<tr>
+<td><strong>Client</strong></td>
+<td>Initiates request on chain</td>
+<td>Host app calling <code>SiteGenerationPipeline.ExecuteAsync</code></td>
+<td><code>OrdersController</code> / <code>ImagesController</code> calling <code>IMediator.SendAsync</code></td>
+</tr>
+<tr>
+<td><strong>Receiver</strong> (often implicit)</td>
+<td>Terminal handler</td>
+<td>Last pipeline step</td>
+<td><code>IRequestHandler&lt;TRequest,TResponse&gt;</code> at chain center</td>
+</tr>
+</tbody>
+</table>
+<p>LightMediator's middleware chain is CoR where <strong>every</strong> middleware runs; the innermost link is always the request handler. MDWeb's pipeline is CoR where <strong>every</strong> step runs; there is no "first handler wins" early exit unless a step throws.</p>
+<hr>
+<h2 id="example-1-mdweb-site-generation-pipeline">Example 1: MDWeb — Site Generation Pipeline</h2>
+<p>MDWeb builds static sites from markdown. Generation is not one monolithic function — it is a <strong>sequence of stages</strong>, each responsible for one transformation, all sharing one <code>SiteContext</code>.</p>
+<h3 id="conceptual-flow">Conceptual flow</h3>
+<p>Each page starts as raw markdown on disk. Over the pipeline it becomes normalized links, HTML, rewritten URLs, post-processed HTML, generated files, copied assets, and optionally PDF export. Stages depend on earlier stages having populated <code>SiteContext</code> (content tree, rendered HTML, theme paths). The behavioral win: <strong>adding a stage does not edit existing stages</strong>.</p>
+<h3 id="key-classes-and-collaboration">Key classes and collaboration</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Role</th>
+<th>State held</th>
+<th>Called by / calls</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>IGenerationStep</code></td>
+<td>Handler contract: <code>Name</code>, <code>ExecuteAsync(context)</code></td>
+<td>None (behavior only)</td>
+<td>Implemented by each step</td>
+</tr>
+<tr>
+<td><code>SiteGenerationPipeline</code></td>
+<td>Client-facing orchestrator</td>
+<td><code>IEnumerable&lt;IGenerationStep&gt;</code>, <code>ILogger</code></td>
+<td>Called by app host; iterates steps in DI registration order</td>
+</tr>
+<tr>
+<td><code>SiteContext</code></td>
+<td>Shared mutable context passed along chain</td>
+<td><code>Root</code>, <code>AllPages</code>, <code>HomePage</code>, configuration, theme, output paths</td>
+<td>Every step reads/writes</td>
+</tr>
+<tr>
+<td><code>ReadContentStep</code></td>
+<td>First stage: load files, build tree</td>
+<td><code>IContentReader</code>, logger</td>
+<td>Reads config from context; writes <code>Root</code>, <code>AllPages</code>, <code>HomePage</code></td>
+</tr>
+<tr>
+<td><code>RenderMarkdownStep</code></td>
+<td>Converts markdown → HTML per page</td>
+<td><code>IMarkdownRenderer</code> (Strategy)</td>
+<td>Reads <code>AllPages[].RawMarkdown</code>; writes <code>HtmlContent</code>, <code>TableOfContents</code></td>
+</tr>
+<tr>
+<td><code>GeneratePagesStep</code>, <code>CopyAssetsStep</code>, …</td>
+<td>Later stages</td>
+<td>Step-specific services</td>
+<td>Mutate context or filesystem</td>
+</tr>
+</tbody>
+</table>
+<p><code>IGenerationStep</code> is documented in source as Chain of Responsibility:</p>
+<pre><code class="language-csharp">/// Chain of Responsibility: a single step in the site generation pipeline.
+public interface IGenerationStep
+{
+    string Name { get; }
+    Task ExecuteAsync(SiteContext context, CancellationToken cancellationToken = default);
+}
+</code></pre>
+<p><code>SiteGenerationPipeline</code> is the <strong>client</strong> that walks the chain:</p>
+<pre><code class="language-csharp">public async Task ExecuteAsync(SiteContext context, CancellationToken cancellationToken = default)
+{
+    foreach (var step in steps)
+    {
+        logger.LogInformation("Running step: {StepName}", step.Name);
+        await step.ExecuteAsync(context, cancellationToken);
+    }
+}
+</code></pre>
+<p>There is no <code>next</code> delegate — order is <strong>extrinsic</strong> (DI registration order) rather than each handler holding a successor pointer. That is a valid CoR variant: the chain is assembled at composition root, not linked at runtime.</p>
+<h3 id="sequence-walkthrough-one-build">Sequence walkthrough: one build</h3>
+<pre class="mermaid">sequenceDiagram
+    participant Host as Build host
+    participant Pipe as SiteGenerationPipeline
+    participant Read as ReadContentStep
+    participant Render as RenderMarkdownStep
+    participant Gen as GeneratePagesStep
+    participant Ctx as SiteContext
+
+    Host-&gt;&gt;Pipe: ExecuteAsync(context)
+    Pipe-&gt;&gt;Read: ExecuteAsync(context)
+    Read-&gt;&gt;Ctx: Root, AllPages, HomePage
+    Pipe-&gt;&gt;Render: ExecuteAsync(context)
+    loop each page
+        Render-&gt;&gt;Ctx: page.HtmlContent, TableOfContents
+    end
+    Pipe-&gt;&gt;Gen: ExecuteAsync(context)
+    Gen-&gt;&gt;Ctx: writes output files
+</pre>
+<ol>
+<li>Host constructs <code>SiteContext</code> from configuration and invokes the pipeline.</li>
+<li><code>ReadContentStep</code> calls <code>IContentReader.ReadAsync</code>, assigns <code>context.Root</code>, collects pages via <code>NavigationBuilder.CollectPages</code>, picks a home page.</li>
+<li><code>RenderMarkdownStep</code> loops <code>context.AllPages</code>, calls <code>IMarkdownRenderer.Render</code> (Strategy — see chapter 9), stores HTML and headings on each page.</li>
+<li>Subsequent steps (normalize links, rewrite, post-process, generate, copy assets, export PDF) each assume prior fields exist. A missing step surfaces as a null reference or empty output, not as a compile error — pipeline contracts are <strong>implicit</strong> and documented by step order.</li>
+</ol>
+<h3 id="adding-a-step-openclosed">Adding a step (Open/Closed)</h3>
+<p>To add <code>ValidateFrontMatterStep</code>, implement <code>IGenerationStep</code>, register it in DI <strong>before</strong> render if validation must see raw markdown, or after read if it only inspects front matter. No edit to <code>RenderMarkdownStep</code> or <code>SiteGenerationPipeline</code> loop body.</p>
+<h3 id="trade-offs">Trade-offs</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Benefit</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stages are small, testable units</td>
+<td>Step order is convention + DI — wrong order fails at runtime</td>
+</tr>
+<tr>
+<td>Shared <code>SiteContext</code> avoids copying large trees</td>
+<td>Context becomes a "god bag" if discipline slips</td>
+</tr>
+<tr>
+<td>Easy to add/remove stages</td>
+<td>No built-in "skip if handled" — all steps run</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Alternatives:</strong> A single <code>BuildSite()</code> method (simplest for tiny sites); workflow engines with explicit DAGs (better when steps have complex dependencies); Mediator-style dispatch (overkill when order is strictly linear).</p>
+<hr>
+<h2 id="example-2-lightmediator-request-middleware-chain">Example 2: LightMediator — Request Middleware Chain</h2>
+<p>LightMediator implements CoR for <strong>cross-cutting request processing</strong>. Business logic lives in <code>IRequestHandler</code>; logging, validation, caching, and auth live in <code>IRequestMiddleware</code> wrappers.</p>
+<h3 id="the-behavioral-problem">The behavioral problem</h3>
+<p>Controllers should not open-code timing logs around every handler. Handlers should not depend on logging abstractions if the concern is universal. Middleware chains let <strong>orthogonal concerns</strong> wrap the terminal handler without subclassing every handler.</p>
+<h3 id="key-classes">Key classes</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Role</th>
+<th>State held</th>
+<th>Called by / calls</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>IMediator</code></td>
+<td>Client API</td>
+<td>—</td>
+<td><code>SendAsync</code> → <code>Mediator</code></td>
+</tr>
+<tr>
+<td><code>Mediator</code></td>
+<td>Builds chain per request type</td>
+<td><code>IServiceProvider</code>, <code>INotificationPublisher</code></td>
+<td>Resolves handler + middlewares; invokes composed delegate</td>
+</tr>
+<tr>
+<td><code>IRequestHandler&lt;TRequest,TResponse&gt;</code></td>
+<td>Terminal receiver</td>
+<td>Handler dependencies (stores, loggers)</td>
+<td><code>HandleAsync</code> — never called by client directly</td>
+</tr>
+<tr>
+<td><code>IRequestMiddleware&lt;TRequest,TResponse&gt;</code></td>
+<td>CoR link</td>
+<td>Middleware dependencies</td>
+<td><code>InvokeAsync(request, next, ct)</code> — must call <code>next</code> to continue</td>
+</tr>
+<tr>
+<td><code>RequestHandlerDelegate&lt;TResponse&gt;</code></td>
+<td>Continuation</td>
+<td>Closure over inner chain</td>
+<td>Passed to each middleware</td>
+</tr>
+</tbody>
+</table>
+<p>Core chain construction in <code>Mediator.SendCore</code>:</p>
+<pre><code class="language-csharp">var handler = serviceProvider.GetService&lt;IRequestHandler&lt;TRequest, TResponse&gt;&gt;();
+var middlewares = serviceProvider.GetServices&lt;IRequestMiddleware&lt;TRequest, TResponse&gt;&gt;().ToArray();
+
+RequestHandlerDelegate&lt;TResponse&gt; next = cancellationToken =&gt; handler.HandleAsync(request, cancellationToken);
+for (var i = middlewares.Length - 1; i &gt;= 0; i--)
+{
+    var middleware = middlewares[i];
+    var inner = next;
+    next = cancellationToken =&gt; middleware.InvokeAsync(request, inner, cancellationToken);
+}
+return await next(cancellationToken);
+</code></pre>
+<p>The loop runs <strong>backward</strong> so the <strong>first registered middleware is outermost</strong> — it executes first on the way in and last on the way out (classic ASP.NET Core onion).</p>
+<h3 id="sequence-walkthrough-createorder-with-logging-middleware">Sequence walkthrough: CreateOrder with logging middleware</h3>
+<pre class="mermaid">sequenceDiagram
+    participant Ctrl as OrdersController
+    participant Med as Mediator
+    participant Log as ElapsedRequestLoggingMiddleware
+    participant H as CreateOrderHandler
+    participant Store as IOrderStore
+
+    Ctrl-&gt;&gt;Med: SendAsync(CreateOrderCommand)
+    Med-&gt;&gt;Log: InvokeAsync(request, next)
+    Log-&gt;&gt;Log: Stopwatch.Start()
+    Log-&gt;&gt;H: next() → HandleAsync
+    H-&gt;&gt;Store: Save(result)
+    H--&gt;&gt;Log: CreateOrderResult
+    Log-&gt;&gt;Log: Log elapsed ms
+    Log--&gt;&gt;Med: result
+    Med--&gt;&gt;Ctrl: result
+</pre>
+<ol>
+<li><code>OrdersController</code> builds <code>CreateOrderCommand</code> and calls <code>mediator.SendAsync</code> — it knows nothing about middleware.</li>
+<li><code>Mediator</code> resolves <code>CreateOrderHandler</code> and any <code>IRequestMiddleware&lt;CreateOrderCommand, CreateOrderResult&gt;</code>.</li>
+<li>Outer middleware starts a stopwatch, awaits <code>next</code>.</li>
+<li><code>CreateOrderHandler</code> persists via <code>IOrderStore</code>, returns <code>CreateOrderResult</code>.</li>
+<li>Middleware <code>finally</code> block logs request type and duration, returns response upstream.</li>
+</ol>
+<p>Sample middleware (<code>LightMediator.Samples.Application.ElapsedRequestLoggingMiddleware</code>) and ImgKit's copy (<code>ImgKit.Application.Middleware.ElapsedRequestLoggingMiddleware</code>) are identical in structure — open generic <code>TRequest,TResponse</code> so one registration covers all commands.</p>
+<h3 id="gof-mapping">GoF mapping</h3>
+<ul>
+<li><strong>Handler:</strong> <code>IRequestMiddleware</code></li>
+<li><strong>ConcreteHandler:</strong> <code>ElapsedRequestLoggingMiddleware&lt;,&gt;</code></li>
+<li><strong>Receiver:</strong> <code>CreateOrderHandler</code>, <code>ApplyFilterHandler</code>, …</li>
+<li><strong>Client:</strong> <code>IMediator</code> caller</li>
+</ul>
+<h3 id="trade-offs-1">Trade-offs</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Benefit</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cross-cutting logic in one place</td>
+<td>Middleware order matters; debugging deep stacks</td>
+</tr>
+<tr>
+<td>Handlers stay focused on domain</td>
+<td>Too many middleware layers obscure flow</td>
+</tr>
+<tr>
+<td>Type-safe per request/response</td>
+<td>Open generics can confuse DI registration</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Alternatives:</strong> Decorator on each handler (N decorators); AOP/weaving; inline <code>try/finally</code> in Mediator (loses extensibility). For HTTP-only concerns, ASP.NET middleware pipeline duplicates this at transport layer — LightMediator duplicates it at <strong>application message</strong> layer, which is why ImgKit uses both.</p>
+<hr>
+<h2 id="example-3-imgkit-logging-middleware-on-image-commands">Example 3: ImgKit — Logging Middleware on Image Commands</h2>
+<p>ImgKit registers LightMediator with open middleware:</p>
+<pre><code class="language-csharp">services.AddLightMediator(typeof(ImgKit.Application.AssemblyMarker).Assembly);
+services.AddOpenRequestMiddleware(typeof(ElapsedRequestLoggingMiddleware&lt;,&gt;));
+</code></pre>
+<p>Every image command (<code>ResizeImageCommand</code>, <code>ApplyFilterCommand</code>, …) passes through elapsed-time logging before reaching handlers in <code>ImageHandlers.cs</code>. The <strong>sender</strong> is <code>ImagesController</code>; it only builds commands and calls <code>SendAsync</code>. It never references <code>ElapsedRequestLoggingMiddleware</code>.</p>
+<p>Behaviorally, ImgKit's chain is:</p>
+<pre><code>ImagesController → IMediator → [LoggingMiddleware → … → ImageHandler] → ProcessedImageResult
+</code></pre>
+<p>The handler then delegates to <code>ImageProcessingHandlerBase.ProcessAsync</code> (Template Method — chapter 10). CoR ends at handler entry; pixel work is not a middleware chain.</p>
+<hr>
+<h2 id="chain-vs-pipeline-decision-guide">Chain vs Pipeline — Decision Guide</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Classic CoR</th>
+<th>MDWeb / LightMediator pipeline</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Typical outcome</td>
+<td>One handler processes</td>
+<td>All links run</td>
+</tr>
+<tr>
+<td>Stopping</td>
+<td>Handler omits <code>next</code> or returns</td>
+<td>Exception aborts pipeline</td>
+</tr>
+<tr>
+<td>Shared state</td>
+<td>Often per-request message object</td>
+<td><code>SiteContext</code> or wrapped delegate</td>
+</tr>
+<tr>
+<td>Composition</td>
+<td>Linked list or builder</td>
+<td>DI-ordered enumerable / reversed delegate stack</td>
+</tr>
+<tr>
+<td>Best when</td>
+<td>Optional handlers (auth, caching hit)</td>
+<td>Fixed multi-stage transforms or universal wrappers</td>
+</tr>
+</tbody>
+</table>
+<p>Both patterns <strong>decouple the sender from receiver topology</strong>. Choose classic CoR when stages are optional or competitive; choose pipeline CoR when every stage must run or when wrapping a single terminal handler.</p>
+<h2 id="pitfalls">Pitfalls</h2>
+<ul>
+<li><strong>Silent order bugs</strong> — MDWeb steps depend on implicit context fields; document registration order in DI module.</li>
+<li><strong>Forgotten <code>next</code></strong> — Middleware that never calls <code>next</code> short-circuits the handler (sometimes intentional, usually a bug).</li>
+<li><strong>Heavy context</strong> — <code>SiteContext</code> growth invites steps that read unrelated fields; keep steps cohesive.</li>
+</ul>
+<h2 id="next">Next</h2>
+<p><a href="03-command.html">Command →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#chain-of-responsibility">Chain of Responsibility</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#the-behavioral-problem-who-handles-this-request">The Behavioral Problem: Who Handles This Request?</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#gof-participants-real-classes">GoF Participants → Real Classes</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-1-mdweb-site-generation-pipeline">Example 1: MDWeb — Site Generation Pipeline</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#conceptual-flow">Conceptual flow</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#key-classes-and-collaboration">Key classes and collaboration</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#sequence-walkthrough-one-build">Sequence walkthrough: one build</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#adding-a-step-openclosed">Adding a step (Open/Closed)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#trade-offs">Trade-offs</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-2-lightmediator-request-middleware-chain">Example 2: LightMediator — Request Middleware Chain</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-behavioral-problem">The behavioral problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#key-classes">Key classes</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#sequence-walkthrough-createorder-with-logging-middleware">Sequence walkthrough: CreateOrder with logging middleware</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#gof-mapping">GoF mapping</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#trade-offs">Trade-offs</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-3-imgkit-logging-middleware-on-image-commands">Example 3: ImgKit — Logging Middleware on Image Commands</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#chain-vs-pipeline-decision-guide">Chain vs Pipeline — Decision Guide</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#pitfalls">Pitfalls</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

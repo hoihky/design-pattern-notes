@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Facade · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>Facade</h1>
+          </header>
+          <div class="doc-body"><h1 id="facade">Facade</h1>
+<p><strong>Intent:</strong> Provide a unified, higher-level interface to a set of interfaces in a subsystem. Facade defines no new functionality — it simplifies access.</p>
+<h2 id="the-structural-problem-subsystem-complexity">The Structural Problem: Subsystem Complexity</h2>
+<p>Subsystems grow many moving parts:</p>
+<ul>
+<li>Catalog, buffer pools, SQL compiler, query executor, spill writer (database).</li>
+<li>Nine ordered pipeline steps, output cleaning, timing, error aggregation (static site generator).</li>
+<li>Window, input, audio, scene, ImGui layer (game engine).</li>
+</ul>
+<p>Clients that reach directly into every class:</p>
+<ul>
+<li>Must learn correct <strong>call order</strong> (compile before execute; clean output before write).</li>
+<li>Break when internal wiring changes.</li>
+<li>Duplicate bootstrap code in CLI, tests, and samples.</li>
+</ul>
+<p><strong>Facade</strong> offers one <strong>entry point</strong> that delegates inward. It does not replace subsystem classes — it <strong>coordinates</strong> them behind a stable surface.</p>
+<pre class="mermaid">flowchart LR
+    CLIENT[CLI / game / app] --&gt; FACADE[Facade]
+    FACADE --&gt; S1[Subsystem A]
+    FACADE --&gt; S2[Subsystem B]
+    FACADE --&gt; S3[Subsystem C]
+</pre>
+<h2 id="uml-roles-project-mapping">UML Roles → Project Mapping</h2>
+<table class="table">
+<thead>
+<tr>
+<th>GoF role</th>
+<th>Responsibility</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Facade</strong></td>
+<td>Simple API; delegates to subsystem</td>
+<td><code>SiteGenerator</code>, <code>RainDbEngine</code>, <code>IEngineContext</code></td>
+</tr>
+<tr>
+<td><strong>Subsystem classes</strong></td>
+<td>Do real work</td>
+<td>Pipeline steps, compilers, executors, engine internals</td>
+</tr>
+<tr>
+<td><strong>Client</strong></td>
+<td>Uses facade only</td>
+<td>MDWeb CLI, RainDB samples, Spark game <code>OnAttach</code></td>
+</tr>
+</tbody>
+</table>
+<p>A facade <strong>must delegate</strong>. If it reimplements parsing, compilation, or rendering logic, it becomes a <strong>God object</strong> and violates Single Responsibility.</p>
+<hr>
+<h2 id="example-1-mdweb-sitegenerator-excellent">Example 1: MDWeb — SiteGenerator (Excellent)</h2>
+<h3 id="the-problem">The problem</h3>
+<p>Generating a static site involves:</p>
+<ol>
+<li>Set and optionally clean output directory.</li>
+<li>Build <code>SiteContext</code> from configuration.</li>
+<li>Execute <code>SiteGenerationPipeline</code> (read content → render markdown → apply templates → post-process → write files → optional PDF).</li>
+<li>Aggregate timing, page counts, errors.</li>
+</ol>
+<p>CLI, watch service, and integration tests should call <strong>one method</strong>, not construct and order steps manually.</p>
+<h3 id="class-roles">Class roles</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Pattern role</th>
+<th>What it wraps / uses</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>SiteGenerator</code></strong></td>
+<td>Facade</td>
+<td><code>SiteGenerationPipeline</code>, <code>IOutputWriter</code>, <code>ILogger</code></td>
+<td>Documented: <em>"Facade: coordinates the full site generation process."</em> Implements <code>ISiteGenerator</code>.</td>
+</tr>
+<tr>
+<td><strong><code>SiteGenerationPipeline</code></strong></td>
+<td>Subsystem</td>
+<td>Ordered <code>IGenerationStep</code> list</td>
+<td>Knows step sequence; not exposed to CLI.</td>
+</tr>
+<tr>
+<td><strong><code>IOutputWriter</code></strong></td>
+<td>Subsystem</td>
+<td>Directory clean/create, file writes</td>
+<td>Facade sets output path before pipeline runs.</td>
+</tr>
+<tr>
+<td><strong><code>SiteContext</code></strong></td>
+<td>Shared state bag</td>
+<td>Pages, config, PDF path</td>
+<td>Passed through pipeline steps — facade creates it, pipeline mutates it.</td>
+</tr>
+<tr>
+<td><strong><code>Program</code> / tests</strong></td>
+<td>Client</td>
+<td><code>await generator.GenerateAsync(config)</code></td>
+<td>Single call surface.</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-csharp">public sealed class SiteGenerator(
+    SiteGenerationPipeline pipeline,
+    IOutputWriter outputWriter,
+    ILogger&lt;SiteGenerator&gt; logger) : ISiteGenerator
+{
+    public async Task&lt;GenerationResult&gt; GenerateAsync(
+        SiteConfiguration configuration, CancellationToken cancellationToken = default)
+    {
+        outputWriter.SetOutputDirectory(configuration.OutputDirectory);
+        // clean or create output directory based on PDF/site flags
+        var context = new SiteContext { Configuration = configuration };
+        await pipeline.ExecuteAsync(context, cancellationToken);
+        return GenerationResult.Ok(...);
+    }
+}
+</code></pre>
+<h3 id="step-by-step-cli-generates-a-site">Step-by-step: CLI generates a site</h3>
+<ol>
+<li>CLI parses arguments into <code>SiteConfiguration</code> (content root, output dir, theme, publish mode).</li>
+<li>DI resolves <code>ISiteGenerator</code> → concrete <code>SiteGenerator</code> with pipeline and writer injected.</li>
+<li>CLI calls <code>GenerateAsync(config, cancellationToken)</code>.</li>
+<li>Facade configures output writer and cleans directory when full site generation is requested.</li>
+<li>Facade creates empty <code>SiteContext</code>, hands it to <code>pipeline.ExecuteAsync</code>.</li>
+<li>Pipeline runs steps (read filesystem → build <code>ContentFolder</code> tree → render each <code>MarkdownPage</code> → layout → post-process → write HTML).</li>
+<li>Facade logs page count and duration, returns <code>GenerationResult</code> with success/failure and paths.</li>
+<li>CLI prints result — never referenced <code>RenderMarkdownStep</code> or <code>PostProcessHtmlStep</code> by name.</li>
+</ol>
+<h3 id="facade-vs-pipeline">Facade vs pipeline</h3>
+<p>The <strong>pipeline</strong> is subsystem internals. The <strong>facade</strong> is the product API. Tests can mock <code>ISiteGenerator</code>; integration tests hit the real facade to exercise the full subsystem.</p>
+<hr>
+<h2 id="example-2-spark-ienginecontext">Example 2: Spark — IEngineContext</h2>
+<h3 id="the-problem-1">The problem</h3>
+<p>Games and demos need window dimensions, input, scene access, audio, and optional ImGui — without including half of <code>Engine.hpp</code> or linking every subsystem header.</p>
+<h3 id="class-roles-1">Class roles</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Pattern role</th>
+<th>What it exposes</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>IEngineContext</code></strong></td>
+<td>Facade interface</td>
+<td><code>GetWindow</code>, <code>GetInput</code>, <code>GetFramebufferSize</code>, <code>TryGetScene</code>, <code>TryGetSoundEngine</code>, <code>TryGetImGuiLayer</code>, scene render params</td>
+<td>Documented: <em>"Facade passed to game code — stable surface that hides Engine internals."</em></td>
+</tr>
+<tr>
+<td><strong><code>EngineContext</code></strong></td>
+<td>Concrete facade</td>
+<td>Holds references into live <code>Engine</code> subsystems</td>
+<td>Implements <code>IEngineContext</code>; constructed per game instance.</td>
+</tr>
+<tr>
+<td><strong><code>Game::OnAttach(IEngineContext&amp;)</code></strong></td>
+<td>Client entry</td>
+<td>Receives facade, not <code>Engine*</code></td>
+<td>Game code uses narrow surface.</td>
+</tr>
+<tr>
+<td><strong><code>Engine</code> internals</strong></td>
+<td>Subsystems</td>
+<td>Rendering, audio, scene graph, UI</td>
+<td>Hidden behind context methods.</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-cpp">class IEngineContext {
+public:
+    virtual Window&amp; GetWindow() = 0;
+    virtual IInput&amp; GetInput() = 0;
+    virtual void GetFramebufferSize(int&amp; outWidth, int&amp; outHeight) const = 0;
+    virtual SoundEngine* TryGetSoundEngine() noexcept = 0;
+    virtual Scene* TryGetScene() noexcept = 0;
+    virtual IImGuiLayer* TryGetImGuiLayer() noexcept = 0;
+};
+</code></pre>
+<h3 id="step-by-step-game-startup">Step-by-step: game startup</h3>
+<ol>
+<li>Engine creates <code>EngineContext</code> wrapping running engine subsystems.</li>
+<li>Engine calls <code>game-&gt;OnAttach(context)</code>.</li>
+<li>Game stores <code>context</code> reference or pulls <code>GetWindow()</code> for title/size.</li>
+<li>Each frame: <code>OnUpdate(timing, context)</code> reads input via <code>context.GetInput()</code>.</li>
+<li><code>OnRender(frame, context)</code> optionally calls <code>TryGetScene()</code> — nullptr if no scene-bound game.</li>
+<li>Game never allocates <code>SoundEngine</code> directly; uses <code>TryGetSoundEngine()</code> if audio needed.</li>
+</ol>
+<p><code>TryGet*</code> methods expose optional subsystems without throwing — facade simplifies <strong>capability discovery</strong>, not just hiding names.</p>
+<h3 id="other-spark-facades">Other Spark facades</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Facade</th>
+<th>Subsystem hidden</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>SoundEngine</code></strong></td>
+<td>Device init, mixing, clip playback</td>
+</tr>
+<tr>
+<td><strong><code>PhysicsSubsystem</code></strong></td>
+<td>2D/3D worlds, raycasts</td>
+</tr>
+<tr>
+<td><strong><code>UiSystem</code></strong></td>
+<td>Active <code>IUiBackend</code>, paint/input routing</td>
+</tr>
+<tr>
+<td><strong><code>SceneSerializer</code></strong></td>
+<td>ECS capture, component registry, file format — one class to "save scene to file"</td>
+</tr>
+</tbody>
+</table>
+<p><code>SceneSerializer::Capture</code> walks <code>GameWorld</code> entities, uses <code>ComponentSnapshotRegistry</code> for per-component serialization, produces <code>SceneDocument</code>. Clients call <code>WriteToFile</code> — not iterate component kinds manually.</p>
+<hr>
+<h2 id="example-3-raindb-raindbengine">Example 3: RainDB — RainDbEngine</h2>
+<h3 id="the-problem-2">The problem</h3>
+<p>Embedded analytics engine assembly requires:</p>
+<ul>
+<li><code>ICatalog</code> for table metadata</li>
+<li><code>IBufferPool</code> / <code>IAlignedBufferPool</code> for vectorized memory</li>
+<li><code>ISqlCompiler</code> and <code>ILinqCompiler</code> for query text → plan</li>
+<li><code>IQueryExecutor</code> for plan → results</li>
+<li>Optional <code>ISpillWriter</code>, <code>RainDbFileDatabase</code> for persistence</li>
+</ul>
+<p>Sample apps and tests should not duplicate this wiring.</p>
+<h3 id="class-roles-2">Class roles</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Role</th>
+<th>Contains / exposes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>RainDbEngine</code></strong></td>
+<td>Facade + composition root</td>
+<td>Properties: <code>Catalog</code>, <code>BufferPool</code>, <code>Executor</code>, <code>SqlCompiler</code>, <code>LinqCompiler</code>, <code>SpillWriter</code>, <code>FileDatabase</code></td>
+</tr>
+<tr>
+<td><strong><code>CreateDefault()</code></strong></td>
+<td>Factory on facade</td>
+<td>Wires <code>InMemoryCatalog</code>, <code>HybridBufferPool</code>, <code>DefaultQueryExecutor</code>, compilers</td>
+</tr>
+<tr>
+<td><strong><code>OpenPersistent(path)</code></strong></td>
+<td>Factory on facade</td>
+<td>Opens file-backed catalog, same executor/compiler wiring</td>
+</tr>
+<tr>
+<td><strong><code>ExecuteSqlAsync</code></strong></td>
+<td>Convenience delegate</td>
+<td><code>CreateSession</code> → compile → execute — hides session object lifecycle for simple callers</td>
+</tr>
+<tr>
+<td><strong>Analytics demo / tests</strong></td>
+<td>Client</td>
+<td><code>RainDbEngine.CreateDefault()</code> then <code>ExecuteSqlAsync("SELECT ...")</code></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-csharp">public sealed class RainDbEngine
+{
+    public ICatalog Catalog { get; }
+    public IQueryExecutor Executor { get; }
+    public ISqlCompiler SqlCompiler { get; }
+    // ...
+
+    public static RainDbEngine CreateDefault() =&gt; CreateDefault(new InMemoryCatalog());
+
+    public async ValueTask&lt;IQueryResult&gt; ExecuteSqlAsync(string sql, CancellationToken ct = default)
+    {
+        var ctx = CreateSession(ct);
+        var plan = await SqlCompiler.CompileAsync(sql, Catalog, ct);
+        return await Executor.ExecuteAsync(plan, ctx);
+    }
+}
+</code></pre>
+<h3 id="step-by-step-run-a-sql-query">Step-by-step: run a SQL query</h3>
+<ol>
+<li>Client calls <code>RainDbEngine.CreateDefault()</code> or <code>OpenPersistent("./data")</code>.</li>
+<li>Facade constructor stores shared collaborators (one buffer pool, one executor).</li>
+<li>Client optionally uses <code>engine.Catalog</code> to create tables via public catalog API.</li>
+<li>Client calls <code>await engine.ExecuteSqlAsync("SELECT * FROM t")</code>.</li>
+<li>Facade creates <code>RainDbExecutionContext</code> (session) with catalog + pools + spill writer.</li>
+<li>Facade delegates compile to <code>SqlCompiler</code>, execute to <code>Executor</code>.</li>
+<li>Client reads <code>IQueryResult</code> — never instantiated <code>DefaultSqlCompiler</code> directly.</li>
+</ol>
+<p>Advanced tests still access <code>SqlCompiler</code> and <code>Executor</code> separately for unit isolation — facade does not <strong>prevent</strong> deep access, it <strong>defaults</strong> to simple paths.</p>
+<hr>
+<h2 id="example-4-lightmapper-maps-facade">Example 4: LightMapper — Maps Facade</h2>
+<p>Generated <code>LightMapper.Generated.Maps</code> exposes:</p>
+<pre><code class="language-csharp">public static TDestination Map&lt;TSource, TDestination&gt;(TSource source);
+public static void MapTo&lt;TSource, TDestination&gt;(TSource source, TDestination destination);
+</code></pre>
+<p>Behind the facade: dispatch tables, generated mapper singletons, reflection metadata. Application code maps DTOs with static methods — subsystem complexity stays in generated assembly.</p>
+<hr>
+<h2 id="example-5-imgkit-iprocessingstudioservice">Example 5: ImgKit — IProcessingStudioService</h2>
+<p>Web UI for image experiments orchestrates upload, operation picker, and API calls through one service — hides HTTP client construction, route URLs, and command payload shapes from Razor components.</p>
+<hr>
+<h2 id="facade-vs-mediator-vs-adapter">Facade vs Mediator vs Adapter</h2>
+<table class="table">
+<thead>
+<tr>
+<th></th>
+<th>Facade</th>
+<th>Mediator</th>
+<th>Adapter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Goal</strong></td>
+<td>Simplify subsystem for <strong>client</strong></td>
+<td>Route <strong>colleague</strong> messages</td>
+<td>Convert <strong>one</strong> interface</td>
+</tr>
+<tr>
+<td><strong>Direction</strong></td>
+<td>Client → subsystem (mostly)</td>
+<td>Colleagues ↔ mediator ↔ colleagues</td>
+<td>Client → target ← adaptee</td>
+</tr>
+<tr>
+<td><strong>Example</strong></td>
+<td><code>SiteGenerator</code></td>
+<td><code>LightMediator.Mediator</code></td>
+<td><code>MarkdigMarkdownRenderer</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="facade-vs-god-object-red-flags">Facade vs God Object — Red Flags</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Healthy facade</th>
+<th>God object</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Methods are one-liners or thin orchestration</td>
+<td>Methods contain business algorithms</td>
+</tr>
+<tr>
+<td>Subsystem classes remain testable in isolation</td>
+<td>All logic migrated into facade</td>
+</tr>
+<tr>
+<td>New features add subsystem classes + one facade call</td>
+<td>Every feature edits the same 2000-line class</td>
+</tr>
+</tbody>
+</table>
+<p>If <code>SiteGenerator</code> started parsing markdown internally, extract back to pipeline steps.</p>
+<hr>
+<h2 id="when-to-introduce-a-facade">When to Introduce a Facade</h2>
+<ul>
+<li>CLI, public SDK, or sample code must bootstrap a complex subsystem.</li>
+<li>You want freedom to reorder internal steps without breaking callers.</li>
+<li>Multiple entry styles (SQL string vs LINQ vs physical plan) share one engine instance.</li>
+</ul>
+<p>Register facades in DI as the <strong>default client-facing type</strong>; keep subsystem interfaces public for advanced extension and testing.</p>
+<h2 id="next">Next</h2>
+<p><a href="07-flyweight.html">Flyweight →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#facade">Facade</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#the-structural-problem-subsystem-complexity">The Structural Problem: Subsystem Complexity</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#uml-roles-project-mapping">UML Roles → Project Mapping</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-1-mdweb-sitegenerator-excellent">Example 1: MDWeb — SiteGenerator (Excellent)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#class-roles">Class roles</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#step-by-step-cli-generates-a-site">Step-by-step: CLI generates a site</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#facade-vs-pipeline">Facade vs pipeline</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-2-spark-ienginecontext">Example 2: Spark — IEngineContext</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#class-roles">Class roles</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#step-by-step-game-startup">Step-by-step: game startup</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#other-spark-facades">Other Spark facades</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-3-raindb-raindbengine">Example 3: RainDB — RainDbEngine</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#class-roles">Class roles</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#step-by-step-run-a-sql-query">Step-by-step: run a SQL query</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-4-lightmapper-maps-facade">Example 4: LightMapper — Maps Facade</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-5-imgkit-iprocessingstudioservice">Example 5: ImgKit — IProcessingStudioService</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#facade-vs-mediator-vs-adapter">Facade vs Mediator vs Adapter</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#facade-vs-god-object-red-flags">Facade vs God Object — Red Flags</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#when-to-introduce-a-facade">When to Introduce a Facade</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

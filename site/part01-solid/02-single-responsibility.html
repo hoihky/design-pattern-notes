@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Single Responsibility Principle · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>Single Responsibility Principle</h1>
+          </header>
+          <div class="doc-body"><h1 id="single-responsibility-principle-srp">Single Responsibility Principle (SRP)</h1>
+<blockquote class="blockquote">
+<p><em>A module should have one, and only one, reason to change.</em></p>
+</blockquote>
+<p>— Robert C. Martin</p>
+<p>SRP is often misread as "one method per class" or "one public API per file." The correct reading is <strong>one axis of change</strong>: a class should not mix unrelated concerns that would cause different stakeholders or requirements to edit the same code.</p>
+<h2 id="the-core-idea">The Core Idea</h2>
+<p>If changing how markdown is rendered forces you to edit the same class that writes PDF files to disk, that class has <strong>two reasons to change</strong> — rendering policy and export I/O.</p>
+<p>Separate them, and each piece can evolve independently. "Reason to change" maps to <strong>stakeholder or requirement axis</strong>: a product manager asking for WeChat support should not force edits in the PDF export module, and a DevOps engineer tuning Puppeteer timeouts should not touch markdown rendering.</p>
+<h3 id="what-counts-as-one-responsibility">What counts as "one responsibility"?</h3>
+<p>A responsibility is a <strong>cohesive job</strong> that a module performs for the rest of the system. Ask: <em>Who would request a change to this code, and why?</em> If two different people with different goals would both edit the same class, SRP is violated.</p>
+<p>Cohesion is the positive mirror of SRP: methods inside a class should cooperate toward one purpose. <code>RenderMarkdownStep</code> loops pages and calls a renderer — every line serves "convert markdown to HTML." That is cohesive even though the class has a loop, logging, and cancellation checks.</p>
+<h2 id="smell-the-god-pipeline">Smell: The God Pipeline</h2>
+<p>Imagine a single <code>SiteGenerator</code> class that:</p>
+<ol>
+<li>Scans the filesystem for <code>.md</code> files</li>
+<li>Parses YAML frontmatter</li>
+<li>Renders markdown to HTML</li>
+<li>Rewrites internal links</li>
+<li>Applies WeChat-specific HTML cleanup</li>
+<li>Loads Scriban templates</li>
+<li>Writes output files</li>
+<li>Exports PDF via headless Chrome</li>
+</ol>
+<p>Every new feature — Mermaid support, a new publish mode, footer injection — touches this one class. Tests require spinning up the entire pipeline. Regressions in link rewriting break PDF export tests.</p>
+<p><strong>Why this hurts:</strong> SRP violations compound. The class becomes a <strong>change magnet</strong> — every PR touches it, merge conflicts multiply, and nobody dares refactor because "it might break PDF." Fear of change is a symptom of SRP failure.</p>
+<h2 id="refactor-one-step-one-class">Refactor: One Step, One Class</h2>
+<p>MDWeb splits generation into discrete <strong>pipeline steps</strong>, each implementing <code>IGenerationStep</code>. The interface itself is intentionally minimal — it exists to give the pipeline orchestrator a uniform contract without knowing step internals.</p>
+<h3 id="igenerationstep-the-pipeline-contract"><code>IGenerationStep</code> — the pipeline contract</h3>
+<p><strong>What it does:</strong> Defines a single unit of work in site generation. Every step exposes a human-readable <code>Name</code> and an <code>ExecuteAsync</code> method that mutates a shared <code>SiteContext</code>.</p>
+<p><strong>Why it exists:</strong> Without this interface, <code>SiteGenerationPipeline</code> would need to know every concrete step type and call them in hard-coded order. The interface lets the orchestrator treat all steps uniformly — classic Chain of Responsibility (Part 4).</p>
+<p><strong>How it fits SRP:</strong> Each implementer owns exactly one transformation. The interface does not bundle "read + render + export" — it bundles only "execute one step."</p>
+<p><strong>Problem it solves:</strong> Decouples <em>ordering</em> (pipeline) from <em>behavior</em> (individual steps).</p>
+<pre><code class="language-csharp">public interface IGenerationStep
+{
+    string Name { get; }
+    Task ExecuteAsync(SiteContext context, CancellationToken cancellationToken = default);
+}
+</code></pre>
+<h3 id="sitecontext-shared-state-not-shared-logic"><code>SiteContext</code> — shared state, not shared logic</h3>
+<p><strong>What it does:</strong> Holds configuration, the content tree, the flat list of pages, theme manifest, and generation outputs. Steps read and write this object; they do not own each other's data structures.</p>
+<p><strong>Why it exists:</strong> Passing ten parameters through every step would violate cohesion in the opposite direction (every step signature would know everything). A context object is the pragmatic compromise — but <strong>logic stays in steps</strong>, not in the context.</p>
+<h3 id="rendermarkdownstep-one-transformation-only"><code>RenderMarkdownStep</code> — one transformation only</h3>
+<p><strong>What it does:</strong> Iterates <code>context.AllPages</code>, calls <code>IMarkdownRenderer.Render</code> on each page's raw markdown, and stores HTML plus table-of-contents headings back on the page model.</p>
+<p><strong>Why it exists:</strong> Markdown rendering is a distinct concern from link rewriting, templating, or PDF export. Isolating it means Markdig extension changes touch one file.</p>
+<p><strong>How it fits SRP:</strong> The step depends on <code>IMarkdownRenderer</code> (abstraction) rather than Markdig (implementation). Its single reason to change is <em>how markdown becomes HTML</em>.</p>
+<p><strong>Problem → Solution → Walkthrough:</strong></p>
+<ul>
+<li><strong>Problem:</strong> Rendering logic embedded in a god generator couples HTML output format to unrelated pipeline stages.</li>
+<li><strong>Solution:</strong> Extract <code>RenderMarkdownStep</code> with injected <code>IMarkdownRenderer</code>.</li>
+<li><strong>Walkthrough:</strong>
+<ol>
+<li><code>SiteGenerationPipeline</code> invokes steps in DI registration order.</li>
+<li>When <code>RenderMarkdownStep.ExecuteAsync</code> runs, <code>context.AllPages</code> is already populated by <code>ReadContentStep</code>.</li>
+<li>For each <code>MarkdownPage</code>, the step calls <code>markdownRenderer.Render(page.RawMarkdown)</code>.</li>
+<li>Results are written to <code>page.HtmlContent</code> and <code>page.TableOfContents</code>.</li>
+<li>Later steps (<code>RewriteLinksStep</code>, <code>PostProcessHtmlStep</code>, <code>GeneratePagesStep</code>) consume the HTML — they never re-render markdown.</li>
+</ol>
+</li>
+</ul>
+<pre><code class="language-csharp">public sealed class RenderMarkdownStep(IMarkdownRenderer markdownRenderer) : IGenerationStep
+{
+    public string Name =&gt; "Render Markdown";
+
+    public Task ExecuteAsync(SiteContext context, CancellationToken cancellationToken = default)
+    {
+        foreach (var page in context.AllPages)
+        {
+            var result = markdownRenderer.Render(page.RawMarkdown);
+            page.HtmlContent = result.Html;
+            page.TableOfContents = result.Headings;
+        }
+        return Task.CompletedTask;
+    }
+}
+</code></pre>
+<p><strong>What would break without this?</strong> If rendering lived inside <code>GeneratePagesStep</code> (which also applies Scriban templates), a Markdig pipeline change could break page layout tests. If rendering lived inside <code>ReadContentStep</code>, content loading would require Markdig in every test that reads files. Separating the step keeps failure domains isolated.</p>
+<h3 id="the-full-step-list-and-each-responsibility">The full step list and each responsibility</h3>
+<p>Nine steps register independently in <code>MDWeb.Application/DependencyInjection.cs</code>:</p>
+<table class="table">
+<thead>
+<tr>
+<th>Step</th>
+<th>Single responsibility</th>
+<th>Reason to change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ReadContentStep</code></td>
+<td>Load markdown files into content tree</td>
+<td>Content folder layout, frontmatter parsing</td>
+</tr>
+<tr>
+<td><code>NormalizeMarkdownLinksStep</code></td>
+<td>Normalize link syntax before render</td>
+<td>Markdown link conventions</td>
+</tr>
+<tr>
+<td><code>RenderMarkdownStep</code></td>
+<td>Markdown → HTML</td>
+<td>Renderer engine, extensions</td>
+</tr>
+<tr>
+<td><code>RewriteLinksStep</code></td>
+<td>Fix internal href targets post-render</td>
+<td>Output URL scheme</td>
+</tr>
+<tr>
+<td><code>PostProcessHtmlStep</code></td>
+<td>Apply publish-profile HTML transforms</td>
+<td>WeChat, print, AMP rules</td>
+</tr>
+<tr>
+<td><code>LoadThemeStep</code></td>
+<td>Resolve theme assets and manifest</td>
+<td>Theme format</td>
+</tr>
+<tr>
+<td><code>GeneratePagesStep</code></td>
+<td>Apply Scriban templates to HTML</td>
+<td>Template engine, page layout</td>
+</tr>
+<tr>
+<td><code>CopyAssetsStep</code></td>
+<td>Copy static assets to output</td>
+<td>Asset pipeline</td>
+</tr>
+<tr>
+<td><code>ExportPdfStep</code></td>
+<td>Export composed documents to PDF</td>
+<td>Puppeteer, print CSS</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Reason to change for <code>RenderMarkdownStep</code>:</strong> how markdown is converted to HTML (e.g., new Markdig extensions). Not link rewriting, not PDF export.</p>
+<h2 id="example-2-raindb-compile-vs-execute">Example 2: RainDB — Compile vs Execute</h2>
+<p>RainDB enforces SRP at the <strong>subsystem</strong> level. A query engine naturally splits into "understand the query" and "run the plan" because those subsystems change for different reasons — SQL dialect features vs execution performance.</p>
+<h3 id="subsystem-boundaries">Subsystem boundaries</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Component</th>
+<th>Responsibility</th>
+<th>Interface</th>
+<th>What it must NOT do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SQL compiler</td>
+<td>SQL text → logical plan → physical plan</td>
+<td><code>ISqlCompiler</code></td>
+<td>Allocate buffers, scan tables</td>
+</tr>
+<tr>
+<td>LINQ compiler</td>
+<td>Expression tree → physical plan</td>
+<td><code>ILinqCompiler</code></td>
+<td>Parse SQL strings</td>
+</tr>
+<tr>
+<td>Query executor</td>
+<td>Run a compiled physical plan</td>
+<td><code>IQueryExecutor</code></td>
+<td>Parse SQL, bind tables</td>
+</tr>
+</tbody>
+</table>
+<p>The executor's documentation states the boundary explicitly:</p>
+<pre><code class="language-csharp">/// &lt;summary&gt;Runs a compiled physical plan (SRP: parsing/planning live elsewhere).&lt;/summary&gt;
+public interface IQueryExecutor
+{
+    ValueTask&lt;IQueryResult&gt; ExecuteAsync(IPhysicalPlan plan, IExecutionContext context);
+}
+</code></pre>
+<p><strong>What <code>IQueryExecutor</code> does:</strong> Accepts an already-compiled <code>IPhysicalPlan</code> and an <code>IExecutionContext</code> (catalog, buffer pools, spill writer, cancellation), then dispatches to the appropriate engine (<code>VectorizedScanEngine</code>, <code>HashAggregateEngine</code>, <code>JoinExecutionEngine</code>, …).</p>
+<p><strong>Why it exists:</strong> Execution operators should not re-parse SQL on every query. Compilation produces a plan artifact; execution consumes it. This mirrors real databases (PostgreSQL's parse/plan/execute separation).</p>
+<p><strong>Problem → Solution → Walkthrough:</strong></p>
+<ul>
+<li><strong>Problem:</strong> Mixing SQL parsing with hash-join implementation means a lexer bug could destabilize join execution, and vectorized scan optimizations require understanding the parser.</li>
+<li><strong>Solution:</strong> <code>DefaultSqlCompiler</code> produces <code>IPhysicalPlan</code>; <code>DefaultQueryExecutor</code> runs it.</li>
+<li><strong>Walkthrough:</strong>
+<ol>
+<li>Client sends SQL string to <code>ISqlCompiler.Compile</code>.</li>
+<li>Compiler binds tables via <code>ICatalog</code>, emits a physical plan (e.g., <code>VectorizedScanPhysicalPlan</code>).</li>
+<li>Client calls <code>IQueryExecutor.ExecuteAsync(plan, context)</code>.</li>
+<li>Executor pattern-matches plan type, resolves <code>IColumnarTableSource</code> from catalog, delegates to specialized engine.</li>
+<li>Engine returns <code>IQueryResult</code> — executor does not format SQL or re-bind.</li>
+</ol>
+</li>
+</ul>
+<p><strong>What would break without this?</strong> Changing SQL <code>GROUP BY</code> syntax would require editing join execution code. Benchmarking vectorized scans would require constructing SQL strings in tests instead of building plans directly. The compile/execute split lets tests feed hand-crafted <code>IPhysicalPlan</code> instances to the executor.</p>
+<h2 id="example-3-spark-editor-panels">Example 3: Spark — Editor Panels</h2>
+<p>Spark's editor divides the UI into <strong>panels</strong>, each implementing <code>IEditorPanel</code>. The editor shell (<code>EditorApplication</code>) handles docking, layout, and input routing; panels handle domain-specific UI.</p>
+<h3 id="ieditorpanel-dock-region-contract"><code>IEditorPanel</code> — dock region contract</h3>
+<p><strong>What it does:</strong> Defines the lifecycle and identity of one editor region (Hierarchy, Inspector, Project Browser, …). Panels expose a root <code>IUiElement</code>, respond to attach/detach/tick events, and can release their widget subtree.</p>
+<p><strong>Why it exists:</strong> Without this interface, <code>EditorApplication</code> would embed hierarchy-tree logic, property-grid logic, and asset-browser logic in one class — the C++ equivalent of the god pipeline.</p>
+<p><strong>How it fits SRP:</strong> Each panel implementation owns one editor concern. <code>HierarchyPanel</code> manages the scene tree view; <code>InspectorPanel</code> shows selected entity properties; <code>ProjectBrowserPanel</code> lists project files.</p>
+<pre><code class="language-cpp">class IEditorPanel {
+public:
+    virtual ~IEditorPanel() = default;
+    virtual Utf8String GetPanelId() const = 0;
+    virtual Utf8String GetDisplayName() const = 0;
+    virtual Ui::IUiElement* GetRootElement() noexcept = 0;
+    virtual void OnAttach(EditorContext&amp; ctx) {}
+    virtual void OnDetach() {}
+    virtual void OnTick(const FrameTiming&amp; timing, EditorContext&amp; ctx) {}
+};
+</code></pre>
+<p><strong>Problem → Solution → Walkthrough:</strong></p>
+<ul>
+<li><strong>Problem:</strong> A monolithic editor class mixing hierarchy, inspector, and project browser becomes unmaintainable as each panel gains features (search, drag-drop, filtering).</li>
+<li><strong>Solution:</strong> One class per panel implementing <code>IEditorPanel</code>; <code>EditorApplication</code> registers and arranges them.</li>
+<li><strong>Walkthrough:</strong>
+<ol>
+<li>Editor startup creates panel instances (<code>HierarchyPanel</code>, <code>InspectorPanel</code>, …).</li>
+<li><code>OnAttach</code> receives <code>EditorContext</code> — shared editor state (selection, active scene) without panels reaching into each other's widgets.</li>
+<li>Each frame, <code>OnTick</code> updates panel-specific logic (e.g., refresh hierarchy when scene changes).</li>
+<li><code>GetRootElement</code> returns the panel's widget subtree for the dock shell to layout.</li>
+<li>Input events route through the shell; panels handle events on their own elements.</li>
+</ol>
+</li>
+</ul>
+<p><strong>What would break without this?</strong> Adding inspector undo/redo would risk breaking hierarchy selection. Testing hierarchy filtering would require constructing the entire editor. Panel-level hot reload (rebuild one panel) becomes impossible when everything lives in one translation unit.</p>
+<h2 id="srp-and-filefolder-structure">SRP and File/Folder Structure</h2>
+<p>SRP often correlates with folder layout:</p>
+<pre><code>MDWeb.Application/Pipeline/
+ReadContentStep.cs
+RenderMarkdownStep.cs
+ExportPdfStep.cs
+</code></pre>
+<p>One class per file is not the goal — <strong>one reason to change per class</strong> is. You might legitimately co-locate small helper types with their step if they share the same change axis.</p>
+<p>RainDB mirrors this:</p>
+<pre><code>RainDB.Sql/Compilation/     ← ISqlCompiler implementations
+RainDB.Query/Execution/     ← IQueryExecutor, engines
+RainDB.Abstractions/        ← interfaces both sides depend on
+</code></pre>
+<p>The folder names encode responsibility boundaries. A developer fixing join performance knows to stay in <code>RainDB.Query/Execution/</code> without touching SQL parsing.</p>
+<h2 id="common-misconceptions">Common Misconceptions</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Misconception</th>
+<th>Reality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"SRP means tiny classes"</td>
+<td>A class can be large if it serves one cohesive purpose (e.g., <code>WeChatHtmlPostProcessor</code> is long but only changes for WeChat HTML rules)</td>
+</tr>
+<tr>
+<td>"SRP forbids multiple public methods"</td>
+<td>Many methods are fine if they all serve the same responsibility</td>
+</tr>
+<tr>
+<td>"SRP is only about classes"</td>
+<td>Apply to modules, namespaces, and microservices too</td>
+</tr>
+<tr>
+<td>"Extract until classes are 10 lines"</td>
+<td>Over-extraction creates navigation overhead without reducing change coupling</td>
+</tr>
+</tbody>
+</table>
+<h2 id="srp-vs-other-principles">SRP vs Other Principles</h2>
+<ul>
+<li><strong>OCP</strong>: SRP makes extension points obvious — small classes are easier to extend via new types than god classes via conditionals</li>
+<li><strong>ISP</strong>: Often follows from SRP — if a class has one job, its interface stays narrow</li>
+<li><strong>DIP</strong>: Small classes with single dependencies are easier to invert</li>
+</ul>
+<h2 id="review-checklist">Review Checklist</h2>
+<p>Ask these questions in code review:</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input disabled="disabled" type="checkbox"> Can I describe this class's job in one sentence without "and"?</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox"> Would two different feature requests edit different parts of this file?</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox"> Does the class name match its primary behavior?</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox"> Could I unit-test this class without mocking unrelated subsystems?</li>
+</ul>
+<h2 id="exercises">Exercises</h2>
+<ol>
+<li>Open <code>MDWeb/src/MDWeb.Application/Pipeline/</code> and list each step's single responsibility in one line.</li>
+<li>In RainDB, trace a SQL query from <code>ISqlCompiler</code> through <code>IQueryExecutor</code> — note where compilation ends and execution begins.</li>
+<li>Find one class in your own codebase that mixes I/O and business logic. Sketch how you would split it.</li>
+</ol>
+<h2 id="next">Next</h2>
+<p><a href="03-open-closed.html">Open/Closed Principle →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#single-responsibility-principle-srp">Single Responsibility Principle (SRP)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#the-core-idea">The Core Idea</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#what-counts-as-one-responsibility">What counts as "one responsibility"?</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#smell-the-god-pipeline">Smell: The God Pipeline</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#refactor-one-step-one-class">Refactor: One Step, One Class</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-pipeline-contract"> — the pipeline contract</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#shared-state-not-shared-logic"> — shared state, not shared logic</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#one-transformation-only"> — one transformation only</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-full-step-list-and-each-responsibility">The full step list and each responsibility</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-2-raindb-compile-vs-execute">Example 2: RainDB — Compile vs Execute</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#subsystem-boundaries">Subsystem boundaries</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-3-spark-editor-panels">Example 3: Spark — Editor Panels</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#dock-region-contract"> — dock region contract</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#srp-and-filefolder-structure">SRP and File/Folder Structure</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#common-misconceptions">Common Misconceptions</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#srp-vs-other-principles">SRP vs Other Principles</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#review-checklist">Review Checklist</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#exercises">Exercises</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

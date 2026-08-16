@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MDWeb Pipeline Architecture · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>MDWeb Pipeline Architecture</h1>
+          </header>
+          <div class="doc-body"><h1 id="mdweb-pipeline-architecture">MDWeb — Pipeline Architecture</h1>
+<p>MDWeb generates static sites from markdown folders. One CLI command hides a <strong>composition</strong> of patterns working together — not because the authors wanted pattern density, but because site generation naturally splits into configuration assembly, multi-step processing, tree-shaped content, and swappable rendering backends.</p>
+<p>This chapter traces a full generation run from the author's keyboard through every pattern layer, explains why each class exists, and analyzes what breaks if you remove any one pattern.</p>
+<h2 id="user-facing-flow">User-Facing Flow</h2>
+<p>An author maintaining documentation runs:</p>
+<pre><code class="language-bash">dotnet run --project MDWeb.Cli -- -s ./docs -o ./site -t ./themes/default --title "My Book"
+</code></pre>
+<p>From their perspective: markdown goes in, HTML comes out, navigation mirrors folder structure, syntax highlighting works, optional PDF export lands beside the site. Under the hood, <code>Program.cs</code> parses flags, <code>SiteBuilder</code> validates configuration, <code>SiteGenerator</code> orchestrates nine pipeline steps, and infrastructure adapters talk to Markdig, Scriban, and the filesystem.</p>
+<p><strong>This book is built with MDWeb.</strong> The <code>design-pattern-notes</code> repository you are reading is markdown processed by the same pipeline — a meta-example where <code>part05-combining/</code> becomes HTML via the patterns described here.</p>
+<h2 id="end-to-end-user-journey">End-to-End User Journey</h2>
+<pre class="mermaid">sequenceDiagram
+    participant Author
+    participant CLI as Program.cs
+    participant Builder as SiteBuilder
+    participant Facade as SiteGenerator
+    participant Chain as SiteGenerationPipeline
+    participant Steps as IGenerationStep x9
+    participant FS as FileSystem
+
+    Author-&gt;&gt;CLI: mdweb -s ./docs -o ./site
+    CLI-&gt;&gt;Builder: WithSource().WithOutput().Build()
+    Note over Builder: loads ThemeManifest, validates paths
+    CLI-&gt;&gt;Facade: GenerateAsync(config)
+    Facade-&gt;&gt;FS: CleanOutputDirectory()
+    Facade-&gt;&gt;Chain: ExecuteAsync(SiteContext)
+    loop each step in DI order
+        Chain-&gt;&gt;Steps: ExecuteAsync(context)
+        Steps-&gt;&gt;FS: read/write/transform
+    end
+    Facade--&gt;&gt;Author: GenerationResult (page count, duration)
+</pre>
+<p><strong>Step-by-step through the code:</strong></p>
+<ol>
+<li><p><strong><code>Program.Main</code></strong> parses <code>--source</code>, <code>--output</code>, <code>--theme</code>, etc. into a <code>CliOptions</code> object. It builds a generic host, registers <code>AddMDWebApplication()</code> and <code>AddMDWebInfrastructure(themeDir)</code>, resolves <code>ISiteBuilder</code>, and fluently configures it.</p>
+</li>
+<li><p><strong><code>SiteBuilder.Build()</code></strong> is the gate. It throws if source, output, or theme is missing; resolves full paths; calls <code>IThemeManifestLoader.Load()</code> to read <code>theme.json</code>; resolves footer HTML via <code>SiteFooterResolver</code>. The output is an immutable-ready <code>SiteConfiguration</code> carrying everything downstream steps need.</p>
+</li>
+<li><p><strong><code>SiteGenerator.GenerateAsync()</code></strong> creates <code>SiteContext { Configuration = config }</code>, optionally cleans the output directory, and awaits <code>pipeline.ExecuteAsync(context)</code>. On success it reads <code>context.AllPages.Count</code> and any <code>PdfOutputPath</code>.</p>
+</li>
+<li><p><strong><code>SiteGenerationPipeline.ExecuteAsync()</code></strong> iterates <code>IEnumerable&lt;IGenerationStep&gt;</code> in registration order — no step knows its neighbors except through shared <code>SiteContext</code>.</p>
+</li>
+<li><p>Steps mutate <code>SiteContext</code> in sequence: build the composite tree, normalize links, render markdown to HTML, rewrite output links, post-process HTML, load Scriban templates, generate wrapped pages, copy assets, optionally export PDF.</p>
+</li>
+</ol>
+<p>The author sees one progress log line per step (<code>Running step: Read Content</code>, <code>Running step: Render Markdown</code>, …) and a final success message with page count.</p>
+<h2 id="pattern-map-interactions-not-isolation">Pattern Map — Interactions, Not Isolation</h2>
+<pre class="mermaid">flowchart TB
+    CLI[Program.cs — composition root] --&gt; BUILD[SiteBuilder — Builder]
+    BUILD --&gt; CONFIG[SiteConfiguration]
+    CONFIG --&gt; FACADE[SiteGenerator — Facade]
+    FACADE --&gt; CTX[SiteContext — shared state]
+    FACADE --&gt; CHAIN[SiteGenerationPipeline — Chain]
+    CHAIN --&gt; READ[ReadContentStep]
+    READ --&gt; COMP[ContentFolder / MarkdownPage — Composite]
+    READ --&gt; NAV[NavigationBuilder — tree walk]
+    CHAIN --&gt; RENDER[RenderMarkdownStep]
+    RENDER --&gt; ADAPT[IMarkdownRenderer — Strategy + Adapter]
+    CHAIN --&gt; POST[PostProcessHtmlStep]
+    POST --&gt; POSTSTRAT[IHtmlPostProcessor — Strategy]
+    CHAIN --&gt; GEN[GeneratePagesStep]
+    GEN --&gt; TMPL[ITemplateEngine — Strategy]
+    GEN --&gt; NAV
+    DI[DependencyInjection.cs] --&gt; CHAIN
+    DI --&gt; ADAPT
+</pre>
+<p>The diagram's arrows show <strong>data flow</strong>, not just containment. <code>SiteConfiguration</code> (from Builder) flows into Facade, which creates <code>SiteContext</code>. The Chain reads/writes <code>SiteContext</code>. Composite structure in <code>ContentFolder</code> is built in step 1 and consumed in step 7 (<code>GeneratePagesStep</code> calls <code>NavigationBuilder.Build(context.Root, …)</code>). Strategy selection happens at DI registration time in <code>AddMDWebInfrastructure</code>, before any step runs.</p>
+<h2 id="builder-configuration-assembly">1. Builder — Configuration Assembly</h2>
+<h3 id="force">Force</h3>
+<p>Site generation accepts many optional parameters: source/output paths, theme, title, description, PDF export mode, footer HTML or footer file, whether to fix markdown links on disk. A constructor with twelve parameters is brittle; a <code>SiteConfiguration</code> with a public setter invites half-initialized objects.</p>
+<h3 id="why-builder">Why Builder</h3>
+<p><code>SiteBuilder</code> collects options fluently and validates atomically in <code>Build()</code>:</p>
+<pre><code class="language-csharp">public sealed class SiteBuilder(IThemeManifestLoader themeManifestLoader) : ISiteBuilder
+{
+    // private fields for each option…
+
+    public ISiteBuilder WithSource(string sourceDirectory) { … return this; }
+    public ISiteBuilder WithPdfExport(string? outputFilePath, bool pdfOnly = false) { … return this; }
+
+    public SiteConfiguration Build()
+    {
+        if (string.IsNullOrWhiteSpace(_sourceDirectory))
+            throw new InvalidOperationException("Source directory is required.");
+        // …
+        var themeManifest = themeManifestLoader.Load(themeDirectory);
+        return new SiteConfiguration { … ThemeManifest = themeManifest, … };
+    }
+}
+</code></pre>
+<p><strong>Class-level detail:</strong> <code>Build()</code> is the only place that touches <code>IThemeManifestLoader</code>. CLI code never loads themes directly — it calls <code>WithTheme()</code> and lets the builder resolve the manifest. That keeps theme parsing (filesystem layout, <code>PublishMode</code> enum) out of <code>Program.cs</code>. <code>SiteFooterResolver.Resolve()</code> merges inline footer HTML and footer file paths here, so pipeline steps receive a single <code>FooterHtml</code> string.</p>
+<h3 id="interaction-with-facade-and-chain">Interaction with Facade and Chain</h3>
+<p>The Builder produces <strong><code>SiteConfiguration</code></strong>, which is <strong>read-only input</strong> to the entire pipeline. Steps never call back into the Builder. If you add a new CLI flag, you extend <code>ISiteBuilder</code>, <code>SiteBuilder</code>, and optionally a new step — you do not modify <code>SiteGenerator</code>.</p>
+<h3 id="if-we-removed-builder">If we removed Builder</h3>
+<p>Without Builder, <code>Program.cs</code> would construct <code>SiteConfiguration</code> manually, duplicating validation and theme loading. Every new option spreads across CLI parsing <strong>and</strong> validation <strong>and</strong> any test that builds configs. The Builder centralizes "valid config" as a single concept.</p>
+<h2 id="facade-sitegenerator">2. Facade — SiteGenerator</h2>
+<h3 id="force-1">Force</h3>
+<p>Callers (CLI, watch service, tests) want "generate this site" — not "run ReadContent, then NormalizeMarkdownLinks, then …". The nine steps are an implementation detail.</p>
+<h3 id="why-facade">Why Facade</h3>
+<p><code>SiteGenerator</code> implements <code>ISiteGenerator</code> with one meaningful method:</p>
+<pre><code class="language-csharp">public async Task&lt;GenerationResult&gt; GenerateAsync(SiteConfiguration configuration, …)
+{
+    outputWriter.SetOutputDirectory(configuration.OutputDirectory);
+    // clean or create output directory based on PDF mode…
+    var context = new SiteContext { Configuration = configuration };
+    await pipeline.ExecuteAsync(context, cancellationToken);
+    return GenerationResult.Ok(…, context.AllPages.Count, …, context.PdfOutputPath);
+}
+</code></pre>
+<p><strong>Class-level detail:</strong> The Facade owns <strong>orchestration concerns</strong> that no single step should own: output directory preparation (<code>CleanOutputDirectory</code> vs <code>CreateDirectory</code> depending on <code>PdfExportOptions</code>), stopwatch timing, exception-to-<code>GenerationResult.Fail</code> translation, and structured logging of page count. It injects <code>SiteGenerationPipeline</code>, <code>IOutputWriter</code>, and <code>ILogger&lt;SiteGenerator&gt;</code> — it does not inject individual steps.</p>
+<h3 id="interaction-with-chain">Interaction with Chain</h3>
+<p>The Facade creates <code>SiteContext</code> and delegates entirely to the pipeline. It never selects which renderer or template engine to use — that was decided at DI registration from <code>ThemeManifest.PublishMode</code>.</p>
+<h3 id="if-we-removed-facade">If we removed Facade</h3>
+<p>CLI would call <code>SiteGenerationPipeline.ExecuteAsync</code> directly and duplicate output cleaning, error handling, and result packaging. Watch mode and tests would copy that logic. The Facade is the stable <strong>application entry point</strong> for "generate."</p>
+<h2 id="composite-content-tree">3. Composite — Content Tree</h2>
+<h3 id="force-2">Force</h3>
+<p>Documentation lives in nested folders. Sidebar navigation must mirror that hierarchy. Page discovery must find all <code>.md</code> files regardless of depth. The system should not maintain a separate <code>navigation.yaml</code> that drifts from the filesystem.</p>
+<h3 id="why-composite">Why Composite</h3>
+<pre><code class="language-csharp">public abstract class ContentNode
+{
+    public required string Name { get; init; }
+    public required string RelativePath { get; init; }
+    public string? Title { get; set; }
+    public int Order { get; set; }
+}
+
+public sealed class ContentFolder : ContentNode
+{
+    public List&lt;ContentNode&gt; Children { get; } = [];
+}
+
+public sealed class MarkdownPage : ContentNode
+{
+    public required string SourceFilePath { get; init; }
+    public string RawMarkdown { get; set; } = string.Empty;
+    public string HtmlContent { get; set; } = string.Empty;
+    // …
+}
+</code></pre>
+<p><strong>Class-level detail:</strong> <code>ContentFolder</code> is the composite — it holds heterogeneous <code>ContentNode</code> children (folders or pages). <code>MarkdownPage</code> is the leaf — it carries mutable pipeline state (<code>RawMarkdown</code> → <code>HtmlContent</code>) as steps progress. Both share <code>Name</code>, <code>RelativePath</code>, <code>Title</code>, <code>Order</code> so navigation and sorting work uniformly.</p>
+<p><code>ReadContentStep</code> sets <code>context.Root</code> via <code>IContentReader.ReadAsync()</code> (infrastructure walks the filesystem) and calls <code>NavigationBuilder.CollectPages(context.Root, context.AllPages)</code> to flatten leaves into a list for steps that iterate all pages without tree recursion.</p>
+<p><code>NavigationBuilder.Build()</code> recursively maps the composite to <code>NavigationItem</code> — folders become group nodes (<code>Url = null</code>), pages become links (<code>Url = page.OutputRelativePath</code>). <code>GeneratePagesStep</code> calls this per page to highlight the active nav entry.</p>
+<h3 id="interaction-with-chain-1">Interaction with Chain</h3>
+<p>Composite structure is built in <strong>step 1</strong> and consumed in <strong>step 7</strong>. Intermediate steps (<code>RenderMarkdownStep</code>, <code>RewriteLinksStep</code>) iterate <code>context.AllPages</code> — the flat list — for efficiency. The tree shape matters for navigation, not for markdown rendering.</p>
+<h3 id="if-we-removed-composite">If we removed Composite</h3>
+<p>You would maintain parallel structures: a file list <strong>and</strong> a nav config. Adding a folder would require updating two places. The composite makes <strong>filesystem hierarchy the single source of truth</strong> for structure.</p>
+<h2 id="chain-of-responsibility-pipeline-steps">4. Chain of Responsibility — Pipeline Steps</h2>
+<h3 id="force-3">Force</h3>
+<p>Generation has nine ordered stages with distinct responsibilities. Stages should be independently testable, registrable, and extendable (e.g., add a sitemap step) without editing the orchestrator.</p>
+<h3 id="why-chain">Why Chain</h3>
+<pre><code class="language-csharp">public sealed class SiteGenerationPipeline(IEnumerable&lt;IGenerationStep&gt; steps, …)
+{
+    public async Task ExecuteAsync(SiteContext context, …)
+    {
+        foreach (var step in steps)
+        {
+            logger.LogInformation("Running step: {StepName}", step.Name);
+            await step.ExecuteAsync(context, cancellationToken);
+        }
+    }
+}
+</code></pre>
+<p>Each step implements <code>IGenerationStep</code> with <code>Name</code> and <code>ExecuteAsync(SiteContext, CancellationToken)</code>. Registration order in <code>DependencyInjection.AddMDWebApplication()</code> <strong>is</strong> execution order:</p>
+<table class="table">
+<thead>
+<tr>
+<th>Order</th>
+<th>Class</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>ReadContentStep</code></td>
+<td>Scan filesystem → composite tree, collect pages, detect home page</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>NormalizeMarkdownLinksStep</code></td>
+<td>Fix <code>.md</code> link targets in source (optional disk write)</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>RenderMarkdownStep</code></td>
+<td>Markdown → HTML via <code>IMarkdownRenderer</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>RewriteLinksStep</code></td>
+<td><code>.md</code> → <code>.html</code> in rendered output</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>PostProcessHtmlStep</code></td>
+<td>Publish-mode HTML transforms via <code>IHtmlPostProcessor</code></td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>LoadThemeStep</code></td>
+<td>Load Scriban templates from theme directory</td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>GeneratePagesStep</code></td>
+<td>Wrap content in layout, write HTML files</td>
+</tr>
+<tr>
+<td>8</td>
+<td><code>CopyAssetsStep</code></td>
+<td>Copy CSS, JS, fonts</td>
+</tr>
+<tr>
+<td>9</td>
+<td><code>ExportPdfStep</code></td>
+<td>Optional Puppeteer PDF export</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Class-level detail:</strong> <code>SiteContext</code> is the <strong>shared mutable accumulator</strong>. <code>ReadContentStep</code> writes <code>Root</code> and <code>AllPages</code>. <code>RenderMarkdownStep</code> mutates each <code>MarkdownPage.HtmlContent</code>. <code>GeneratePagesStep</code> reads everything and writes via <code>IOutputWriter</code>. Steps communicate only through <code>SiteContext</code> — classic Chain shared-state variant (not the linked-list "handle or pass" variant, but the same force: sequential processing with single-responsibility handlers).</p>
+<p><code>SiteGenerationGuard.ShouldGenerateSite(context)</code> in <code>GeneratePagesStep</code> and other steps respects <code>PdfExportOptions.PdfOnly</code> — HTML generation skips when the user requested PDF-only export.</p>
+<h3 id="interaction-with-strategy-and-adapter">Interaction with Strategy and Adapter</h3>
+<p>Individual steps <strong>delegate variation</strong> to injected strategies:</p>
+<ul>
+<li><code>RenderMarkdownStep</code> loops pages, calls <code>markdownRenderer.Render(page.RawMarkdown)</code> — it does not know Markdig exists.</li>
+<li><code>PostProcessHtmlStep</code> selects post-processor based on publish mode.</li>
+<li><code>GeneratePagesStep</code> calls <code>templateEngine.RenderAsync(templateName, model)</code> — Scriban is hidden behind <code>ITemplateEngine</code>.</li>
+</ul>
+<h3 id="if-we-removed-chain">If we removed Chain</h3>
+<p>All generation logic lands in <code>SiteGenerator</code> or one <code>GenerateEverything()</code> method — hundreds of lines, untestable in isolation, violating OCP. Adding a sitemap step means editing the monolith. The Chain makes <strong>each stage a class you can unit test with a fake <code>SiteContext</code></strong>.</p>
+<h2 id="strategy-adapter-rendering-and-templating">5. Strategy + Adapter — Rendering and Templating</h2>
+<h3 id="force-4">Force</h3>
+<p>Two publish modes exist: standard documentation sites and WeChat Official Account articles. They need different markdown pipelines (syntax highlighting vs inline styles), different HTML post-processing, and potentially different link behavior. Third-party libraries (Markdig, Scriban) must not leak into <code>MDWeb.Application</code>.</p>
+<h3 id="why-strategy">Why Strategy</h3>
+<p>Core abstractions live in <code>MDWeb.Core</code>:</p>
+<ul>
+<li><code>IMarkdownRenderer</code> — markdown string → HTML + heading list</li>
+<li><code>IHtmlPostProcessor</code> — HTML string → transformed HTML</li>
+<li><code>ITemplateEngine</code> — template name + model → final HTML</li>
+</ul>
+<p>Infrastructure provides concrete strategies:</p>
+<ul>
+<li><code>MarkdigMarkdownRenderer</code> — uses <code>MarkdownPipelineFactory.CreateSitePipeline()</code>, extracts headings for TOC</li>
+<li><code>WeChatMarkdownRenderer</code> — alternate pipeline for paste-ready articles</li>
+<li><code>PassThroughHtmlPostProcessor</code> vs <code>WeChatHtmlPostProcessor</code></li>
+<li><code>ScribanTemplateEngine</code> — wraps Scriban templating</li>
+</ul>
+<p><strong>Adapter aspect:</strong> <code>MarkdigMarkdownRenderer</code> adapts Markdig's <code>Markdown.Parse</code> / <code>Markdown.ToHtml</code> API to MDWeb's <code>MarkdownRenderResult</code>. Application code depends on <code>IMarkdownRenderer</code>, not on Markdig types.</p>
+<h3 id="why-di-selects-the-strategy">Why DI selects the strategy</h3>
+<pre><code class="language-csharp">services.AddSingleton&lt;IMarkdownRenderer&gt;(sp =&gt;
+manifest.PublishMode == PublishMode.WeChat
+    ? sp.GetRequiredService&lt;WeChatMarkdownRenderer&gt;()
+    : sp.GetRequiredService&lt;MarkdigMarkdownRenderer&gt;());
+</code></pre>
+<p>The composition root reads <code>ThemeManifest.PublishMode</code> <strong>once at startup</strong> and binds the correct renderer. Pipeline steps inject <code>IMarkdownRenderer</code> — they never branch on publish mode. This is <strong>Strategy via DI</strong> rather than runtime <code>switch</code>.</p>
+<h3 id="interaction-with-builder-and-chain">Interaction with Builder and Chain</h3>
+<p><code>SiteBuilder.Build()</code> loads <code>ThemeManifest</code> into <code>SiteConfiguration</code>. Infrastructure DI reads the same manifest when registering services. <code>RenderMarkdownStep</code> and <code>PostProcessHtmlStep</code> consume the bound strategy without knowing how it was chosen.</p>
+<h3 id="if-we-removed-strategyadapter">If we removed Strategy/Adapter</h3>
+<p><code>RenderMarkdownStep</code> would reference Markdig directly. Swapping WeChat mode requires <code>if (weChat)</code> branches in every step. Testing rendering means spinning up Markdig instead of injecting a fake <code>IMarkdownRenderer</code>. Third-party API changes ripple into application layer — violating DIP.</p>
+<h2 id="dip-layering">6. DIP — Layering</h2>
+<pre><code>MDWeb.Core          → abstractions (IGenerationStep, IMarkdownRenderer), models (ContentNode, SiteContext)
+MDWeb.Application   → pipeline steps, SiteGenerator, SiteBuilder, NavigationBuilder
+MDWeb.Infrastructure → Markdig, Scriban, filesystem I/O, Puppeteer PDF
+MDWeb.Cli           → composition root (Host + DI registration)
+</code></pre>
+<p><strong>Why this split matters for pattern composition:</strong> Patterns live at different layers. Builder and Facade are application-layer coordination. Composite model is core. Adapters are infrastructure. The Chain interface is core; step implementations are application. This layering lets you test <code>RenderMarkdownStep</code> with a fake renderer defined in test code without referencing Infrastructure.</p>
+<h2 id="pattern-interaction-summary">Pattern Interaction Summary</h2>
+<table class="table">
+<thead>
+<tr>
+<th>From</th>
+<th>To</th>
+<th>Handoff</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Builder</td>
+<td>Facade</td>
+<td><code>SiteConfiguration</code></td>
+</tr>
+<tr>
+<td>Facade</td>
+<td>Chain</td>
+<td><code>SiteContext</code> with config</td>
+</tr>
+<tr>
+<td>ReadContentStep</td>
+<td>Composite</td>
+<td><code>context.Root</code>, <code>context.AllPages</code></td>
+</tr>
+<tr>
+<td>RenderMarkdownStep</td>
+<td>Strategy</td>
+<td>per-page <code>HtmlContent</code></td>
+</tr>
+<tr>
+<td>GeneratePagesStep</td>
+<td>Composite + Strategy</td>
+<td>nav from tree, layout from template</td>
+</tr>
+<tr>
+<td>DI composition root</td>
+<td>Strategy</td>
+<td>binds renderer/post-processor at startup</td>
+</tr>
+</tbody>
+</table>
+<h2 id="impact-analysis-removing-one-pattern">Impact Analysis — Removing One Pattern</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Removed</th>
+<th>Immediate effect</th>
+<th>Downstream cascade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Builder</strong></td>
+<td>CLI constructs configs manually</td>
+<td>Validation duplicated; theme loading scattered</td>
+</tr>
+<tr>
+<td><strong>Facade</strong></td>
+<td>CLI calls pipeline directly</td>
+<td>Output prep and error handling duplicated in watch mode and tests</td>
+</tr>
+<tr>
+<td><strong>Composite</strong></td>
+<td>Flat file list only</td>
+<td>Navigation config drifts from folders; no hierarchical TOC</td>
+</tr>
+<tr>
+<td><strong>Chain</strong></td>
+<td>Monolithic generator</td>
+<td>OCP violated; cannot add/test steps independently</td>
+</tr>
+<tr>
+<td><strong>Strategy</strong></td>
+<td>Markdig types in Application</td>
+<td>Publish mode becomes <code>if/else</code> in every step; tests couple to Markdig</td>
+</tr>
+<tr>
+<td><strong>Adapter</strong></td>
+<td>Same as Strategy removal</td>
+<td>Third-party API leaks across layers</td>
+</tr>
+<tr>
+<td><strong>DIP layers</strong></td>
+<td>Core references Markdig</td>
+<td>Cannot swap infrastructure or test application in isolation</td>
+</tr>
+</tbody>
+</table>
+<p>Removing <strong>Chain</strong> hurts most for day-to-day maintenance — it is the spine connecting all other patterns through <code>SiteContext</code>.</p>
+<h2 id="lessons">Lessons</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Force</th>
+<th>Pattern chosen</th>
+<th>Key class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Many optional config fields</td>
+<td>Builder</td>
+<td><code>SiteBuilder</code></td>
+</tr>
+<tr>
+<td>Hide multi-step generation</td>
+<td>Facade</td>
+<td><code>SiteGenerator</code></td>
+</tr>
+<tr>
+<td>Filesystem = navigation</td>
+<td>Composite</td>
+<td><code>ContentFolder</code>, <code>MarkdownPage</code></td>
+</tr>
+<tr>
+<td>Independent generation stages</td>
+<td>Chain of Responsibility</td>
+<td><code>SiteGenerationPipeline</code>, <code>IGenerationStep</code></td>
+</tr>
+<tr>
+<td>Multiple publish targets</td>
+<td>Strategy</td>
+<td><code>IMarkdownRenderer</code>, <code>IHtmlPostProcessor</code></td>
+</tr>
+<tr>
+<td>Third-party markdown lib</td>
+<td>Adapter</td>
+<td><code>MarkdigMarkdownRenderer</code></td>
+</tr>
+<tr>
+<td>Testable boundaries</td>
+<td>DIP</td>
+<td>four-project split</td>
+</tr>
+</tbody>
+</table>
+<h2 id="next">Next</h2>
+<p><a href="03-spark-engine.html">Spark Game Engine Layering →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#mdweb-pipeline-architecture">MDWeb — Pipeline Architecture</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#user-facing-flow">User-Facing Flow</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#end-to-end-user-journey">End-to-End User Journey</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#pattern-map-interactions-not-isolation">Pattern Map — Interactions, Not Isolation</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#1-builder-configuration-assembly">1. Builder — Configuration Assembly</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#force">Force</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-builder">Why Builder</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#interaction-with-facade-and-chain">Interaction with Facade and Chain</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#if-we-removed-builder">If we removed Builder</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#2-facade-sitegenerator">2. Facade — SiteGenerator</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#force">Force</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-facade">Why Facade</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#interaction-with-chain">Interaction with Chain</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#if-we-removed-facade">If we removed Facade</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#3-composite-content-tree">3. Composite — Content Tree</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#force">Force</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-composite">Why Composite</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#interaction-with-chain">Interaction with Chain</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#if-we-removed-composite">If we removed Composite</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#4-chain-of-responsibility-pipeline-steps">4. Chain of Responsibility — Pipeline Steps</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#force">Force</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-chain">Why Chain</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#interaction-with-strategy-and-adapter">Interaction with Strategy and Adapter</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#if-we-removed-chain">If we removed Chain</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#5-strategy-adapter-rendering-and-templating">5. Strategy + Adapter — Rendering and Templating</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#force">Force</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-strategy">Why Strategy</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-di-selects-the-strategy">Why DI selects the strategy</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#interaction-with-builder-and-chain">Interaction with Builder and Chain</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#if-we-removed-strategyadapter">If we removed Strategy/Adapter</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#6-dip-layering">6. DIP — Layering</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#pattern-interaction-summary">Pattern Interaction Summary</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#impact-analysis-removing-one-pattern">Impact Analysis — Removing One Pattern</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#lessons">Lessons</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Builder · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>Builder</h1>
+          </header>
+          <div class="doc-body"><h1 id="builder">Builder</h1>
+<p><strong>Intent:</strong> Separate the construction of a complex object from its representation so the same construction process can create different representations.</p>
+<p>Builder solves the <strong>stepwise assembly problem</strong>. Some objects have many optional parts, validation rules that only make sense when the full picture is known, and defaults that differ per call site. A constructor with fourteen parameters — or a chain of overloaded constructors — pushes configuration errors to runtime scattered across callers. Builder concentrates accumulation in one object and exposes a single validation gate at <code>Build()</code>.</p>
+<h2 id="structure">Structure</h2>
+<pre class="mermaid">classDiagram
+    class Director {
+        +construct()
+    }
+    class Builder {
+        +buildPartA()
+        +buildPartB()
+        +getResult()
+    }
+    class ConcreteBuilder {
+        +buildPartA()
+        +buildPartB()
+        +getResult()
+    }
+    Director --&gt; Builder
+    Builder &lt;|.. ConcreteBuilder
+</pre>
+<h3 id="gof-participants">GoF Participants</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Builder</strong></td>
+<td>Abstract step interface (<code>WithSource</code>, <code>WithTheme</code>, …)</td>
+</tr>
+<tr>
+<td><strong>ConcreteBuilder</strong></td>
+<td>Implements steps; holds mutable accumulation</td>
+</tr>
+<tr>
+<td><strong>Product</strong></td>
+<td>Immutable (or effectively immutable) result (<code>SiteConfiguration</code>)</td>
+</tr>
+<tr>
+<td><strong>Director</strong></td>
+<td>Optional — encodes a fixed build sequence; often omitted in modern code</td>
+</tr>
+</tbody>
+</table>
+<p>Modern usage often <strong>omits Director</strong> — the client chains fluent methods and calls <code>Build()</code>. MDWeb's CLI <em>is</em> the director: it knows the order of <code>With*</code> calls.</p>
+<hr>
+<h2 id="example-1-mdweb-sitebuilder-canonical">Example 1: MDWeb — SiteBuilder (Canonical)</h2>
+<h3 id="the-problem">The Problem</h3>
+<p>Generating a documentation site requires binding source directory, output path, theme directory, title, description, optional PDF export, footer HTML (inline or from file), and a link-fix flag. These values arrive from CLI flags with different combinations per invocation. Passing them through a single constructor creates <strong>constructor telescoping</strong>:</p>
+<pre><code class="language-csharp">// anti-pattern — which null means "default" vs "absent"?
+new SiteConfiguration(source, output, theme, title, desc, pdf: null, fixLinks: true, footer: null, ...);
+</code></pre>
+<p>Worse, some fields need cross-field validation: theme directory must exist and load a manifest; footer can come from HTML string <em>or</em> file path. That logic should not live in every caller.</p>
+<h3 id="classes-and-responsibilities">Classes and Responsibilities</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>SiteBuilder</code></strong></td>
+<td>ConcreteBuilder</td>
+<td>Accumulates optional settings; validates; produces <code>SiteConfiguration</code></td>
+</tr>
+<tr>
+<td><strong><code>ISiteBuilder</code></strong></td>
+<td>Builder interface</td>
+<td>Fluent return type for chaining</td>
+</tr>
+<tr>
+<td><strong><code>SiteConfiguration</code></strong></td>
+<td>Product</td>
+<td>Immutable snapshot consumed by <code>SiteGenerator</code></td>
+</tr>
+<tr>
+<td><strong><code>IThemeManifestLoader</code></strong></td>
+<td>Collaborator</td>
+<td>Loads theme manifest during <code>Build()</code> — injected dependency</td>
+</tr>
+<tr>
+<td><strong><code>SiteFooterResolver</code></strong></td>
+<td>Collaborator</td>
+<td>Resolves footer from HTML and/or file path at build time</td>
+</tr>
+<tr>
+<td><strong><code>PdfExportOptions</code></strong></td>
+<td>Value object</td>
+<td>Nested product fragment (enabled, pdfOnly, output path)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Relationships:</strong> <code>SiteBuilder</code> is created per CLI invocation. It does <strong>not</strong> generate the site — it only produces configuration. <code>SiteGenerator</code> depends on <code>SiteConfiguration</code>, never on <code>SiteBuilder</code>.</p>
+<h3 id="object-creation-flow">Object Creation Flow</h3>
+<ol>
+<li>CLI parses arguments: <code>source</code>, <code>output</code>, <code>theme</code>, <code>title</code>, …</li>
+<li>CLI constructs <code>new SiteBuilder(themeManifestLoader)</code></li>
+<li>Fluent chain:
+<pre><code class="language-csharp">var config = new SiteBuilder(themeManifestLoader)
+.WithSource(source)
+.WithOutput(output)
+.WithTheme(theme)
+.WithTitle(title)
+.WithDescription(description)
+.WithPdfExport(pdfPath, pdfOnly: false)
+.Build();
+</code></pre>
+</li>
+<li>Each <code>With*</code> assigns a private field and returns <code>this</code> (as <code>ISiteBuilder</code>)</li>
+<li><code>Build()</code> runs validation:
+<ul>
+<li>Throws if <code>source</code>, <code>output</code>, or <code>theme</code> is whitespace</li>
+<li>Normalizes paths via <code>Path.GetFullPath</code></li>
+<li>Calls <code>themeManifestLoader.Load(themeDirectory)</code> — I/O happens here, not in <code>WithTheme</code></li>
+<li>Calls <code>SiteFooterResolver.Resolve(_footerHtml, _footerFilePath)</code></li>
+</ul>
+</li>
+<li>Returns <code>new SiteConfiguration { ... }</code> with all fields populated</li>
+<li><code>SiteGenerator</code> receives <code>config</code> and runs the pipeline — builder discarded</li>
+</ol>
+<pre><code class="language-csharp">/// &lt;summary&gt;
+/// Builder pattern: fluent API for configuring site generation.
+/// &lt;/summary&gt;
+public sealed class SiteBuilder(IThemeManifestLoader themeManifestLoader) : ISiteBuilder
+{
+    private string _sourceDirectory = string.Empty;
+    private string _outputDirectory = string.Empty;
+    // ... defaults for title, description, pdf, footer
+
+    public ISiteBuilder WithSource(string sourceDirectory) { ... return this; }
+    public ISiteBuilder WithOutput(string outputDirectory) { ... return this; }
+    public ISiteBuilder WithTheme(string themeDirectory) { ... return this; }
+    // ... other With* methods
+
+    public SiteConfiguration Build()
+    {
+        if (string.IsNullOrWhiteSpace(_sourceDirectory))
+            throw new InvalidOperationException("Source directory is required.");
+        // validate output, theme...
+        var themeManifest = themeManifestLoader.Load(themeDirectory);
+        return new SiteConfiguration { /* immutable result */ };
+    }
+}
+</code></pre>
+<h3 id="participant-mapping">Participant Mapping</h3>
+<table class="table">
+<thead>
+<tr>
+<th>GoF</th>
+<th>MDWeb</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Builder</td>
+<td><code>ISiteBuilder</code> / <code>SiteBuilder</code></td>
+</tr>
+<tr>
+<td>Product</td>
+<td><code>SiteConfiguration</code></td>
+</tr>
+<tr>
+<td>Director</td>
+<td>MDWeb CLI (<code>Program.cs</code>) — orchestrates call order</td>
+</tr>
+<tr>
+<td>Collaborators</td>
+<td><code>IThemeManifestLoader</code>, <code>SiteFooterResolver</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="when-you-see-this-in-the-wild">When You See This in the Wild</h3>
+<ul>
+<li>CLI and configuration objects (<code>HostBuilder</code>, <code>DbContextOptionsBuilder</code>, <code>UriBuilder</code>)</li>
+<li>HTTP request builders, query builders, test data builders</li>
+<li>Any "required fields + many optionals + validate at end" scenario</li>
+</ul>
+<h3 id="common-mistakes">Common Mistakes</h3>
+<ul>
+<li><strong><code>Build()</code> without validation</strong> — partial configs leak into production</li>
+<li><strong>Reusing one builder across threads</strong> — builders are mutable; create per operation</li>
+<li><strong>Builder that also runs the pipeline</strong> — violates SRP; MDWeb correctly stops at <code>SiteConfiguration</code></li>
+</ul>
+<hr>
+<h2 id="builder-vs-constructor-telescoping">Builder vs Constructor Telescoping</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Approach</th>
+<th>Problem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Many constructors</td>
+<td>Combinatorial explosion; unclear defaults</td>
+</tr>
+<tr>
+<td>Nullable optional parameters</td>
+<td>Ambiguous <code>null</code> meaning</td>
+</tr>
+<tr>
+<td>Property bag + validate later</td>
+<td>Partial invalid states exist in the wild</td>
+</tr>
+<tr>
+<td><strong>Builder</strong></td>
+<td>Only valid products exit <code>Build()</code>; call site reads fluently</td>
+</tr>
+</tbody>
+</table>
+<p>Builder scales when parameters grow and defaults differ per call site. It shines when <strong>validation requires multiple fields together</strong> (footer resolution, theme manifest load).</p>
+<hr>
+<h2 id="example-2-imgkit-request-builders">Example 2: ImgKit — Request Builders</h2>
+<h3 id="the-problem-1">The Problem</h3>
+<p>ImgKit's web API accepts multipart form requests where each image operation (resize, crop, filter, …) appends different form fields and metadata. A single mega-method with switches would couple HTTP formatting to every operation's parameter shape.</p>
+<h3 id="classes-and-responsibilities-1">Classes and Responsibilities</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>ImageOperationRequestBuilderBase</code></strong></td>
+<td>Abstract Builder</td>
+<td>Defines <code>Descriptor</code> and <code>AppendParameters</code> contract</td>
+</tr>
+<tr>
+<td><strong><code>ResizeRequestBuilder</code>, <code>CropRequestBuilder</code>, …</strong></td>
+<td>ConcreteBuilder</td>
+<td>One builder per operation type</td>
+</tr>
+<tr>
+<td><strong><code>IImageOperationRequestBuilder</code></strong></td>
+<td>Builder interface</td>
+<td>Polymorphic append hook</td>
+</tr>
+<tr>
+<td><strong><code>ImageOperationDescriptor</code></strong></td>
+<td>Metadata</td>
+<td>Operation name, route, validation rules</td>
+</tr>
+<tr>
+<td><strong><code>MultipartFormDataContent</code></strong></td>
+<td>Assembly target</td>
+<td>HTTP body under construction</td>
+</tr>
+<tr>
+<td><strong>Processing studio service</strong></td>
+<td>Client / Director</td>
+<td>Selects builder matching user's operation</td>
+</tr>
+</tbody>
+</table>
+<h3 id="object-creation-flow-1">Object Creation Flow</h3>
+<ol>
+<li>User selects "Apply filter" in UI</li>
+<li>Service resolves <code>ApplyFilterRequestBuilder</code> from DI</li>
+<li>Service creates <code>MultipartFormDataContent</code></li>
+<li>Calls <code>builder.AppendParameters(content, request)</code> — builder adds filter name, radius, image bytes</li>
+<li>HTTP client posts assembled content</li>
+<li>Different operation → different builder class; same assembly protocol</li>
+</ol>
+<pre><code class="language-csharp">public abstract class ImageOperationRequestBuilderBase : IImageOperationRequestBuilder
+{
+    public abstract ImageOperationDescriptor Descriptor { get; }
+    public abstract void AppendParameters(MultipartFormDataContent content, ImageOperationRequest request);
+}
+</code></pre>
+<h3 id="participant-mapping-1">Participant Mapping</h3>
+<table class="table">
+<thead>
+<tr>
+<th>GoF</th>
+<th>ImgKit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Builder</td>
+<td><code>IImageOperationRequestBuilder</code> hierarchy</td>
+</tr>
+<tr>
+<td>Product</td>
+<td>Completed <code>MultipartFormDataContent</code> (HTTP payload)</td>
+</tr>
+<tr>
+<td>Director</td>
+<td>Processing studio service</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Variant:</strong> Builder-like, but <strong>one builder per operation type</strong> rather than one mega-builder for all operations. Still valid — each builder assembles one representation (multipart body) step by step through <code>AppendParameters</code>.</p>
+<h3 id="when-you-see-this-in-the-wild-1">When You See This in the Wild</h3>
+<ul>
+<li>Serializer builders (JSON, protobuf)</li>
+<li>SQL query builders with dialect-specific subclasses</li>
+<li>Test object mothers with fluent setup</li>
+</ul>
+<h3 id="common-mistakes-1">Common Mistakes</h3>
+<ul>
+<li>Builder that mutates global state while appending parameters</li>
+<li>Missing operation in factory/registry — runtime failure when user selects unsupported op</li>
+</ul>
+<hr>
+<h2 id="what-is-not-builder-in-this-corpus">What Is NOT Builder in This Corpus</h2>
+<p>Not every fluent API is Builder. Look for <strong>complex product assembly + validation gate at <code>Build()</code></strong>.</p>
+<table class="table">
+<thead>
+<tr>
+<th>Name</th>
+<th>Actual pattern</th>
+<th>Why it is not Builder</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RainDB <code>CompositeJoinKeyBuilder</code></td>
+<td>Static construction helper</td>
+<td>Builds a value in one shot; no fluent accumulation or <code>Build()</code> gate</td>
+</tr>
+<tr>
+<td>MDWeb <code>NavigationBuilder</code></td>
+<td>Tree traversal / data assembly</td>
+<td>Walks content graph; does not produce one immutable config object via steps</td>
+</tr>
+<tr>
+<td>Markdig <code>MarkdownPipelineBuilder</code></td>
+<td>Third-party fluent API</td>
+<td>External library; similar shape but not MDWeb's domain builder</td>
+</tr>
+</tbody>
+</table>
+<p>Calling these "Builder" dilutes the pattern name and hides the real intent (key extraction, navigation graph, Markdig config).</p>
+<hr>
+<h2 id="builder-and-immutability">Builder and Immutability</h2>
+<p>The builder holds <strong>mutable</strong> accumulation (<code>_sourceDirectory</code>, <code>_pdfExport</code>, …). The product after <code>Build()</code> should be <strong>immutable</strong> (or treated as such):</p>
+<ul>
+<li><code>SiteConfiguration</code> is a record-like snapshot — generators must not mutate it mid-render</li>
+<li>Sharing the builder between threads is unsafe; sharing <code>SiteConfiguration</code> is safe</li>
+</ul>
+<p>This separation lets you pass configuration through the pipeline without defensive copying at every layer.</p>
+<h2 id="thread-safety">Thread Safety</h2>
+<p>Builders are typically <strong>not</strong> thread-safe — one builder per configuration thread. <code>SiteBuilder</code> is created per CLI invocation. ImgKit request builders are scoped per HTTP request in ASP.NET Core.</p>
+<p>If you need concurrent configuration, either synchronize the builder or give each thread its own builder instance merging into a shared immutable product at the end.</p>
+<h2 id="builder-vs-abstract-factory">Builder vs Abstract Factory</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Builder</th>
+<th>Abstract Factory</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>One complex product</td>
+<td>Many related products</td>
+</tr>
+<tr>
+<td>Steps are optional parts of same object</td>
+<td>Each <code>Create*</code> is a finished control</td>
+</tr>
+<tr>
+<td>Validation at <code>Build()</code></td>
+<td>Products valid per factory method</td>
+</tr>
+<tr>
+<td>MDWeb <code>SiteBuilder</code></td>
+<td>Spark <code>IUiControlsFactory</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="when-you-see-this-in-the-wild-summary">When You See This in the Wild (Summary)</h2>
+<ul>
+<li>CLI/config with required + optional fields</li>
+<li>HTTP/multipart assembly per operation type</li>
+<li>Test data builders with sensible defaults</li>
+<li><code>StringBuilder</code>, <code>UriBuilder</code>, EF <code>ModelBuilder</code> — built-in library examples</li>
+</ul>
+<h2 id="common-mistakes-summary">Common Mistakes (Summary)</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Mistake</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No <code>Build()</code> — mutable product escapes</td>
+<td>Always transition to immutable product</td>
+</tr>
+<tr>
+<td>Builder does I/O on every <code>With*</code></td>
+<td>Defer I/O to <code>Build()</code> (MDWeb loads theme manifest once at end)</td>
+</tr>
+<tr>
+<td><code>With*</code> returns void</td>
+<td>Return <code>this</code> / interface for fluency</td>
+</tr>
+<tr>
+<td>Director logic in builder</td>
+<td>Keep builder generic; CLI/service is director</td>
+</tr>
+</tbody>
+</table>
+<h2 id="review-checklist">Review Checklist</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input disabled="disabled" type="checkbox"> Does <code>Build()</code> validate required fields?</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox"> Can I add optional parameters without breaking existing call sites?</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox"> Is the built product distinct from the builder (no shared mutable state)?</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox"> Is the builder free of "run the whole pipeline" responsibilities?</li>
+</ul>
+<h2 id="next">Next</h2>
+<p><a href="06-prototype.html">Prototype →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#builder">Builder</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#structure">Structure</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#gof-participants">GoF Participants</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-1-mdweb-sitebuilder-canonical">Example 1: MDWeb — SiteBuilder (Canonical)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The Problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#classes-and-responsibilities">Classes and Responsibilities</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#object-creation-flow">Object Creation Flow</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#participant-mapping">Participant Mapping</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#when-you-see-this-in-the-wild">When You See This in the Wild</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#common-mistakes">Common Mistakes</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#builder-vs-constructor-telescoping">Builder vs Constructor Telescoping</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-2-imgkit-request-builders">Example 2: ImgKit — Request Builders</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The Problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#classes-and-responsibilities">Classes and Responsibilities</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#object-creation-flow">Object Creation Flow</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#participant-mapping">Participant Mapping</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#when-you-see-this-in-the-wild">When You See This in the Wild</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#common-mistakes">Common Mistakes</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#what-is-not-builder-in-this-corpus">What Is NOT Builder in This Corpus</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#builder-and-immutability">Builder and Immutability</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#thread-safety">Thread Safety</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#builder-vs-abstract-factory">Builder vs Abstract Factory</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#when-you-see-this-in-the-wild-summary">When You See This in the Wild (Summary)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#common-mistakes-summary">Common Mistakes (Summary)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#review-checklist">Review Checklist</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bridge · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>Bridge</h1>
+          </header>
+          <div class="doc-body"><h1 id="bridge">Bridge</h1>
+<p><strong>Intent:</strong> Decouple an abstraction from its implementation so the two can vary independently.</p>
+<h2 id="the-structural-problem-abstraction-locked-to-implementation">The Structural Problem: Abstraction Locked to Implementation</h2>
+<p>When a high-level module directly includes concrete low-level types, every change ripples upward:</p>
+<ul>
+<li>Swap Dear ImGui for a retained widget tree → rewrite every editor panel.</li>
+<li>Change Vulkan recording strategy → touch ImGui integration and the main renderer.</li>
+<li>Test UI logic without GPU → impossible without heavy mocking.</li>
+</ul>
+<p><strong>Bridge</strong> splits the design into two hierarchies:</p>
+<ol>
+<li><strong>Abstraction</strong> — what clients program against (UI system, document editor API).</li>
+<li><strong>Implementor</strong> — how that API is realized (native widgets vs immediate-mode ImGui).</li>
+</ol>
+<p>The abstraction holds a reference to the implementor and <strong>delegates</strong> platform-specific work. Both sides can evolve on separate timelines.</p>
+<pre class="mermaid">flowchart TB
+    subgraph abstraction [Abstraction hierarchy]
+        CLIENT[UiSystem / editor panels]
+        ABSTR[IUiBackend interface]
+    end
+    subgraph implementor [Implementor hierarchy]
+        IMPL1[SparkUiBackend]
+        IMPL2[DearImguiUiBackend]
+    end
+    CLIENT --&gt; ABSTR
+    ABSTR --&gt; IMPL1
+    ABSTR --&gt; IMPL2
+</pre>
+<h2 id="adapter-vs-bridge">Adapter vs Bridge</h2>
+<table class="table">
+<thead>
+<tr>
+<th></th>
+<th>Adapter</th>
+<th>Bridge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Purpose</strong></td>
+<td>Fix incompatibility <em>after</em> the fact</td>
+<td>Plan separation <em>upfront</em></td>
+</tr>
+<tr>
+<td><strong>Typical trigger</strong></td>
+<td>"This library doesn't match our interface"</td>
+<td>"We know we'll ship multiple backends"</td>
+</tr>
+<tr>
+<td><strong>Structure</strong></td>
+<td>One adaptee wrapped by one adapter</td>
+<td>Abstraction + implementor <strong>hierarchies</strong></td>
+</tr>
+<tr>
+<td><strong>Example here</strong></td>
+<td><code>MarkdigMarkdownRenderer</code></td>
+<td><code>IUiBackend</code> + <code>SparkUiBackend</code> / <code>DearImguiUiBackend</code></td>
+</tr>
+</tbody>
+</table>
+<p><code>ManagedGameBridge</code> in Spark is an <strong>Adapter</strong> (managed callbacks → native <code>Game</code>), despite the word "bridge" in its name.</p>
+<h2 id="uml-roles-spark-ui">UML Roles → Spark UI</h2>
+<table class="table">
+<thead>
+<tr>
+<th>GoF role</th>
+<th>Spark type</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Abstraction</strong></td>
+<td><code>UiSystem</code>, editor code using <code>IUiControlsFactory</code></td>
+<td>Frame loop, panel layout, input routing policy</td>
+</tr>
+<tr>
+<td><strong>Implementor</strong></td>
+<td><code>IUiBackend</code></td>
+<td>Backend-specific input, paint, factory access</td>
+</tr>
+<tr>
+<td><strong>ConcreteImplementor A</strong></td>
+<td><code>SparkUiBackend</code></td>
+<td>Retained-mode native control tree + <code>SparkUiControlsFactory</code></td>
+</tr>
+<tr>
+<td><strong>ConcreteImplementor B</strong></td>
+<td><code>DearImguiUiBackend</code></td>
+<td>Immediate-mode ImGui + <code>DearImguiControlsFactory</code></td>
+</tr>
+<tr>
+<td><strong>RefinedAbstraction</strong></td>
+<td>(Optional) specialized editors</td>
+<td>Could extend UI behavior without new backends</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="example-1-spark-iuibackend-excellent">Example 1: Spark — IUiBackend (Excellent)</h2>
+<h3 id="why-bridge-fits">Why Bridge fits</h3>
+<p>Spark ships two UI stacks:</p>
+<ul>
+<li><strong>Spark native</strong> — retained widget tree, <code>SparkUiControlsFactory</code>, <code>UiInputRouter</code>.</li>
+<li><strong>Dear ImGui</strong> — immediate-mode panels, <code>DearImguiControlsFactory</code>, bound to <code>IImGuiLayer</code>.</li>
+</ul>
+<p>Editor demos and tools should compile against <strong>one</strong> set of panel APIs regardless of which stack is active. That is intentional dual hierarchy design — Bridge, not a one-off wrapper.</p>
+<h3 id="class-roles">Class roles</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Pattern role</th>
+<th>What it contains</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>IUiBackend</code></strong></td>
+<td>Implementor interface</td>
+<td>Pure virtual: <code>GetKind</code>, <code>GetControlsFactory</code>, <code>ProcessInput</code>, <code>Paint</code>, capture flags</td>
+<td>Stable seam between UI policy and backend mechanics. Header comment says "Strategy" — both patterns share delegation; <strong>parallel hierarchies</strong> make Bridge the clearer label.</td>
+</tr>
+<tr>
+<td><strong><code>SparkUiBackend</code></strong></td>
+<td>ConcreteImplementor</td>
+<td><code>SparkUiControlsFactory controlsFactory</code>, <code>UiInputRouter inputRouter</code></td>
+<td>Native retained UI: routes input through <code>UiInputRouter</code>, paints via Spark's widget tree.</td>
+</tr>
+<tr>
+<td><strong><code>DearImguiUiBackend</code></strong></td>
+<td>ConcreteImplementor</td>
+<td><code>DearImguiControlsFactory</code>, <code>ImguiUiRenderer</code>, pointer to <code>IImGuiLayer*</code></td>
+<td>Immediate-mode path: <code>ProcessInput</code> feeds ImGui; <code>Paint</code> records draw lists into scene params.</td>
+</tr>
+<tr>
+<td><strong><code>UiSystem</code></strong></td>
+<td>Abstraction / context</td>
+<td>Active <code>IUiBackend*</code> (via <code>SetActiveBackend</code>)</td>
+<td>Client code asks <code>GetActiveBackend().GetControlsFactory()</code> — never <code>#ifdef IMGUI</code> in every panel.</td>
+</tr>
+<tr>
+<td><strong><code>IUiControlsFactory</code></strong></td>
+<td>Related Abstract Factory</td>
+<td>Button, label, panel constructors per backend</td>
+<td>Each implementor returns a <strong>matching control family</strong> — Bridge + Factory work together.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="iuibackend-surface">IUiBackend surface</h3>
+<pre><code class="language-cpp">class IUiBackend {
+public:
+    virtual UiBackendKind GetKind() const noexcept = 0;
+    virtual IUiControlsFactory&amp; GetControlsFactory() noexcept = 0;
+    virtual void ProcessInput(GameWorld&amp; world, IInput&amp; input, ...) = 0;
+    virtual void Paint(const GameWorld&amp; world, SceneRenderParams&amp; params, ...) = 0;
+    virtual bool WantsCaptureMouse() const noexcept = 0;
+    virtual bool WantsCaptureKeyboard() const noexcept = 0;
+};
+</code></pre>
+<p><code>SparkUiBackend</code> returns <code>UiBackendKind::SparkNative</code>; <code>DearImguiUiBackend</code> returns <code>UiBackendKind::DearImGui</code>. Kind queries let diagnostics and settings UI show which stack is active without <code>dynamic_cast</code>.</p>
+<h3 id="step-by-step-one-frame-with-bridge">Step-by-step: one frame with Bridge</h3>
+<ol>
+<li>Engine calls <code>UiSystem::Get().GetActiveBackend()</code> — returns <code>SparkUiBackend</code> or <code>DearImguiUiBackend</code>.</li>
+<li><strong>Input phase:</strong> engine passes <code>GameWorld</code>, <code>IInput</code>, framebuffer dimensions to <code>ProcessInput</code>.
+<ul>
+<li>Native backend: <code>UiInputRouter</code> hit-tests retained widgets.</li>
+<li>ImGui backend: translates input into ImGui IO, updates focus/hover.</li>
+</ul>
+</li>
+<li>Game simulation runs.</li>
+<li><strong>Paint phase:</strong> <code>Paint(world, sceneRenderParams, ...)</code> runs.
+<ul>
+<li>Native backend: walks widget tree into draw commands.</li>
+<li>ImGui backend: builds ImGui draw lists; renderer consumes them later.</li>
+</ul>
+</li>
+<li>Panel code that created buttons via <code>GetControlsFactory()</code> never branched on backend — the factory came from the active implementor.</li>
+</ol>
+<p>Switching backends at runtime (<code>SetActiveBackend(UiBackendKind::DearImGui)</code>) changes implementation <strong>without recompiling</strong> panel sources, as long as they use the shared factory interface.</p>
+<hr>
+<h2 id="example-2-spark-rendering-imgui-integration">Example 2: Spark — Rendering / ImGui Integration</h2>
+<p>A second Bridge appears at the GPU boundary: <code>IImGuiVulkanBackend</code> (and <code>ImGuiVulkanLayer</code>) keep the Vulkan renderer's core headers free of ImGui types while still recording ImGui draw data each frame.</p>
+<table class="table">
+<thead>
+<tr>
+<th>Role</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Abstraction</td>
+<td>Main renderer / frame presenter</td>
+</tr>
+<tr>
+<td>Implementor</td>
+<td><code>IImGuiVulkanBackend</code></td>
+</tr>
+<tr>
+<td>Concrete implementors</td>
+<td>Vulkan-specific ImGui layer implementations</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Bridge benefit:</strong> the rendering engine and ImGui version/integration can ship on different cadences. Upgrading ImGui should not require rewriting scene graph rendering.</p>
+<hr>
+<h2 id="example-3-skyui-listvirtualgriddatasource-lightweight-bridge">Example 3: SkyUI — ListVirtualGridDataSource (Lightweight Bridge)</h2>
+<p><code>ListVirtualGridDataSource</code> adapts <code>IList</code> to <code>IVirtualGridDataSource</code>. It is simpler than Spark's full dual hierarchy — one adapter class, no deep implementor tree — but the <strong>decoupling intent</strong> matches Bridge:</p>
+<ul>
+<li><strong>Abstraction side:</strong> virtual grid expects row count + random row access + structure change events.</li>
+<li><strong>Implementor side:</strong> arbitrary in-memory lists, including <code>ObservableCollection</code>.</li>
+</ul>
+<p>Grid controls depend on <code>IVirtualGridDataSource</code>; view-models keep using <code>IList</code>. The bridge class is the only place that knows both protocols.</p>
+<hr>
+<h2 id="bridge-and-strategy-when-labels-collide">Bridge and Strategy — When Labels Collide</h2>
+<p>Spark's <code>IUiBackend</code> header says "Strategy." Both patterns use <strong>composition and delegation</strong>:</p>
+<table class="table">
+<thead>
+<tr>
+<th></th>
+<th>Bridge</th>
+<th>Strategy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Emphasis</strong></td>
+<td>Two hierarchies that evolve together</td>
+<td>One algorithm slot swapped at runtime</td>
+</tr>
+<tr>
+<td><strong>Typical shape</strong></td>
+<td>Abstraction + Implementor interfaces</td>
+<td>Context + Strategy interface</td>
+</tr>
+<tr>
+<td><strong>Question to ask</strong></td>
+<td>"Do we have <em>families</em> on both sides?"</td>
+<td>"Is it just one swappable algorithm?"</td>
+</tr>
+</tbody>
+</table>
+<p>For UI: abstraction = "editor UI API + frame integration"; implementor = "native vs ImGui stack" — <strong>Bridge</strong>. For markdown rendering (<code>IMarkdownRenderer</code>), a single swappable renderer with no parallel hierarchy — <strong>Strategy</strong>.</p>
+<hr>
+<h2 id="sceneserializer-facade-not-bridge">SceneSerializer — Facade, Not Bridge</h2>
+<p><code>SceneSerializer</code> captures ECS worlds into <code>SceneDocument</code> text files; <code>SceneDeserializer</code> restores them. It <strong>orchestrates</strong> registry lookups, entity iteration, and file I/O — a <strong>Facade</strong> over serialization subsystems (see Facade chapter). It does not separate abstraction from implementor hierarchies; do not classify it as Bridge.</p>
+<hr>
+<h2 id="design-checklist">Design Checklist</h2>
+<p>Use Bridge when:</p>
+<ul>
+<li>You can name <strong>two independent dimensions</strong> that will change (UI API vs rendering backend; document model vs storage format).</li>
+<li>Multiple concrete implementors are <strong>planned</strong>, not accidental.</li>
+<li>Clients should compile against the abstraction indefinitely.</li>
+</ul>
+<p>Avoid forcing Bridge when a single Strategy interface (<code>IMarkdownRenderer</code>) suffices — extra hierarchy adds noise without flexibility gain.</p>
+<h2 id="next">Next</h2>
+<p><a href="04-composite.html">Composite →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#bridge">Bridge</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#the-structural-problem-abstraction-locked-to-implementation">The Structural Problem: Abstraction Locked to Implementation</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#adapter-vs-bridge">Adapter vs Bridge</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#uml-roles-spark-ui">UML Roles → Spark UI</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-1-spark-iuibackend-excellent">Example 1: Spark — IUiBackend (Excellent)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-bridge-fits">Why Bridge fits</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#class-roles">Class roles</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#iuibackend-surface">IUiBackend surface</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#step-by-step-one-frame-with-bridge">Step-by-step: one frame with Bridge</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-2-spark-rendering-imgui-integration">Example 2: Spark — Rendering / ImGui Integration</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-3-skyui-listvirtualgriddatasource-lightweight-bridge">Example 3: SkyUI — ListVirtualGridDataSource (Lightweight Bridge)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#bridge-and-strategy-when-labels-collide">Bridge and Strategy — When Labels Collide</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#sceneserializer-facade-not-bridge">SceneSerializer — Facade, Not Bridge</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#design-checklist">Design Checklist</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

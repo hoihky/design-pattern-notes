@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Memento · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>Memento</h1>
+          </header>
+          <div class="doc-body"><h1 id="memento">Memento</h1>
+<p><strong>Intent:</strong> Without violating encapsulation, capture and externalize an object's internal state so that the object can be restored to this state later.</p>
+<h2 id="the-behavioral-problem-saving-state-without-breaking-encapsulation">The Behavioral Problem: Saving State Without Breaking Encapsulation</h2>
+<p>Undo, save files, checkpoints, and crash recovery all need <strong>snapshots</strong> of complex object graphs. The naive approach exposes internals: public getters for every private field, JSON serialization on live entities, or friend classes that reach into components. That couples persistence format to runtime types and makes refactoring dangerous — any field rename breaks saves.</p>
+<p><strong>Memento</strong> splits roles:</p>
+<ul>
+<li><strong>Originator</strong> knows how to produce and consume a snapshot (capture/restore hooks).</li>
+<li><strong>Memento</strong> holds the snapshot data — ideally opaque to outsiders.</li>
+<li><strong>Caretaker</strong> stores mementos and decides when to save/restore — without inspecting memento contents.</li>
+</ul>
+<p>The caretaker can stack mementos for undo; the originator remains the only class that interprets snapshot bytes/records.</p>
+<hr>
+<h2 id="gof-participants-spark-scene-serialization">GoF Participants → Spark Scene Serialization</h2>
+<table class="table">
+<thead>
+<tr>
+<th>GoF role</th>
+<th>Spark class</th>
+<th>State held</th>
+<th>Who calls whom</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Originator</strong></td>
+<td>Live <code>GameObject</code> + attached <code>GameComponent</code>s in <code>GameWorld</code></td>
+<td>Runtime transforms, meshes, physics, health, …</td>
+<td>Queried by serializer during capture; mutated during restore</td>
+</tr>
+<tr>
+<td><strong>Memento</strong></td>
+<td><code>SceneDocument</code>, <code>ComponentRecord</code>, entity headers</td>
+<td>Serialized text/binary structure — no live pointers</td>
+<td>Produced by <code>SceneSerializer</code>; consumed by <code>SceneDeserializer</code></td>
+</tr>
+<tr>
+<td><strong>Caretaker</strong></td>
+<td><code>SceneSerializer</code>, <code>SceneDeserializer</code>, editor save/load, file I/O</td>
+<td>Path strings, optional filters</td>
+<td>Orchestrates capture/write/read/apply; does not parse component payloads</td>
+</tr>
+<tr>
+<td><strong>Strategy helpers</strong></td>
+<td><code>IComponentSnapshotHandler</code> per <code>ComponentKind</code></td>
+<td>Stateless handlers</td>
+<td>Registry dispatches capture/restore per component type</td>
+</tr>
+</tbody>
+</table>
+<pre class="mermaid">flowchart LR
+    subgraph Live["Live ECS (Originator)"]
+        GW[GameWorld]
+        GO[GameObjects + Components]
+    end
+
+    subgraph Memento["Memento (opaque snapshot)"]
+        DOC[SceneDocument]
+        REC[ComponentRecord entries]
+    end
+
+    subgraph Caretaker["Caretaker"]
+        SER[SceneSerializer]
+        DES[SceneDeserializer]
+        FILE[(.spark scene file)]
+    end
+
+    GW --&gt; GO
+    SER --&gt;|Capture| DOC
+    DOC --&gt; REC
+    SER --&gt;|WriteToFile| FILE
+    FILE --&gt;|ReadFromFile| DES
+    DES --&gt;|Apply| GW
+</pre>
+<hr>
+<h2 id="example-1-spark-scene-serialization">Example 1: Spark — Scene Serialization</h2>
+<p>Spark's editor and runtime load scenes from text <strong>scene documents</strong> while simulation uses ECS entities. Serialization is Memento at engine scale: the live world is originator; the document is memento; serializer/deserializer are caretakers.</p>
+<h3 id="sceneserializer-caretaker-capture-side">SceneSerializer (caretaker — capture side)</h3>
+<p>Public API:</p>
+<pre><code class="language-cpp">class SceneSerializer {
+public:
+    explicit SceneSerializer(const ComponentSnapshotRegistry&amp; registry = ...);
+
+    SceneDocument Capture(
+        const GameWorld&amp; world,
+        const SceneCaptureContext&amp; ctx,
+        const std::function&lt;bool(const GameObject*)&gt;&amp; includeEntity) const;
+
+    bool WriteToFile(const SceneDocument&amp; document, const char* path) const;
+    bool WriteToString(const SceneDocument&amp; document, Utf8String&amp; out) const;
+private:
+    const ComponentSnapshotRegistry&amp; registry;
+};
+</code></pre>
+<p><strong>State:</strong> reference to <code>ComponentSnapshotRegistry</code> (strategy registry — not snapshot data).</p>
+<p><strong>Behavior:</strong></p>
+<ol>
+<li>Iterate entities in <code>GameWorld</code> matching <code>includeEntity</code> predicate.</li>
+<li>For each <code>GameObject</code>, walk registered component kinds in deterministic capture order (<code>kCaptureOrder</code> array in implementation — Transform before Mesh before Material, etc.).</li>
+<li>For each present component, ask registry for <code>IComponentSnapshotHandler</code>; call <code>TryCapture</code>.</li>
+<li>Append <code>ComponentRecord</code> entries into <code>SceneDocument</code>.</li>
+<li>Write header lines (name, assets root, scene UID) and entity blocks to file or string.</li>
+</ol>
+<p>The caretaker <strong>never</strong> reads mesh vertices or collider radii directly — handlers encode domain knowledge.</p>
+<h3 id="scenedeserializer-caretaker-restore-side">SceneDeserializer (caretaker — restore side)</h3>
+<pre><code class="language-cpp">class SceneDeserializer {
+public:
+    bool ReadFromFile(const char* path, SceneDocument&amp; out) const;
+    bool Apply(const SceneDocument&amp; document, GameWorld&amp; world, const SceneApplyContext&amp; ctx, ...) const;
+};
+</code></pre>
+<p><strong>Apply sequence:</strong></p>
+<ol>
+<li>Parse document into memento structure in memory.</li>
+<li>Create <code>GameObject</code> instances for each entity record.</li>
+<li>For each <code>ComponentRecord</code>, registry finds handler → <code>TryRestore</code> attaches component state.</li>
+<li>Link parent/child hierarchy after components exist (transform hierarchy depends on stable entity ids).</li>
+</ol>
+<p>Partial failure policy: if one entity fails, successfully created objects may remain — caretaker documents this; user may need manual cleanup.</p>
+<h3 id="icomponentsnapshothandler-originator-delegate-strategy">IComponentSnapshotHandler (originator delegate / strategy)</h3>
+<p>Each component type implements capture/restore without bloating serializer:</p>
+<pre><code class="language-cpp">class IComponentSnapshotHandler {
+public:
+    virtual ComponentKind GetKind() const noexcept = 0;
+    virtual bool TryCapture(const GameObject&amp; owner, const SceneCaptureContext&amp; ctx,
+                            ComponentRecord&amp; out) const = 0;
+    virtual bool TryRestore(GameObject&amp; owner, const ComponentRecord&amp; record,
+                            GameWorld&amp; world, const SceneApplyContext&amp; ctx) const = 0;
+};
+</code></pre>
+<p><strong>Comment in source:</strong> implementations are <strong>stateless strategy objects</strong> — good OCP: new component kind = new handler class + registry entry, not a 5,000-line serializer switch.</p>
+<p><strong>SceneCaptureContext / SceneApplyContext</strong> hold optional callbacks (resolve mesh asset path, defer async asset loads). Context objects parameterize capture/restore without storing state in handlers.</p>
+<h3 id="componentsnapshotregistry">ComponentSnapshotRegistry</h3>
+<p>Maps <code>ComponentKind</code> → handler pointer. <strong>State:</strong> registration table built at startup. <strong>Called by:</strong> serializer and deserializer for each record.</p>
+<hr>
+<h2 id="sequence-walkthrough-save-scene-from-editor">Sequence walkthrough: Save scene from editor</h2>
+<pre class="mermaid">sequenceDiagram
+    participant Ed as Scene editor
+    participant Ser as SceneSerializer
+    participant Reg as ComponentSnapshotRegistry
+    participant H as TransformSnapshotHandler
+    participant Doc as SceneDocument
+    participant FS as File system
+
+    Ed-&gt;&gt;Ser: Capture(world, ctx, includeAll)
+    loop each GameObject
+        Ser-&gt;&gt;Reg: handler for ComponentKind::Transform
+        Reg-&gt;&gt;H: TryCapture(owner, ctx, record)
+        H-&gt;&gt;Doc: append ComponentRecord
+    end
+    Ed-&gt;&gt;Ser: WriteToFile(doc, "level.spark")
+    Ser-&gt;&gt;FS: text lines H/E/C records
+</pre>
+<h2 id="sequence-walkthrough-load-scene-into-play-mode">Sequence walkthrough: Load scene into play mode</h2>
+<pre class="mermaid">sequenceDiagram
+    participant RT as Runtime bootstrap
+    participant Des as SceneDeserializer
+    participant Doc as SceneDocument
+    participant Reg as ComponentSnapshotRegistry
+    participant W as GameWorld
+
+    RT-&gt;&gt;Des: ReadFromFile(path, doc)
+    RT-&gt;&gt;Des: Apply(doc, world, ctx)
+    Des-&gt;&gt;W: CreateGameObject per entity
+    loop each ComponentRecord
+        Des-&gt;&gt;Reg: GetHandler(kind)
+        Reg--&gt;&gt;Des: IComponentSnapshotHandler
+        Des-&gt;&gt;W: TryRestore on owner
+    end
+    Des-&gt;&gt;W: Link parent/child indices
+</pre>
+<hr>
+<h2 id="memento-vs-prototype">Memento vs Prototype</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Memento</th>
+<th>Prototype</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>External snapshot for undo/save</td>
+<td>Clone live object for <strong>new</strong> instance</td>
+</tr>
+<tr>
+<td>Caretaker stores opaque document</td>
+<td>Client calls <code>Clone()</code> on originator</td>
+</tr>
+<tr>
+<td>Spark <code>.spark</code> scene files</td>
+<td>RainDB <code>DeepClone</code> on keys</td>
+</tr>
+<tr>
+<td>Time dimension: restore <strong>same</strong> entity identity later</td>
+<td>Space dimension: duplicate for branching</td>
+</tr>
+</tbody>
+</table>
+<p>Scene save <strong>restores into</strong> a world (possibly empty); prototype <strong>creates another</strong> object with copied state.</p>
+<hr>
+<h2 id="legacy-collider-snapshots">Legacy Collider Snapshots</h2>
+<p>Spark physics colliders expose <code>FromLegacySnapshot</code> / <code>ToLegacySnapshot</code> — <strong>migration mementos</strong> between API versions. Same pattern: opaque blob + originator knows interpretation; tools convert old files without upgrading live gameplay code paths.</p>
+<hr>
+<h2 id="undoredo-future-editor-feature">Undo/Redo (Future Editor Feature)</h2>
+<p>Interactive undo would use the <strong>same</strong> <code>SceneDocument</code> mementos:</p>
+<ol>
+<li>On each edit, caretaker pushes <code>Capture(world)</code> onto undo stack.</li>
+<li>Undo pops memento, <code>Apply</code> to world (or diff-based optimize).</li>
+<li>Redo stack holds forward mementos.</li>
+</ol>
+<p>Current codebase emphasizes <strong>save/load</strong> over interactive undo — caretaker role is file I/O and bootstrap, not keystroke stack. Pattern is identical; only caretaker policy changes.</p>
+<hr>
+<h2 id="encapsulation-boundaries">Encapsulation boundaries</h2>
+<table class="table">
+<thead>
+<tr>
+<th>What caretaker may know</th>
+<th>What caretaker must not know</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>File paths, document headers</td>
+<td>Mesh buffer layout</td>
+</tr>
+<tr>
+<td>When to capture/apply</td>
+<td>How <code>HealthComponent</code> encodes floats</td>
+</tr>
+<tr>
+<td>Include/exclude entity filter</td>
+<td>Material shader parameter names</td>
+</tr>
+</tbody>
+</table>
+<p>Handlers encapsulate per-component encoding; document format stays stable as components evolve independently.</p>
+<hr>
+<h2 id="trade-offs">Trade-offs</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Benefit</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Add components without rewriting serializer</td>
+<td>Registry discipline required</td>
+</tr>
+<tr>
+<td>Opaque memento to most code</td>
+<td>Debugging saved files needs format docs</td>
+</tr>
+<tr>
+<td>Test handlers in isolation</td>
+<td>Full scene round-trip tests are heavy</td>
+</tr>
+<tr>
+<td>Async asset deferral via ApplyContext</td>
+<td>Partial Apply failure leaves mixed world</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Alternatives:</strong> Full-scene JSON of public DTOs (fast to hack, breaks encapsulation); entity streaming databases; command sourcing (store edits not snapshots — complements memento for undo).</p>
+<hr>
+<h2 id="next">Next</h2>
+<p><a href="07-observer.html">Observer →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#memento">Memento</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#the-behavioral-problem-saving-state-without-breaking-encapsulation">The Behavioral Problem: Saving State Without Breaking Encapsulation</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#gof-participants-spark-scene-serialization">GoF Participants → Spark Scene Serialization</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-1-spark-scene-serialization">Example 1: Spark — Scene Serialization</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#sceneserializer-caretaker-capture-side">SceneSerializer (caretaker — capture side)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#scenedeserializer-caretaker-restore-side">SceneDeserializer (caretaker — restore side)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#icomponentsnapshothandler-originator-delegate-strategy">IComponentSnapshotHandler (originator delegate / strategy)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#componentsnapshotregistry">ComponentSnapshotRegistry</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#sequence-walkthrough-save-scene-from-editor">Sequence walkthrough: Save scene from editor</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#sequence-walkthrough-load-scene-into-play-mode">Sequence walkthrough: Load scene into play mode</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#memento-vs-prototype">Memento vs Prototype</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#legacy-collider-snapshots">Legacy Collider Snapshots</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#undoredo-future-editor-feature">Undo/Redo (Future Editor Feature)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#encapsulation-boundaries">Encapsulation boundaries</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#trade-offs">Trade-offs</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

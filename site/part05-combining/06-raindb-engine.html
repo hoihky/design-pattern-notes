@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RainDB Query Engine · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>RainDB Query Engine</h1>
+          </header>
+          <div class="doc-body"><h1 id="raindb-query-engine-composition">RainDB — Query Engine Composition</h1>
+<p>RainDB is a columnar analytics database. Its architecture emphasizes <strong>SOLID separation</strong> and pragmatic pattern use over explicit GoF naming — yet the same forces appear: hide complexity behind a facade, compile separately from execute, dispatch algorithms by plan type, clone keys for hash tables, inject dependencies via context.</p>
+<p>This chapter traces an analyst running SQL through RainDB, follows the compile/execute split, and explains when RainDB deliberately <strong>does not</strong> label a pattern.</p>
+<h2 id="end-to-end-user-journey">End-to-End User Journey</h2>
+<pre class="mermaid">sequenceDiagram
+    participant Analyst
+    participant Engine as RainDbEngine
+    participant SQL as DefaultSqlCompiler
+    participant Plan as IPhysicalPlan
+    participant Exec as DefaultQueryExecutor
+    participant Ctx as IExecutionContext
+    participant Scan as VectorizedScanEngine
+
+    Analyst-&gt;&gt;Engine: ExecuteSqlAsync("SELECT …")
+    Engine-&gt;&gt;Engine: CreateSession() → RainDbExecutionContext
+    Engine-&gt;&gt;SQL: CompileAsync(sql, catalog)
+    SQL--&gt;&gt;Engine: IPhysicalPlan (e.g. VectorizedScanPhysicalPlan)
+    Engine-&gt;&gt;Exec: ExecuteAsync(plan, ctx)
+    Exec-&gt;&gt;Exec: pattern match plan type
+    Exec-&gt;&gt;Scan: ExecuteAsync(plan, columnarTable, ctx)
+    Scan-&gt;&gt;Ctx: BufferPool, AlignedBufferPool, Catalog
+    Scan--&gt;&gt;Analyst: IColumnarQueryResult (batches)
+</pre>
+<p><strong>What the analyst experiences:</strong></p>
+<ol>
+<li><code>RainDbEngine.CreateDefault()</code> or <code>OpenPersistent("./data")</code> — one call, no manual wiring of catalog, buffer pools, compilers, executor.</li>
+<li><code>await engine.ExecuteSqlAsync("SELECT sum(amount) FROM sales WHERE region = 'EU' GROUP BY product")</code>.</li>
+<li>Results arrive as columnar batches — efficient for analytics, not row-by-row ORM objects.</li>
+<li>Cancellation via <code>CancellationToken</code> propagates through <code>IExecutionContext</code>.</li>
+</ol>
+<p>Under the hood: SQL text becomes logical plan becomes physical plan becomes engine-specific vectorized execution — each phase is a separate layer with explicit interfaces.</p>
+<h2 id="subsystem-map-how-layers-interact">Subsystem Map — How Layers Interact</h2>
+<pre class="mermaid">flowchart LR
+    SQL[SQL Text] --&gt; COMPILER[ISqlCompiler — DefaultSqlCompiler]
+    LINQ[Expression Tree] --&gt; LCOMP[ILinqCompiler — DefaultLinqCompiler]
+    COMPILER --&gt; PLAN[IPhysicalPlan]
+    LCOMP --&gt; PLAN
+    PLAN --&gt; EXEC[IQueryExecutor — DefaultQueryExecutor]
+    EXEC --&gt; ENGINES[Execution Engines]
+    ENGINES --&gt; CTX[IExecutionContext]
+    CTX --&gt; CAT[ICatalog]
+    CTX --&gt; POOL[IBufferPool / IAlignedBufferPool]
+    CTX --&gt; SPILL[ISpillWriter]
+    FACADE[RainDbEngine] --&gt; COMPILER
+    FACADE --&gt; EXEC
+    FACADE --&gt; CTX
+</pre>
+<p><strong>Compile path</strong> never allocates query buffers. <strong>Execute path</strong> never parses SQL. <strong>Facade</strong> exposes both without leaking the graph. <strong>Context</strong> bundles per-query resources so engines don't construct their own catalog or pools.</p>
+<h2 id="facade-raindbengine">Facade — RainDbEngine</h2>
+<h3 id="force">Force</h3>
+<p>Embedding RainDB requires catalog, hybrid buffer pool, aligned SIMD buffers, SQL compiler, LINQ compiler, query executor, spill writer, and optional file database. Application code should not wire ten services manually or know construction order.</p>
+<h3 id="why-facade">Why Facade</h3>
+<pre><code class="language-csharp">public sealed class RainDbEngine
+{
+    public static RainDbEngine CreateDefault() =&gt; CreateDefault(new InMemoryCatalog());
+    public static RainDbEngine OpenPersistent(string directoryPath) { … }
+
+    public IExecutionContext CreateSession(CancellationToken cancellationToken = default);
+    public async ValueTask&lt;IQueryResult&gt; ExecuteSqlAsync(string sql, …);
+    public async ValueTask&lt;IQueryResult&gt; ExecutePhysicalAsync(IPhysicalPlan plan, …);
+}
+</code></pre>
+<p><strong>Class-level detail:</strong></p>
+<ul>
+<li><code>CreateDefault()</code> constructs <code>HybridBufferPool</code> (implements both <code>IBufferPool</code> and <code>IAlignedBufferPool</code>), <code>DefaultQueryExecutor</code>, <code>DefaultSqlCompiler</code>, <code>DefaultLinqCompiler</code>, <code>NoOpSpillWriter.Instance</code>, and <code>InMemoryCatalog</code>.</li>
+<li><code>OpenPersistent(path)</code> opens <code>RainDbFileDatabase</code>, uses its catalog, retains <code>FileDatabase</code> reference so GC does not collect backing store.</li>
+<li><code>ExecuteSqlAsync</code> is the <strong>convenience path</strong>: <code>CreateSession</code> → <code>CompileAsync</code> → <code>ExecuteAsync</code> — three lines hiding the compile/execute boundary.</li>
+<li><code>ExecutePhysicalAsync</code> bypasses SQL for tests and advanced callers that construct plans directly.</li>
+</ul>
+<p>Constructor injection on <code>RainDbEngine</code> itself allows tests to substitute any collaborator — Facade does not hardcode <code>new</code> everywhere, factories do.</p>
+<h3 id="interaction-with-srp-split">Interaction with SRP split</h3>
+<p>Facade <strong>coordinates</strong> but does not compile or execute. <code>ExecuteSqlAsync</code> delegates to <code>SqlCompiler</code> and <code>Executor</code> — Facade is thin orchestration, not a god object containing parser code.</p>
+<h3 id="if-we-removed-facade">If we removed Facade</h3>
+<p>Every sample and test repeats:</p>
+<pre><code class="language-csharp">var catalog = new InMemoryCatalog();
+var buffers = new HybridBufferPool();
+var executor = new DefaultQueryExecutor();
+var sql = new DefaultSqlCompiler();
+var ctx = new RainDbExecutionContext(catalog, buffers, buffers, NoOpSpillWriter.Instance, ct);
+var plan = await sql.CompileAsync(…);
+await executor.ExecuteAsync(plan, ctx);
+</code></pre>
+<p>Construction drift breaks samples when defaults change.</p>
+<h2 id="srp-compile-vs-execute">SRP — Compile vs Execute</h2>
+<h3 id="force-1">Force</h3>
+<p>SQL parsing, name binding, logical planning, and physical planning change for different reasons than vectorized scan kernels, hash aggregation, and join probe/build logic. Mixing them prevents testing execution with handcrafted plans and prevents testing compilation without running kernels.</p>
+<h3 id="why-strict-split">Why strict split</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Layer</th>
+<th>Project</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parse + bind + plan</td>
+<td><code>RainDB.Sql</code>, <code>RainDB.Linq</code></td>
+<td>Text/expression → <code>IPhysicalPlan</code></td>
+</tr>
+<tr>
+<td>Execute operators</td>
+<td><code>RainDB.Query</code></td>
+<td><code>IPhysicalPlan</code> + <code>IExecutionContext</code> → <code>IQueryResult</code></td>
+</tr>
+<tr>
+<td>Storage + types</td>
+<td><code>RainDB.Core</code></td>
+<td>Catalog, column chunks, persistence</td>
+</tr>
+</tbody>
+</table>
+<p><code>IQueryExecutor</code> documentation states execution-only scope — parsing lives elsewhere.</p>
+<p><strong>Class-level detail:</strong> <code>DefaultSqlCompiler.CompileAsync</code> runs lexer → parser → logical binders (<code>LogicalTableScanBinder</code>, <code>LogicalJoinBinder</code>) → physical plan builder producing <code>VectorizedScanPhysicalPlan</code>, <code>HashAggregatePhysicalPlan</code>, <code>JoinPhysicalPlan</code>, etc. Compiler reads <code>ICatalog</code> for schema but never allocates result batches.</p>
+<p><code>DefaultQueryExecutor.ExecuteAsync</code> receives ready physical plan — no SQL string, no re-parse on retry.</p>
+<h3 id="interaction-with-facade-and-context">Interaction with Facade and Context</h3>
+<pre><code>ExecuteSqlAsync
+→ SqlCompiler.CompileAsync(sql, Catalog)   // read-only catalog
+→ Executor.ExecuteAsync(plan, session)     // session carries mutable pools
+</code></pre>
+<p>Catalog is shared; buffer pools are per-session via <code>IExecutionContext</code>.</p>
+<h3 id="if-we-removed-split">If we removed split</h3>
+<p>Optimizer experiments re-parse SQL on every execution iteration. Unit tests for hash aggregate require SQL strings instead of <code>HashAggregatePhysicalPlan</code> fixtures.</p>
+<h2 id="strategy-like-dispatch-defaultqueryexecutor">Strategy-Like Dispatch — DefaultQueryExecutor</h2>
+<h3 id="force-2">Force</h3>
+<p>Each physical plan type runs a different algorithm: vectorized scan, hash aggregate, hash join, sort/top-N, grouped join (join then aggregate on ephemeral table). Execution code must route plan → engine.</p>
+<h3 id="why-pattern-match-dispatch-strategy-like-not-formal-strategy">Why pattern-match dispatch (Strategy-like, not formal Strategy)</h3>
+<pre><code class="language-csharp">public async ValueTask&lt;IQueryResult&gt; ExecuteAsync(IPhysicalPlan plan, IExecutionContext context)
+{
+    if (plan is VectorizedScanPhysicalPlan vs) { … return await VectorizedScanEngine.ExecuteAsync(vs, cols, context); }
+    if (plan is HashAggregatePhysicalPlan ha) { … return await HashAggregateEngine.ExecuteAsync(ha, cols2, context); }
+    if (plan is JoinPhysicalPlan join) { … return await JoinExecutionEngine.ExecuteAsync(…); }
+    // SortTopNPhysicalPlan, JoinSortTopNPhysicalPlan, GroupedJoinPhysicalPlan …
+}
+</code></pre>
+<p>Each <code>*Engine</code> class is a specialized algorithm — <strong>Strategy object without shared <code>IExecutionStrategy</code> interface</strong>.</p>
+<p><strong>Class-level detail:</strong></p>
+<ul>
+<li>Executor resolves <code>IColumnarTableSource</code> from <code>context.Catalog</code> by table id — fail fast if table missing or not columnar.</li>
+<li><code>GroupedJoinPhysicalPlan</code> runs join, wraps result in <code>EphemeralColumnarTableSource</code>, runs hash aggregate, disposes join result in <code>finally</code> — <strong>composition of engines</strong> inside executor for one plan type.</li>
+<li>Unknown plan returns <code>EmptyQueryResult(0)</code> — placeholder for future plan types.</li>
+</ul>
+<h3 id="why-not-formal-strategy-interface-yet">Why not formal Strategy interface (yet)</h3>
+<p>Forces satisfied today:</p>
+<ul>
+<li>Plan types are <strong>closed set</strong> (~7 variants), stable.</li>
+<li>Engines are static classes — no runtime plugin registration needed.</li>
+<li>Pattern-match is readable in one file for debugger stepping.</li>
+</ul>
+<p>Forces that would trigger refactor to explicit Strategy + registry:</p>
+<ul>
+<li>Third-party pluggable operators (UDF aggregates, custom join algorithms).</li>
+<li>Plan nodes loaded from serialized plan files.</li>
+</ul>
+<p>RainDB documents this as <strong>pragmatic dispatch</strong> — patterns are forces satisfied, not badges.</p>
+<h3 id="interaction-with-iexecutioncontext">Interaction with IExecutionContext</h3>
+<p>Every engine receives same <code>IExecutionContext</code> — swap spill writer or buffer pool without changing executor dispatch or engine signatures.</p>
+<h3 id="if-we-removed-dispatch-layer">If we removed dispatch layer</h3>
+<p>One <code>ExecuteEverything()</code> method with intertwined scan/join/agg logic — untestable, violates OCP when adding <code>SortTopNPhysicalPlan</code>.</p>
+<h2 id="isp-interface-layering">ISP — Interface Layering</h2>
+<h3 id="force-3">Force</h3>
+<p>Not every caller needs columnar batches or SIMD-aligned buffers. Catalog browsers need table metadata; vectorized kernels need aligned pools; persistence layer needs batch codec — different clients, different surface areas.</p>
+<h3 id="why-layered-interfaces">Why layered interfaces</h3>
+<pre><code class="language-csharp">ITableSource              // metadata only
+IColumnarTableSource      // + columnar batches
+IBufferPool               // general byte buffers
+IAlignedBufferPool        // SIMD-aligned buffers (extends memory concerns)
+</code></pre>
+<p><strong>Class-level detail:</strong> <code>VectorizedScanEngine</code> requests <code>IAlignedBufferPool</code> from context for SIMD kernels. Catalog listing in demos uses <code>ICatalog.TryGetTable</code> returning <code>ITableSource</code> — does not pull in columnar dependencies.</p>
+<p><code>HybridBufferPool</code> implements both pool interfaces — one object, multiple roles, but clients depend only on what they need.</p>
+<h3 id="interaction-with-dip">Interaction with DIP</h3>
+<p><code>IExecutionContext</code> exposes all execution dependencies in one bundle for <strong>operator convenience</strong>, while interface segregation applies at <strong>type definition</strong> level — operators that only read catalog don't take <code>IAlignedBufferPool</code> as separate parameter if they don't need it; they simply don't use that property.</p>
+<h2 id="dip-iexecutioncontext">DIP — IExecutionContext</h2>
+<h3 id="force-4">Force</h3>
+<p>Execution engines need catalog, memory pools, spill writer, cancellation — but should not <code>new InMemoryCatalog()</code> internally (tests couldn't substitute fakes).</p>
+<h3 id="why-context-bundle">Why context bundle</h3>
+<pre><code class="language-csharp">public interface IExecutionContext
+{
+    ICatalog Catalog { get; }
+    IBufferPool BufferPool { get; }
+    IAlignedBufferPool AlignedBufferPool { get; }
+    ISpillWriter SpillWriter { get; }
+    CancellationToken CancellationToken { get; }
+}
+</code></pre>
+<p><code>RainDbExecutionContext</code> is concrete implementation. <code>RainDbEngine.CreateSession()</code> manufactures one per query.</p>
+<p><strong>Class-level detail:</strong> Tests inject <code>NoOpSpillWriter.Instance</code> — <strong>Null Object</strong> singleton — so in-memory engines skip disk spill without null checks in every engine. Tests use <code>InMemoryCatalog</code> with preloaded <code>MemoryTable</code> data.</p>
+<h3 id="interaction-with-facade">Interaction with Facade</h3>
+<p>Facade creates session, passes to executor. Compiler does <strong>not</strong> receive context — compile phase has no spill/buffer needs. Clean phase separation.</p>
+<h3 id="if-we-removed-context-bundle">If we removed context bundle</h3>
+<p>Each engine method grows <code>(catalog, bufferPool, alignedPool, spill, ct)</code> parameter list — signature churn when adding tracing or memory limits.</p>
+<h2 id="prototype-join-aggregation-keys">Prototype — Join Aggregation Keys</h2>
+<h3 id="force-5">Force</h3>
+<p>Hash aggregate and join build phases use composite keys mixing fixed-width numerics and UTF-8 string payloads. When merging partial aggregates or inserting into hash tables, keys must be <strong>independent copies</strong> — mutating one must not affect dictionary buckets.</p>
+<h3 id="why-prototype-deepclone">Why Prototype (DeepClone)</h3>
+<pre><code class="language-csharp">public CompositeJoinKey DeepClone()
+{
+    var nums = (ulong[])NumericParts.Clone();
+    byte[]?[] utf = new byte[Utf8Payloads.Length][];
+    for (var i = 0; i &lt; Utf8Payloads.Length; i++)
+        utf[i] = Utf8Payloads[i] is { } u ? (byte[])u.Clone() : null;
+    return new CompositeJoinKey(NullMask, nums, utf);
+}
+</code></pre>
+<p><strong>Class-level detail:</strong> <code>CompositeJoinKeyBuilder.Build</code> constructs keys from columnar batch rows — reads null bitmap, copies UTF-8 payload spans into owned byte arrays. <code>CompositeJoinKeyComparer</code> compares keys for sort-merge operations. <code>DeepClone</code> ensures hash table stability when keys are stored after batch memory is recycled.</p>
+<p>This is Prototype in the <strong>minimal GoF sense</strong> — clone expensive composite state — not a public <code>IPrototype</code> interface.</p>
+<h3 id="interaction-with-execution-engines">Interaction with execution engines</h3>
+<p><code>HashAggregateEngine</code> and <code>JoinExecutionEngine</code> use keys internally — Prototype is a <strong>value-object concern</strong> inside execution, invisible to SQL caller.</p>
+<h3 id="if-we-removed-deepclone">If we removed DeepClone</h3>
+<p>Subtle hash corruption when batch memory reused — keys share mutable byte[] backing arrays.</p>
+<h2 id="singleton-null-object">Singleton — Null Object</h2>
+<pre><code class="language-csharp">NoOpSpillWriter.Instance
+</code></pre>
+<p>In-memory default engines disable spill-to-disk without <code>if (spillWriter != null)</code> in every operator. <strong>Singleton</strong> for single shared no-op; <strong>Null Object</strong> for behavior.</p>
+<h2 id="lsp-query-results">LSP — Query Results</h2>
+<p><code>IColumnarQueryResult</code> and <code>IAggregateQueryResult</code> extend <code>IQueryResult</code>. Callers using only <code>RowCount</code> or <code>DisposeAsync</code> work with any result type — substitutability for generic result handling in tests and demos.</p>
+<h2 id="what-raindb-teaches-about-pattern-composition">What RainDB Teaches About Pattern Composition</h2>
+<p>Not every subsystem needs labeled patterns. RainDB prioritizes:</p>
+<ol>
+<li><strong>Clear compile/execute boundary</strong> (SRP) — stronger than any single GoF pattern here.</li>
+<li><strong>Execution context bundle</strong> (DIP) — operators depend on abstraction bundle, not concretes.</li>
+<li><strong>Layered table/memory interfaces</strong> (ISP) — clients take minimum surface.</li>
+<li><strong>Pragmatic dispatch</strong> over ceremony — Strategy-like without interface until plugins are a real force.</li>
+</ol>
+<p>Patterns are <strong>forces satisfied</strong>. The Facade and Context bundle are the clearest pattern contributions; dispatch is Strategy <strong>thinking</strong> without Strategy <strong>typing</strong>.</p>
+<h2 id="comparison-to-other-part-5-systems">Comparison to Other Part 5 Systems</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Aspect</th>
+<th>MDWeb</th>
+<th>RainDB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pipeline</td>
+<td>Explicit Chain (<code>IGenerationStep</code>)</td>
+<td>Implicit compile → execute phases</td>
+</tr>
+<tr>
+<td>Shared state</td>
+<td><code>SiteContext</code> mutable accumulator</td>
+<td><code>IExecutionContext</code> dependency bundle</td>
+</tr>
+<tr>
+<td>Variation</td>
+<td>Strategy via DI (renderer)</td>
+<td>Pattern-match engines (plan type)</td>
+</tr>
+<tr>
+<td>Extension</td>
+<td>Register new DI step</td>
+<td>Would need Strategy registry for plugins</td>
+</tr>
+</tbody>
+</table>
+<p>Both use Facade as entry point. MDWeb's Chain is explicit because stage count is high and order is user-visible. RainDB's phases are two stable gates — compiler and executor — so Chain would be over-engineering.</p>
+<h2 id="extension-roadmap-pattern-opportunities">Extension Roadmap (Pattern Opportunities)</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Future feature</th>
+<th>Likely pattern</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pluggable storage backends</td>
+<td>Strategy + Factory</td>
+<td>Multiple <code>ITableSource</code> implementations</td>
+</tr>
+<tr>
+<td>Query optimizer rules</td>
+<td>Chain of Responsibility</td>
+<td>Rule pipeline rewriting logical plan</td>
+</tr>
+<tr>
+<td>Plan node plugins</td>
+<td>Visitor over plan tree</td>
+<td>Operations on stable plan IR</td>
+</tr>
+<tr>
+<td>Custom aggregate functions</td>
+<td>Strategy registry</td>
+<td>Like Spark's <code>ComponentSnapshotRegistry</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="impact-analysis">Impact Analysis</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Removed</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>RainDbEngine Facade</strong></td>
+<td>Construction boilerplate; samples break on default changes</td>
+</tr>
+<tr>
+<td><strong>Compile/execute split</strong></td>
+<td>Cannot test engines with physical plans; optimizer coupled to I/O</td>
+</tr>
+<tr>
+<td><strong>IExecutionContext</strong></td>
+<td>Engine signatures explode; testing requires real file spill</td>
+</tr>
+<tr>
+<td><strong>ISP on table interfaces</strong></td>
+<td>Metadata callers link columnar/SIMD dependencies</td>
+</tr>
+<tr>
+<td><strong>DeepClone on keys</strong></td>
+<td>Intermittent wrong aggregate results — worst kind of bug</td>
+</tr>
+<tr>
+<td><strong>NoOpSpillWriter</strong></td>
+<td>Null checks or accidental disk spill in memory mode</td>
+</tr>
+</tbody>
+</table>
+<p>Removing <strong>compile/execute split</strong> causes the deepest architectural damage — harder to detect than a missing Facade but more expensive to fix later.</p>
+<h2 id="next">Next</h2>
+<p><a href="07-choosing-patterns.html">Choosing Patterns for Real Problems →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#raindb-query-engine-composition">RainDB — Query Engine Composition</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#end-to-end-user-journey">End-to-End User Journey</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#subsystem-map-how-layers-interact">Subsystem Map — How Layers Interact</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#facade-raindbengine">Facade — RainDbEngine</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#force">Force</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-facade">Why Facade</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#interaction-with-srp-split">Interaction with SRP split</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#if-we-removed-facade">If we removed Facade</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#srp-compile-vs-execute">SRP — Compile vs Execute</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#force">Force</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-strict-split">Why strict split</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#interaction-with-facade-and-context">Interaction with Facade and Context</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#if-we-removed-split">If we removed split</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#strategy-like-dispatch-defaultqueryexecutor">Strategy-Like Dispatch — DefaultQueryExecutor</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#force">Force</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-pattern-match-dispatch-strategy-like-not-formal-strategy">Why pattern-match dispatch (Strategy-like, not formal Strategy)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-not-formal-strategy-interface-yet">Why not formal Strategy interface (yet)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#interaction-with-iexecutioncontext">Interaction with IExecutionContext</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#if-we-removed-dispatch-layer">If we removed dispatch layer</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#isp-interface-layering">ISP — Interface Layering</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#force">Force</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-layered-interfaces">Why layered interfaces</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#interaction-with-dip">Interaction with DIP</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#dip-iexecutioncontext">DIP — IExecutionContext</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#force">Force</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-context-bundle">Why context bundle</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#interaction-with-facade">Interaction with Facade</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#if-we-removed-context-bundle">If we removed context bundle</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#prototype-join-aggregation-keys">Prototype — Join Aggregation Keys</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#force">Force</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-prototype-deepclone">Why Prototype (DeepClone)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#interaction-with-execution-engines">Interaction with execution engines</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#if-we-removed-deepclone">If we removed DeepClone</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#singleton-null-object">Singleton — Null Object</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#lsp-query-results">LSP — Query Results</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#what-raindb-teaches-about-pattern-composition">What RainDB Teaches About Pattern Composition</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#comparison-to-other-part-5-systems">Comparison to Other Part 5 Systems</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#extension-roadmap-pattern-opportunities">Extension Roadmap (Pattern Opportunities)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#impact-analysis">Impact Analysis</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

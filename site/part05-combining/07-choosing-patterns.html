@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Choosing Patterns for Real Problems · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>Choosing Patterns for Real Problems</h1>
+          </header>
+          <div class="doc-body"><h1 id="choosing-patterns-for-real-problems">Choosing Patterns for Real Problems</h1>
+<p>This final chapter synthesizes Parts 1–5 into a practical decision framework — grounded in the seven projects you can open locally. It explains <strong>when to combine patterns</strong>, <strong>when one pattern hands off to another</strong>, and <strong>when not to apply a pattern at all</strong>.</p>
+<p>Design patterns are not goals. <strong>Maintainable systems</strong> are. The projects in this book show patterns emerging from variation that must not break existing code (OCP), boundaries that must stay testable (DIP, SRP), and structures that must support new operations (Visitor, Composite).</p>
+<h2 id="decision-flowchart">Decision Flowchart</h2>
+<pre class="mermaid">flowchart TD
+    START[New feature or refactor] --&gt; PAIN{Feeling pain?}
+    PAIN --&gt;|No| YAGNI[Keep simple code]
+    PAIN --&gt;|Yes| WHAT{What kind of pain?}
+    WHAT --&gt;|Creation complexity| CREATE[Creational: Builder, Factory, Prototype]
+    WHAT --&gt;|Structure mismatch| STRUCT[Structural: Facade, Composite, Bridge, Adapter]
+    WHAT --&gt;|Behavior varies| BEHAVE[Behavioral: Strategy, State, Chain, Command, Visitor]
+    WHAT --&gt;|Many concerns in one class| SOLID[Part 1: split responsibilities first]
+    CREATE --&gt; COMPOSE[Combine patterns minimally]
+    STRUCT --&gt; COMPOSE
+    BEHAVE --&gt; COMPOSE
+    SOLID --&gt; COMPOSE
+    COMPOSE --&gt; REVIEW[Can you name the force? Can you remove it without worse pain?]
+</pre>
+<p>The flowchart ends with <strong>review questions</strong>, not automatic pattern selection. If you cannot name the force, you may be name-dropping.</p>
+<h2 id="symptom-pattern-cheat-sheet">Symptom → Pattern Cheat Sheet</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Consider</th>
+<th>Example in corpus</th>
+<th>Key class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Telescoping constructors / many optional params</td>
+<td>Builder</td>
+<td>MDWeb CLI config</td>
+<td><code>SiteBuilder.Build()</code></td>
+</tr>
+<tr>
+<td>Families of related products</td>
+<td>Abstract Factory</td>
+<td>Spark UI controls</td>
+<td><code>IUiControlsFactory</code></td>
+</tr>
+<tr>
+<td>One product, many creators</td>
+<td>Factory Method</td>
+<td>Spark 2D shapes</td>
+<td><code>ShapeFactory2D</code></td>
+</tr>
+<tr>
+<td>Copy expensive mutable state</td>
+<td>Prototype</td>
+<td>RainDB join keys</td>
+<td><code>CompositeJoinKey.DeepClone()</code></td>
+</tr>
+<tr>
+<td>Global coordinator (use sparingly)</td>
+<td>Singleton</td>
+<td>Spark UI runtime</td>
+<td><code>UiSystem::Get()</code></td>
+</tr>
+<tr>
+<td>Third-party API mismatch</td>
+<td>Adapter</td>
+<td>MDWeb markdown</td>
+<td><code>MarkdigMarkdownRenderer</code></td>
+</tr>
+<tr>
+<td>Two independent variation axes</td>
+<td>Bridge</td>
+<td>Spark UI backend</td>
+<td><code>IUiBackend</code></td>
+</tr>
+<tr>
+<td>Tree structures in domain</td>
+<td>Composite</td>
+<td>MDWeb folders, SkyUI filters</td>
+<td><code>ContentFolder</code>, <code>FilterGroupNode</code></td>
+</tr>
+<tr>
+<td>Simplify subsystem entry</td>
+<td>Facade</td>
+<td>MDWeb, RainDB, ImgKit studio</td>
+<td><code>SiteGenerator</code>, <code>RainDbEngine</code></td>
+</tr>
+<tr>
+<td>Ordered processing stages</td>
+<td>Chain of Responsibility</td>
+<td>MDWeb pipeline, ImgKit middleware</td>
+<td><code>SiteGenerationPipeline</code>, <code>IRequestMiddleware</code></td>
+</tr>
+<tr>
+<td>Encapsulate user/HTTP actions</td>
+<td>Command</td>
+<td>ImgKit operations</td>
+<td><code>ResizeImageCommand</code></td>
+</tr>
+<tr>
+<td>Decouple request routing</td>
+<td>Mediator</td>
+<td>ImgKit + LightMediator</td>
+<td><code>IMediator.SendAsync</code></td>
+</tr>
+<tr>
+<td>Save/restore snapshots</td>
+<td>Memento</td>
+<td>Spark scenes</td>
+<td><code>SceneDocument</code></td>
+</tr>
+<tr>
+<td>Notify dependents of changes</td>
+<td>Observer</td>
+<td>SkyUI bindings, Spark signals</td>
+<td><code>INotifyPropertyChanged</code></td>
+</tr>
+<tr>
+<td>Behavior modes with transitions</td>
+<td>State</td>
+<td>Spark AI FSM</td>
+<td><code>FsmStateMachine</code></td>
+</tr>
+<tr>
+<td>Swappable algorithms</td>
+<td>Strategy</td>
+<td>ImgKit filters, MDWeb renderers</td>
+<td><code>IImageFilterStrategy</code>, <code>IMarkdownRenderer</code></td>
+</tr>
+<tr>
+<td>Fixed shell, variable step</td>
+<td>Template Method</td>
+<td>ImgKit processing</td>
+<td><code>ImageProcessingHandlerBase.ProcessAsync</code></td>
+</tr>
+<tr>
+<td>Operations on stable tree</td>
+<td>Visitor</td>
+<td>SkyUI SQL export</td>
+<td><code>IFilterNodeVisitor&lt;T&gt;</code></td>
+</tr>
+<tr>
+<td>DTO mapping boilerplate</td>
+<td>Generated Adapter</td>
+<td>LightMapper</td>
+<td><code>ILightMapper&lt;TSource,TDest&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<p>Use the cheat sheet as <strong>hypothesis generator</strong>, not checklist. RainDB's executor dispatch is Strategy-like but intentionally not <code>IExecutionStrategy</code> — symptom "swappable algorithms" applies only when algorithms are truly pluggable.</p>
+<h2 id="how-patterns-combine-interaction-patterns">How Patterns Combine — Interaction Patterns</h2>
+<p>Real systems repeat a few <strong>composition recipes</strong>. Recognizing the recipe helps you design without starting from zero.</p>
+<h3 id="recipe-1-build-facade-chain-strategy">Recipe 1: Build → Facade → Chain → Strategy</h3>
+<p><strong>MDWeb</strong> is the reference implementation:</p>
+<pre><code>SiteBuilder → SiteConfiguration
+SiteGenerator (Facade) → SiteGenerationPipeline (Chain)
+Each IGenerationStep → IMarkdownRenderer / ITemplateEngine (Strategy)
+</code></pre>
+<p><strong>Forces:</strong> many config options, many ordered stages, swappable rendering.</p>
+<p><strong>Handoff objects:</strong> <code>SiteConfiguration</code> (immutable input), <code>SiteContext</code> (mutable pipeline state).</p>
+<p><strong>If you skip a layer:</strong> Builder skipped → validation scattered. Facade skipped → CLI duplicates orchestration. Chain skipped → monolithic generator. Strategy skipped → Markdig types in application layer.</p>
+<h3 id="recipe-2-command-mediator-chain-middleware-template-method-strategy">Recipe 2: Command → Mediator → Chain (middleware) → Template Method → Strategy</h3>
+<p><strong>ImgKit</strong>:</p>
+<pre><code>ImagesController → ResizeImageCommand
+IMediator → ElapsedRequestLoggingMiddleware → ResizeImageHandler
+ImageProcessingHandlerBase.ProcessAsync → transform lambda or IImageFilterStrategy
+</code></pre>
+<p><strong>Forces:</strong> many HTTP endpoints, cross-cutting logging, identical I/O with different pixels.</p>
+<p><strong>Handoff objects:</strong> Command records (input), <code>ProcessedImageModel</code> (output), <code>Func&lt;Image,Image&gt;</code> or strategy (variation point).</p>
+<p><strong>LightMediator</strong> supplies Mediator + middleware Chain infrastructure so ImgKit focuses on domain Template Method and Strategy.</p>
+<h3 id="recipe-3-bridge-abstract-factory">Recipe 3: Bridge → Abstract Factory</h3>
+<p><strong>Spark UI</strong>:</p>
+<pre><code>UiSystem.SetActiveBackend → IUiBackend → IUiControlsFactory → IUiButton*, ISlider*, …
+</code></pre>
+<p><strong>Forces:</strong> two variation axes — backend technology and control product family.</p>
+<p><strong>Rule:</strong> If only one axis varies, use Strategy alone. If <strong>both</strong> backend and product family vary together, Bridge + Abstract Factory prevents mixed concrete types.</p>
+<h3 id="recipe-4-composite-visitor-observer-for-ui">Recipe 4: Composite → Visitor (+ Observer for UI)</h3>
+<p><strong>SkyUI filter editor</strong>:</p>
+<pre><code>FilterGroupNode tree (Composite)
+BasicFilterSqlExporter visits via Accept (Visitor)
+FilterEditorViewModel wires PropertyChanged (Observer)
+</code></pre>
+<p><strong>Forces:</strong> stable tree structure, multiple operations on tree, live UI binding.</p>
+<p><strong>Rule:</strong> Composite without Visitor leads to duplicated tree walks. Visitor without Composite leads to <code>is</code> checks on non-uniform structure.</p>
+<h3 id="recipe-5-memento-strategy-registry">Recipe 5: Memento → Strategy registry</h3>
+<p><strong>Spark scene serialization</strong>:</p>
+<pre><code>SceneSerializer.Capture → SceneDocument (Memento)
+Per component: ComponentSnapshotRegistry.Find(kind) → IComponentSnapshotHandler (Strategy)
+</code></pre>
+<p><strong>Forces:</strong> heterogeneous parts in snapshot, extensible component types.</p>
+<p><strong>Handoff object:</strong> <code>SceneDocument</code> between capture and file I/O / restore.</p>
+<h3 id="recipe-6-facade-srp-phases-context-bundle-dip">Recipe 6: Facade → SRP phases → Context bundle (DIP)</h3>
+<p><strong>RainDB</strong>:</p>
+<pre><code>RainDbEngine.ExecuteSqlAsync
+DefaultSqlCompiler → IPhysicalPlan
+DefaultQueryExecutor → engines
+IExecutionContext → catalog, pools, spill
+</code></pre>
+<p><strong>Forces:</strong> compile vs execute change independently; operators need injected resources.</p>
+<p><strong>Rule:</strong> Not every system needs explicit Chain — two stable phases may suffice.</p>
+<h2 id="cross-library-integration">Cross-Library Integration</h2>
+<h3 id="lightmediator-imgkit">LightMediator + ImgKit</h3>
+<p>ImgKit is a <strong>consumer</strong> of LightMediator:</p>
+<pre><code>HTTP → Command → Mediator → Middleware → Handler → Template Method → Strategy
+</code></pre>
+<p>LightMediator provides:</p>
+<table class="table">
+<thead>
+<tr>
+<th>Capability</th>
+<th>Pattern</th>
+<th>Mechanism</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Request dispatch</td>
+<td>Mediator</td>
+<td><code>Mediator.SendCore</code> resolves handler</td>
+</tr>
+<tr>
+<td>Request encapsulation</td>
+<td>Command</td>
+<td><code>IRequest&lt;TResponse&gt;</code> records</td>
+</tr>
+<tr>
+<td>Cross-cutting wrap</td>
+<td>Chain</td>
+<td><code>IRequestMiddleware&lt;,&gt;</code> onion</td>
+</tr>
+<tr>
+<td>Side-effect broadcast</td>
+<td>Observer</td>
+<td><code>INotification</code> + <code>INotificationHandler</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Class-level detail:</strong> <code>Mediator</code> caches compiled invokers per <code>(RequestType, ResponseType)</code> pair in <code>ConcurrentDictionary</code> — dispatch performance without hand-written switch on all command types.</p>
+<p>Middleware registration in ImgKit DI:</p>
+<pre><code class="language-csharp">services.AddTransient(typeof(IRequestMiddleware&lt;,&gt;), typeof(ElapsedRequestLoggingMiddleware&lt;,&gt;));
+</code></pre>
+<p>One registration applies logging to all requests implementing <code>IRequest&lt;T&gt;</code>.</p>
+<h3 id="lightmapper-imgkit">LightMapper + ImgKit</h3>
+<pre><code>API DTO / Command record --ILightMapper--&gt; Specification / Result model
+</code></pre>
+<ul>
+<li><strong>LightMapper</strong> — source generator emits <code>ILightMapper&lt;TSource,TDestination&gt;</code> (Adapter-like mapping, DIP through interface).</li>
+<li><code>[LightMap]</code> on DTOs triggers compile-time codegen — no reflection at runtime for mapped pairs.</li>
+<li>Handlers call <code>CommandModelMapper.ToSpecification&lt;ResizeImageCommand, ResizeImageSpecification&gt;(request)</code> — mapping stays out of <code>HandleAsync</code> body.</li>
+</ul>
+<p><strong>Why codegen Adapter:</strong> Hand-written mapping loops obscure Command + Template Method structure and drift when properties rename. Generated mappers fail at compile time when shapes mismatch.</p>
+<h3 id="mdweb-self-hosting">MDWeb — Self-Hosting</h3>
+<p>This ebook's markdown is processed by MDWeb:</p>
+<ul>
+<li><strong>Builder</strong> — CLI assembles <code>SiteConfiguration</code></li>
+<li><strong>Facade</strong> — <code>SiteGenerator.GenerateAsync</code></li>
+<li><strong>Chain</strong> — nine <code>IGenerationStep</code> implementations</li>
+<li><strong>Composite</strong> — folder navigation from <code>ContentFolder</code> tree</li>
+</ul>
+<p>Reading Part 5 while browsing <code>site/part05-combining/*.html</code> is a live composition example.</p>
+<h3 id="lightmapper-lightmediator-together">LightMapper + LightMediator Together</h3>
+<p>Full ImgKit vertical slice:</p>
+<pre><code>Browser multipart
+→ ImagesController (HTTP Adapter)
+→ ResizeImageCommand (Command)
+→ IMediator (Mediator)
+→ ElapsedRequestLoggingMiddleware (Chain)
+→ ResizeImageHandler (Handler)
+    → CommandModelMapper (LightMapper)
+    → ImageProcessingHandlerBase (Template Method)
+        → PillowNet resize (inline Strategy)
+→ ProcessedImageResult (Command)
+→ File HTTP response
+</code></pre>
+<p>Each library owns one concern. Removing LightMediator returns fat controllers; removing LightMapper returns property-copy noise in every handler.</p>
+<h2 id="anti-patterns-in-pattern-application">Anti-Patterns in Pattern Application</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Anti-pattern</th>
+<th>Symptom</th>
+<th>Fix</th>
+<th>Corpus counter-example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pattern every class</td>
+<td>Interfaces with one impl, no variation</td>
+<td>YAGNI — wait for second force</td>
+<td>RainDB executor dispatch without <code>IExecutionStrategy</code></td>
+</tr>
+<tr>
+<td>Singleton for all shared services</td>
+<td>Global hidden state, untestable</td>
+<td>DI singleton lifetime in C#</td>
+<td>Spark uses Singleton only for C++ coordinators</td>
+</tr>
+<tr>
+<td>God Mediator (all logic in one handler)</td>
+<td>500-line <code>HandleAsync</code></td>
+<td>SRP — split handlers per command</td>
+<td>ImgKit: one handler per operation</td>
+</tr>
+<tr>
+<td>Visitor on unstable structure</td>
+<td>New node type weekly</td>
+<td>Wait until node types stabilize</td>
+<td>SkyUI filter nodes are stable AND/OR/condition</td>
+</tr>
+<tr>
+<td>Abstract Factory for one product</td>
+<td>Factory creates only buttons</td>
+<td>Factory Method or <code>new</code></td>
+<td>Use Abstract Factory when <strong>family</strong> varies</td>
+</tr>
+<tr>
+<td>Decorator chains without shared interface</td>
+<td>Unrelated wrappers</td>
+<td>Middleware/pipeline with common delegate</td>
+<td>LightMediator <code>RequestHandlerDelegate</code></td>
+</tr>
+<tr>
+<td>Builder for two fields</td>
+<td><code>new Config(a, b)</code> suffices</td>
+<td>Plain constructor</td>
+<td>MDWeb Builder justified by 10+ optional fields</td>
+</tr>
+<tr>
+<td>Strategy interface with one impl</td>
+<td>Indirection without OCP benefit</td>
+<td>Concrete class until second algorithm</td>
+<td>Refactor when second filter family appears</td>
+</tr>
+</tbody>
+</table>
+<h2 id="code-review-questions">Code Review Questions</h2>
+<p>Use these when reviewing PRs in any of the seven projects:</p>
+<ol>
+<li><p><strong>Can I name the force this pattern solves?</strong> — "We use Mediator" is insufficient. "Controllers must not reference eleven handlers" is sufficient.</p>
+</li>
+<li><p><strong>Can I remove the pattern without increasing complexity elsewhere?</strong> — If removing <code>SiteBuilder</code> pushes validation into three callers, Builder earns its keep.</p>
+</li>
+<li><p><strong>Would a junior understand the pattern from the type names?</strong> — <code>IGenerationStep</code>, <code>IFilterNodeVisitor</code>, <code>IImageFilterStrategy</code> are self-describing. <code>IHelper</code>, <code>IManager</code> are not.</p>
+</li>
+<li><p><strong>Do tests cover extension points?</strong> — New MDWeb step: register in DI, test in isolation. New ImgKit filter: register strategy, factory resolves by name. New Spark component: register snapshot handler.</p>
+</li>
+<li><p><strong>Where does state hand off between patterns?</strong> — <code>SiteContext</code>, <code>IExecutionContext</code>, <code>SceneDocument</code>, <code>FilterDocument</code> — if unclear, boundaries need documentation or refactoring.</p>
+</li>
+<li><p><strong>Are two patterns solving the same force?</strong> — Redundant Facade inside Facade, or Strategy wrapping Strategy with no variation axis.</p>
+</li>
+</ol>
+<h2 id="project-pattern-density-ranking">Project Pattern Density Ranking</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Rank</th>
+<th>Project</th>
+<th>Why</th>
+<th>Best study file</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Spark</td>
+<td>Widest variety: UI Bridge+Factory, Memento+registry, State, physics Strategy, ECS Observer</td>
+<td><code>include/spark/ui/runtime/UiSystem.hpp</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td>ImgKit + LightMediator</td>
+<td>Full application stack: Command through Strategy</td>
+<td><code>ImageProcessingHandlerBase.cs</code>, <code>Mediator.cs</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>MDWeb</td>
+<td>Clean pipeline + content tree; self-hosting book</td>
+<td><code>SiteGenerationPipeline.cs</code>, <code>NavigationBuilder.cs</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td>SkyUI</td>
+<td>Composite + Visitor showcase; MVVM Command + Observer</td>
+<td><code>FilterNodeBase.cs</code>, <code>BasicFilterSqlExporter.cs</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td>RainDB</td>
+<td>SOLID architecture; pragmatic over ceremonial</td>
+<td><code>RainDbEngine.cs</code>, <code>DefaultQueryExecutor.cs</code></td>
+</tr>
+<tr>
+<td>6</td>
+<td>LightMapper</td>
+<td>Focused codegen: generated Adapter, DI registration</td>
+<td><code>ILightMapper.cs</code>, generated mappers in consumer projects</td>
+</tr>
+<tr>
+<td>7</td>
+<td>LightMediator</td>
+<td>Mediator + middleware + notifications infrastructure</td>
+<td><code>Mediator.cs</code>, <code>IRequestMiddleware.cs</code></td>
+</tr>
+</tbody>
+</table>
+<p>Density rank ≠ importance. RainDB ranks lower on labeled pattern count but higher on <strong>architectural lessons</strong> about when not to add interfaces.</p>
+<h2 id="choosing-between-similar-patterns">Choosing Between Similar Patterns</h2>
+<h3 id="facade-vs-mediator">Facade vs Mediator</h3>
+<table class="table">
+<thead>
+<tr>
+<th></th>
+<th>Facade</th>
+<th>Mediator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Intent</strong></td>
+<td>Simplify one subsystem</td>
+<td>Route many requests to colleagues</td>
+</tr>
+<tr>
+<td><strong>Coupling</strong></td>
+<td>Client → Facade → internals</td>
+<td>Colleagues don't reference each other</td>
+</tr>
+<tr>
+<td><strong>Example</strong></td>
+<td><code>SiteGenerator</code> hides pipeline</td>
+<td><code>IMediator</code> hides handler list from controller</td>
+</tr>
+</tbody>
+</table>
+<p>MDWeb uses Facade (one entry <code>GenerateAsync</code>). ImgKit uses Mediator (many commands, many handlers). A site generator could use Mediator for steps — MDWeb chose Chain instead because steps share <code>SiteContext</code> sequentially, not request/response dispatch.</p>
+<h3 id="strategy-vs-state">Strategy vs State</h3>
+<table class="table">
+<thead>
+<tr>
+<th></th>
+<th>Strategy</th>
+<th>State</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Intent</strong></td>
+<td>Swap algorithm</td>
+<td>Mode owns behavior; transitions explicit</td>
+</tr>
+<tr>
+<td><strong>Who switches</strong></td>
+<td>Client/config selects</td>
+<td>Machine transitions on events</td>
+</tr>
+<tr>
+<td><strong>Example</strong></td>
+<td><code>IImageFilterStrategy</code> selected by name</td>
+<td><code>FsmStateMachine.SendEvent</code></td>
+</tr>
+</tbody>
+</table>
+<p>ImgKit filter is Strategy — handler picks algorithm once per request. Spark AI is State — entity stays in chase mode until event transitions to attack.</p>
+<h3 id="chain-of-responsibility-vs-mediator-middleware">Chain of Responsibility vs Mediator middleware</h3>
+<p>Both chain handlers. <strong>Chain (MDWeb pipeline):</strong> each step always runs in order; shared accumulator. <strong>Middleware (ImgKit):</strong> wraps one handler; optional short-circuit; onion delegation. Choose pipeline Chain for <strong>batch stages</strong>; choose middleware Chain for <strong>request wrap</strong>.</p>
+<h3 id="composite-vs-nested-dto-lists">Composite vs nested DTO lists</h3>
+<p>If UI renders hierarchy and operations recurse, use Composite with <code>Accept</code>. If JSON flattens to list with <code>parentId</code>, you will reinvent Composite poorly — consider proper tree model upfront (SkyUI lesson).</p>
+<h2 id="suggested-study-path">Suggested Study Path</h2>
+<p>Work through in order — each step builds recognition of composition recipes:</p>
+<ol>
+<li><p><strong>MDWeb pipeline</strong> (<code>MDWeb.Application/Pipeline/</code>) — trace <code>SiteContext</code> through all nine steps. Identify where Composite ends and flat <code>AllPages</code> iteration begins.</p>
+</li>
+<li><p><strong>One ImgKit command end-to-end</strong> — start at <code>ImagesController.Filter</code>, follow through middleware to <code>ApplyFilterHandler</code>, into <code>ImageFilterStrategyFactory.GetStrategy</code>. Time: one hour.</p>
+</li>
+<li><p><strong>Spark UI Bridge + Factory</strong> — open <code>IUiControlsFactory.hpp</code>, <code>SparkUiControlsFactory</code>, <code>DearImguiControlsFactory</code>. Find one editor panel calling <code>CreateTreeView</code>.</p>
+</li>
+<li><p><strong>SkyUI filter tree</strong> — build tree in demo, set breakpoint in <code>BasicFilterSqlExporter.Visitor.VisitGroup</code>, watch double dispatch.</p>
+</li>
+<li><p><strong>RainDB execute path</strong> — run analytics demo SQL, breakpoint in <code>DefaultQueryExecutor.ExecuteAsync</code>, follow one plan type into engine.</p>
+</li>
+<li><p><strong>LightMediator source</strong> — read <code>SendCore</code> middleware loop; compare to ASP.NET Core middleware (same force, different domain).</p>
+</li>
+<li><p><strong>LightMapper generated code</strong> — inspect generated <code>ILightMapper</code> implementation in ImgKit build output; see compile-time mapping.</p>
+</li>
+</ol>
+<h2 id="impact-analysis-template">Impact Analysis Template</h2>
+<p>When evaluating a proposed pattern in code review, fill this table:</p>
+<table class="table">
+<thead>
+<tr>
+<th>Pattern proposed</th>
+<th>Force claimed</th>
+<th>Classes affected</th>
+<th>If removed instead?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>e.g. Builder</td>
+<td>12 optional CLI flags</td>
+<td><code>SiteBuilder</code>, <code>ISiteBuilder</code></td>
+<td>Validation in CLI + tests + watch service</td>
+</tr>
+</tbody>
+</table>
+<p>If "if removed" column is empty or mild, reject the pattern.</p>
+<h2 id="closing-principles">Closing Principles</h2>
+<p>From the seven projects together:</p>
+<ol>
+<li><strong>Variation</strong> that must not break existing code → Strategy, Abstract Factory, registry (OCP).</li>
+<li><strong>Boundaries</strong> that must stay testable → DIP, Facade, interface layering (SRP, ISP).</li>
+<li><strong>Structures</strong> that need new operations → Visitor + Composite.</li>
+<li><strong>Requests</strong> that need routing and cross-cutting → Command + Mediator + middleware.</li>
+<li><strong>Phases</strong> that change independently → split compile/execute, read/transform/write (RainDB, MDWeb Chain).</li>
+<li><strong>Ceremony</strong> must earn its cost → RainDB dispatch, LightMapper codegen, Spark Singleton coordinators — each justified by a listed force.</li>
+</ol>
+<p>Use this book as a map back to real code. When you face a design problem:</p>
+<ol>
+<li>Name the pain (symptom table).</li>
+<li>Pick a composition recipe (or YAGNI).</li>
+<li>Open the matching chapter and read the corresponding source file in your local project copy.</li>
+<li>Run the impact analysis — if removing the pattern hurts, it belongs.</li>
+</ol>
+<p>Part 6 continues with <strong>application architecture</strong>: MVVM, Clean Architecture, and CQRS — how presentation, layering, and read/write separation work in SkyUI, Spark Studio, MDWeb, ImgKit, LightMediator, and RainDB.</p>
+<h2 id="next">Next</h2>
+<p><a href="../part06-architecture/01-introduction.html">Part 6: Introduction to Application Architecture →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#choosing-patterns-for-real-problems">Choosing Patterns for Real Problems</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#decision-flowchart">Decision Flowchart</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#symptom-pattern-cheat-sheet">Symptom → Pattern Cheat Sheet</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#how-patterns-combine-interaction-patterns">How Patterns Combine — Interaction Patterns</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#recipe-1-build-facade-chain-strategy">Recipe 1: Build → Facade → Chain → Strategy</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#recipe-2-command-mediator-chain-middleware-template-method-strategy">Recipe 2: Command → Mediator → Chain (middleware) → Template Method → Strategy</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#recipe-3-bridge-abstract-factory">Recipe 3: Bridge → Abstract Factory</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#recipe-4-composite-visitor-observer-for-ui">Recipe 4: Composite → Visitor (+ Observer for UI)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#recipe-5-memento-strategy-registry">Recipe 5: Memento → Strategy registry</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#recipe-6-facade-srp-phases-context-bundle-dip">Recipe 6: Facade → SRP phases → Context bundle (DIP)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#cross-library-integration">Cross-Library Integration</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#lightmediator-imgkit">LightMediator + ImgKit</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#lightmapper-imgkit">LightMapper + ImgKit</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#mdweb-self-hosting">MDWeb — Self-Hosting</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#lightmapper-lightmediator-together">LightMapper + LightMediator Together</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#anti-patterns-in-pattern-application">Anti-Patterns in Pattern Application</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#code-review-questions">Code Review Questions</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#project-pattern-density-ranking">Project Pattern Density Ranking</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#choosing-between-similar-patterns">Choosing Between Similar Patterns</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#facade-vs-mediator">Facade vs Mediator</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#strategy-vs-state">Strategy vs State</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#chain-of-responsibility-vs-mediator-middleware">Chain of Responsibility vs Mediator middleware</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#composite-vs-nested-dto-lists">Composite vs nested DTO lists</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#suggested-study-path">Suggested Study Path</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#impact-analysis-template">Impact Analysis Template</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#closing-principles">Closing Principles</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Introduction to Behavioral Patterns · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>Introduction to Behavioral Patterns</h1>
+          </header>
+          <div class="doc-body"><h1 id="introduction-to-behavioral-patterns">Introduction to Behavioral Patterns</h1>
+<p>Structural patterns (Part 3) answer <strong>how classes are wired together</strong>. Creational patterns (Part 2) answer <strong>how objects are born</strong>. Behavioral patterns answer a different question: <strong>what happens when objects talk to each other at runtime</strong> — who decides the algorithm, who notifies whom, and how control flows through a workflow without turning every class into a tightly coupled knot.</p>
+<p>Behavioral patterns concern <strong>algorithms and assignment of responsibilities</strong> between objects. They do not usually introduce new types of relationships (like Composite or Adapter). Instead, they reorganize <em>communication</em>: decoupling senders from receivers, encapsulating variation in interchangeable policies, centralizing coordination, or making state-driven behavior explicit.</p>
+<h2 id="the-core-behavioral-problems">The Core Behavioral Problems</h2>
+<p>Most behavioral patterns address one or more of these recurring tensions:</p>
+<table class="table">
+<thead>
+<tr>
+<th>Problem</th>
+<th>Symptom without a pattern</th>
+<th>Pattern family</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Coupling</strong></td>
+<td>Class A directly calls B, C, D; every new feature edits A</td>
+<td>Mediator, Command</td>
+</tr>
+<tr>
+<td><strong>Algorithm variation</strong></td>
+<td>Giant <code>switch</code> or <code>if/else</code> for rendering, filtering, exporting</td>
+<td>Strategy, Template Method</td>
+</tr>
+<tr>
+<td><strong>Notification</strong></td>
+<td>Subject maintains a hand-rolled subscriber list; leaks and ordering bugs</td>
+<td>Observer</td>
+</tr>
+<tr>
+<td><strong>State transitions</strong></td>
+<td>Enum + switch grows unbounded; enter/exit logic scattered</td>
+<td>State</td>
+</tr>
+<tr>
+<td><strong>Request routing</strong></td>
+<td>One object must try several handlers; or a pipeline must run in order</td>
+<td>Chain of Responsibility</td>
+</tr>
+<tr>
+<td><strong>Traversal vs operations</strong></td>
+<td>Exposing internal collections breaks encapsulation; or adding operations edits every node type</td>
+<td>Iterator, Visitor</td>
+</tr>
+<tr>
+<td><strong>Undo / snapshots</strong></td>
+<td>Caller reaches into private fields to save state</td>
+<td>Memento</td>
+</tr>
+</tbody>
+</table>
+<p>The chapters that follow map each GoF pattern to <strong>real code</strong> from this monorepo. The goal is not to memorize UML boxes but to recognize <em>when</em> a behavioral problem appears and <em>which</em> collaboration shape resolves it cleanly.</p>
+<h2 id="patterns-in-part-4">Patterns in Part 4</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Focus</th>
+<th>Primary question it answers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chain of Responsibility</td>
+<td>Pass a request along a handler chain</td>
+<td>"Who gets a chance to handle this — and in what order?"</td>
+</tr>
+<tr>
+<td>Command</td>
+<td>Encapsulate a request as an object</td>
+<td>"How do I represent an action as data I can queue, log, or route?"</td>
+</tr>
+<tr>
+<td>Iterator</td>
+<td>Sequential access without exposing structure</td>
+<td>"How do I walk a collection without knowing if it is a list, tree, or batch?"</td>
+</tr>
+<tr>
+<td>Mediator</td>
+<td>Centralize complex communications</td>
+<td>"How do N objects coordinate without N² direct references?"</td>
+</tr>
+<tr>
+<td>Memento</td>
+<td>Capture and restore state</td>
+<td>"How do I snapshot internal state without breaking encapsulation?"</td>
+</tr>
+<tr>
+<td>Observer</td>
+<td>One-to-many dependency notification</td>
+<td>"How do dependents react when something changes?"</td>
+</tr>
+<tr>
+<td>State</td>
+<td>Alter behavior when internal state changes</td>
+<td>"How do I replace enum switches with polymorphic lifecycle hooks?"</td>
+</tr>
+<tr>
+<td>Strategy</td>
+<td>Interchangeable algorithms</td>
+<td>"How do I swap algorithms at runtime without editing the client?"</td>
+</tr>
+<tr>
+<td>Template Method</td>
+<td>Skeleton algorithm with subclass hooks</td>
+<td>"Which steps are fixed workflow and which steps vary?"</td>
+</tr>
+<tr>
+<td>Visitor</td>
+<td>Operations on a structure without changing node classes</td>
+<td>"How do I add a new operation over a stable tree without editing every node?"</td>
+</tr>
+</tbody>
+</table>
+<h2 id="how-behavioral-patterns-compose-in-real-systems">How Behavioral Patterns Compose in Real Systems</h2>
+<p>Production code rarely uses one pattern in isolation. The richest examples in this repository <strong>stack</strong> behavioral patterns:</p>
+<pre class="mermaid">flowchart TB
+    subgraph ImgKit["ImgKit image API"]
+        CTRL[ImagesController] --&gt;|SendAsync command| MED[IMediator]
+        MED --&gt; MW[ElapsedRequestLoggingMiddleware]
+        MW --&gt; H[ApplyFilterHandler]
+        H --&gt; TM[ImageProcessingHandlerBase.ProcessAsync]
+        TM --&gt; ST[IImageFilterStrategy.Apply]
+    end
+
+    subgraph LightMediator["LightMediator sample API"]
+        OC[OrdersController] --&gt;|SendAsync| MED2[Mediator]
+        MED2 --&gt; COH[CreateOrderHandler]
+        OC --&gt;|PublishAsync| NP[SequentialNotificationPublisher]
+        NP --&gt; NH[OrderCreatedLogHandler]
+    end
+</pre>
+<p><strong>ImgKit</strong> on a single resize request: <strong>Command</strong> (the HTTP body becomes a <code>ResizeImageCommand</code>), <strong>Mediator</strong> (routes to exactly one handler), <strong>Chain of Responsibility</strong> (logging middleware wraps the handler), <strong>Template Method</strong> (<code>ProcessAsync</code> owns I/O and threading), and optionally <strong>Strategy</strong> (filter/enhancement families inside the transform hook).</p>
+<p><strong>LightMediator samples</strong> on order creation: <strong>Command</strong> (<code>CreateOrderCommand</code>), <strong>Mediator</strong> (<code>SendAsync</code>), then <strong>Observer</strong> via <strong>Mediator notifications</strong> (<code>PublishAsync</code> + <code>OrderCreatedLogHandler</code>), with notification fan-out itself swappable via <strong>Strategy</strong> (<code>SequentialNotificationPublisher</code> vs <code>ParallelNotificationPublisher</code>).</p>
+<p>Understanding behavioral patterns means recognizing these <strong>layers</strong>: transport (HTTP/UI) → message object (command/notification) → coordinator (mediator/pipeline) → algorithm (strategy/state/template hook).</p>
+<h2 id="richest-projects-for-behavioral-patterns">Richest Projects for Behavioral Patterns</h2>
+<p>These repositories appear repeatedly because they exercise multiple patterns with clear boundaries:</p>
+<ol>
+<li><p><strong>LightMediator</strong> — Mediator, Command, Chain (middleware), Observer (notifications). The library <em>is</em> a behavioral-pattern toolkit: <code>IRequest</code>/<code>IRequestHandler</code>, <code>IRequestMiddleware</code>, <code>INotification</code>/<code>INotificationHandler</code>, and <code>Mediator.SendCore</code> building the middleware onion.</p>
+</li>
+<li><p><strong>MDWeb</strong> — Chain (site generation pipeline), Strategy (markdown renderers, template engines, exporters). Every build step is an <code>IGenerationStep</code> mutating shared <code>SiteContext</code>; renderer choice is injected strategy.</p>
+</li>
+<li><p><strong>Spark</strong> — State (<code>FsmStateMachine</code>), Strategy (collider bake, component snapshot handlers), Memento (<code>SceneSerializer</code> / <code>SceneDocument</code>), Observer (ECS <code>EmitSignal</code> / <code>OnSignal</code>). Gameplay and tooling share the same behavioral vocabulary.</p>
+</li>
+<li><p><strong>ImgKit</strong> — Command, Strategy, Template Method, Chain (middleware). End-to-end from multipart upload to PillowNet transform, with cross-cutting concerns in the base handler.</p>
+</li>
+<li><p><strong>SkyUI</strong> — Visitor (<code>IFilterNodeVisitor</code>), Command (MVVM <code>ICommand</code>), Observer (<code>INotifyPropertyChanged</code> on filter nodes). Filter tree is Composite + Visitor + data binding.</p>
+</li>
+</ol>
+<h2 id="gof-vocabulary-vs-modern-frameworks">GoF Vocabulary vs Modern Frameworks</h2>
+<p>The Gang of Four catalog predates ASP.NET Core, MVVM, and ECS game engines. Modern names differ; collaborations often match:</p>
+<table class="table">
+<thead>
+<tr>
+<th>GoF term</th>
+<th>Modern analogue in this repo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Command</td>
+<td><code>IRequest&lt;TResponse&gt;</code>, UI <code>ICommand</code>, ImgKit <code>*Command</code> records</td>
+</tr>
+<tr>
+<td>Invoker</td>
+<td><code>IMediator.SendAsync</code>, Avalonia button binding</td>
+</tr>
+<tr>
+<td>Receiver</td>
+<td><code>IRequestHandler</code>, <code>ApplyFilterHandler</code>, ViewModel actions</td>
+</tr>
+<tr>
+<td>ConcreteMediator</td>
+<td><code>LightMediator.Mediator</code></td>
+</tr>
+<tr>
+<td>Colleague</td>
+<td>Handlers and middleware — they never reference each other directly</td>
+</tr>
+<tr>
+<td>Subject / Observer</td>
+<td><code>INotification</code> + handlers; <code>INotifyPropertyChanged</code>; <code>GameObject::EmitSignal</code></td>
+</tr>
+<tr>
+<td>Context (State)</td>
+<td><code>FsmStateMachine</code> holding <code>current</code> state id</td>
+</tr>
+<tr>
+<td>Strategy</td>
+<td><code>IMarkdownRenderer</code>, <code>IImageFilterStrategy</code>, <code>IComponentSnapshotHandler</code></td>
+</tr>
+</tbody>
+</table>
+<p>When reading source, map <strong>roles</strong> (who initiates, who executes, what state is shared) before matching class names to pattern labels.</p>
+<h2 id="reading-order">Reading Order</h2>
+<p>Part 4 follows a practical arc:</p>
+<ol>
+<li><strong>Chain of Responsibility</strong> and <strong>Command</strong> — routing and encapsulating work (pipelines, middleware, requests).</li>
+<li><strong>Iterator</strong> and <strong>Mediator</strong> — traversal and centralized coordination.</li>
+<li><strong>Memento</strong> and <strong>Observer</strong> — snapshots and reactive updates.</li>
+<li><strong>State</strong> and <strong>Strategy</strong> — behavior that changes over time vs algorithms selected at a point in time.</li>
+<li><strong>Template Method</strong> and <strong>Visitor</strong> — fixed skeletons with hooks vs new operations over stable structures.</li>
+</ol>
+<p>Each chapter includes sequence walkthroughs, participant tables, and trade-offs grounded in the projects above.</p>
+<h2 id="next">Next</h2>
+<p><a href="02-chain-of-responsibility.html">Chain of Responsibility →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#introduction-to-behavioral-patterns">Introduction to Behavioral Patterns</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#the-core-behavioral-problems">The Core Behavioral Problems</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#patterns-in-part-4">Patterns in Part 4</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#how-behavioral-patterns-compose-in-real-systems">How Behavioral Patterns Compose in Real Systems</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#richest-projects-for-behavioral-patterns">Richest Projects for Behavioral Patterns</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#gof-vocabulary-vs-modern-frameworks">GoF Vocabulary vs Modern Frameworks</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#reading-order">Reading Order</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

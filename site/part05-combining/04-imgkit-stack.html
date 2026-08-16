@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ImgKit Full-Stack CQRS · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>ImgKit Full-Stack CQRS</h1>
+          </header>
+          <div class="doc-body"><h1 id="imgkit-full-stack-cqrs">ImgKit — Full-Stack CQRS</h1>
+<p>ImgKit is an image processing web API and studio UI. It combines <strong>Command</strong>, <strong>Mediator</strong>, <strong>Chain</strong>, <strong>Template Method</strong>, and <strong>Strategy</strong> across layers — not as a pattern checklist, but because HTTP image operations share identical I/O choreography while differing in pixel logic.</p>
+<p>This chapter follows one resize request from browser click through middleware, handler shell, and PillowNet transform, and explains how LightMediator and LightMapper integrate at the boundaries.</p>
+<h2 id="end-to-end-user-journey">End-to-End User Journey</h2>
+<p><strong>API client path:</strong></p>
+<pre class="mermaid">sequenceDiagram
+    participant Browser
+    participant Ctrl as ImagesController
+    participant Med as IMediator
+    participant MW as ElapsedRequestLoggingMiddleware
+    participant Handler as ResizeImageHandler
+    participant Base as ImageProcessingHandlerBase
+    participant Pillow as PillowNet Image
+
+    Browser-&gt;&gt;Ctrl: POST /api/images/resize (multipart)
+    Ctrl-&gt;&gt;Ctrl: IFormFile → ImageInput
+    Ctrl-&gt;&gt;Med: SendAsync(ResizeImageCommand)
+    Med-&gt;&gt;MW: InvokeAsync (outermost middleware)
+    MW-&gt;&gt;Handler: HandleAsync (via delegate chain)
+    Handler-&gt;&gt;Handler: CommandModelMapper.ToSpecification
+    Handler-&gt;&gt;Base: ProcessAsync(input, transform lambda)
+    Base-&gt;&gt;Base: validate, temp file, acquire gate
+    Base-&gt;&gt;Pillow: Open → Resize → Save
+    Base--&gt;&gt;Handler: ProcessedImageModel
+    Handler--&gt;&gt;Ctrl: ProcessedImageResult
+    Ctrl--&gt;&gt;Browser: File(image bytes + X-Image-* headers)
+</pre>
+<p><strong>Studio UI path:</strong> User picks operation in web studio → <code>ProcessingStudioService.ProcessAsync()</code> → <code>ImageProcessingApiClient</code> uses <code>IImageOperationRequestBuilder</code> (Builder) to assemble multipart form → same API endpoint → same mediator stack on server.</p>
+<p>The user sees: upload image, set width/height, click Process, download result. The pattern stack ensures every operation gets logging, validation, temp-file hygiene, and native-library serialization — without duplicating that code in eleven handlers.</p>
+<h2 id="request-flow-pattern-layers">Request Flow — Pattern Layers</h2>
+<pre class="mermaid">flowchart TB
+    HTTP[ImagesController] --&gt; CMD[ResizeImageCommand — Command]
+    CMD --&gt; MED[IMediator.SendAsync — Mediator]
+    MED --&gt; CHAIN[Middleware pipeline — Chain]
+    CHAIN --&gt; LOG[ElapsedRequestLoggingMiddleware]
+    CHAIN --&gt; H[ResizeImageHandler — IRequestHandler]
+    H --&gt; MAP[CommandModelMapper — LightMapper-style]
+    H --&gt; TMPL[ImageProcessingHandlerBase.ProcessAsync — Template Method]
+    TMPL --&gt; VAL[ImageOperationValidator]
+    TMPL --&gt; GATE[IPillowNetProcessingGate]
+    TMPL --&gt; TEMP[ITempImageFileStore]
+    TMPL --&gt; PIX[transform lambda — Strategy or inline op]
+    WEB[ProcessingStudioService — Facade] --&gt; BUILDER[ResizeRequestBuilder — Builder]
+    BUILDER --&gt; HTTP
+</pre>
+<p>Each layer solves one force. Removing any layer either duplicates code (Template Method removed) or couples HTTP to pixels (Mediator removed).</p>
+<h2 id="command-mediator-application-core">Command + Mediator — Application Core</h2>
+<h3 id="force">Force</h3>
+<p>ImgKit exposes many endpoints (<code>/resize</code>, <code>/crop</code>, <code>/filter</code>, <code>/enhance</code>, …) with similar controller shape but different parameters and pixel operations. Controllers should not contain business logic. Cross-cutting concerns (logging, future auth/caching) should not require editing every handler.</p>
+<h3 id="why-command">Why Command</h3>
+<p>Every operation is an immutable request record:</p>
+<pre><code class="language-csharp">public sealed record ApplyFilterCommand(ImageInput Input, string FilterName, string? Format)
+: IRequest&lt;ProcessedImageResult&gt;;
+</code></pre>
+<p>Commands carry <strong>all input</strong> needed for one use case. <code>ResizeImageCommand</code> includes <code>Image</code>, <code>Width</code>, <code>Height</code>, <code>Resampling</code>. Handlers receive a fully-formed intent — not seven loose parameters from controller method signatures.</p>
+<p><strong>Class-level detail:</strong> Records give value semantics and concise syntax. Commands live in <code>ImgKit.Contracts</code> — shared between API, Application, and tests without referencing handlers.</p>
+<h3 id="why-mediator">Why Mediator</h3>
+<p>Controllers stay thin:</p>
+<pre><code class="language-csharp">var result = await mediator.SendAsync(new ResizeImageCommand { … }, cancellationToken);
+return ToFileResult(result);
+</code></pre>
+<p><code>IMediator.SendAsync</code> resolves <code>IRequestHandler&lt;ResizeImageCommand, ProcessedImageResult&gt;</code> from DI. The controller does not know <code>ResizeImageHandler</code> exists — <strong>Dependency Inversion</strong> between HTTP layer and application layer.</p>
+<p>LightMediator's <code>Mediator.SendCore</code> builds a middleware onion:</p>
+<pre><code class="language-csharp">RequestHandlerDelegate&lt;TResponse&gt; next = ct =&gt; handler.HandleAsync(request, ct);
+for (var i = middlewares.Length - 1; i &gt;= 0; i--)
+{
+    var inner = next;
+    next = ct =&gt; middlewares[i].InvokeAsync(request, inner, ct);
+}
+return await next(cancellationToken);
+</code></pre>
+<p>Handlers are the inner core; middleware wraps outward. Registration order determines wrap order.</p>
+<h3 id="interaction-with-template-method">Interaction with Template Method</h3>
+<p>Mediator delivers the command to exactly one handler. Handler's <code>HandleAsync</code> is thin: map command → specification, call <code>ProcessAsync</code> with a transform. <strong>Command identifies the use case; Template Method defines the processing shell; lambda/strategy defines the pixels.</strong></p>
+<h3 id="if-we-removed-command">If we removed Command</h3>
+<p>Controllers call <code>PillowNet.Image.Open</code> directly — untestable, no uniform request logging, fat controllers.</p>
+<h3 id="if-we-removed-mediator">If we removed Mediator</h3>
+<p>Controllers inject eleven handlers or a switch on operation name — controller knows all handlers; adding middleware means editing every controller action.</p>
+<h2 id="chain-of-responsibility-middleware">Chain of Responsibility — Middleware</h2>
+<h3 id="force-1">Force</h3>
+<p>All image operations should log elapsed time. Future requirements may add validation middleware, rate limiting, or caching — without modifying <code>ResizeImageHandler</code>, <code>ApplyFilterHandler</code>, etc.</p>
+<h3 id="why-chain">Why Chain</h3>
+<pre><code class="language-csharp">public sealed class ElapsedRequestLoggingMiddleware&lt;TRequest, TResponse&gt;(…)
+    : IRequestMiddleware&lt;TRequest, TResponse&gt;
+    where TRequest : IRequest&lt;TResponse&gt;
+{
+    public async Task&lt;TResponse&gt; InvokeAsync(
+        TRequest request,
+        RequestHandlerDelegate&lt;TResponse&gt; next,
+        CancellationToken cancellationToken)
+    {
+        var sw = Stopwatch.StartNew();
+        try { return await next(cancellationToken); }
+        finally
+        {
+            logger.LogInformation("Handled {RequestType} in {ElapsedMs}ms", …);
+        }
+    }
+}
+</code></pre>
+<p>Generic middleware applies to <strong>all</strong> <code>IRequest&lt;TResponse&gt;</code> pairs — one registration covers resize, crop, filter, and info query.</p>
+<h3 id="interaction-with-mediator">Interaction with Mediator</h3>
+<p>Mediator constructs the delegate chain at dispatch time from <code>GetServices&lt;IRequestMiddleware&lt;TRequest,TResponse&gt;&gt;()</code>. Middleware and handler share the same generic type parameters — logging middleware for <code>ResizeImageCommand</code> does not run for unrelated requests unless registered broadly.</p>
+<h3 id="if-we-removed-chain">If we removed Chain</h3>
+<p>Copy logging <code>try/finally</code> into every handler — eleven copies, inconsistent log formats, missed handlers when adding new operations.</p>
+<h2 id="template-method-processing-shell">Template Method — Processing Shell</h2>
+<h3 id="force-2">Force</h3>
+<p>Every handler that mutates pixels must: validate input, acquire exclusive access to native PillowNet (not thread-safe), write temp input file, run transform on background thread with timeout, read output bytes, delete temp files. Only the transform differs.</p>
+<h3 id="why-template-method">Why Template Method</h3>
+<p><code>ImageProcessingHandlerBase.ProcessAsync</code> defines the invariant algorithm:</p>
+<pre><code class="language-csharp">protected async Task&lt;ProcessedImageModel&gt; ProcessAsync(
+    ImageInput input,
+    Func&lt;Image, Image&gt; transform,
+    string? outputFormat = null,
+    CancellationToken cancellationToken = default)
+{
+    ImageOperationValidator.ValidateInput(input);
+    using var processingScope = await processingGate.AcquireAsync(cancellationToken);
+    using var timeoutSource = CreateTimeoutSource(cancellationToken);
+
+    var inputPath = await tempFiles.WriteAsync(input.Data, input.FileName, …);
+    var (outputPath, format, contentType) = ImageOutputHelper.ResolveOutput(…);
+
+    try
+    {
+        return await Task.Run(
+            () =&gt; ProcessOnBackgroundThread(inputPath, outputPath, format, contentType, transform),
+            timeoutSource.Token);
+    }
+    finally
+    {
+        tempFiles.Delete(inputPath);
+        tempFiles.Delete(outputPath);
+    }
+}
+</code></pre>
+<p><strong>Class-level detail:</strong></p>
+<ul>
+<li><code>ImageOperationValidator.ValidateInput</code> — shared guard for empty data, oversized files.</li>
+<li><code>IPillowNetProcessingGate.AcquireAsync</code> — serializes native library access across concurrent HTTP requests (SemaphoreSlim-style).</li>
+<li><code>CreateTimeoutSource</code> — links caller cancellation with <code>MaxProcessingSeconds</code> timeout.</li>
+<li><code>ProcessOnBackgroundThread</code> — opens image, applies <code>transform</code> delegate, saves, reads bytes into <code>ProcessedImageModel</code>.</li>
+<li><code>finally</code> — temp cleanup even on exceptions.</li>
+</ul>
+<p>Handlers supply only the <strong><code>transform</code> hook</strong>:</p>
+<pre><code class="language-csharp">// ResizeImageHandler
+var model = await ProcessAsync(
+    request.Image,
+    image =&gt; image.Resize((specification.Width, specification.Height), resampling),
+    cancellationToken: cancellationToken);
+</code></pre>
+<p><code>InspectAsync</code> is a sibling template for read-only info queries — same gate and temp file pattern, different background work.</p>
+<h3 id="interaction-with-strategy">Interaction with Strategy</h3>
+<p>When transform logic is non-trivial and swappable (filters, enhancements, ops), handlers pass <code>image =&gt; strategy.Apply(image, options)</code> as the transform. Template Method owns <strong>when</strong> strategy runs; Strategy owns <strong>what</strong> pixels change.</p>
+<h3 id="if-we-removed-template-method">If we removed Template Method</h3>
+<p>Each of eleven handlers duplicates validate/gate/temp/timeout/cleanup — bugs in one not fixed in others (historically common in image services).</p>
+<h2 id="strategy-pixel-operations">Strategy — Pixel Operations</h2>
+<h3 id="force-3">Force</h3>
+<p>Filters (Blur, GaussianBlur, Sharpen, …), enhancements (Brightness, Contrast, …), and ops (Grayscale, Posterize, Flip, …) must be addable without new handler classes or controller endpoints.</p>
+<h3 id="why-strategy-factory">Why Strategy + Factory</h3>
+<p>Three strategy families with DI-registered factories:</p>
+<table class="table">
+<thead>
+<tr>
+<th>Factory</th>
+<th>Interface</th>
+<th>Example strategies</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ImageFilterStrategyFactory</code></td>
+<td><code>IImageFilterStrategy</code></td>
+<td><code>BlurFilterStrategy</code>, <code>GaussianBlurFilterStrategy</code></td>
+</tr>
+<tr>
+<td><code>ImageEnhancementStrategyFactory</code></td>
+<td><code>IImageEnhancementStrategy</code></td>
+<td><code>BrightnessEnhancementStrategy</code>, <code>ContrastEnhancementStrategy</code></td>
+</tr>
+<tr>
+<td><code>ImageOpsStrategyFactory</code></td>
+<td><code>IImageOpsStrategy</code></td>
+<td><code>GrayscaleOpsStrategy</code>, <code>PosterizeOpsStrategy</code></td>
+</tr>
+</tbody>
+</table>
+<p>Factory builds dictionary at startup:</p>
+<pre><code class="language-csharp">public ImageFilterStrategyFactory(IEnumerable&lt;IImageFilterStrategy&gt; strategies) =&gt;
+    _strategies = strategies.ToDictionary(s =&gt; s.Name, StringComparer.OrdinalIgnoreCase);
+
+public IImageFilterStrategy GetStrategy(string filterName) =&gt;
+    _strategies.TryGetValue(filterName, out var strategy)
+        ? strategy
+        : throw new ArgumentException($"Unsupported filter '{filterName}'.");
+</code></pre>
+<p><strong>Class-level detail:</strong> <code>ApplyFilterHandler</code> resolves strategy by name from command, builds <code>FilterStrategyOptions</code> from radius/percent/threshold/size parameters, passes to <code>ProcessAsync</code>. Adding <code>SepiaFilterStrategy</code> means: implement <code>IImageFilterStrategy</code>, register in DI — <strong>OCP</strong>. No handler edit.</p>
+<p>Named base classes (<code>NamedImageFilterStrategy</code>) centralize the <code>Name</code> property for dictionary keys.</p>
+<h3 id="interaction-with-command-and-template-method">Interaction with Command and Template Method</h3>
+<pre><code>ApplyFilterCommand.FilterName
+→ ApplyFilterHandler.HandleAsync
+    → filterFactory.GetStrategy(name)
+        → ProcessAsync(input, image =&gt; strategy.Apply(image, options))
+</code></pre>
+<p>Command carries <strong>which</strong> filter; factory selects <strong>how</strong>; template method handles <strong>infrastructure</strong>.</p>
+<h3 id="if-we-removed-strategy">If we removed Strategy</h3>
+<p><code>ApplyFilterHandler</code> becomes <code>switch(filterName)</code> with PillowNet calls — grows with every filter, untestable in isolation.</p>
+<h2 id="adapter-dip-infrastructure">Adapter + DIP — Infrastructure</h2>
+<h3 id="force-4">Force</h3>
+<p>Application must not depend on temp file paths, disk layout, or PillowNet threading constraints. API DTOs differ from handler domain models.</p>
+<h3 id="why-abstractions">Why abstractions</h3>
+<ul>
+<li><code>ITempImageFileStore</code> — write/delete temp files (Infrastructure implements with safe paths).</li>
+<li><code>IPillowNetProcessingGate</code> — <code>PillowNetProcessingGate</code> serializes native access.</li>
+<li><code>CommandModelMapper</code> — maps commands ↔ specifications ↔ contract results (LightMapper-generated or hand-maintained mapping surface).</li>
+</ul>
+<p><strong>LightMapper integration:</strong> <code>[LightMap]</code> attributes on DTOs generate <code>ILightMapper&lt;T,T&gt;</code> implementations. Handlers call <code>CommandModelMapper.ToSpecification&lt;ResizeImageCommand, ResizeImageSpecification&gt;(request)</code> — no property-copy loops in handler bodies.</p>
+<h3 id="interaction">Interaction</h3>
+<p>Infrastructure Adapters sit <strong>below</strong> Template Method. Handlers depend on abstractions injected via constructor — classic DIP from Part 1.</p>
+<h2 id="facade-web-studio">Facade — Web Studio</h2>
+<p><code>ProcessingStudioService</code> orchestrates upload UI, operation catalog lookup, and API calls:</p>
+<pre><code class="language-csharp">public async Task&lt;ProcessingResult&gt; ProcessAsync(
+    ImageUpload upload, string operationId, IReadOnlyDictionary&lt;string, string&gt; parameters, …)
+{
+    var operation = catalog.GetById(operationId);
+    return await apiClient.ProcessAsync(operation, upload, parameters, …);
+}
+</code></pre>
+<p><strong>Class-level detail:</strong> UI view models depend on <code>IProcessingStudioService</code>, not <code>HttpClient</code> or multipart construction. <code>ImageProcessingApiClient</code> hides HTTP details; <code>ImageOperationCatalog</code> aggregates <code>IImageOperationRequestBuilder</code> descriptors for the operation picker.</p>
+<h2 id="builder-request-builders">Builder — Request Builders</h2>
+<p><code>ResizeRequestBuilder</code>, <code>CropRequestBuilder</code>, etc. implement <code>IImageOperationRequestBuilder</code>:</p>
+<ul>
+<li>Expose <code>Descriptor</code> (id, display name, API endpoint, parameter schema).</li>
+<li><code>AppendParameters(MultipartFormDataContent, parameters)</code> adds form fields.</li>
+</ul>
+<p><strong>Why Builder variant here:</strong> Multipart requests have required field order and naming conventions per operation. Builders assemble correct form shape — parallel to <code>SiteBuilder</code> assembling site config, but for HTTP client layer.</p>
+<h2 id="lightmediator-lightmapper-cross-library-integration">LightMediator + LightMapper — Cross-Library Integration</h2>
+<pre><code>HTTP DTO --LightMapper/CommandModelMapper--&gt; Specification --Command--&gt; Handler
+        ↓
+Template Method → Strategy
+</code></pre>
+<ul>
+<li><strong>LightMediator</strong> provides <code>IMediator</code>, <code>IRequest&lt;T&gt;</code>, <code>IRequestHandler&lt;,&gt;</code>, <code>IRequestMiddleware&lt;,&gt;</code>, and notification publishing.</li>
+<li><strong>LightMapper</strong> provides compile-time generated mappers — Adapter-like translation between API contracts and application models.</li>
+</ul>
+<p>ImgKit is a <strong>consumer</strong> of both libraries. The pattern story is incomplete without noting: Mediator replaces hand-rolled handler dispatch; LightMapper replaces hand-rolled mapping — both reduce boilerplate that would obscure the Command + Template Method + Strategy structure.</p>
+<h2 id="pattern-decision-log">Pattern Decision Log</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Force</th>
+<th>Choice</th>
+<th>Key class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Many HTTP endpoints, shared flow</td>
+<td>Command + Mediator</td>
+<td><code>ImagesController</code>, <code>IMediator</code></td>
+</tr>
+<tr>
+<td>Logging all requests</td>
+<td>Middleware chain</td>
+<td><code>ElapsedRequestLoggingMiddleware</code></td>
+</tr>
+<tr>
+<td>Identical I/O, different pixels</td>
+<td>Template Method + Strategy</td>
+<td><code>ImageProcessingHandlerBase</code>, <code>IImageFilterStrategy</code></td>
+</tr>
+<tr>
+<td>New filters without handler edits</td>
+<td>Strategy factory</td>
+<td><code>ImageFilterStrategyFactory</code></td>
+</tr>
+<tr>
+<td>Complex multipart from UI</td>
+<td>Request builders</td>
+<td><code>IImageOperationRequestBuilder</code></td>
+</tr>
+<tr>
+<td>Hide HTTP from studio UI</td>
+<td>Facade</td>
+<td><code>ProcessingStudioService</code></td>
+</tr>
+<tr>
+<td>Native library thread safety</td>
+<td>Adapter/Gate</td>
+<td><code>IPillowNetProcessingGate</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="impact-analysis">Impact Analysis</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Removed</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Command</strong></td>
+<td>Fat controllers; no uniform request object for tests</td>
+</tr>
+<tr>
+<td><strong>Mediator</strong></td>
+<td>Controller injects all handlers; middleware impossible</td>
+</tr>
+<tr>
+<td><strong>Middleware Chain</strong></td>
+<td>Duplicated logging; cross-cutting features touch every handler</td>
+</tr>
+<tr>
+<td><strong>Template Method</strong></td>
+<td>Eleven copies of temp/gate/timeout/cleanup logic</td>
+</tr>
+<tr>
+<td><strong>Strategy + Factory</strong></td>
+<td>Giant switch in filter handler; OCP violated</td>
+</tr>
+<tr>
+<td><strong>Facade (studio)</strong></td>
+<td>View models construct HttpClient multipart manually</td>
+</tr>
+<tr>
+<td><strong>Builder (request)</strong></td>
+<td>Wrong form fields per operation; UI/API coupling</td>
+</tr>
+</tbody>
+</table>
+<p>Removing <strong>Template Method</strong> causes the most bugs in production — native resource leaks and race conditions on PillowNet.</p>
+<h2 id="next">Next</h2>
+<p><a href="05-skyui-filter-editor.html">SkyUI Filter Editor →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#imgkit-full-stack-cqrs">ImgKit — Full-Stack CQRS</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#end-to-end-user-journey">End-to-End User Journey</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#request-flow-pattern-layers">Request Flow — Pattern Layers</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#command-mediator-application-core">Command + Mediator — Application Core</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#force">Force</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-command">Why Command</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-mediator">Why Mediator</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#interaction-with-template-method">Interaction with Template Method</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#if-we-removed-command">If we removed Command</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#if-we-removed-mediator">If we removed Mediator</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#chain-of-responsibility-middleware">Chain of Responsibility — Middleware</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#force">Force</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-chain">Why Chain</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#interaction-with-mediator">Interaction with Mediator</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#if-we-removed-chain">If we removed Chain</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#template-method-processing-shell">Template Method — Processing Shell</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#force">Force</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-template-method">Why Template Method</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#interaction-with-strategy">Interaction with Strategy</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#if-we-removed-template-method">If we removed Template Method</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#strategy-pixel-operations">Strategy — Pixel Operations</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#force">Force</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-strategy-factory">Why Strategy + Factory</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#interaction-with-command-and-template-method">Interaction with Command and Template Method</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#if-we-removed-strategy">If we removed Strategy</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#adapter-dip-infrastructure">Adapter + DIP — Infrastructure</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#force">Force</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#why-abstractions">Why abstractions</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#interaction">Interaction</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#facade-web-studio">Facade — Web Studio</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#builder-request-builders">Builder — Request Builders</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#lightmediator-lightmapper-cross-library-integration">LightMediator + LightMapper — Cross-Library Integration</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#pattern-decision-log">Pattern Decision Log</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#impact-analysis">Impact Analysis</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SOLID in Practice · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>SOLID in Practice</h1>
+          </header>
+          <div class="doc-body"><h1 id="solid-in-practice-pitfalls-and-project-survey">SOLID in Practice — Pitfalls and Project Survey</h1>
+<p>This chapter consolidates how SOLID appears across all seven reference projects and lists common mistakes when applying the principles in production code. It ties together the individual principle chapters with cross-project patterns, concrete walkthroughs, and failure modes you can recognize in code review.</p>
+<h2 id="cross-project-solid-map">Cross-Project SOLID Map</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Project</th>
+<th>S</th>
+<th>O</th>
+<th>L</th>
+<th>I</th>
+<th>D</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MDWeb</td>
+<td>Pipeline steps</td>
+<td><code>IHtmlPostProcessor</code></td>
+<td>Renderer substitutability</td>
+<td>Per-step narrow deps</td>
+<td>Core ↔ Infrastructure</td>
+</tr>
+<tr>
+<td>RainDB</td>
+<td>Compile/execute split</td>
+<td>Physical plan operators</td>
+<td>Result type hierarchy</td>
+<td>Table/buffer interfaces</td>
+<td><code>IExecutionContext</code></td>
+</tr>
+<tr>
+<td>Spark</td>
+<td>Editor panels, subsystems</td>
+<td>Snapshot handlers, bake strategies</td>
+<td>Physics shapes</td>
+<td>UI control interfaces</td>
+<td><code>IEngineContext</code>, <code>IUiBackend</code></td>
+</tr>
+<tr>
+<td>LightMediator</td>
+<td>Per-handler</td>
+<td>Middleware chain</td>
+<td>Publisher substitutability</td>
+<td>Small handler interfaces</td>
+<td><code>IMediator</code> + DI</td>
+</tr>
+<tr>
+<td>LightMapper</td>
+<td>Generator vs runtime</td>
+<td>New map pairs via codegen</td>
+<td>Mapper contract</td>
+<td><code>ILightMapper&lt;T,T&gt;</code></td>
+<td>Generated DI registration</td>
+</tr>
+<tr>
+<td>ImgKit</td>
+<td>Handler per command</td>
+<td>Filter/enhance/ops strategies</td>
+<td>Strategy substitutability</td>
+<td>Separate factories</td>
+<td>Handlers → abstractions</td>
+</tr>
+<tr>
+<td>SkyUI</td>
+<td>Validator per rule</td>
+<td><code>CompositeSkyValidator</code></td>
+<td>Validator substitutability</td>
+<td><code>ISkyValidator</code></td>
+<td>MVVM + services</td>
+</tr>
+</tbody>
+</table>
+<p>The table is a map, not a scorecard. No project "implements all five perfectly" — each optimizes for its domain. MDWeb prioritizes pipeline SRP and DIP; Spark prioritizes ISP for UI and LSP for physics; LightMapper pushes OCP through codegen.</p>
+<h2 id="project-deep-dives">Project Deep Dives</h2>
+<h3 id="mdweb-solid-as-a-static-site-pipeline">MDWeb — SOLID as a static site pipeline</h3>
+<p><strong>Architecture:</strong> <code>MDWeb.Core</code> (abstractions + models) ← <code>MDWeb.Application</code> (pipeline, building) ← <code>MDWeb.Infrastructure</code> (Markdig, Scriban, Puppeteer, filesystem).</p>
+<p><strong>Problem → Solution → Walkthrough (full generation):</strong></p>
+<ol>
+<li><strong>Problem:</strong> Static site generation spans content I/O, rendering, templating, and export — one class would be unmaintainable.</li>
+<li><strong>Solution:</strong> Chain of Responsibility via <code>IGenerationStep</code>; DIP via Core abstractions; OCP via <code>IHtmlPostProcessor</code>.</li>
+<li><strong>Walkthrough:</strong>
+<ul>
+<li>CLI builds <code>SiteContext</code> from theme directory and content path.</li>
+<li><code>SiteGenerationPipeline</code> runs steps in DI order: read → normalize links → render → rewrite links → post-process → load theme → generate pages → copy assets → export PDF.</li>
+<li>Each step mutates <code>SiteContext</code>; none imports Infrastructure types from Application layer.</li>
+<li>Composition root selects <code>IMarkdownRenderer</code> and registers all <code>IHtmlPostProcessor</code> implementations.</li>
+</ul>
+</li>
+</ol>
+<p><strong>What would break without SOLID?</strong> Watch-mode rebuilds would re-run Puppeteer on every markdown typo. WeChat experiments would fork the entire generator. PDF export bugs would block markdown rendering merges.</p>
+<p><strong>Key files to study:</strong> <code>MDWeb.Application/Pipeline/SiteGenerationPipeline.cs</code>, <code>MDWeb.Infrastructure/DependencyInjection.cs</code>, <code>WeChatHtmlPostProcessor.cs</code>.</p>
+<hr>
+<h3 id="raindb-solid-as-a-query-engine">RainDB — SOLID as a query engine</h3>
+<p><strong>Architecture:</strong> <code>RainDB.Abstractions</code> ← <code>RainDB.Sql</code> + <code>RainDB.Linq</code> (compilers) ← <code>RainDB.Query</code> (executor, engines) ← <code>RainDB.Core</code> (columnar, catalog, persistence).</p>
+<p><strong>SRP boundary:</strong> <code>ISqlCompiler</code> ends at <code>IPhysicalPlan</code>; <code>IQueryExecutor</code> begins there. Parsing never allocates scan buffers; execution never tokenizes SQL.</p>
+<p><strong>ISP boundary:</strong> <code>ITableSource</code> for metadata; <code>IColumnarTableSource</code> for scans. <code>IBufferPool</code> vs <code>IAlignedBufferPool</code> for spill vs SIMD.</p>
+<p><strong>DIP boundary:</strong> <code>IExecutionContext</code> bundles catalog, pools, spill writer — operators receive context, never <code>new RainDbFileDatabase()</code>.</p>
+<p><strong>Problem → Solution → Walkthrough (SQL query):</strong></p>
+<ol>
+<li>Client: <code>engine.ExecuteAsync("SELECT id, name FROM users WHERE age &gt; 18")</code>.</li>
+<li><code>DefaultSqlCompiler</code> parses, binds tables, emits <code>VectorizedScanPhysicalPlan</code>.</li>
+<li><code>DefaultQueryExecutor</code> matches plan type, resolves <code>IColumnarTableSource</code>, calls <code>VectorizedScanEngine</code>.</li>
+<li>Engine reads batches via <code>SelectionEvaluator</code>, returns <code>IColumnarQueryResult</code>.</li>
+<li>Client disposes result; buffers return to pools via context.</li>
+</ol>
+<p><strong>What would break without SOLID?</strong> Vectorized kernel tuning would require SQL parser changes. Tests could not inject plans directly. Metadata APIs would drag in columnar batch types.</p>
+<p><strong>Key files:</strong> <code>RainDB.Abstractions/Execution/IQueryExecutor.cs</code>, <code>RainDB.Query/Execution/DefaultQueryExecutor.cs</code>, <code>RainDB.Abstractions/Catalog/ITableSource.cs</code>.</p>
+<hr>
+<h3 id="spark-solid-in-a-c-game-engine">Spark — SOLID in a C++ game engine</h3>
+<p><strong>SRP:</strong> <code>IEditorPanel</code> per dock region; physics subsystems separate from rendering subsystems; scene serialization split across handler files.</p>
+<p><strong>OCP:</strong> <code>IComponentSnapshotHandler</code> + registry — new ECS components extend serialization without editing <code>SceneSerializer</code>. Collider bake strategies follow the same pattern in <code>ColliderBakeStrategies2D.cpp</code>.</p>
+<p><strong>LSP:</strong> <code>IShape2D</code> — every shape implements full collision contract. <code>NarrowPhase2D</code> never handles "unsupported shape."</p>
+<p><strong>ISP:</strong> <code>IUiButton</code>, <code>ISlider</code>, <code>ILabel</code> segregate widget APIs; layout code uses <code>IUiElement</code> base only.</p>
+<p><strong>DIP:</strong> <code>IEngineContext</code> facade for demos; <code>IUiBackend</code> for toolkit; games never include Vulkan/GLFW headers.</p>
+<p><strong>Problem → Solution → Walkthrough (scene save):</strong></p>
+<ol>
+<li>Editor triggers scene save on active <code>GameWorld</code>.</li>
+<li><code>SceneSerializer</code> iterates entities and components.</li>
+<li>For each component, <code>ComponentSnapshotRegistry</code> finds handler by <code>ComponentKind</code>.</li>
+<li>Handler <code>TryCapture</code> writes <code>ComponentRecord</code> with kind tag and payload fields.</li>
+<li>Document written to disk; load reverses via <code>TryRestore</code> with <code>SceneApplyContext</code> for asset resolution.</li>
+</ol>
+<p><strong>What would break without SOLID?</strong> New tilemap components would edit a monolithic serializer. Physics demos would link Vulkan. UI demos would recompile when unrelated widget APIs change.</p>
+<p><strong>Key files:</strong> <code>include/spark/scene/serialization/IComponentSnapshotHandler.hpp</code>, <code>include/spark/physics/shapes/IShape2D.hpp</code>, <code>include/spark/engine/IEngineContext.hpp</code>.</p>
+<hr>
+<h3 id="lightmediator-solid-as-requestnotification-dispatch">LightMediator — SOLID as request/notification dispatch</h3>
+<p><strong>SRP:</strong> One class per <code>IRequestHandler&lt;TRequest,TResponse&gt;</code> — <code>CreateOrderHandler</code>, <code>GetOrderSummaryHandler</code>, each handles one command.</p>
+<p><strong>OCP:</strong> <code>IRequestMiddleware&lt;TRequest,TResponse&gt;</code> chain wraps handlers without editing handler bodies. New middleware = new class + DI registration.</p>
+<p><strong>LSP:</strong> <code>SequentialNotificationPublisher</code> vs <code>ParallelNotificationPublisher</code> — swappable fan-out semantics.</p>
+<p><strong>DIP:</strong> <code>Mediator</code> depends on <code>IServiceProvider</code> and <code>INotificationPublisher</code>, not concrete handlers. Handlers registered by assembly scanning.</p>
+<p><strong>Problem → Solution → Walkthrough (command):</strong></p>
+<ol>
+<li>API controller sends <code>CreateOrder</code> command via <code>IMediator.SendAsync</code>.</li>
+<li><code>Mediator</code> resolves <code>IRequestHandler&lt;CreateOrder, OrderId&gt;</code> from DI.</li>
+<li>Middleware pipeline wraps handler (validation, logging, transactions).</li>
+<li>Handler executes, returns response.</li>
+<li>Optional: <code>PublishAsync(OrderCreated)</code> notifies subscribers via configured publisher.</li>
+</ol>
+<p><strong>What would break without SOLID?</strong> Cross-cutting concerns would duplicate in every handler. Parallel vs sequential notification would require <code>if</code> in <code>Mediator</code>. Handlers would <code>new</code> repository implementations.</p>
+<p><strong>Key files:</strong> <code>LightMediator/Mediator.cs</code>, <code>INotificationPublisher.cs</code>, sample handlers in <code>LightMediator.Samples.Application/Handlers.cs</code>.</p>
+<hr>
+<h3 id="lightmapper-solid-via-source-generation">LightMapper — SOLID via source generation</h3>
+<p><strong>SRP:</strong> Runtime library (<code>ILightMapper</code>, attributes) separate from compile-time generator (<code>LightMapperIncrementalGenerator</code>, emitters).</p>
+<p><strong>OCP:</strong> New <code>[LightMapFrom]</code> pair generates new mapper + DI line — runtime infrastructure unchanged.</p>
+<p><strong>DIP:</strong> Handlers inject <code>ILightMapper&lt;TSource,TDestination&gt;</code>; generator emits <code>AddLightMapperMappers()</code> for composition root.</p>
+<p><strong>Problem → Solution → Walkthrough:</strong></p>
+<ol>
+<li>Developer annotates source type with mapping attribute pointing to destination DTO.</li>
+<li>Generator collects declarations, emits mapper class with property assignments.</li>
+<li><code>DependencyInjectionEmitter</code> adds singleton registration for the interface pair.</li>
+<li>Application calls <code>services.AddLightMapperMappers()</code> at startup.</li>
+<li>Handler receives mapper via constructor, calls <code>Map</code> or <code>MapTo</code>.</li>
+</ol>
+<p><strong>What would break without SOLID?</strong> Mapping changes would edit generated and hand-written code in the same files. Tests would reference concrete mapper types. Adding a DTO pair would require manual DI wiring.</p>
+<p><strong>Key files:</strong> <code>LightMapper/ILightMapper.cs</code>, <code>LightMapper.SourceGenerators/DependencyInjectionEmitter.cs</code>.</p>
+<hr>
+<h3 id="imgkit-solid-as-image-processing-api">ImgKit — SOLID as image processing API</h3>
+<p><strong>SRP:</strong> Separate handlers per command (<code>ResizeImageHandler</code>, <code>ApplyFilterHandler</code>, …). Shared base <code>ImageProcessingHandlerBase</code> handles temp file lifecycle — one cohesive helper, not a god handler.</p>
+<p><strong>OCP:</strong> Three strategy families (filter, enhancement, ops) with factory registries. New blur variant = new strategy class.</p>
+<p><strong>ISP:</strong> Handlers inject only the factory they need — filter handler never sees ops factory.</p>
+<p><strong>DIP:</strong> Handlers depend on <code>ITempImageFileStore</code>, <code>IPillowNetProcessingGate</code>, strategy factories — not PillowNet static APIs directly in controllers.</p>
+<p><strong>Problem → Solution → Walkthrough (filter request):</strong></p>
+<ol>
+<li><code>ImagesController</code> accepts multipart form with filter name and parameters.</li>
+<li>Maps to <code>ApplyFilterCommand</code>, sends via LightMediator.</li>
+<li><code>ApplyFilterHandler</code> validates, loads image through processing gate.</li>
+<li><code>IImageFilterStrategyFactory.GetStrategy(name)</code> resolves implementation.</li>
+<li>Strategy applies PillowNet filter; handler saves temp output, returns result contract.</li>
+</ol>
+<p><strong>What would break without SOLID?</strong> Controllers would call PillowNet directly — untestable, no gate for concurrency limits. New filters would edit controller switch statements.</p>
+<p><strong>Key files:</strong> <code>ImgKit.Application/Processing/ImageProcessingStrategies.cs</code>, <code>ImgKit.Application/Handlers/ImageHandlers.cs</code>.</p>
+<hr>
+<h3 id="skyui-solid-in-avalonia-form-controls">SkyUI — SOLID in Avalonia form controls</h3>
+<p><strong>SRP:</strong> One validator class per rule (<code>RequiredValidator</code> via factory, <code>EmailValidator</code>, …).</p>
+<p><strong>OCP:</strong> <code>CompositeSkyValidator</code> adds rules by composition — new validator type, append to composite, no edit to existing validators.</p>
+<p><strong>ISP:</strong> <code>ISkyValidator</code> single method — form fields never depend on a validation service with unrelated rule methods.</p>
+<p><strong>LSP:</strong> Any <code>ISkyValidator</code> returns consistent <code>SkyValidationResult</code> — composite, delegate-backed, or concrete validators substitute cleanly.</p>
+<p><strong>Problem → Solution → Walkthrough (form field validation):</strong></p>
+<ol>
+<li>ViewModel defines <code>CompositeSkyValidator</code> with <code>Required()</code> + <code>Email()</code>.</li>
+<li><code>SkyFormField</code> binds to input control and validator.</li>
+<li>On value change or focus loss, field calls <code>validator.Validate(value)</code>.</li>
+<li>First failure sets error message on field; success clears error.</li>
+<li>Form submit checks all fields — each uses its own composed validator.</li>
+</ol>
+<p><strong>What would break without SOLID?</strong> New validation rules would edit <code>SkyFormField</code> internals. Fields would couple to email regex logic when they only need required check.</p>
+<p><strong>Key files:</strong> <code>SkyUI/Controls/Forms/Validation/ISkyValidator.cs</code>, <code>CompositeSkyValidator.cs</code>, <code>SkyValidators.cs</code>.</p>
+<hr>
+<h2 id="pitfall-1-solid-as-dogma">Pitfall 1: SOLID as Dogma</h2>
+<p>Applying every principle to every class produces:</p>
+<ul>
+<li>200-interface solutions for 200-line programs</li>
+<li>Abstract factories with one product family</li>
+<li>"Repository" wrappers over <code>List&lt;T&gt;</code></li>
+</ul>
+<p><strong>Guidance:</strong> refactor toward SOLID when you feel <strong>pain</strong> — duplicate conditionals, untestable god classes, merge conflicts on hot files.</p>
+<p><strong>Concrete signal in the reference projects:</strong> MDWeb did not start with nine pipeline steps — the pipeline grew as publish modes and export features accumulated. ImgKit's three strategy factories appeared when filter/enhancement/ops counts made a single switch unmaintainable. Premature abstraction in LightMapper would mean generating mappers for one DTO pair — the generator pays off at scale.</p>
+<h2 id="pitfall-2-confusing-di-lifetime-with-singleton-pattern">Pitfall 2: Confusing DI Lifetime with Singleton Pattern</h2>
+<pre><code class="language-csharp">services.AddSingleton&lt;IMarkdownRenderer, MarkdigMarkdownRenderer&gt;();
+</code></pre>
+<p>This is <strong>one instance per container</strong> for performance — not the GoF Singleton pattern (Part 2). The difference:</p>
+<table class="table">
+<thead>
+<tr>
+<th>DI Singleton</th>
+<th>GoF Singleton</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scoped to application/container</td>
+<td>Global process-wide access</td>
+</tr>
+<tr>
+<td>Resolved via constructor</td>
+<td><code>Instance</code> static property</td>
+</tr>
+<tr>
+<td>Testable (replace registration)</td>
+<td>Hard to mock without seams</td>
+</tr>
+</tbody>
+</table>
+<p>Teach Singleton from Spark's static subsystems or RainDB's <code>NoOpSpillWriter.Instance</code> — explicit single-instance types with documented test purpose — not from <code>AddSingleton</code>.</p>
+<p><strong>What would break if confused?</strong> Developers avoid <code>AddSingleton</code> thinking it is an anti-pattern, then create static globals that are harder to test than container-managed singletons.</p>
+<h2 id="pitfall-3-lsp-ignored-in-read-only-implementations">Pitfall 3: LSP Ignored in "Read-Only" Implementations</h2>
+<p>Implementing full <code>IList&lt;T&gt;</code> but throwing on mutators breaks substitutability. Prefer <code>IReadOnlyList&lt;T&gt;</code> at API boundaries.</p>
+<p>RainDB's interface layering (<code>ITableSource</code> vs <code>IColumnarTableSource</code>) avoids this by not forcing columnar concepts on metadata-only clients. SkyUI's <code>ISkyValidator</code> has one method — no throw-on-unused-method problem.</p>
+<p><strong>What would break?</strong> Callers pass read-only list to code that calls <code>.Add()</code>, expecting <code>IList</code> contract to hold. Runtime <code>NotSupportedException</code> in production.</p>
+<h2 id="pitfall-4-isp-fragmentation">Pitfall 4: ISP Fragmentation</h2>
+<p>Splitting <code>IUserService</code> into <code>IUserReader</code>, <code>IUserWriter</code>, <code>IUserDeleter</code>, <code>IUserSearcher</code> when every handler needs all four creates injection fatigue.</p>
+<p><strong>Rule:</strong> segregate when <strong>different modules</strong> need <strong>different subsets</strong>. If one service class implements everything and every client uses everything, keep one interface.</p>
+<p>ImgKit segregates because <strong>filter handlers genuinely never call ops factories</strong>. RainDB segregates because <strong>catalog metadata clients genuinely never read batches</strong>. Fragmentation without distinct client roles adds registration noise only.</p>
+<h2 id="pitfall-5-dip-without-a-composition-root">Pitfall 5: DIP Without a Composition Root</h2>
+<p>Scattering <code>new MarkdigMarkdownRenderer()</code> inside steps defeats inversion even if an interface exists somewhere. <strong>All</strong> concretion choice belongs in <code>Program.cs</code> / <code>DependencyInjection.cs</code> / <code>RainDbEngine.CreateDefault()</code>.</p>
+<p><strong>Smell:</strong> Application project references Infrastructure. <strong>Fix:</strong> Move <code>new</code> to composition root; Application references Core abstractions only.</p>
+<p><strong>MDWeb enforces this:</strong> <code>MDWeb.Application</code> has zero Markdig usings. <code>MDWeb.Infrastructure/DependencyInjection.cs</code> owns all concrete bindings including publish-mode renderer selection.</p>
+<h2 id="pitfall-6-ocp-without-srp">Pitfall 6: OCP Without SRP</h2>
+<p>Adding new strategy classes to a god class that still owns unrelated logic does not achieve OCP in practice. The class remains a change magnet; you merely moved one switch into a factory while leaving other switches inline.</p>
+<p><strong>Fix SRP first:</strong> extract the variation axis into its own class, then apply OCP to that axis. MDWeb's <code>PostProcessHtmlStep</code> is small <em>and</em> delegates variation to <code>IHtmlPostProcessor</code> — both principles apply.</p>
+<h2 id="how-solid-enables-patterns-in-later-parts">How SOLID Enables Patterns in Later Parts</h2>
+<pre class="mermaid">flowchart TB
+    SRP[SRP: small units] --&gt; CHAIN[Chain of Responsibility]
+    OCP[OCP: extension points] --&gt; STRAT[Strategy / Abstract Factory]
+    LSP[LSP: safe polymorphism] --&gt; STATE[State / Strategy]
+    ISP[ISP: narrow ports] --&gt; ADAPT[Adapter / Facade]
+    DIP[DIP: abstractions] --&gt; ALL[All patterns]
+</pre>
+<table class="table">
+<thead>
+<tr>
+<th>Principle</th>
+<th>Pattern enabled</th>
+<th>Project example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SRP</td>
+<td>Chain of Responsibility</td>
+<td>MDWeb <code>IGenerationStep</code> pipeline</td>
+</tr>
+<tr>
+<td>OCP</td>
+<td>Strategy</td>
+<td>ImgKit filter strategies, MDWeb post-processors</td>
+</tr>
+<tr>
+<td>OCP</td>
+<td>Abstract Factory</td>
+<td>Spark <code>IUiControlsFactory</code></td>
+</tr>
+<tr>
+<td>LSP</td>
+<td>Strategy (safe swap)</td>
+<td>Spark <code>IShape2D</code>, LightMediator publishers</td>
+</tr>
+<tr>
+<td>ISP</td>
+<td>Adapter</td>
+<td>Spark segregated UI controls</td>
+</tr>
+<tr>
+<td>ISP</td>
+<td>Composite</td>
+<td>SkyUI <code>CompositeSkyValidator</code></td>
+</tr>
+<tr>
+<td>DIP</td>
+<td>All patterns</td>
+<td>Every project's Core/Abstractions layer</td>
+</tr>
+</tbody>
+</table>
+<p>Patterns are not alternatives to SOLID — they are <strong>implementations</strong> of SOLID constraints in recurring situations.</p>
+<h2 id="code-review-solid-pass">Code Review SOLID Pass</h2>
+<p>For any PR, five quick questions:</p>
+<ol>
+<li><strong>S:</strong> Can I name two unrelated reasons this class might change?</li>
+<li><strong>O:</strong> Am I editing a switch that should be a new type?</li>
+<li><strong>L:</strong> Would a fake implementation break caller assumptions?</li>
+<li><strong>I:</strong> Does this interface force unused methods on implementers?</li>
+<li><strong>D:</strong> Does this class <code>new</code> a concrete infrastructure type?</li>
+</ol>
+<p>Expand with walkthrough when any answer is "yes":</p>
+<ul>
+<li><strong>S yes:</strong> Identify the two change axes; propose split boundary.</li>
+<li><strong>O yes:</strong> Name the variation axis; sketch interface + registration.</li>
+<li><strong>L yes:</strong> Document contract gap or narrow interface.</li>
+<li><strong>I yes:</strong> List client roles; propose segregation.</li>
+<li><strong>D yes:</strong> Move instantiation to composition root.</li>
+</ul>
+<h2 id="suggested-reading-order-with-patterns">Suggested Reading Order with Patterns</h2>
+<table class="table">
+<thead>
+<tr>
+<th>After SOLID chapter</th>
+<th>Read pattern chapter</th>
+<th>Connect via</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OCP</td>
+<td>Strategy, Abstract Factory</td>
+<td>ImgKit strategies, Spark UI factory</td>
+</tr>
+<tr>
+<td>SRP + DIP</td>
+<td>Chain of Responsibility, Facade</td>
+<td>MDWeb pipeline, Spark <code>IEngineContext</code></td>
+</tr>
+<tr>
+<td>ISP</td>
+<td>Adapter, Composite</td>
+<td>Spark UI controls, SkyUI validators</td>
+</tr>
+<tr>
+<td>LSP</td>
+<td>State, Strategy</td>
+<td>Spark shapes, LightMediator publishers</td>
+</tr>
+<tr>
+<td>All</td>
+<td>Part 5 — Combining Patterns</td>
+<td>Cross-project composition</td>
+</tr>
+</tbody>
+</table>
+<h2 id="part-1-summary">Part 1 Summary</h2>
+<p>SOLID is the <strong>grammar</strong> of maintainable OOP. The seven projects use it consistently:</p>
+<ul>
+<li><strong>Abstractions in core</strong>, implementations at the edge</li>
+<li><strong>Extension via new types</strong>, not edited conditionals</li>
+<li><strong>Narrow interfaces</strong> aligned with client roles</li>
+<li><strong>Substitutable</strong> implementations for testing and deployment variants</li>
+</ul>
+<p>Each principle addresses a different failure mode: SRP prevents change magnets; OCP prevents regression cascades; LSP prevents polymorphism lies; ISP prevents mock bloat; DIP prevents framework lock-in. Together they make the design patterns in later parts worth learning — because the abstractions those patterns use are already shaped correctly.</p>
+<p>Part 2 begins <strong>creational patterns</strong> — how objects are born, and how SOLID shapes factories and builders.</p>
+<h2 id="next">Next</h2>
+<p><a href="../part02-creational/01-introduction.html">Part 2: Introduction to Creational Patterns →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#solid-in-practice-pitfalls-and-project-survey">SOLID in Practice — Pitfalls and Project Survey</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#cross-project-solid-map">Cross-Project SOLID Map</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#project-deep-dives">Project Deep Dives</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#mdweb-solid-as-a-static-site-pipeline">MDWeb — SOLID as a static site pipeline</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#raindb-solid-as-a-query-engine">RainDB — SOLID as a query engine</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#spark-solid-in-a-c-game-engine">Spark — SOLID in a C++ game engine</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#lightmediator-solid-as-requestnotification-dispatch">LightMediator — SOLID as request/notification dispatch</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#lightmapper-solid-via-source-generation">LightMapper — SOLID via source generation</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#imgkit-solid-as-image-processing-api">ImgKit — SOLID as image processing API</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#skyui-solid-in-avalonia-form-controls">SkyUI — SOLID in Avalonia form controls</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#pitfall-1-solid-as-dogma">Pitfall 1: SOLID as Dogma</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#pitfall-2-confusing-di-lifetime-with-singleton-pattern">Pitfall 2: Confusing DI Lifetime with Singleton Pattern</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#pitfall-3-lsp-ignored-in-read-only-implementations">Pitfall 3: LSP Ignored in "Read-Only" Implementations</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#pitfall-4-isp-fragmentation">Pitfall 4: ISP Fragmentation</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#pitfall-5-dip-without-a-composition-root">Pitfall 5: DIP Without a Composition Root</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#pitfall-6-ocp-without-srp">Pitfall 6: OCP Without SRP</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#how-solid-enables-patterns-in-later-parts">How SOLID Enables Patterns in Later Parts</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#code-review-solid-pass">Code Review SOLID Pass</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#suggested-reading-order-with-patterns">Suggested Reading Order with Patterns</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#part-1-summary">Part 1 Summary</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

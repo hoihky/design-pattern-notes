@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open/Closed Principle · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>Open/Closed Principle</h1>
+          </header>
+          <div class="doc-body"><h1 id="openclosed-principle-ocp">Open/Closed Principle (OCP)</h1>
+<blockquote class="blockquote">
+<p><em>Software entities should be open for extension, but closed for modification.</em></p>
+</blockquote>
+<p>— Bertrand Meyer</p>
+<p>OCP means you add new behavior by <strong>introducing new types</strong> (or registering new plugins) rather than <strong>editing existing conditional logic</strong>. The stable core stays untouched; extensions plug in through abstractions.</p>
+<h2 id="the-core-idea">The Core Idea</h2>
+<p>When the next publish target arrives — WeChat articles, print-only CSS, AMP HTML — you should not open <code>PostProcessHtmlStep</code> and add another <code>if (mode == ...)</code>. You add a new <code>IHtmlPostProcessor</code> implementation and register it in DI.</p>
+<p>OCP is about <strong>protecting working code from regression</strong>. Every edit to a conditional branch re-tests all branches. Every new <code>case</code> in a <code>switch</code> is a merge conflict waiting to happen. Extension via new types isolates change: existing classes compile unchanged; tests for existing processors still pass.</p>
+<h3 id="extension-vs-modification">Extension vs modification</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Approach</th>
+<th>What changes</th>
+<th>Risk</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Modification</td>
+<td>Edit existing method, add branch</td>
+<td>Regress existing modes</td>
+</tr>
+<tr>
+<td>Extension</td>
+<td>Add new class, register in DI</td>
+<td>Only new code needs tests</td>
+</tr>
+</tbody>
+</table>
+<p>The "closed" part does not mean "never edit." It means the <strong>stable algorithm</strong> — how the step selects and invokes a processor — should not change when a new variant appears.</p>
+<h2 id="smell-growing-switch-statements">Smell: Growing switch Statements</h2>
+<pre><code class="language-csharp">// Anti-pattern: every new mode edits this method
+string PostProcess(string html, PublishMode mode) =&gt; mode switch
+{
+    PublishMode.Site =&gt; html,
+    PublishMode.WeChat =&gt; WeChatSanitize(html),
+    PublishMode.Print =&gt; InjectPrintCss(html),  // new requirement
+    _ =&gt; html
+};
+</code></pre>
+<p>Each new mode risks regressions in existing modes. Tests must cover every branch on every change. The method becomes a <strong>feature graveyard</strong> — nobody removes dead branches because "something might still use it."</p>
+<p><strong>Why this violates OCP:</strong> The post-processing <em>algorithm</em> (iterate pages, transform HTML) is stable, but the <em>variation axis</em> (publish mode) keeps forcing edits to the same method.</p>
+<h2 id="refactor-strategy-registry">Refactor: Strategy Registry</h2>
+<p>MDWeb defines a narrow extension point. The interface is deliberately small — one property and one method — so new publish profiles implement only what differs.</p>
+<h3 id="ihtmlpostprocessor-publish-profile-transform"><code>IHtmlPostProcessor</code> — publish-profile transform</h3>
+<p><strong>What it does:</strong> Transforms rendered HTML for a specific <code>PublishMode</code>. Each implementation declares which mode it handles via the <code>Mode</code> property and implements <code>Process(string html)</code>.</p>
+<p><strong>Why it exists:</strong> WeChat Official Account paste workflow requires stripped scripts, inline-only styles, and a restricted tag subset. Standard site generation needs none of that. These are orthogonal transformations on the same HTML artifact.</p>
+<p><strong>How it fits OCP:</strong> Adding print mode means implementing <code>IHtmlPostProcessor</code> with <code>Mode =&gt; PublishMode.Print</code> — not editing <code>PostProcessHtmlStep</code>.</p>
+<p><strong>Problem it solves:</strong> Decouples <em>when</em> to post-process (pipeline step) from <em>how</em> (per-mode strategy).</p>
+<pre><code class="language-csharp">public interface IHtmlPostProcessor
+{
+    PublishMode Mode { get; }
+    string Process(string html);
+}
+</code></pre>
+<h3 id="two-implementations-site-vs-wechat">Two implementations — site vs WeChat</h3>
+<p><strong><code>PassThroughHtmlPostProcessor</code></strong> — <strong>What it does:</strong> Returns HTML unchanged. <strong>Why it exists:</strong> Standard site generation needs no post-processing; this explicit no-op makes the registry complete and testable. <strong>Problem it solves:</strong> Callers can inject a real processor in tests without WeChat-specific AngleSharp parsing.</p>
+<p><strong><code>WeChatHtmlPostProcessor</code></strong> — <strong>What it does:</strong> Parses HTML with AngleSharp, removes unsafe tags (<code>script</code>, <code>iframe</code>, …), strips <code>class</code>/<code>id</code>/<code>data-*</code> attributes, inlines preset styles from <code>WeChatStylePresets</code>, replaces Mermaid blocks with upload placeholders. <strong>Why it exists:</strong> WeChat's editor rejects external stylesheets and JavaScript. <strong>Problem it solves:</strong> Authors write normal markdown; the processor adapts output for paste compatibility.</p>
+<h3 id="postprocesshtmlstep-closed-selection-logic"><code>PostProcessHtmlStep</code> — closed selection logic</h3>
+<p><strong>What it does:</strong> Reads <code>PublishMode</code> from the theme manifest, finds the matching processor from injected <code>IEnumerable&lt;IHtmlPostProcessor&gt;</code>, and applies it to every page's <code>HtmlContent</code>.</p>
+<p><strong>Why it stays closed:</strong> The step's control flow — guard check, mode lookup, foreach page — does not change when a third mode arrives. Only DI registration grows.</p>
+<pre><code class="language-csharp">// Simplified from PostProcessHtmlStep.cs
+var mode = context.Configuration.ThemeManifest.PublishMode;
+var processor = postProcessors.FirstOrDefault(p =&gt; p.Mode == mode);
+if (processor is null || mode == PublishMode.Site)
+    return Task.CompletedTask;
+
+foreach (var page in context.AllPages)
+    page.HtmlContent = processor.Process(page.HtmlContent);
+</code></pre>
+<p><strong>Problem → Solution → Walkthrough:</strong></p>
+<ul>
+<li><strong>Problem:</strong> WeChat HTML rules diverge sharply from standard site output; inline <code>if (mode == WeChat)</code> couples pipeline flow to WeChat-specific AngleSharp logic.</li>
+<li><strong>Solution:</strong> Extract <code>IHtmlPostProcessor</code> implementations; register both in <code>MDWeb.Infrastructure/DependencyInjection.cs</code>.</li>
+<li><strong>Walkthrough:</strong>
+<ol>
+<li><code>RenderMarkdownStep</code> produces standard HTML in <code>page.HtmlContent</code>.</li>
+<li><code>PostProcessHtmlStep</code> runs after rendering and link rewriting.</li>
+<li><code>SiteGenerationGuard.ShouldGenerateSite</code> may skip post-processing for export-only runs.</li>
+<li>Step resolves processor by <code>PublishMode</code> from theme manifest.</li>
+<li>For WeChat themes, <code>WeChatHtmlPostProcessor.Process</code> sanitizes each page.</li>
+<li>Downstream <code>GeneratePagesStep</code> receives already-adapted HTML.</li>
+</ol>
+</li>
+</ul>
+<p><strong>What would break without this?</strong> Every new publish target edits <code>PostProcessHtmlStep</code>. WeChat regression tests run on every print-mode change. The step accumulates AngleSharp, print CSS, and AMP logic in one file — an SRP violation stacked on an OCP violation.</p>
+<h2 id="example-2-spark-component-snapshot-handlers">Example 2: Spark — Component Snapshot Handlers</h2>
+<p>Spark serializes ECS components to scene documents. Each component type (Transform, Mesh, Rigidbody, SpriteAnimator, …) has different capture/restore logic. A single serializer method with a giant switch on component type would violate OCP the moment you add a new component.</p>
+<h3 id="icomponentsnapshothandler-per-component-strategy"><code>IComponentSnapshotHandler</code> — per-component strategy</h3>
+<p><strong>What it does:</strong> Captures one component kind from a live <code>GameObject</code> into a <code>ComponentRecord</code>, and restores it back into a <code>GameWorld</code>. Handlers are stateless strategy objects.</p>
+<p><strong>Why it exists:</strong> Component serialization rules vary wildly — a <code>TransformComponent</code> stores position/rotation; a <code>MeshComponent</code> resolves asset paths via <code>SceneCaptureContext</code> callbacks; animation components reference state machines.</p>
+<p><strong>How it fits OCP:</strong> <code>SceneSerializer</code> delegates to the registry; new components add a handler file without editing the serializer.</p>
+<pre><code class="language-cpp">class IComponentSnapshotHandler {
+public:
+    virtual ~IComponentSnapshotHandler() = default;
+    virtual ComponentKind GetKind() const noexcept = 0;
+    virtual const char* GetKindTag() const noexcept = 0;
+    virtual bool TryCapture(const GameObject&amp; owner, const SceneCaptureContext&amp; ctx,
+                            ComponentRecord&amp; out) const = 0;
+    virtual bool TryRestore(GameObject&amp; owner, const ComponentRecord&amp; record,
+                            GameWorld&amp; world, const SceneApplyContext&amp; ctx) const = 0;
+};
+</code></pre>
+<h3 id="supporting-types">Supporting types</h3>
+<p><strong><code>ComponentRecord</code></strong> — serialized component payload in the scene document.</p>
+<p><strong><code>SceneCaptureContext</code></strong> — optional callbacks for asset path resolution during capture (mesh paths, texture keys, skinned model paths).</p>
+<p><strong><code>SceneApplyContext</code></strong> — hooks during restore (assets root, deferred loading via <code>GameWorldAssetLoader</code>, entity-created callbacks).</p>
+<p><strong><code>ComponentSnapshotRegistry</code></strong> — maps <code>ComponentKind</code> → handler. Handlers register at static init or startup via <code>Register()</code>.</p>
+<p><strong>Problem → Solution → Walkthrough:</strong></p>
+<ul>
+<li><strong>Problem:</strong> <code>SceneSerializer</code> with inline switch-on-component-type grows without bound; rendering, physics, and tilemap teams all edit the same file.</li>
+<li><strong>Solution:</strong> Split handlers across <code>ComponentSnapshotHandlersRendering.cpp</code>, <code>ComponentSnapshotHandlersExtended.cpp</code>, <code>ComponentSnapshotHandlersMore.cpp</code>.</li>
+<li><strong>Walkthrough:</strong>
+<ol>
+<li>Save scene: serializer iterates entities and components.</li>
+<li>For each component, registry lookup by <code>ComponentKind</code>.</li>
+<li>Handler's <code>TryCapture</code> writes fields into <code>ComponentRecord</code>.</li>
+<li>Load scene: for each record, handler's <code>TryRestore</code> attaches component to <code>GameObject</code>.</li>
+<li>Deferred restores (async asset load) use <code>SceneApplyContext.onDeferredComponent</code>.</li>
+</ol>
+</li>
+</ul>
+<p><strong>What would break without this?</strong> Adding <code>TilemapAutotileComponent</code> requires editing a 5,000-line serializer. Physics snapshot bugs break rendering tests. Handler logic for unrelated domains interleaves, making code review impossible.</p>
+<h2 id="example-3-imgkit-image-filter-strategies">Example 3: ImgKit — Image Filter Strategies</h2>
+<p>ImgKit applies filters (blur, sharpen, grayscale, edge enhance, …) through a strategy family. HTTP handlers and LightMediator command handlers depend on factories — never on filter names directly.</p>
+<h3 id="iimagefilterstrategy-and-factory"><code>IImageFilterStrategy</code> and factory</h3>
+<p><strong>What it does:</strong> Each strategy exposes a <code>Name</code> and an <code>Apply(PillowNet.Image, FilterStrategyOptions)</code> method. The factory builds a case-insensitive dictionary from all registered strategies at startup.</p>
+<p><strong>Why it exists:</strong> Filter algorithms differ in parameters (radius, percent, threshold) and PillowNet API calls. A single handler method with filter-specific branches would grow with every new filter.</p>
+<p><strong>How it fits OCP:</strong> New filter = new sealed strategy class + DI registration. Factory dictionary grows automatically via <code>IEnumerable&lt;IImageFilterStrategy&gt;</code> injection.</p>
+<pre><code class="language-csharp">internal sealed class ImageFilterStrategyFactory : IImageFilterStrategyFactory
+{
+    private readonly IReadOnlyDictionary&lt;string, IImageFilterStrategy&gt; _strategies;
+
+    public ImageFilterStrategyFactory(IEnumerable&lt;IImageFilterStrategy&gt; strategies) =&gt;
+        _strategies = strategies.ToDictionary(s =&gt; s.Name, StringComparer.OrdinalIgnoreCase);
+
+    public IImageFilterStrategy GetStrategy(string filterName) =&gt;
+        _strategies.TryGetValue(filterName, out var strategy)
+            ? strategy
+            : throw new ArgumentException($"Unsupported filter '{filterName}'.", nameof(filterName));
+}
+</code></pre>
+<p>ImgKit mirrors this pattern for <strong><code>IImageEnhancementStrategyFactory</code></strong> (brightness, contrast) and <strong><code>IImageOpsStrategyFactory</code></strong> (resize, crop, rotate) — three parallel extension axes, each OCP-compliant.</p>
+<p><strong>Problem → Solution → Walkthrough:</strong></p>
+<ul>
+<li><strong>Problem:</strong> <code>ApplyFilterHandler</code> with inline switch on filter name couples HTTP layer to every PillowNet filter API.</li>
+<li><strong>Solution:</strong> Handler calls <code>_filterFactory.GetStrategy(request.FilterName).Apply(image, options)</code>.</li>
+<li><strong>Walkthrough:</strong>
+<ol>
+<li>API receives filter command with filter name and options.</li>
+<li>Handler validates via <code>ImageOperationValidator</code>, acquires image through <code>IPillowNetProcessingGate</code>.</li>
+<li>Factory resolves strategy by name.</li>
+<li>Strategy applies PillowNet transform, returns modified image.</li>
+<li>Handler writes temp file via <code>ITempImageFileStore</code>, returns result DTO.</li>
+</ol>
+</li>
+</ul>
+<p><strong>What would break without this?</strong> Adding <code>GaussianBlurFilterStrategy</code> edits the handler and every test that mocks the handler. Filter-specific validation scatters across one method. Parallel strategy families (enhancement vs ops) would collide in a single god switch.</p>
+<h2 id="ocp-mechanisms-in-this-books-projects">OCP Mechanisms in This Book's Projects</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Projects</th>
+<th>How extension works</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interface + DI</td>
+<td>MDWeb, ImgKit, LightMediator</td>
+<td>New implementation, register in <code>AddSingleton</code></td>
+</tr>
+<tr>
+<td>Registry</td>
+<td>Spark snapshot handlers, collider bake</td>
+<td><code>Register()</code> at static init or startup</td>
+</tr>
+<tr>
+<td>Source generator</td>
+<td>LightMapper</td>
+<td>New <code>[LightMapFrom]</code> pair → generated mapper + DI line</td>
+</tr>
+<tr>
+<td>Pipeline step list</td>
+<td>MDWeb</td>
+<td>New <code>IGenerationStep</code> in ordered registration</td>
+</tr>
+<tr>
+<td>Middleware chain</td>
+<td>LightMediator</td>
+<td>New <code>IRequestMiddleware&lt;TRequest,TResponse&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="lightmapper-ocp-via-codegen">LightMapper — OCP via codegen</h3>
+<p>When you declare a new mapping pair with <code>[LightMapFrom]</code>, the source generator emits a concrete mapper class and a line in <code>AddLightMapperMappers()</code>. You extend mapping capability without editing runtime mapper infrastructure — OCP enforced at build time.</p>
+<h2 id="ocp-vs-yagni">OCP vs YAGNI</h2>
+<p>OCP does not mean "build every extension point on day one." It means when the <strong>second</strong> variant appears, refactor the <code>if/else</code> into an abstraction — not when the tenth variant forces a rewrite.</p>
+<p>ImgKit started with a few filters; the strategy factory emerged when filter count and test surface grew. MDWeb's <code>IHtmlPostProcessor</code> appeared when WeChat mode was real, not when the project started.</p>
+<p><strong>Rule of thumb:</strong> one implementation + no confirmed second variant = inline code is fine. Two implementations = extract the interface.</p>
+<h2 id="when-ocp-goes-too-far">When OCP Goes Too Far</h2>
+<p>Over-abstracting a single implementation creates:</p>
+<ul>
+<li>Interfaces with one implementer forever</li>
+<li>Factories that wrap <code>new ConcreteType()</code></li>
+<li>Plugin registries for two static options</li>
+</ul>
+<p><strong>Rule of thumb:</strong> introduce the abstraction when you have <strong>two</strong> real variants or a <strong>confirmed</strong> upcoming third.</p>
+<h2 id="review-checklist">Review Checklist</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input disabled="disabled" type="checkbox"> Can I add a new variant without editing existing classes (only registration/wiring)?</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox"> Are conditionals on type/mode centralized at the composition root?</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox"> Do tests for existing variants still pass when I add a new one?</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox"> Is the extension point named after the <strong>variation axis</strong> (publish mode, filter name, component kind)?</li>
+</ul>
+<h2 id="connection-to-patterns">Connection to Patterns</h2>
+<p>OCP is the principle behind:</p>
+<ul>
+<li><strong>Strategy</strong> (Part 4) — interchangeable algorithms</li>
+<li><strong>Abstract Factory</strong> (Part 2) — interchangeable product families</li>
+<li><strong>Chain of Responsibility</strong> (Part 4) — new handlers in the chain</li>
+</ul>
+<h2 id="next">Next</h2>
+<p><a href="04-liskov-substitution.html">Liskov Substitution Principle →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#openclosed-principle-ocp">Open/Closed Principle (OCP)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#the-core-idea">The Core Idea</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#extension-vs-modification">Extension vs modification</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#smell-growing-switch-statements">Smell: Growing switch Statements</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#refactor-strategy-registry">Refactor: Strategy Registry</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#publish-profile-transform"> — publish-profile transform</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#two-implementations-site-vs-wechat">Two implementations — site vs WeChat</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#closed-selection-logic"> — closed selection logic</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-2-spark-component-snapshot-handlers">Example 2: Spark — Component Snapshot Handlers</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#per-component-strategy"> — per-component strategy</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#supporting-types">Supporting types</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-3-imgkit-image-filter-strategies">Example 3: ImgKit — Image Filter Strategies</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#and-factory"> and factory</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#ocp-mechanisms-in-this-books-projects">OCP Mechanisms in This Book's Projects</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#lightmapper-ocp-via-codegen">LightMapper — OCP via codegen</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#ocp-vs-yagni">OCP vs YAGNI</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#when-ocp-goes-too-far">When OCP Goes Too Far</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#review-checklist">Review Checklist</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#connection-to-patterns">Connection to Patterns</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dependency Inversion Principle · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>Dependency Inversion Principle</h1>
+          </header>
+          <div class="doc-body"><h1 id="dependency-inversion-principle-dip">Dependency Inversion Principle (DIP)</h1>
+<blockquote class="blockquote">
+<p><em>High-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend on details.</em></p>
+</blockquote>
+<p>— Robert C. Martin</p>
+<p>DIP is the principle that makes <strong>dependency injection</strong>, <strong>testability</strong>, and most design patterns possible. Application logic depends on interfaces; infrastructure implements them at the composition root.</p>
+<h2 id="the-core-idea">The Core Idea</h2>
+<pre><code>Without DIP:  Application → Markdig, File.ReadAllText, PuppeteerSharp
+With DIP:     Application → IMarkdownRenderer, IContentReader, IDocumentExporter
+              Infrastructure → concrete implementations
+</code></pre>
+<p>The dependency arrow points <strong>inward</strong> toward domain abstractions, not outward toward frameworks.</p>
+<h3 id="two-parts-of-dip">Two parts of DIP</h3>
+<ol>
+<li><strong>High-level modules should not depend on low-level modules</strong> — <code>RenderMarkdownStep</code> should not import Markdig types.</li>
+<li><strong>Abstractions should not depend on details</strong> — <code>IMarkdownRenderer</code> lives in <code>MDWeb.Core</code>; it does not reference Markdig's <code>MarkdownPipeline</code>.</li>
+</ol>
+<p>Both sides depend on the abstraction. Infrastructure "depends on" the interface by implementing it — the interface owns the contract, not the framework.</p>
+<h2 id="smell-new-in-handlers">Smell: New in Handlers</h2>
+<pre><code class="language-csharp">public class RenderMarkdownStep
+{
+    public void Execute(SiteContext ctx)
+    {
+        var pipeline = new MarkdownPipelineBuilder().UseAdvancedExtensions().Build();
+        foreach (var page in ctx.AllPages)
+            page.Html = Markdown.ToHtml(page.RawMarkdown, pipeline);
+    }
+}
+</code></pre>
+<p>Tests must run Markdig. Swapping to a WeChat-specific renderer requires editing the step. The step is <strong>high-level orchestration</strong> coupled to <strong>low-level library details</strong>.</p>
+<p><strong>Why this violates DIP:</strong> The dependency arrow points from application code directly to Markdig — the opposite of inward-pointing abstractions.</p>
+<h2 id="refactor-inject-abstractions">Refactor: Inject Abstractions</h2>
+<p>MDWeb's <code>RenderMarkdownStep</code> receives <code>IMarkdownRenderer</code>. Infrastructure registers concrete renderers and selects by publish mode at the composition root.</p>
+<h3 id="imarkdownrenderer-rendering-port"><code>IMarkdownRenderer</code> — rendering port</h3>
+<p><strong>What it does:</strong> Converts markdown string to HTML plus heading metadata. <strong>Why it exists:</strong> Application pipeline should not know whether Markdig or a WeChat-tuned renderer performs conversion. <strong>DIP role:</strong> Application depends on this port; infrastructure adapts Markdig.</p>
+<h3 id="composition-root-selection">Composition root selection</h3>
+<pre><code class="language-csharp">services.AddSingleton&lt;IMarkdownRenderer&gt;(sp =&gt;
+manifest.PublishMode == PublishMode.WeChat
+    ? sp.GetRequiredService&lt;WeChatMarkdownRenderer&gt;()
+    : sp.GetRequiredService&lt;MarkdigMarkdownRenderer&gt;());
+</code></pre>
+<p><strong>What this wiring does:</strong> Reads theme manifest once at startup, binds the correct renderer implementation. <strong>Why it lives in Infrastructure DI:</strong> Publish-mode selection is a deployment/configuration concern, not a pipeline-step concern.</p>
+<p>The application layer never imports Markdig types. Selection logic lives at the composition root (<code>MDWeb.Infrastructure/DependencyInjection.cs</code>).</p>
+<p><strong>Problem → Solution → Walkthrough:</strong></p>
+<ul>
+<li><strong>Problem:</strong> Pipeline steps instantiate infrastructure directly; tests and alternate deployments cannot swap implementations.</li>
+<li><strong>Solution:</strong> Define abstractions in Core; register concretions in Infrastructure; inject via constructors.</li>
+<li><strong>Walkthrough:</strong>
+<ol>
+<li>CLI calls <code>services.AddMDWebApplication()</code> then <code>services.AddMDWebInfrastructure(themeDir)</code>.</li>
+<li>Container resolves <code>SiteGenerationPipeline</code> with all <code>IGenerationStep</code> instances.</li>
+<li><code>RenderMarkdownStep</code> receives <code>IMarkdownRenderer</code> — container supplies Markdig or WeChat variant.</li>
+<li>Step executes without knowing which renderer is active.</li>
+<li>Tests register fake renderer: <code>services.AddSingleton&lt;IMarkdownRenderer, FakeRenderer&gt;()</code>.</li>
+</ol>
+</li>
+</ul>
+<p><strong>What would break without this?</strong> Every pipeline test links Markdig. WeChat rendering experiments require editing application code. Application project references Infrastructure assemblies — layering inversion.</p>
+<h2 id="example-1-mdweb-abstraction-stack">Example 1: MDWeb Abstraction Stack</h2>
+<p>MDWeb's Core assembly defines the full port surface. Application orchestrates; Infrastructure implements.</p>
+<table class="table">
+<thead>
+<tr>
+<th>Abstraction</th>
+<th>What it abstracts</th>
+<th>Implementation</th>
+<th>Used by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>IContentReader</code></td>
+<td>Loading markdown from content folders</td>
+<td><code>FileSystemContentReader</code></td>
+<td><code>ReadContentStep</code></td>
+</tr>
+<tr>
+<td><code>IMarkdownRenderer</code></td>
+<td>Markdown → HTML</td>
+<td><code>MarkdigMarkdownRenderer</code>, <code>WeChatMarkdownRenderer</code></td>
+<td><code>RenderMarkdownStep</code></td>
+</tr>
+<tr>
+<td><code>IMarkdownLinkRewriter</code></td>
+<td>Pre-render link normalization</td>
+<td><code>MarkdownInternalLinkRewriter</code></td>
+<td><code>NormalizeMarkdownLinksStep</code></td>
+</tr>
+<tr>
+<td><code>ILinkRewriter</code></td>
+<td>Post-render href rewriting</td>
+<td><code>InternalLinkRewriter</code></td>
+<td><code>RewriteLinksStep</code></td>
+</tr>
+<tr>
+<td><code>IHtmlPostProcessor</code></td>
+<td>Publish-profile HTML transforms</td>
+<td><code>PassThroughHtmlPostProcessor</code>, <code>WeChatHtmlPostProcessor</code></td>
+<td><code>PostProcessHtmlStep</code></td>
+</tr>
+<tr>
+<td><code>ITemplateEngine</code></td>
+<td>HTML → final page</td>
+<td><code>ScribanTemplateEngine</code></td>
+<td><code>GeneratePagesStep</code></td>
+</tr>
+<tr>
+<td><code>IOutputWriter</code></td>
+<td>Writing files to output directory</td>
+<td><code>FileSystemOutputWriter</code></td>
+<td><code>GeneratePagesStep</code>, <code>CopyAssetsStep</code></td>
+</tr>
+<tr>
+<td><code>IDocumentExporter</code></td>
+<td>PDF generation</td>
+<td><code>PuppeteerPdfDocumentExporter</code></td>
+<td><code>ExportPdfStep</code></td>
+</tr>
+<tr>
+<td><code>IThemeManifestLoader</code></td>
+<td>Theme configuration loading</td>
+<td><code>FileSystemThemeManifestLoader</code></td>
+<td>Composition root</td>
+</tr>
+</tbody>
+</table>
+<p><strong><code>SiteGenerator</code></strong> orchestrates <code>IEnumerable&lt;IGenerationStep&gt;</code> — it does not know filesystem or Markdig details.</p>
+<p><strong>Data flow with DIP intact:</strong></p>
+<ol>
+<li><code>ReadContentStep</code> → <code>IContentReader.ReadAsync</code> → populates <code>SiteContext</code></li>
+<li><code>RenderMarkdownStep</code> → <code>IMarkdownRenderer.Render</code> → fills <code>HtmlContent</code></li>
+<li><code>PostProcessHtmlStep</code> → <code>IHtmlPostProcessor.Process</code> → adapts HTML per mode</li>
+<li><code>GeneratePagesStep</code> → <code>ITemplateEngine.Render</code> + <code>IOutputWriter.Write</code></li>
+<li><code>ExportPdfStep</code> → <code>IDocumentExporter.Export</code> → PDF on disk</li>
+</ol>
+<p>Each arrow crosses an abstraction boundary. Swapping Markdig for another engine touches Infrastructure registration only.</p>
+<h2 id="example-2-spark-ienginecontext">Example 2: Spark — IEngineContext</h2>
+<p>Game and demo code depend on a stable facade, not the monolithic <code>Engine</code> class.</p>
+<h3 id="ienginecontext-engine-facade-for-game-code"><code>IEngineContext</code> — engine facade for game code</h3>
+<p><strong>What it does:</strong> Exposes window, frame presenter, input, framebuffer size, scene render params, optional sound engine, scene pointer, and ImGui layer through virtual methods.</p>
+<p><strong>Why it exists:</strong> Demos and games should not include Vulkan, GLFW, or audio backend headers. The engine implementation changes; game code compiles against a narrow stable surface.</p>
+<p><strong>How it fits DIP:</strong> High-level game logic depends on <code>IEngineContext</code>; <code>EngineContext</code> (in engine internals) implements and forwards.</p>
+<pre><code class="language-cpp">class IEngineContext {
+public:
+    virtual ~IEngineContext() = default;
+    virtual Window&amp; GetWindow() = 0;
+    virtual IFramePresenter&amp; GetFramePresenter() = 0;
+    virtual IInput&amp; GetInput() = 0;
+    virtual void GetFramebufferSize(int&amp; outWidth, int&amp; outHeight) const = 0;
+    virtual SoundEngine* TryGetSoundEngine() noexcept = 0;
+    virtual Scene* TryGetScene() noexcept = 0;
+    virtual IImGuiLayer* TryGetImGuiLayer() noexcept = 0;
+};
+</code></pre>
+<p><strong>Supporting abstractions:</strong></p>
+<ul>
+<li><strong><code>IFramePresenter</code></strong> — abstracts Vulkan/OpenGL present path</li>
+<li><strong><code>IInput</code></strong> — keyboard/mouse/gamepad without GLFW types in game headers</li>
+<li><strong><code>IUiBackend</code></strong> + <strong><code>IUiControlsFactory</code></strong> — UI toolkit without Dear ImGui in consumer code</li>
+</ul>
+<p><strong>Problem → Solution → Walkthrough:</strong></p>
+<ul>
+<li><strong>Problem:</strong> Demo code including <code>Engine.hpp</code> pulls in rendering, audio, ECS, and platform headers.</li>
+<li><strong>Solution:</strong> Pass <code>IEngineContext&amp;</code> to demo <code>OnInit</code>/<code>OnTick</code>; engine bootstrap creates <code>EngineContext</code>.</li>
+<li><strong>Walkthrough:</strong>
+<ol>
+<li>Engine constructs subsystems (window, presenter, input, sound).</li>
+<li><code>EngineContext</code> implements <code>IEngineContext</code>, holds references.</li>
+<li>Demo receives context in lifecycle hooks.</li>
+<li>Demo calls <code>ctx.GetInput()</code> for movement, <code>ctx.TryGetScene()</code> for ECS access.</li>
+<li>Rendering params set via <code>SetSceneRenderParams</code> without Vulkan types.</li>
+</ol>
+</li>
+</ul>
+<p><strong>What would break without this?</strong> Headless test builds would link graphics drivers. Scripting bindings would expose engine internals instead of the facade. Platform ports require rewriting every demo.</p>
+<h2 id="example-3-lightmapper-imgkit">Example 3: LightMapper + ImgKit</h2>
+<p>LightMapper inverts mapping from hand-written property copies to generated, injectable mappers.</p>
+<h3 id="ilightmappertsource-tdestination-mapping-port"><code>ILightMapper&lt;TSource, TDestination&gt;</code> — mapping port</h3>
+<p><strong>What it does:</strong> <code>Map(source)</code> creates and fills a destination; <code>MapTo(source, destination)</code> updates an existing instance. <strong>Why it exists:</strong> Handlers and services should not contain repetitive DTO mapping code. <strong>DIP role:</strong> Application depends on generic mapper interface; source generator produces implementations.</p>
+<pre><code class="language-csharp">public interface ILightMapper&lt;TSource, TDestination&gt;
+    where TDestination : notnull
+{
+    TDestination Map(TSource source);
+    void MapTo(TSource source, TDestination destination);
+}
+</code></pre>
+<p><strong>Source generator</strong> emits concrete mapper classes (e.g., for <code>[LightMapFrom(typeof(TargetDto))]</code> on a source type) and <code>AddLightMapperMappers()</code> extension that registers each as <code>ILightMapper&lt;TSource,TDestination&gt;</code> singleton.</p>
+<p>ImgKit consumes mapping without referencing generated type names:</p>
+<pre><code class="language-csharp">services.AddLightMapperMappers();
+</code></pre>
+<p>Handlers depend on <code>ILightMapper&lt;SourceDto, TargetModel&gt;</code> — inversion from inline mapping to generated, testable mappers.</p>
+<p><strong>Problem → Solution → Walkthrough:</strong></p>
+<ul>
+<li><strong>Problem:</strong> <code>CommandModelMapper</code> static helpers couple handlers to every DTO shape; new commands edit central mapping code.</li>
+<li><strong>Solution:</strong> Declare mapping pairs with attributes; generator emits mappers; DI registers abstractions.</li>
+<li><strong>Walkthrough:</strong>
+<ol>
+<li>Developer adds <code>[LightMapFrom(typeof(ResizeImageSpecification))]</code> on command type.</li>
+<li>Build runs incremental generator → emits mapper class + DI registration line.</li>
+<li>Handler injects <code>ILightMapper&lt;ResizeImageCommand, ResizeImageSpecification&gt;</code>.</li>
+<li>Handler calls <code>_mapper.Map(request)</code> instead of manual property copy.</li>
+<li>Tests substitute fake mapper or test generated mapper in isolation.</li>
+</ol>
+</li>
+</ul>
+<p><strong>What would break without this?</strong> Every new API command edits shared mapping utilities. Handlers reference generated concrete types — compile coupling to generator output names. Unit tests cannot replace mapping without rewriting handlers.</p>
+<h2 id="example-4-raindb-iexecutioncontext">Example 4: RainDB — IExecutionContext</h2>
+<p><code>DefaultQueryExecutor</code> depends on a bundle of abstractions passed per query — not on concrete allocators or file paths.</p>
+<h3 id="iexecutioncontext-per-query-resource-bundle"><code>IExecutionContext</code> — per-query resource bundle</h3>
+<p><strong>What it does:</strong> Provides <code>ICatalog</code>, <code>IBufferPool</code>, <code>IAlignedBufferPool</code>, <code>ISpillWriter</code>, and <code>CancellationToken</code> to execution engines. <strong>Why it exists:</strong> Operators (scan, join, aggregate) need shared resources but should not locate them globally. <strong>DIP + OCP role:</strong> Add tracing or metrics to context without changing operator signatures.</p>
+<pre><code class="language-csharp">public interface IExecutionContext
+{
+    ICatalog Catalog { get; }
+    IBufferPool BufferPool { get; }
+    IAlignedBufferPool AlignedBufferPool { get; }
+    ISpillWriter SpillWriter { get; }
+    CancellationToken CancellationToken { get; }
+}
+</code></pre>
+<p><strong><code>RainDbExecutionContext</code></strong> — concrete implementation created per query in <code>RainDbEngine</code>.</p>
+<p>Operators never <code>new</code> concrete allocators. Tests substitute <code>NoOpSpillWriter.Instance</code> and in-memory catalogs via a test context.</p>
+<p><strong>Problem → Solution → Walkthrough:</strong></p>
+<ul>
+<li><strong>Problem:</strong> Engines call <code>ArrayPool.Shared</code> and static catalog — untestable, non-configurable.</li>
+<li><strong>Solution:</strong> Pass <code>IExecutionContext</code> into every <code>ExecuteAsync</code> call.</li>
+<li><strong>Walkthrough:</strong>
+<ol>
+<li>Client compiles SQL → <code>IPhysicalPlan</code>.</li>
+<li>Engine creates <code>RainDbExecutionContext</code> with catalog, pools, spill writer.</li>
+<li><code>DefaultQueryExecutor.ExecuteAsync(plan, context)</code> dispatches to engine.</li>
+<li><code>VectorizedScanEngine</code> allocates from <code>context.AlignedBufferPool</code>.</li>
+<li>Large join may spill via <code>context.SpillWriter</code>; tests use no-op spill.</li>
+</ol>
+</li>
+</ul>
+<p><strong>What would break without this?</strong> Executor tests would write temp files on disk. SIMD benchmarks could not use custom pool implementations. Cancellation would not propagate into operators.</p>
+<h2 id="dip-and-the-composition-root">DIP and the Composition Root</h2>
+<p>DIP only works if <strong>something</strong> wires concretions. That place is the composition root:</p>
+<table class="table">
+<thead>
+<tr>
+<th>Project</th>
+<th>Composition root</th>
+<th>What gets wired</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MDWeb</td>
+<td><code>MDWeb.Cli/Program.cs</code>, <code>DependencyInjection.cs</code></td>
+<td>Renderers, readers, steps, exporters</td>
+</tr>
+<tr>
+<td>ImgKit</td>
+<td><code>ImgKit.Web/Program.cs</code>, <code>ImgKit.Application/DependencyInjection.cs</code></td>
+<td>Strategies, handlers, mapper registrations</td>
+</tr>
+<tr>
+<td>RainDB</td>
+<td><code>RainDbEngine.CreateDefault()</code></td>
+<td>Catalog, compiler, executor, buffer pools</td>
+</tr>
+<tr>
+<td>Spark</td>
+<td>Engine bootstrap / editor startup</td>
+<td>Context facade, UI backend, snapshot handlers</td>
+</tr>
+<tr>
+<td>LightMediator</td>
+<td><code>LightMediatorServiceCollectionExtensions</code></td>
+<td>Mediator, publisher, handler discovery</td>
+</tr>
+<tr>
+<td>LightMapper</td>
+<td>Generated <code>AddLightMapperMappers()</code></td>
+<td>All <code>ILightMapper&lt;,&gt;</code> singletons</td>
+</tr>
+</tbody>
+</table>
+<p>Business logic classes should not call <code>new</code> on infrastructure types. The composition root is the only place that chooses Markdig over WeChat, sequential over parallel publisher, or filesystem over in-memory catalog.</p>
+<h2 id="dip-vs-di-framework">DIP vs DI Framework</h2>
+<ul>
+<li><strong>DIP</strong> is a design principle (depend on abstractions)</li>
+<li><strong>DI</strong> is a technique (constructor injection, service locator, factory)</li>
+<li><strong>IoC container</strong> is a tool (<code>IServiceCollection</code>, manual wiring)</li>
+</ul>
+<p>You can follow DIP without a container — pass interfaces via constructors and construct the graph in <code>Main</code>. Spark does this with manual registries and constructor injection in C++.</p>
+<h2 id="review-checklist">Review Checklist</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input disabled="disabled" type="checkbox"> Do high-level modules import only abstractions from Core/Abstractions assemblies?</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox"> Is framework code (Markdig, PillowNet, Vulkan) confined to Infrastructure?</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox"> Can I unit-test with fakes without filesystem or network?</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox"> Does the composition root contain all <code>new</code> calls for services?</li>
+</ul>
+<h2 id="next">Next</h2>
+<p><a href="07-solid-in-practice.html">SOLID in Practice →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#dependency-inversion-principle-dip">Dependency Inversion Principle (DIP)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#the-core-idea">The Core Idea</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#two-parts-of-dip">Two parts of DIP</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#smell-new-in-handlers">Smell: New in Handlers</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#refactor-inject-abstractions">Refactor: Inject Abstractions</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#rendering-port"> — rendering port</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#composition-root-selection">Composition root selection</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-1-mdweb-abstraction-stack">Example 1: MDWeb Abstraction Stack</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-2-spark-ienginecontext">Example 2: Spark — IEngineContext</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#engine-facade-for-game-code"> — engine facade for game code</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-3-lightmapper-imgkit">Example 3: LightMapper + ImgKit</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#mapping-port"> — mapping port</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#example-4-raindb-iexecutioncontext">Example 4: RainDB — IExecutionContext</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#per-query-resource-bundle"> — per-query resource bundle</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#dip-and-the-composition-root">DIP and the Composition Root</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#dip-vs-di-framework">DIP vs DI Framework</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#review-checklist">Review Checklist</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

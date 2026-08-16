@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proxy · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>Proxy</h1>
+          </header>
+          <div class="doc-body"><h1 id="proxy">Proxy</h1>
+<p><strong>Intent:</strong> Provide a surrogate or placeholder for another object to control access, lazy initialization, logging, or remote delegation.</p>
+<h2 id="the-structural-problem-uncontrolled-access-to-expensive-or-sensitive-resources">The Structural Problem: Uncontrolled Access to Expensive or Sensitive Resources</h2>
+<p>Some objects are costly or risky to use directly:</p>
+<ul>
+<li>Loading a multi-gigabyte texture on construction slows startup.</li>
+<li>Unrestricted database or image-processor access allows abuse.</li>
+<li>Remote services live behind network latency and failure modes.</li>
+</ul>
+<p><strong>Proxy</strong> implements the <strong>same interface</strong> as the real subject. Clients call the proxy; the proxy decides <strong>when</strong> and <strong>whether</strong> to forward to the real object.</p>
+<pre class="mermaid">classDiagram
+    class Subject {
+        &lt;&lt;interface&gt;&gt;
+        +request()
+    }
+    class RealSubject
+    class Proxy {
+        -realSubject
+        +request()
+    }
+    Subject &lt;|.. RealSubject
+    Subject &lt;|.. Proxy
+    Proxy --&gt; RealSubject : forwards
+    Client --&gt; Subject
+</pre>
+<h2 id="proxy-variants">Proxy Variants</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Type</th>
+<th>Purpose</th>
+<th>Mechanism</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Virtual</strong></td>
+<td>Defer expensive creation</td>
+<td>Create <code>RealSubject</code> on first use</td>
+</tr>
+<tr>
+<td><strong>Protection</strong></td>
+<td>Access control</td>
+<td>Check permissions before forward</td>
+</tr>
+<tr>
+<td><strong>Remote</strong></td>
+<td>Network transparency</td>
+<td>Local stub serializes calls</td>
+</tr>
+<tr>
+<td><strong>Logging / auditing</strong></td>
+<td>Observability</td>
+<td>Log, then forward</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="honest-assessment-no-classic-gof-proxy-in-the-corpus">Honest Assessment: No Classic GoF Proxy in the Corpus</h2>
+<p>No project defines <code>IImageProcessor</code> with <code>ImageProcessorProxy</code> that implements every method, holds a lazy <code>RealImageProcessor</code>, and forwards calls while adding access checks.</p>
+<p>That gap reflects <strong>modern platform idioms</strong> that solve the same problems without surrogate classes:</p>
+<table class="table">
+<thead>
+<tr>
+<th>Need</th>
+<th>Classic proxy</th>
+<th>What this corpus uses instead</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lazy initialization</td>
+<td>Virtual proxy wrapping service</td>
+<td><code>Lazy&lt;T&gt;</code>, deferred construction in DI, <code>TryGet*</code> returning nullptr until ready</td>
+</tr>
+<tr>
+<td>Access control</td>
+<td>Protection proxy</td>
+<td>ASP.NET authorization middleware, handler-level checks</td>
+</tr>
+<tr>
+<td>Concurrency limits</td>
+<td>Proxy serializing access</td>
+<td><strong>Resource gate</strong> — <code>IPillowNetProcessingGate</code> (ImgKit)</td>
+</tr>
+<tr>
+<td>Caching</td>
+<td>Proxy memoizing results</td>
+<td><code>ConcurrentDictionary</code> in LightMediator send invokers</td>
+</tr>
+<tr>
+<td>Remote API</td>
+<td>Remote proxy</td>
+<td>Typed HTTP client interfaces — no generated stub wrapper class</td>
+</tr>
+</tbody>
+</table>
+<p>Understanding Proxy remains essential for ORMs, RPC, and interception frameworks even when your app uses gates and middleware instead.</p>
+<hr>
+<h2 id="uml-roles-where-they-would-map">UML Roles — Where They Would Map</h2>
+<table class="table">
+<thead>
+<tr>
+<th>GoF role</th>
+<th>Would be</th>
+<th>In corpus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Subject</strong></td>
+<td>Service interface client depends on</td>
+<td><code>IImageProcessor</code>, <code>IRealService</code> — <strong>not wrapped</strong></td>
+</tr>
+<tr>
+<td><strong>RealSubject</strong></td>
+<td>Heavy implementation</td>
+<td><code>PillowNetProcessor</code>, engine subsystems</td>
+</tr>
+<tr>
+<td><strong>Proxy</strong></td>
+<td>Surrogate implementing Subject</td>
+<td><strong>Absent</strong> as named pattern</td>
+</tr>
+<tr>
+<td><strong>Client</strong></td>
+<td>Code using Subject</td>
+<td>Handlers call services directly after gate acquire</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="imgkit-ipillownetprocessinggate-gate-not-proxy">ImgKit — IPillowNetProcessingGate (Gate, Not Proxy)</h2>
+<h3 id="the-problem">The problem</h3>
+<p>Native PillowNet image processing is <strong>not re-entrant</strong> safely at unlimited parallelism. Multiple HTTP requests must not corrupt shared native state.</p>
+<h3 id="what-exists-a-concurrency-gate">What exists — a concurrency gate</h3>
+<pre><code class="language-csharp">internal sealed class PillowNetProcessingGate : IPillowNetProcessingGate
+{
+    private readonly SemaphoreSlim _semaphore = new(1, 1);
+
+    public async Task&lt;IDisposable&gt; AcquireAsync(CancellationToken cancellationToken = default)
+    {
+        await _semaphore.WaitAsync(cancellationToken);
+        return new ReleaseHandle(_semaphore);
+    }
+}
+</code></pre>
+<p>Handlers use:</p>
+<pre><code class="language-csharp">await using (await processingGate.AcquireAsync(cancellationToken))
+{
+    // call PillowNet directly
+}
+</code></pre>
+<h3 id="class-roles">Class roles</h3>
+<table class="table">
+<thead>
+<tr>
+<th>Class</th>
+<th>Role</th>
+<th>Why not Proxy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>IPillowNetProcessingGate</code></strong></td>
+<td>Concurrency contract</td>
+<td>Acquire/release — <strong>not</strong> <code>ProcessImage()</code> forwarding</td>
+</tr>
+<tr>
+<td><strong><code>PillowNetProcessingGate</code></strong></td>
+<td>Semaphore wrapper</td>
+<td>Serializes access; does <strong>not</strong> implement image API</td>
+</tr>
+<tr>
+<td><strong><code>ImageProcessingHandlerBase</code></strong></td>
+<td>Client</td>
+<td>Calls gate, then real processor — two separate types</td>
+</tr>
+</tbody>
+</table>
+<h3 id="proxy-vs-gate-conceptual-distinction">Proxy vs gate — conceptual distinction</h3>
+<table class="table">
+<thead>
+<tr>
+<th></th>
+<th>Proxy</th>
+<th>Gate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Interface</strong></td>
+<td>Same as real subject</td>
+<td>Different (<code>Acquire</code> / <code>IDisposable</code>)</td>
+</tr>
+<tr>
+<td><strong>Caller sees</strong></td>
+<td>One service object</td>
+<td>Service + explicit lock scope</td>
+</tr>
+<tr>
+<td><strong>Purpose</strong></td>
+<td>Transparent control</td>
+<td>Explicit resource serialization</td>
+</tr>
+</tbody>
+</table>
+<p>A <strong>protection proxy</strong> would look like:</p>
+<pre><code class="language-csharp">class PillowNetProcessorProxy : IImageProcessor {
+    public ImageResult Process(ImageRequest req) {
+        _gate.Wait();
+        try { return _inner.Process(req); }
+        finally { _gate.Release(); }
+    }
+}
+</code></pre>
+<p>ImgKit chose <strong>visible gate</strong> over <strong>transparent proxy</strong> — callers see the critical section, which aids code review and avoids pretending the proxy is the full processor interface.</p>
+<h3 id="step-by-step-handler-processes-an-image">Step-by-step: handler processes an image</h3>
+<ol>
+<li>HTTP request hits <code>ResizeImageHandler</code>.</li>
+<li>Handler validates command DTO (authorization may run in ASP.NET pipeline — another non-proxy control).</li>
+<li>Handler <code>await using (await gate.AcquireAsync(ct))</code> — waits if another native call is in flight.</li>
+<li>Handler invokes PillowNet resize on buffer — <strong>direct call</strong>, not through proxy.</li>
+<li><code>ReleaseHandle.Dispose()</code> releases semaphore on exit.</li>
+<li>Handler returns HTTP response.</li>
+</ol>
+<p>Concurrency control achieved; Proxy pattern not used.</p>
+<hr>
+<h2 id="spark-tryget-pattern-optional-access-not-proxy">Spark — TryGet Pattern (Optional Access, Not Proxy)</h2>
+<p><code>IEngineContext</code> exposes optional subsystems:</p>
+<pre><code class="language-cpp">virtual SoundEngine* TryGetSoundEngine() noexcept = 0;
+virtual Scene* TryGetScene() noexcept = 0;
+virtual IImGuiLayer* TryGetImGuiLayer() noexcept = 0;
+</code></pre>
+<h3 id="what-this-is">What this is</h3>
+<ul>
+<li><strong>Null object / optional capability</strong> — nullptr when subsystem absent (game without scene binding, host without audio).</li>
+<li><strong>Not lazy proxy</strong> — does not implement <code>SoundEngine</code>'s interface and forward calls after lazy init.</li>
+</ul>
+<p>A <strong>virtual proxy</strong> for audio would expose <code>PlaySound</code> methods on a lightweight stub that loads <code>SoundEngine</code> on first play. Spark instead constructs subsystems during engine boot and exposes raw pointers when available.</p>
+<p><strong>Teaching point:</strong> <code>TryGet*</code> simplifies <strong>capability queries</strong> on a facade — different problem from surrogate forwarding.</p>
+<hr>
+<h2 id="modern-replacements-deeper-look">Modern Replacements — Deeper Look</h2>
+<h3 id="lazy-initialization-lazyt-di-deferred-init">Lazy initialization (<code>Lazy&lt;T&gt;</code>, DI deferred init)</h3>
+<p>DI containers construct services on first resolve. No hand-written proxy class — the container or factory holds the lazy logic. Same <strong>virtual proxy intent</strong>, framework-provided.</p>
+<h3 id="middleware-and-filters">Middleware and filters</h3>
+<p>Authorization and logging wrap HTTP pipelines — similar to <strong>decorator/proxy</strong> semantics on <code>HttpContext</code>, but structured as middleware chains (see Decorator chapter). ASP.NET does not generate <code>ControllerProxy</code> per endpoint.</p>
+<h3 id="http-clients">HTTP clients</h3>
+<p><code>HttpClient</code> + typed interfaces (<code>IImgKitApi</code>) call remote services. Remote proxy pattern from CORBA/RMI era maps to <strong>generated clients or Refit interfaces</strong> — the "proxy" is often source-generated, not a visible application class.</p>
+<h3 id="dispatchproxy.net">DispatchProxy (.NET)</h3>
+<p>Runtime-generated proxies for interface interception — used in mocking and some AOP libraries. None of the seven projects use <code>DispatchProxy</code> for production services in the reviewed code.</p>
+<hr>
+<h2 id="when-classic-proxy-still-makes-sense">When Classic Proxy Still Makes Sense</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Why proxy fits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ORM lazy-loading navigation properties</td>
+<td>Property access triggers DB fetch — transparent to caller</td>
+</tr>
+<tr>
+<td>gRPC / CORBA stubs</td>
+<td>Generated local surrogate matches service IDL</td>
+</tr>
+<tr>
+<td>.NET <code>DispatchProxy</code></td>
+<td>Cross-cutting logging on interface without manual wrappers</td>
+</tr>
+<tr>
+<td>Large file / texture handles</td>
+<td>Virtual proxy delays IO until first read</td>
+</tr>
+</tbody>
+</table>
+<p>If you need <strong>transparent</strong> lazy load or access control on a <strong>wide interface</strong>, Proxy (or generated equivalent) beats scattering <code>if (!_loaded) Load()</code> in every method of the real subject — extract that into one surrogate class.</p>
+<hr>
+<h2 id="structural-part-summary">Structural Part Summary</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Best corpus example</th>
+<th>UML → real mapping</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Adapter</strong></td>
+<td>SkyUI <code>ICheckedListItemAdapter</code></td>
+<td>Target → adapter → domain model / Markdig</td>
+</tr>
+<tr>
+<td><strong>Bridge</strong></td>
+<td>Spark <code>IUiBackend</code></td>
+<td>Abstraction (<code>UiSystem</code>) → implementor (<code>SparkUiBackend</code>, <code>DearImguiUiBackend</code>)</td>
+</tr>
+<tr>
+<td><strong>Composite</strong></td>
+<td>MDWeb <code>ContentNode</code></td>
+<td>Component → <code>ContentFolder</code> (composite) / <code>MarkdownPage</code> (leaf)</td>
+</tr>
+<tr>
+<td><strong>Decorator</strong></td>
+<td>Not explicit — use middleware (Part 4) or Strategy</td>
+<td>Wrapping intent without shared component stack</td>
+</tr>
+<tr>
+<td><strong>Facade</strong></td>
+<td>MDWeb <code>SiteGenerator</code>, RainDB <code>RainDbEngine</code></td>
+<td>Client → facade → pipeline / compilers / executors</td>
+</tr>
+<tr>
+<td><strong>Flyweight</strong></td>
+<td>SkyUI palettes (informal)</td>
+<td>Shared <code>Instance</code> + extrinsic control context</td>
+</tr>
+<tr>
+<td><strong>Proxy</strong></td>
+<td>Modern DI, gates, <code>TryGet*</code> replace classic surrogates</td>
+<td>Gate ≠ Proxy; know the difference</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="cross-part-connections">Cross-Part Connections</h2>
+<ul>
+<li><strong>Composite + Visitor</strong> — SkyUI filter SQL export (Part 4).</li>
+<li><strong>Facade + Pipeline</strong> — MDWeb generation steps share <code>SiteContext</code>.</li>
+<li><strong>Bridge + Abstract Factory</strong> — Spark UI backends and control factories.</li>
+<li><strong>Adapter vs Facade</strong> — <code>MarkdigMarkdownRenderer</code> converts one API; <code>SiteGenerator</code> simplifies many.</li>
+</ul>
+<p>Structural patterns shape <strong>object graphs</strong>. Behavioral patterns (Part 4) shape <strong>communication</strong> over those graphs. The dividing line is not always crisp — middleware wraps delegates (behavioral) with decorator-like structure — but the vocabulary helps you name what you build and spot what you deliberately omitted.</p>
+<hr>
+<h2 id="part-3-closing-thought">Part 3 Closing Thought</h2>
+<p>The strongest examples in this book — Adapter, Bridge, Composite, Facade — are <strong>explicit in source comments and type structure</strong>. Weaker examples — Decorator, Flyweight, Proxy — teach equally by showing <strong>modern alternatives</strong>: Strategy over decorator stacks, pools over flyweights, gates and DI over surrogate classes. Naming the pattern you are <em>not</em> using is as valuable as naming the one you are.</p>
+<h2 id="next">Next</h2>
+<p><a href="../part04-behavioral/01-introduction.html">Part 4: Introduction to Behavioral Patterns →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#proxy">Proxy</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#the-structural-problem-uncontrolled-access-to-expensive-or-sensitive-resources">The Structural Problem: Uncontrolled Access to Expensive or Sensitive Resources</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#proxy-variants">Proxy Variants</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#honest-assessment-no-classic-gof-proxy-in-the-corpus">Honest Assessment: No Classic GoF Proxy in the Corpus</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#uml-roles-where-they-would-map">UML Roles — Where They Would Map</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#imgkit-ipillownetprocessinggate-gate-not-proxy">ImgKit — IPillowNetProcessingGate (Gate, Not Proxy)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#the-problem">The problem</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#what-exists-a-concurrency-gate">What exists — a concurrency gate</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#class-roles">Class roles</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#proxy-vs-gate-conceptual-distinction">Proxy vs gate — conceptual distinction</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#step-by-step-handler-processes-an-image">Step-by-step: handler processes an image</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#spark-tryget-pattern-optional-access-not-proxy">Spark — TryGet Pattern (Optional Access, Not Proxy)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#what-this-is">What this is</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#modern-replacements-deeper-look">Modern Replacements — Deeper Look</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#lazy-initialization-di-deferred-init">Lazy initialization (, DI deferred init)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#middleware-and-filters">Middleware and filters</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#http-clients">HTTP clients</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#dispatchproxy-net">DispatchProxy (.NET)</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#when-classic-proxy-still-makes-sense">When Classic Proxy Still Makes Sense</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#structural-part-summary">Structural Part Summary</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#cross-part-connections">Cross-Part Connections</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#part-3-closing-thought">Part 3 Closing Thought</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

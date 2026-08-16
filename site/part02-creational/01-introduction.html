@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Introduction to Creational Patterns · Design Patterns & SOLID in Practice</title>
+  <meta name="description" content="Generated documentation site">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="../assets/vendor/atom-one-dark.min.css">
+</head>
+<body>
+  <div class="site">
+    <header class="topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">☰</button>
+      <a href="../index.html" class="brand">Design Patterns & SOLID in Practice</a>
+      <div class="search-wrap">
+        <input type="search" id="search" placeholder="Search docs…" autocomplete="off">
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav" aria-label="Documentation">
+          <ul class="nav-list">
+            
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../index.html" class="nav-link">Design Patterns & SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <a href="../README.html" class="nav-link">README</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part01 solid</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/01-introduction.html" class="nav-link">Introduction to SOLID</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/02-single-responsibility.html" class="nav-link">Single Responsibility Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/03-open-closed.html" class="nav-link">Open/Closed Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/04-liskov-substitution.html" class="nav-link">Liskov Substitution Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/05-interface-segregation.html" class="nav-link">Interface Segregation Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/06-dependency-inversion.html" class="nav-link">Dependency Inversion Principle</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part01-solid/07-solid-in-practice.html" class="nav-link">SOLID in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part02 creational</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1 is-active">
+                          
+                            <a href="../part02-creational/01-introduction.html" class="nav-link">Introduction to Creational Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/02-singleton.html" class="nav-link">Singleton</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/03-factory-method.html" class="nav-link">Factory Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/04-abstract-factory.html" class="nav-link">Abstract Factory</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/05-builder.html" class="nav-link">Builder</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part02-creational/06-prototype.html" class="nav-link">Prototype</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part03 structural</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/01-introduction.html" class="nav-link">Introduction to Structural Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/02-adapter.html" class="nav-link">Adapter</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/03-bridge.html" class="nav-link">Bridge</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/04-composite.html" class="nav-link">Composite</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/05-decorator.html" class="nav-link">Decorator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/06-facade.html" class="nav-link">Facade</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/07-flyweight.html" class="nav-link">Flyweight</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part03-structural/08-proxy.html" class="nav-link">Proxy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part04 behavioral</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/01-introduction.html" class="nav-link">Introduction to Behavioral Patterns</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/02-chain-of-responsibility.html" class="nav-link">Chain of Responsibility</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/03-command.html" class="nav-link">Command</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/04-iterator.html" class="nav-link">Iterator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/05-mediator.html" class="nav-link">Mediator</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/06-memento.html" class="nav-link">Memento</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/07-observer.html" class="nav-link">Observer</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/08-state.html" class="nav-link">State</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/09-strategy.html" class="nav-link">Strategy</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/10-template-method.html" class="nav-link">Template Method</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part04-behavioral/11-visitor.html" class="nav-link">Visitor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part05 combining</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/01-introduction.html" class="nav-link">Introduction to Pattern Composition</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/02-mdweb-pipeline.html" class="nav-link">MDWeb Pipeline Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/03-spark-engine.html" class="nav-link">Spark Game Engine Layering</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/04-imgkit-stack.html" class="nav-link">ImgKit Full-Stack CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/05-skyui-filter-editor.html" class="nav-link">SkyUI Filter Editor</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/06-raindb-engine.html" class="nav-link">RainDB Query Engine</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part05-combining/07-choosing-patterns.html" class="nav-link">Choosing Patterns for Real Problems</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0 is-group">
+                          
+                            <span class="nav-group">part06 architecture</span>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/01-introduction.html" class="nav-link">Introduction to Application Architecture</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/02-mvvm-fundamentals.html" class="nav-link">MVVM Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/03-mvvm-skyui.html" class="nav-link">MVVM in SkyUI</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/04-mvvm-spark-studio.html" class="nav-link">MVVM at Application Scale</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/05-clean-architecture.html" class="nav-link">Clean Architecture Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/06-clean-architecture-projects.html" class="nav-link">Clean Architecture in Practice</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/07-cqrs-fundamentals.html" class="nav-link">CQRS Fundamentals</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/08-cqrs-practice.html" class="nav-link">CQRS with LightMediator and ImgKit</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/09-cqrs-raindb.html" class="nav-link">Storage-Layer CQRS in RainDB</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-1">
+                          
+                            <a href="../part06-architecture/10-combining-architecture.html" class="nav-link">Combining MVVM, Clean Architecture, and CQRS</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item depth-0">
+                          
+                            <span class="nav-group">site</span>
+                            
+                        </li>
+                        
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <article class="doc">
+          <header class="doc-header">
+            <h1>Introduction to Creational Patterns</h1>
+          </header>
+          <div class="doc-body"><h1 id="introduction-to-creational-patterns">Introduction to Creational Patterns</h1>
+<p>Every program eventually asks: <strong>how do I make this object?</strong> That question sounds trivial until construction becomes the hard part — when a type has dozens of optional parameters, when the concrete class depends on a platform or backend, when you need exactly one coordinator for a subsystem, or when copying an existing configuration is safer than rebuilding it from scratch.</p>
+<p>Creational patterns address <strong>object creation</strong> — how instances are constructed, configured, and wired so that client code stays decoupled from concrete types. They do not replace good design elsewhere; they concentrate creation logic in predictable places so the rest of the codebase can depend on abstractions.</p>
+<h2 id="the-core-problem-creational-patterns-solve">The Core Problem Creational Patterns Solve</h2>
+<p>Without deliberate creation boundaries, applications accumulate scattered <code>new</code> calls. Each call site must know:</p>
+<ul>
+<li>Which concrete class to instantiate</li>
+<li>Which constructor overload applies</li>
+<li>Which optional dependencies are valid together</li>
+<li>Whether the object should be shared, cloned, or rebuilt</li>
+</ul>
+<p>That coupling makes change expensive. Swapping Spark's native UI for Dear ImGui would require editing every panel if buttons and panels were constructed independently at each call site. Building a documentation site would require a 12-parameter constructor if PDF export, footer HTML, and link-fix flags were all required up front.</p>
+<p>Creational patterns answer: <strong>who decides the type, who assembles the parts, and who owns the lifetime?</strong></p>
+<h2 id="the-five-gof-creational-patterns">The Five GoF Creational Patterns</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Intent</th>
+<th>Key question</th>
+<th>What gets decoupled</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Singleton</strong></td>
+<td>One shared instance</td>
+<td>Who owns the global access point?</td>
+<td><em>Existence</em> — ensuring a single coordinator</td>
+</tr>
+<tr>
+<td><strong>Factory Method</strong></td>
+<td>Subclass or module decides which product to create</td>
+<td>Which type should I construct?</td>
+<td><em>Concrete product type</em> — callers depend on interfaces</td>
+</tr>
+<tr>
+<td><strong>Abstract Factory</strong></td>
+<td>Create families of related products</td>
+<td>Which <em>family</em> of objects?</td>
+<td><em>Product families</em> — related objects stay consistent</td>
+</tr>
+<tr>
+<td><strong>Builder</strong></td>
+<td>Step-by-step construction of complex objects</td>
+<td>How do I assemble many optional parts?</td>
+<td><em>Construction steps</em> — assembly vs. use</td>
+</tr>
+<tr>
+<td><strong>Prototype</strong></td>
+<td>Clone existing instances</td>
+<td>Can I copy instead of rebuild?</td>
+<td><em>Construction cost</em> — duplication vs. re-derivation</td>
+</tr>
+</tbody>
+</table>
+<p>Each pattern trades a small amount of indirection for flexibility at the point where change actually happens: object birth.</p>
+<h2 id="creational-patterns-and-solid">Creational Patterns and SOLID</h2>
+<p>Creational patterns are not separate from SOLID — they are how SOLID shows up at construction time.</p>
+<h3 id="dependency-inversion-dip">Dependency Inversion (DIP)</h3>
+<p>Factories return interfaces (<code>IShape2D</code>, <code>IUiButton</code>, <code>ISpillWriter</code>), not concretions. Callers in Spark's physics pipeline depend on <code>IShape2D</code>; they never include <code>BoxShape2D.hpp</code>. RainDB's hash-aggregate operators depend on <code>ISpillWriter</code>; tests inject the same interface with a no-op implementation.</p>
+<h3 id="openclosed-ocp">Open/Closed (OCP)</h3>
+<p>New products arrive as new factory types or new factory methods, not edited <code>new</code> calls scattered through business logic. Adding a <code>CreateCapsule()</code> to <code>ShapeFactory2D</code> does not require changing narrow-phase collision code. Adding <code>DearImguiControlsFactory</code> does not require rewriting editor panels — only the composition root selects the backend.</p>
+<h3 id="single-responsibility-srp">Single Responsibility (SRP)</h3>
+<p>Builders separate <em>construction</em> from <em>use</em>. <code>SiteBuilder</code> accumulates CLI flags and validates them; <code>SiteGenerator</code> consumes an immutable <code>SiteConfiguration</code>. The generator never parses command-line arguments; the builder never renders HTML.</p>
+<h3 id="interface-segregation-and-liskov">Interface Segregation and Liskov</h3>
+<p>Less central to creational patterns, but relevant when factories return fat interfaces. Spark's <code>IUiControlsFactory</code> exposes one method per control type rather than one mega-factory per control — the family stays cohesive without forcing unrelated creation APIs together.</p>
+<h2 id="how-to-read-the-pattern-chapters">How to Read the Pattern Chapters</h2>
+<p>Each pattern chapter in Part 2 follows a consistent structure:</p>
+<ol>
+<li><strong>Intent and structure</strong> — UML-level roles (Creator, Product, ConcreteFactory, Builder, Prototype)</li>
+<li><strong>The problem in context</strong> — why <code>new</code> alone fails for the example</li>
+<li><strong>Class responsibilities</strong> — what each type does and how it relates to neighbors</li>
+<li><strong>Object creation flow</strong> — step-by-step from client call to finished instance</li>
+<li><strong>Participant mapping</strong> — GoF names mapped to real classes in this corpus</li>
+<li><strong>When you see this in the wild</strong> — production signals that the pattern fits</li>
+<li><strong>Common mistakes</strong> — anti-patterns and mislabeling traps</li>
+<li><strong>Project examples</strong> from MDWeb, Spark, RainDB, SkyUI, ImgKit, LightMapper, LightMediator</li>
+</ol>
+<h2 id="project-coverage-summary">Project Coverage Summary</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Best examples in this corpus</th>
+<th>Why they are canonical</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Singleton</td>
+<td>Spark <code>UiSystem</code>, RainDB <code>NoOpSpillWriter</code></td>
+<td>Process-wide coordinators and null-object services</td>
+</tr>
+<tr>
+<td>Factory Method</td>
+<td>Spark <code>ShapeFactory2D</code>, <code>Mesh::CreateUnitCube</code></td>
+<td>Interface-returning creators with non-trivial construction</td>
+</tr>
+<tr>
+<td>Abstract Factory</td>
+<td>Spark <code>IUiControlsFactory</code></td>
+<td>Backend-scoped families of UI controls</td>
+</tr>
+<tr>
+<td>Builder</td>
+<td>MDWeb <code>SiteBuilder</code></td>
+<td>Fluent assembly + validation gate at <code>Build()</code></td>
+</tr>
+<tr>
+<td>Prototype</td>
+<td>RainDB <code>CompositeJoinKey.DeepClone</code>, SkyUI <code>CloneProto</code></td>
+<td>Independent copies for hash keys and clipboard state</td>
+</tr>
+</tbody>
+</table>
+<p>These examples were chosen because the source code documents the intent (<code>/// Builder pattern</code>, <code>/** Factory Method */</code>, <code>/** Abstract Factory */</code>) or because the structure makes the pattern unmistakable in review.</p>
+<h2 id="choosing-among-creational-patterns">Choosing Among Creational Patterns</h2>
+<p>Use this decision flow when more than one pattern seems applicable:</p>
+<pre class="mermaid">flowchart TD
+    START[Need an object] --&gt; ONE{Exactly one&lt;br/&gt;shared instance?}
+    ONE --&gt;|Yes| SINGLE[Singleton or DI singleton lifetime]
+    ONE --&gt;|No| FAMILY{Multiple related&lt;br/&gt;product types?}
+    FAMILY --&gt;|Yes| AF[Abstract Factory]
+    FAMILY --&gt;|No| COMPLEX{Many optional&lt;br/&gt;assembly steps?}
+    COMPLEX --&gt;|Yes| BUILD[Builder]
+    COMPLEX --&gt;|No| COPY{Copy existing&lt;br/&gt;instance cheaper?}
+    COPY --&gt;|Yes| PROTO[Prototype]
+    COPY --&gt;|No| FM[Factory Method]
+</pre>
+<p>Patterns compose. Spark's <code>UiSystem</code> (Singleton) selects an <code>IUiBackend</code>, which exposes an <code>IUiControlsFactory</code> (Abstract Factory). RainDB's <code>RainDbEngine.CreateDefault()</code> (Factory Method) wires <code>NoOpSpillWriter.Instance</code> (Singleton) into the engine graph.</p>
+<h2 id="anti-pattern-service-locator-disguised-as-factory">Anti-Pattern: Service Locator Disguised as Factory</h2>
+<pre><code class="language-csharp">var renderer = ServiceLocator.Get&lt;IMarkdownRenderer&gt;(); // hides dependencies
+</code></pre>
+<p>A service locator looks like a factory but inverts the dependency direction: the client reaches into a global registry instead of declaring what it needs. That hides dependencies from constructors, breaks testability, and makes call graphs impossible to trace statically.</p>
+<p><strong>Prefer constructor injection.</strong> Factories belong at the composition root (<code>RainDbEngine.CreateDefault</code>, MDWeb DI registration, Spark's <code>Engine.cpp</code> bootstrap) or behind interfaces the client explicitly depends on (<code>IDiagramNodePresenterFactory</code> on <code>DiagramSurface</code>).</p>
+<p>MDWeb uses DI singleton <em>lifetime</em> for services like <code>IMarkdownRenderer</code> — that is <strong>not</strong> GoF Singleton. The container owns one instance per scope; access is through constructor parameters, not <code>Class.Instance</code>. Teach the distinction explicitly when reviewing code.</p>
+<h2 id="anti-pattern-omnibus-new-in-business-logic">Anti-Pattern: Omnibus <code>new</code> in Business Logic</h2>
+<pre><code class="language-csharp">// scattered through handlers
+var pipeline = new MarkdownPipelineBuilder().UseAdvancedExtensions()...Build();
+var shape = new BoxShape2D(ComputeAabb(owner, collider));
+</code></pre>
+<p>When construction requires domain knowledge (world-space AABB from a collider, Markdig extension sets per output channel), that knowledge belongs in a factory or builder — not duplicated at every call site.</p>
+<h2 id="when-you-see-this-in-the-wild">When You See This in the Wild</h2>
+<ul>
+<li><strong>Startup / composition root</strong> — <code>Program.cs</code>, <code>Engine.cpp</code>, <code>RainDbEngine.CreateDefault()</code>: where graphs are wired</li>
+<li><strong>Plugin or backend switches</strong> — UI toolkit selection, markdown renderer selection, spill writer injection</li>
+<li><strong>Test doubles</strong> — <code>NoOpSpillWriter.Instance</code>, fake <code>IDiagramNodePresenterFactory</code>, headless <code>DearImguiControlsFactory</code></li>
+<li><strong>Generated code</strong> — LightMapper emits singleton mappers; the generator <em>is</em> the factory</li>
+<li><strong>Static convenience APIs</strong> — <code>Mesh::CreateUnitCube()</code>, <code>SkyValidators.Email()</code>: acceptable when construction is stable and returns abstractions</li>
+</ul>
+<h2 id="common-mistakes">Common Mistakes</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Mistake</th>
+<th>Why it hurts</th>
+<th>Better approach</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Labeling every static method a "factory"</td>
+<td>Dilutes vocabulary; misses structural intent</td>
+<td>Reserve "Factory Method" for interface-returning creators that encapsulate non-trivial construction</td>
+</tr>
+<tr>
+<td>Calling every fluent API a "Builder"</td>
+<td><code>NavigationBuilder</code> may traverse, not assemble</td>
+<td>Look for complex product + <code>Build()</code> validation gate</td>
+</tr>
+<tr>
+<td>Using Singleton for convenience</td>
+<td>Hidden global state, untestable order dependencies</td>
+<td>DI singleton lifetime + explicit injection</td>
+</tr>
+<tr>
+<td>Mixing product families</td>
+<td>Spark button + ImGui panel</td>
+<td>Abstract Factory boundary at backend</td>
+</tr>
+<tr>
+<td>Shallow clone where deep clone is required</td>
+<td>Shared mutable arrays in hash tables</td>
+<td>RainDB's explicit <code>DeepClone()</code> on composite keys</td>
+</tr>
+</tbody>
+</table>
+<h2 id="modern-alternatives-worth-knowing">Modern Alternatives Worth Knowing</h2>
+<table class="table">
+<thead>
+<tr>
+<th>Approach</th>
+<th>When it replaces creational patterns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>DI containers</strong> (<code>AddSingleton</code>, <code>AddTransient</code>)</td>
+<td>Lifetime management without static <code>Get()</code></td>
+</tr>
+<tr>
+<td><strong>Source generators</strong> (LightMapper)</td>
+<td>Compile-time factory/registry emission</td>
+</tr>
+<tr>
+<td><strong>Primary constructors + records</strong></td>
+<td>Simple immutable products after builder assembly</td>
+</tr>
+<tr>
+<td><strong>Functional factories</strong> (<code>Func&lt;T&gt;</code>)</td>
+<td>Deferred creation in DI; not a pattern name, but a mechanism</td>
+</tr>
+</tbody>
+</table>
+<p>These are not replacements for the <em>ideas</em> — they are implementations of the same decoupling goals.</p>
+<h2 id="next">Next</h2>
+<p><a href="02-singleton.html">Singleton →</a></p>
+</div>
+          <footer class="doc-footer">
+            <p>Generated by <strong>hoihky</strong> with <strong>MDWeb</strong> and with assistance from <strong>AI</strong></p>
+          </footer>
+        </article>
+
+        
+                <aside class="toc" aria-label="On this page">
+                  <p class="toc-title">On this page</p>
+                  <ul>
+                    
+                        <li class="toc-h1">
+                          <a href="#introduction-to-creational-patterns">Introduction to Creational Patterns</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#the-core-problem-creational-patterns-solve">The Core Problem Creational Patterns Solve</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#the-five-gof-creational-patterns">The Five GoF Creational Patterns</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#creational-patterns-and-solid">Creational Patterns and SOLID</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#dependency-inversion-dip">Dependency Inversion (DIP)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#openclosed-ocp">Open/Closed (OCP)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#single-responsibility-srp">Single Responsibility (SRP)</a>
+                        </li>
+                        
+                        <li class="toc-h3">
+                          <a href="#interface-segregation-and-liskov">Interface Segregation and Liskov</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#how-to-read-the-pattern-chapters">How to Read the Pattern Chapters</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#project-coverage-summary">Project Coverage Summary</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#choosing-among-creational-patterns">Choosing Among Creational Patterns</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#anti-pattern-service-locator-disguised-as-factory">Anti-Pattern: Service Locator Disguised as Factory</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#anti-pattern-omnibus-in-business-logic">Anti-Pattern: Omnibus  in Business Logic</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#when-you-see-this-in-the-wild">When You See This in the Wild</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#common-mistakes">Common Mistakes</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#modern-alternatives-worth-knowing">Modern Alternatives Worth Knowing</a>
+                        </li>
+                        
+                        <li class="toc-h2">
+                          <a href="#next">Next</a>
+                        </li>
+                        
+                  </ul>
+                </aside>
+                
+      </main>
+    </div>
+  </div>
+  <script src="../assets/vendor/mermaid.min.js"></script>
+  <script src="../assets/vendor/highlight.min.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>
