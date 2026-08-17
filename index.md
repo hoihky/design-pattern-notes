@@ -21,7 +21,7 @@ This ebook teaches **SOLID principles** and **GoF design patterns** through real
 
 ## Reference Projects
 
-Every chapter draws examples from these repositories (local paths under `~/Desktop/Kwan/Source/Projects`):
+Every chapter draws examples from these repositories
 
 | Project | Language | Role in This Book |
 |---------|----------|-------------------|
