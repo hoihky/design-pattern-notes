@@ -101,7 +101,7 @@ MDWeb's `MDWeb.Core` and RainDB's `RainDB.Abstractions` sit at the center. Spark
 
 We avoid textbook `Animal` / `Dog` hierarchies. Every example:
 
-- Comes from **shipping code** you can open locally under `/Users/rainechen/Desktop/Kwan/Source/Projects/`
+- Comes from **shipping code** you can find and study at `https://hoihky.github.io`
 - Shows **trade-offs** (when a principle is stretched, or when DI lifetime replaces Singleton)
 - Connects to **patterns** covered in later parts
 
